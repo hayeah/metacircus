@@ -3,8 +3,6 @@ layout: post
 title: Poor Shylock
 ---
 
-Poor Shylock.
-
 Greentea said that all my characters are depressed. Nothing good ever
 happens to them. All lonely, and never find love.
 

@@ -3,8 +3,6 @@ layout: post
 title: Coffin For Two
 ---
 
-h1. Coffin For Two
-
 __An optimist and a pessimist buried in a coffin together. They lie facing each other. A candle burns between them.__
 
 A: The smell of earth.

@@ -3,8 +3,6 @@ layout: post
 title: Playing Git Like A Violin
 ---
 
-# Play Git Like A Violin
-
 People think that playing the violin is hard. But
 that's only when you are learning and
 practicing. When you are *actually* playing, it's

@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-08-24T03:46:22+08:00</updated>
+ <updated>2011-08-24T03:59:00+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -17,9 +17,7 @@
    <link href="http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin.html"/>
    <updated>2011-02-18T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin</id>
-   <content type="html">&lt;h1 id='play_git_like_a_violin'&gt;Play Git Like A Violin&lt;/h1&gt;
-
-&lt;p&gt;People think that playing the violin is hard. But that&amp;#8217;s only when you are learning and practicing. When you are &lt;em&gt;actually&lt;/em&gt; playing, it&amp;#8217;s as natural as breathing. So it is with Git. After a couple years of use, and the help of a few aliases, my git usage now comes as easily as music from a familiar piece:&lt;/p&gt;
+   <content type="html">&lt;p&gt;People think that playing the violin is hard. But that&amp;#8217;s only when you are learning and practicing. When you are &lt;em&gt;actually&lt;/em&gt; playing, it&amp;#8217;s as natural as breathing. So it is with Git. After a couple years of use, and the help of a few aliases, my git usage now comes as easily as music from a familiar piece:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git caa
 git ca
@@ -111,9 +109,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
    <link href="http://www.metacircus.com/writings/2011/02/06/forest-song.html"/>
    <updated>2011-02-06T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2011/02/06/forest-song</id>
-   <content type="html">&lt;h1 id='forest_song'&gt;Forest Song&lt;/h1&gt;
-
-&lt;p&gt;I dreamed of us as a tree, and my limbs growing into yours, and you swallowing me up with your embrace. This growth is driven by life, and binds us by life. And slowly we are dying, by growing into one.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I dreamed of us as a tree, and my limbs growing into yours, and you swallowing me up with your embrace. This growth is driven by life, and binds us by life. And slowly we are dying, by growing into one.&lt;/p&gt;
 
 &lt;p&gt;We worry not where we are going, or where we are, for the sun comes to us, and the rain sweetens our life. Our roots anchor us to Earth, that massive stability. Yet our branches and leaves extend into the Heavens, light as air, and exuberant, free as birds.&lt;/p&gt;
 
@@ -141,9 +137,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
    <link href="http://www.metacircus.com/writings/2010/05/22/who-brought-fire.html"/>
    <updated>2010-05-22T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/05/22/who-brought-fire</id>
-   <content type="html">&lt;h1 id='who_brought_fire'&gt;Who Brought Fire?&lt;/h1&gt;
-
-&lt;blockquote&gt;
+   <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Bread is the most everyday and familiar of foods, the sturdy staff of life on which hundreds of generations have leaned for sustenance. It also represents a truly remarkable discovery, a lively pole on which the young human imagination may well have vaulted forward in insight and inspiration. For our prehistoric ancestors it would have been a startling sign of the natural world&amp;#8217;s hidden potential for being transformed, and their own ability to shape natural materials to human desires. &amp;#8211; Harold McGee &lt;em&gt;On Food And Cooking&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -167,16 +161,6 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>
-   <title>Tired And Nothing To Say</title>
-   <link href="http://www.metacircus.com/writings/2010/04/23/tired-and-nothing-to-say.html"/>
-   <updated>2010-04-23T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/writings/2010/04/23/tired-and-nothing-to-say</id>
-   <content type="html">&lt;p&gt;Reading great pieces of writing is devastating. How can I ever be that good? Do I just write, write, write, and write some more? This probably doesn&amp;#8217;t count. Just saying whatever&amp;#8217;s on my mind (as it&amp;#8217;s been happening more and more lately: nothing) isn&amp;#8217;t writing.&lt;/p&gt;
-
-&lt;p&gt;I just don&amp;#8217;t feel like saying anything. I&amp;#8217;ll leave this at this, as I am bored myself by myself.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>One Thing</title>
    <link href="http://www.metacircus.com/writings/2010/04/20/one-thing.html"/>
    <updated>2010-04-20T00:00:00+08:00</updated>
@@ -193,9 +177,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
    <link href="http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork.html"/>
    <updated>2010-04-19T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork</id>
-   <content type="html">&lt;h1 id='what_is_the_opposite_of_a_fork'&gt;What is The Opposite of a Fork&lt;/h1&gt;
-
-&lt;p&gt;It is always tempting to think in dualistic terms: us vs them, black and white, dark and light, work and play, life and death, love and hate. It seems natural that for any X, there&amp;#8217;s always the opposite of X.&lt;/p&gt;
+   <content type="html">&lt;p&gt;It is always tempting to think in dualistic terms: us vs them, black and white, dark and light, work and play, life and death, love and hate. It seems natural that for any X, there&amp;#8217;s always the opposite of X.&lt;/p&gt;
 
 &lt;p&gt;&amp;#8220;If you are not a liberal, then you are a conservative.&amp;#8221;&lt;/p&gt;
 
@@ -267,9 +249,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
    <link href="http://www.metacircus.com/writings/2010/04/16/rhetorical-rationality.html"/>
    <updated>2010-04-16T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/16/rhetorical-rationality</id>
-   <content type="html">&lt;h1 id='rhetorical_rationality'&gt;Rhetorical Rationality&lt;/h1&gt;
-
-&lt;p&gt;Thinking of ourselves as rational creatures, we often resort to rhetorical techniques to sound rational rather than putting in the effort to actually think. As David Hume pointed out, an argument is often invented after we have already decided on a conclusion. So an argument is rhetorical in the sense that it is designed to persuade so-called &amp;#8220;rational beings&amp;#8221;. We do not generally arrive at Truth via an argument.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Thinking of ourselves as rational creatures, we often resort to rhetorical techniques to sound rational rather than putting in the effort to actually think. As David Hume pointed out, an argument is often invented after we have already decided on a conclusion. So an argument is rhetorical in the sense that it is designed to persuade so-called &amp;#8220;rational beings&amp;#8221;. We do not generally arrive at Truth via an argument.&lt;/p&gt;
 
 &lt;p&gt;That be as it may, a good argument is still appreciated. Sometimes though, we are too lazy even to come up with a good one. Rather, we resort to cheap rhetorical tricks to appear rational.&lt;/p&gt;
 
@@ -318,20 +298,6 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
 &lt;p&gt;As soon as I reach three points, I am satisfied. But of course, there are often more than three points. And sometimes there are less than three points. But we would still feel powerfully drawn to pad the list to make three, perhaps by making a slight variation on an existing point.&lt;/p&gt;
 
 &lt;p&gt;So I avoid lists of three. I always try to think more. Failing that, I try to condense, to see if there is a unifying idea behind the points. Stopping at three, I am being lazy.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Nothing To Say Today</title>
-   <link href="http://www.metacircus.com/writings/2010/04/14/nothing-to-say-today.html"/>
-   <updated>2010-04-14T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/writings/2010/04/14/nothing-to-say-today</id>
-   <content type="html">&lt;h1 id='nothing_to_say_today'&gt;Nothing To Say Today&lt;/h1&gt;
-
-&lt;p&gt;I don&amp;#8217;t remember my dreams anymore, though I know I still dream at night. What would Freud think?&lt;/p&gt;
-
-&lt;p&gt;Today was a beautiful day. I did not do anything useful tonight. But I cooked, and cleaned up my apartment. I watched another lecture on Nietzsche, then I watched &lt;em&gt;Coco Chanel and Igor Stravinsky&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;It was a good movie. I wish they had somebody uglier to play Stravinsky. The man in the movie was simply too good looking. I don&amp;#8217;t have any pre-existing idea of Chanel, but I enjoyed the version in the film.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -404,9 +370,7 @@ b.call(3,4) # fails&lt;/code&gt;&lt;/pre&gt;
    <link href="http://www.metacircus.com/hacking/2010/04/11/exploring-ruby-internals.html"/>
    <updated>2010-04-11T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/11/exploring-ruby-internals</id>
-   <content type="html">&lt;h1 id='dont_just_grope_at_the_elephant'&gt;Don&amp;#8217;t Just Grope at The Elephant&lt;/h1&gt;
-
-&lt;p&gt;It is always very hard to learn a large code base, especially initially, when there&amp;#8217;s not even a vague idea of how things fit into a structure. This overall picture of the code base is the crucial first step. After that, it becomes much easier to see an arbitrary fragment of code, and guess what it does.&lt;/p&gt;
+   <content type="html">&lt;p&gt;It is always very hard to learn a large code base, especially initially, when there&amp;#8217;s not even a vague idea of how things fit into a structure. This overall picture of the code base is the crucial first step. After that, it becomes much easier to see an arbitrary fragment of code, and guess what it does.&lt;/p&gt;
 
 &lt;p&gt;It is this first step that&amp;#8217;s the hardest. It is a gestalt process, where out of a sea of random information miraculously emerges understanding. I would pretty much pick a place, and start to randomly walk through the files, then hope for the best.&lt;/p&gt;
 
@@ -520,13 +484,39 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  </entry>
  
  <entry>
+   <title>Lecture 7 on Nietzsche</title>
+   <link href="http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche.html"/>
+   <updated>2010-04-07T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche</id>
+   <content type="html">&lt;p&gt;I always feel the pressure that I gotta be somewhere, I gotta do something, I gotta be somebody. Being goal-driven, there&amp;#8217;s always the sense that &lt;em&gt;something&lt;/em&gt;, when it is finally achieved, will provide a lasting satisfaction.&lt;/p&gt;
+
+&lt;p&gt;Maybe I am kidding myself. Maybe it doesn&amp;#8217;t make sense to think of the good life like some Platonic ideal. Life should be let lived. Let it grow, organically, unexpectedly, but not according to some idea of perfection.&lt;/p&gt;
+
+&lt;p&gt;Maybe life isn&amp;#8217;t about being content. Maybe another idea of good life is one of endless restlessness, unquenchable desires. To desire life so much, so deeply, so intensely, every waking moment, and then dream some more of it at night&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;The idea that there could be a perfection of being where I could be free of worries, longings, sadness, hopes, wants, regrets, is intellectually seductive. That wonderful illusion of coherency comes only at the expense of ignoring life.&lt;/p&gt;
+
+&lt;p&gt;I am watching a lecture series on Nietzsche&amp;#8217;s philosophy. Every lecture I receive something wonderfully life-affirming. Lecture 7 is concluded on these notes,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Schopenhauer ultimately seems to think that meaning, purpose, is to be found in a kind of rationality. That&amp;#8217;s what Kant thought. Nevertheless, what Nietzsche points out, and I think very powerfully, is that the meaning of life is to be found not in reason, not in rationality, not in some calculation, much less in theology, but the meaning of life is to be found in the passions, that it&amp;#8217;s creativity, it&amp;#8217;s being devoted to causes, it&amp;#8217;s being dedicated to something &amp;#8211; another person, a project, an art. That&amp;#8217;s what gives life meaning. And so pessimism is overcome as the aesthetic phenomenon, not as a reason, not as a rational enterprise, but, rather, by something you really care about, something you feel deeply passionate about. &amp;#8211; &lt;em&gt;Robert Soloman&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Rather than seeking perfection, I could see life as a dynamic process, continuously unfolding. It is music, and we all dance to it.&lt;/p&gt;
+
+&lt;p&gt;Meaning isn&amp;#8217;t some ghostly Platonic treasure. God is dead, and soon enough, we will all be dead. What Meanings are to be found in the ruins of religions and philosophy? Meaningfulness is a feeling. It comes right out of living.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If your life burned well, poetry is just the ash. &amp;#8211; &lt;em&gt;Leonard Cohen&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Poor Shylock</title>
    <link href="http://www.metacircus.com/writings/2010/04/02/poor-shylock.html"/>
    <updated>2010-04-02T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/02/poor-shylock</id>
-   <content type="html">&lt;p&gt;Poor Shylock.&lt;/p&gt;
-
-&lt;p&gt;Greentea said that all my characters are depressed. Nothing good ever happens to them. All lonely, and never find love.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Greentea said that all my characters are depressed. Nothing good ever happens to them. All lonely, and never find love.&lt;/p&gt;
 
 &lt;p&gt;I thought a bit, to come up with a story with a good ending: A guy has a beloved. I kill off his beloved arbitrarily. The guy feels sad. He misses his beloved terribly. He wants her back. He searches for her. He dreams of her. Eventually, the guy goes crazy, and hallucinates the girl. He&amp;#8217;s happy again.&lt;/p&gt;
 
@@ -556,9 +546,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
    <link href="http://www.metacircus.com/writings/2010/04/01/why-not.html"/>
    <updated>2010-04-01T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/01/why-not</id>
-   <content type="html">&lt;h1 id='why_not'&gt;Why Not?&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;They would never have met in life. But here they are, in death, sharing a bench at a deserted station, waiting for the train to come to take them away. A withered old man, and a young man in his 20s.&lt;/em&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;em&gt;They would never have met in life. But here they are, in death, sharing a bench at a deserted station, waiting for the train to come to take them away. A withered old man, and a young man in his 20s.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;B: I bet you can&amp;#8217;t guess how old I am.&lt;/p&gt;
 
@@ -925,8 +913,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
    <link href="http://www.metacircus.com/writings/2009/11/01/i-believe-in-x.html"/>
    <updated>2009-11-01T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2009/11/01/i-believe-in-x</id>
-   <content type="html">&lt;h1&gt;Do You Believe in X?&lt;/h1&gt;
-&lt;p&gt;&lt;i&gt;There had been a long pause in the car. The silence between them was punctuated by occasional comments on random things, and questions more meant to be rhetorical than answered, as well as superficial agreements and disagreements to reassert their familiarty with each other. The words uttered were less meant to go through, than to hang about in the air, and let fade like incense.&lt;/i&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;i&gt;There had been a long pause in the car. The silence between them was punctuated by occasional comments on random things, and questions more meant to be rhetorical than answered, as well as superficial agreements and disagreements to reassert their familiarty with each other. The words uttered were less meant to go through, than to hang about in the air, and let fade like incense.&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;A. Do you believe in X?&lt;/p&gt;
 &lt;p&gt;B. Why do you ask? I have had X. I must have. But I am not sure if I believe in X. Or what it even means.&lt;/p&gt;
 &lt;p&gt;A. You know, to believe in X enough, that you have the courage to want it, and to get it. To believe in X enough, that when you have it, you know you have it.&lt;/p&gt;
@@ -985,8 +972,7 @@ A. You are not making any sense at all.&lt;/p&gt;
 &lt;p&gt;A. You are so hungry, you&amp;#8217;d eat anything.&lt;/p&gt;
 &lt;p&gt;B. I can sense it now! Ahh, right there, the hunger pang.&lt;/p&gt;
 &lt;p&gt;A. There, make a right turn.&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;They pulled the car into McDonald&amp;#8217;s. He turned down the music, and turned off the engine. They emerged from the car into the chill of the night. Both shivering, they huddled together across the parking lot. They walked under the Golden Arch, and disappeared, hand-in-hand, enveloped in the glow of white florescent light.&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;Can you believe in my believing in X?&lt;/p&gt;</content>
+&lt;p&gt;&lt;i&gt;They pulled the car into McDonald&amp;#8217;s. He turned down the music, and turned off the engine. They emerged from the car into the chill of the night. Both shivering, they huddled together across the parking lot. They walked under the Golden Arch, and disappeared, hand-in-hand, enveloped in the glow of white florescent light.&lt;/i&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -1207,8 +1193,7 @@ WS.extend Test::Unit::Assertions&lt;/code&gt;&lt;br /&gt;
    <link href="http://www.metacircus.com/hacking/2009/03/17/does-ruby-dream-a-shell.html"/>
    <updated>2009-03-17T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2009/03/17/does-ruby-dream-a-shell</id>
-   <content type="html">&lt;h1&gt;Does Ruby Dream An Eclectic Shell?&lt;/h1&gt;
-&lt;p&gt;Whenever I encounter something that sounds even slightly hard to do in Bash, I&amp;#8217;d think: &amp;#8220;hmmm, how do I do this in Bash? Oh, I know, I&amp;#8217;ll use Ruby.&amp;#8221; So I never actually bothered to learn Bash. Better for my sanity.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Whenever I encounter something that sounds even slightly hard to do in Bash, I&amp;#8217;d think: &amp;#8220;hmmm, how do I do this in Bash? Oh, I know, I&amp;#8217;ll use Ruby.&amp;#8221; So I never actually bothered to learn Bash. Better for my sanity.&lt;/p&gt;
 &lt;p&gt;But sometimes in the depth of night, contemplating my eventual existential end, I&amp;#8217;d think to myself, hmmm, wouldn&amp;#8217;t it be nice to have a shell that&amp;#8217;s consistent, expressive, powerful, concise, and &lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;FUN&lt;/span&gt;&lt;/strong&gt; to use?&lt;/p&gt;
 &lt;p&gt;I was motivated by two thoughts:&lt;/p&gt;
 &lt;ol&gt;
@@ -1670,8 +1655,7 @@ laughing, and laughing. And the light grew more intense.&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/06/08/me-and.html"/>
    <updated>2008-06-08T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/06/08/me-and</id>
-   <content type="html">&lt;h1&gt;me and&lt;/h1&gt;
-&lt;p&gt;this is a poem i wrote &lt;br /&gt;
+   <content type="html">&lt;p&gt;this is a poem i wrote &lt;br /&gt;
 for me and&lt;/p&gt;
 &lt;p&gt;the story of me and&lt;br /&gt;
 the gazing into the sky&lt;br /&gt;
@@ -1767,7 +1751,7 @@ a song of me&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/03/15/beautiful-happiness.html"/>
    <updated>2008-03-15T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/03/15/beautiful-happiness</id>
-   <content type="html">&lt;h2&gt;Monster Trucks are Beautiful&lt;/h2&gt;
+   <content type="html">&lt;p&gt;Monster Trucks are Beautiful.&lt;/p&gt;
 &lt;p&gt;Beauty is important to me. I never knew how to defend my sense of beauty, except with a childish tantrum, &amp;#8220;This is my sense of beauty, and if you disagree with me, you are an idiot&amp;#8221;. At the same time that I find certain objects beautiful, the image of a monster truck leaping over flatten cars imposes itself upon my mind.&lt;/p&gt;
 &lt;p&gt;I am forced to remember that there are people who sincerely find /that/ beautiful. I am not just saying monster trucks can be entertaining. More than entertaining, they can be, to some people, genuinely beautiful.&lt;/p&gt;
 &lt;p&gt;This realization is distressing. If Beauty can mean monster trucks to some people, does it mean my sense of Beauty is as stupid as theirs?&lt;/p&gt;
@@ -1840,8 +1824,7 @@ Lispnik: &amp;#8220;Buddha is big, has hairy armpits, and laughs.&amp;#8221;&lt;
    <link href="http://www.metacircus.com/writings/2008/02/25/self-help-for-emo-kids.html"/>
    <updated>2008-02-25T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/02/25/self-help-for-emo-kids</id>
-   <content type="html">&lt;h2&gt;Shelf Help&lt;/h2&gt;
-&lt;p&gt;Do you feel bad that you are not fulfilling your full potential? Are there things you know you can do, but for one reason or another, you are not doing? Perhaps life is too demanding. Perhaps job is too draining. Perhaps love is too consuming. But deep down, you know you can &lt;i&gt;be&lt;/i&gt; much more. Right?&lt;/p&gt;
+   <content type="html">&lt;p&gt;Do you feel bad that you are not fulfilling your full potential? Are there things you know you can do, but for one reason or another, you are not doing? Perhaps life is too demanding. Perhaps job is too draining. Perhaps love is too consuming. But deep down, you know you can &lt;i&gt;be&lt;/i&gt; much more. Right?&lt;/p&gt;
 &lt;p&gt;So you read self-help books.&lt;/p&gt;
 &lt;p&gt;So I read self-help books.&lt;/p&gt;
 &lt;p&gt;So you read productivity blogs.&lt;/p&gt;
@@ -1935,8 +1918,7 @@ Lispnik: &amp;#8220;Buddha is big, has hairy armpits, and laughs.&amp;#8221;&lt;
    <link href="http://www.metacircus.com/writings/2008/02/17/be.html"/>
    <updated>2008-02-17T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/02/17/be</id>
-   <content type="html">&lt;h1&gt;Be&lt;/h1&gt;
-&lt;p&gt;everything has been said&lt;br /&gt;
+   <content type="html">&lt;p&gt;everything has been said&lt;br /&gt;
 nothing can be said&lt;br /&gt;
 anything may be said&lt;br /&gt;
 but my mouth won&amp;#8217;t say.&lt;/p&gt;
@@ -2009,8 +1991,7 @@ Wilson is an elegant writer. Thought provoking. Though after 30 years, it’s le
    <link href="http://www.metacircus.com/writings/2007/05/13/coffin-for-two.html"/>
    <updated>2007-05-13T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2007/05/13/coffin-for-two</id>
-   <content type="html">&lt;h1&gt;Coffin For Two&lt;/h1&gt;
-&lt;p&gt;&lt;i&gt;An optimist and a pessimist buried in a coffin together. They lie facing each other. A candle burns between them.&lt;/i&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;i&gt;An optimist and a pessimist buried in a coffin together. They lie facing each other. A candle burns between them.&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;A: The smell of earth.&lt;/p&gt;
 &lt;p&gt;B: The smell of death.&lt;/p&gt;
 &lt;p&gt;A: What are you talking about? It&amp;#8217;s quiet. It&amp;#8217;s calm. There&amp;#8217;s a zen-like serenity to be buried alive 5 feet underground.&lt;/p&gt;

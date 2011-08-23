@@ -3,8 +3,6 @@ layout: post
 title: What is The Opposite of a Fork
 ---
 
-# What is The Opposite of a Fork
-
 It is always tempting to think in dualistic terms: us vs them, black
 and white, dark and light, work and play, life and death, love and
 hate. It seems natural that for any X, there's always the opposite of

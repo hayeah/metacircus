@@ -2,7 +2,6 @@
 layout: post
 title: me and
 ---
-h1. me and
 
 this is a poem i wrote 
 for me and

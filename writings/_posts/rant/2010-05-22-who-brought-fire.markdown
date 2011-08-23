@@ -3,8 +3,6 @@ layout: post
 title: Who Brought Fire?
 ---
 
-# Who Brought Fire?
-
 > Bread is the most everyday and familiar of foods, the sturdy staff of life on which hundreds of generations have leaned for sustenance. It also represents a truly remarkable discovery, a lively pole on which the young human imagination may well have vaulted forward in insight and inspiration. For our prehistoric ancestors it would have been a startling sign of the natural world's hidden potential for being transformed, and their own ability to shape natural materials to human desires. --  Harold McGee _On Food And Cooking_
 
 Only a food writer could sing a semi-religious paean to bread. "A

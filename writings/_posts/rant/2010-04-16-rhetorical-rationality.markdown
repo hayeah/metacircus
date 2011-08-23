@@ -3,8 +3,6 @@ layout: post
 title: Rhetorical Rationality
 ---
 
-# Rhetorical Rationality
-
 Thinking of ourselves as rational creatures, we often resort to
 rhetorical techniques to sound rational rather than putting in the
 effort to actually think. As David Hume pointed out, an argument is

@@ -3,8 +3,6 @@ layout: post
 title: Be
 ---
 
-h1. Be
-
 everything has been said
 nothing can be said
 anything may be said

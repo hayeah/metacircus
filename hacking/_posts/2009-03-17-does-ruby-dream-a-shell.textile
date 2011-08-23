@@ -3,8 +3,6 @@ layout: post
 title: Does Ruby Dream An Eclectic Shell?
 ---
 
-h1. Does Ruby Dream An Eclectic Shell?
-
 Whenever I encounter something that sounds even slightly hard to do in Bash, I'd think: "hmmm, how do I do this in Bash? Oh, I know, I'll use Ruby." So I never actually bothered to learn Bash. Better for my sanity.
 
 But sometimes in the depth of night, contemplating my eventual existential end, I'd think to myself, hmmm, wouldn't it be nice to have a shell that's consistent, expressive, powerful, concise, and *FUN* to use?

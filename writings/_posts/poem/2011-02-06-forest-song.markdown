@@ -3,8 +3,6 @@ layout: post
 title: Forest Song
 ---
 
-# Forest Song
-
 I dreamed of us as a tree, and my limbs growing
 into yours, and you swallowing me up with your
 embrace. This growth is driven by life, and binds

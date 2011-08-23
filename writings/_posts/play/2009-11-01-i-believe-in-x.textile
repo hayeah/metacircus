@@ -3,9 +3,6 @@ layout: post
 title: Do You Believe in X?
 ---
 
-
-h1. Do You Believe in X?
-
 __There had been a long pause in the car. The silence between them was punctuated by occasional comments on random things, and questions more meant to be rhetorical than answered, as well as superficial agreements and disagreements to reassert their familiarty with each other. The words uttered were less meant to go through, than to hang about in the air, and let fade like incense.__
 
 
@@ -127,6 +124,3 @@ A. There, make a right turn.
 
 __They pulled the car into McDonald's. He turned down the music, and turned off the engine. They emerged from the car into the chill of the night. Both shivering, they huddled together across the parking lot. They walked under the Golden Arch, and disappeared, hand-in-hand, enveloped in the glow of white florescent light.__
 
-
-
-Can you believe in my believing in X?

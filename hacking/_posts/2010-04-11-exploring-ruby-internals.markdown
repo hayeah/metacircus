@@ -3,8 +3,6 @@ layout: post
 title:  Exploring Ruby Internals with GDB and DTrace
 ---
 
-# Don't Just Grope at The Elephant
-
 It is always very hard to learn a large code base, especially
 initially, when there's not even a vague idea of how things fit into a
 structure. This overall picture of the code base is the crucial first
