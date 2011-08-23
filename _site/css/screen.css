@@ -1,3 +1,5 @@
+/* @override http://localhost:9292/css/screen.css */
+
 /*****************************************************************************/
 /*
 /* Common
@@ -141,6 +143,14 @@ ul.posts {
   margin-bottom: 2em;
 }
 
+.title h1 {
+	margin-bottom: 0em;
+}
+
+.title .name {
+	color: #777;
+}
+
   .site .title a {
     color: #a00;
     text-decoration: none;
@@ -162,6 +172,8 @@ ul.posts {
 
   .site .meta {
     color: #777;
+    font-size: 1.7em;
+    
   }
 
   .site .footer {
