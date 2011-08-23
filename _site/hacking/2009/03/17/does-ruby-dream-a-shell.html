@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Does Ruby Dream An Eclectic Shell? - Howard Yeh | Metacircus</title>
+   <meta name="author" content="Howard Yeh" />
+   <link href="http://feeds2.feedburner.com/metacircus" rel="alternate" title="Metacircus" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="/">Metacircus</a>
+    <h2 class="meta">Words Are But Shattered Mirror of Thought</h2>
+  </div>
+
+  <div class="main">
+    <div id="post">
+<h1>Does Ruby Dream An Eclectic Shell?</h1>
+<p>Whenever I encounter something that sounds even slightly hard to do in Bash, I&#8217;d think: &#8220;hmmm, how do I do this in Bash? Oh, I know, I&#8217;ll use Ruby.&#8221; So I never actually bothered to learn Bash. Better for my sanity.</p>
+<p>But sometimes in the depth of night, contemplating my eventual existential end, I&#8217;d think to myself, hmmm, wouldn&#8217;t it be nice to have a shell that&#8217;s consistent, expressive, powerful, concise, and <strong><span class="caps">FUN</span></strong> to use?</p>
+<p>I was motivated by two thoughts:</p>
+<ol>
+	<li>Ruby&#8217;s syntax makes a <strong>plausible</strong> shell.</li>
+	<li>Ruby itself makes a <strong>compelling</strong> shell.</li>
+</ol>
+<p>So I wrote a Ruby shell called <a href="http://github.com/hayeah/rubish/tree/master">Rubish</a>. Rubish, like Ruby, <strong>is object oriented</strong> from the ground up, and it only uses Ruby syntax (<strong>it has no metasyntax</strong> of its own). And unlike Bash, Rubish is not rubbish. (Always fun to bash Bash).</p>
+<p>In a series of articles, I&#8217;ll write about Rubish itself, its design, and what potentials it could have (aside from being yet another attempt at programmatic shell that&#8217;s merely <i>quaint</i>.).</p>
+<p>Along the way, I&#8217;ll have digressions about the internals of Rubish to demostrate metaprogramming techniques in Ruby. Feel free to skip these, but I hope they would stimulate your hacking muscles as they did mine. For example, what use is a class that has all its methods undefined (I wonder if Ruby classes have castration anxiety)?</p>
+<div>
+<pre>
+<code class='ruby'>class Mu
+self.public_instance_methods.each do |m|
+self.send(:undef_method,m)
+end
+<p>end</code><br />
+  </pre></p>
+</div>
+<p>For the rest of this article, I&#8217;d like to ask you to imagine how you&#8217;d design a Ruby shell yourself.</p>
+<h1>Now, Imagine!</h1>
+<p>Ruby&#8217;s syntax is concise enough that in the degenerate case, it&#8217;s like any other Unix shell.</p>
+<pre class="terminal">
+&gt; ls
+&gt; ls :la # i.e. ls -la
+&gt; ls "-l *"
+</pre>
+<p>Command evaluations are just method calls handled by the shell object. Of course, since we are <code>eval</code> ing, any Ruby expression is valid.</p>
+<pre class="terminal">
+&gt; 1+1
+2
+&gt; "abcd" == "dcba"
+false
+</pre>
+<p>Since it&#8217;s Ruby, it follows that we can abstract unix commands as objects.</p>
+<pre class="terminal">
+&gt; @cmd = ls ; false
+false
+&gt; @cmd.inspect
+"&lt;#Rubish::Executable @cmd=\"ls\"&gt;"
+</pre>
+<p>Because commands are objects, it&#8217;s easy to build extra functionalities for them with Ruby. All these extensions to unix commands are just be <i>ad hoc</i> wrappers that munge lines from a pipe. So unlike <a href="http://en.wikipedia.org/wiki/Powershell" title="TM">PowerShell</a>, Rubish assumes no specialized support from the underlying platform.</p>
+<p>You could, for example, imagine a mixin for the <code>ls</code> command (I say &#8220;imagine&#8221;, because this is not necessarily useful or even pretty. But it illustrates the possibilities).</p>
+<div>
+<pre>
+<code class='ruby'># we'll mix this into the an Executable instance
+<p>module LsMixin<br />
+  def each_file(filter=nil)</p>
+<ol>
+	<li>Executable#each yields to a block each line</li>
+	<li>of the executable&#8217;s output.<br />
+    self.each do |line|<br />
+      if filter.nil? or line =~ filter<br />
+        f = File.new(line)<br />
+        yield(f)<br />
+      end<br />
+    end<br />
+  end<br />
+end</code><br />
+  </pre><br />
+</div></li>
+</ol>
+<p>Then you could extend <code>ls</code> so you yield to a block each line of its output as a Ruby File object,</p>
+<pre class="terminal">
+# use the filter to include only *.rb
+&gt; ls.extend(LsMixin).each_file(/.rb$/) { |f|... }
+</pre>
+<p>Actually, you could use it for find as well.</p>
+<pre class="terminal">
+&gt; find.extend(LsMixin).each_file { |f|... }
+</pre>
+<p>To summarize again,</p>
+<ol>
+	<li>Ruby&#8217;s concise syntax makes a <strong>plausible</strong> shell.</li>
+	<li>Ruby itself makes a <strong>compelling</strong> shell.</li>
+</ol>
+<p>In the next article, I&#8217;d like to give you a tour of Rubish. And before we go into Rubish itself, I&#8217;d love to know how <strong><span class="caps">YOU</span></strong> would design a Ruby shell given these ideas. So take a coffee break, and imagine :)</p>
+<p>Check out these shells for inspirations:</p>
+<ul>
+	<li><a href="http://ipython.scipy.org/moin/">iPython</a> is in Python. It has fairly extensive metasyntax and magic to make it practical. Whereas for Rubish, I chose not to add any metasyntax, because Ruby&#8217;s own is (arguably) good enough.</li>
+</ul>
+<ul>
+	<li><a href="http://rush.heroku.com">rush</a> is another ruby shell by <a href="http://adam.blog.heroku.com">Adam Wiggins</a>. I actually wanted to call my shell Rush. But he got there first. Rush is far more Rubyesque than Unixy. And it&#8217;s more designed for handling multiple machines over network. Rubish tries to fuse better with Unix, but keeping with Ruby&#8217;s spirit.</li>
+</ul>
+<ul>
+	<li><a href="http://www.scsh.net/">scsh</a> is a shell in scheme. Being a Lisp weenie, how can I not mention this? Scsh is the work of Olin Shivers, implemented on <a href="http://groups.csail.mit.edu/mac/projects/s48/">Scheme48</a>. Shivers&#8217; <a href="http://www.scsh.net/docu/html/man.html">acknowledgement</a> is worth reading. I couldn&#8217;t get scsh to work though.</li>
+</ul>
+</div>
+
+
+<div id="profile">
+  Howard Yeh
+</div>
+
+<div id="comments">
+  <a href="http://www.metacircus.com/hacking/2009/03/17/does-ruby-dream-a-shell.html#disqus_thread">Comments</a>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/metacircus/embed.js"></script>
+  <noscript><a href="http://metacircus.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+  </div>
+
+  <div class="sidebar">
+    <div id="about" class="section">
+      <h3>About Me</h3>
+      <img src="/images/profile.jpg"></img>
+      <p><b>Howard Yeh</b>. Thinker. Traveller. Entrepreneur. Hacker. Violinist. </p>
+      <p>
+        Howard is a Rails freelancer. He is now travelling the world, spending
+        less money than staying at home. After 6 months of travel, he saved more
+        money in the bank than when he started. Everything he owns fits in a 25L
+        backpack.
+      </p>
+      <p class="follow">
+        <em>
+          You should <a href="http://twitter.com/hayeah"><b>follow me</b></a>
+          around the world.
+        </em>
+      </p>
+    </div>
+
+    <div id="subscribe" class="section links">
+      <h3><img src="/images/feed-icon16x16.png"/>Subscribe</h3>
+      <a href="http://feeds2.feedburner.com/metacircus">Via RSS feed</a>
+      <a href="#">Get updates by email</a>
+    </div>
+
+    <div id="contact" class="section links">
+      <h3>Contact Me</h3>
+      <a href="mailto:hayeah@gmail.com">hayeah@gmail.com</a>
+      <a href="http://twitter.com/hayeah">Follow me on <img src="/images/twitter.png"/> Twitter</a>
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="contact">
+      <p>
+        <b>Howard Yeh</b>
+        <br/>
+        <a href="mailto:hayeah@gmail.com">hayeah@gmail.com</a>
+        <br/>
+        <a href="http://twitter.com/hayeah"><b>@hayeah</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7576362-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metacircus/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+</body>
+</html>

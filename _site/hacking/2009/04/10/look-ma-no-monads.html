@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Sinful QuickChecking in Ruby - Howard Yeh | Metacircus</title>
+   <meta name="author" content="Howard Yeh" />
+   <link href="http://feeds2.feedburner.com/metacircus" rel="alternate" title="Metacircus" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="/">Metacircus</a>
+    <h2 class="meta">Words Are But Shattered Mirror of Thought</h2>
+  </div>
+
+  <div class="main">
+    <div id="post">
+<p>In the first section, I&#8217;ll rant about how hard it was to learn monads (tried to, anyway). The second section I&#8217;ll write about <a href="http://github.com/hayeah/rant/tree/master">Rant</a>, an <strong>imperative</strong> random data generator and property checker inspired by <a href="http://www.cs.chalmers.se/~rjmh/QuickCheck/">Quickcheck</a>. <a href="http://rushcheck.rubyforge.org/">Rushcheck</a> is a more faithful port of Quickcheck by Daisuke Ikegami, as it uses the monadic style, and mostly the same operators.</p>
+<p>Rant, in contrast, is full of sin.</p>
+<p>You might like Rant, if you can&#8217;t wrap your head around monads. That&#8217;s OK! As St. Augustine would say, may the power and purity of Functional Programming save me, but not yet.</p>
+<h1>Monads&#8212; It Means Ignorance is Bliss</h1>
+<p>I think it&#8217;s fair to say that monadic style is the <a href="http://en.wikipedia.org/wiki/Pons_asinorum">pons asinorum</a> of Haskell programming. It&#8217;s embarrasing how much brain cycles I burned on reading <a href="http://www.haskell.org/tutorial/monads.html">all</a> <a href="http://en.wikibooks.org/wiki/Haskell/Understanding_monads">the</a> <a href="http://stefan-klinger.de/files/monadGuide.pdf">tutorials</a> <a href="http://citeseer.ist.psu.edu/576538.html">and</a> <a href="http://homepages.inf.ed.ac.uk/wadler/papers/essence/essence.ps.gz">introductory</a> <a href="http://homepages.inf.ed.ac.uk/wadler/papers/monads/monads.ps.gz">papers</a> on monads I could find. It is just really, really, really tough.</p>
+<p>Purity, laziness, and a powerful type system make many neat tricks possible in Haskell. Like <a href="http://calculist.blogspot.com/2005/07/circular-programming-in-haskell.html">circular programming</a>, in which you can compute on a value that&#8217;s computed in the future. It&#8217;s also neat how it&#8217;s a common technique to derive results algebraically (<a href="http://www.cs.nott.ac.uk/~gmh/fold.pdf">Universality of Fold</a>, <a href="http://www.cs.chalmers.se/~rjmh/Papers/pretty.html">Pretty Printing</a>). Seriously, Haskell is executable mathematics.</p>
+<p>But at the end of my Haskell adventure, I got the strangest feeling that a lot of what I was learning was to do things I already know how to do in other languages, but now in ways so highly abstracted by formalisms and convoluted by derivations, that I no longer recognized it.</p>
+<p>The last straw, I remember, was reading about <a href="http://www.cs.vu.nl/boilerplate/">generic programming</a> in Haskell. I had a really hard time with those papers. Then I realized, hey, <span class="caps">WTF</span>, <em>if I want to do generic programming, why not just use a dynamic language that <span class="caps">SUPPORTS</span> generic programming</em>, rather than putting on losing fight against the type system?</p>
+<p>So&#8230; I gave up crossing the bridge, and conceded to remain an ignorant, though perhaps repentant, fool.</p>
+<p>Then I started sinning again. I used side effects. I destructively updated my data structures. I used loops rather than tail recursions. I had global variables. <span class="caps">AND</span> I <span class="caps">USED</span> IO!</p>
+<p>And it felt <em>soooo</em> good.</p>
+<h1>Look Ma, No Monads</h1>
+<p>Having left Haskell, I really pined for <a href="http://www.cs.chalmers.se/~rjmh/QuickCheck/">Quickcheck</a>. I want something like it for my day to day work, to check my tests against structured random data. And furthermore, since I am capable of generating random data, I could also use it to generate database fixtures!</p>
+<p>I looked at Rushcheck, the Ruby port of Quickcheck, and all the terribleness of monads came back to me. To create a custom generator in RushCheck, you do something like:</p>
+<div>
+<pre>
+<code class='ruby'>class Candy
+extend RushCheck::Arbitrary
+def self.arbitrary
+RushCheck::Gen.new do |n, r|
+r2 = r
+name, price = [String, Integer].map do |c|
+r1, r2 = r2.split
+c.arbitrary.value(n. r1)
+end
+price = &#8211; price if price &lt; 0 # trick
+new(name, price)
+end
+end
+<p>end</code><br />
+  </pre></p>
+</div>
+<p>Seriously hardcore! Rushcheck is cool, but monads in Ruby is just too crazy. (Rushcheck, is orphaned. I created a github repo for it <a href="http://github.com/hayeah/rushcheck/tree/master">here</a>).</p>
+<p>I just can&#8217;t figure it out. <strong><span class="caps">BUT</span> I <span class="caps">REALLY</span> <span class="caps">WANT</span> TO <span class="caps">USE</span> IT!</strong> So I rolled my own, which actually wasn&#8217;t so hard. I call it <strong>Rant</strong>&#8212; RandomlyType. At its core is an imperative random generator that generates structured data, and property testing is just a trivial extension of Test::Unit using the generator.</p>
+<p>It is easy to Rant. To generate a random Candy, you say,</p>
+<div>
+<pre>
+<code class='ruby'>require 'rant'
+<ol>
+	<li>&#8216;string&#8217; returns a random printable string</li>
+	<li>&#8216;float&#8217; returns a random float<br />
+Rant.gen.value {<br />
+  Candy.new(string,float)<br />
+}</code><br />
+  </pre><br />
+</div></li>
+</ol>
+<p>To generate a hundred Candies,</p>
+<div>
+<pre>
+<code class='ruby'>Rant.gen.map(100) {
+Candy.new(string,float)
+<p>}</code><br />
+  </pre></p>
+</div>
+<p>Or generate a hundred pairs of Candies,</p>
+<div>
+<pre>
+<code class='ruby'>Rant.gen.map(100) {
+[Candy.new(string,float),Candy.new(string,float)]
+<p>}</code><br />
+  </pre></p>
+</div>
+<p>The reason Rant is lot easier to use and implement, no surprise, is because it doesn&#8217;t use the monadic style. Because Ruby lacks support for higher-order programming, monadic style is impractical for real use.</p>
+<p>In an imperative language, something like QuickCheck doesn&#8217;t actually <em>need</em> to be in monadic style in the first place. The particular monad QuickCheck defines and uses only abstracts over two things: size of the datastructure to generate, and the state of the random sequence generator. But, as Yogi Berra once said, the easiest way to represent states in a stateful language is to use states!</p>
+<p>Ruby is an imperative language, so we can ask each instance of Rant generator to keep structure size as its instance variable. And the Ruby interpreter takes care of the state of the random sequence generator. We just call <code>rand</code>. Easy.</p>
+<p>In other words, when a block of code gets executed within an object (with <code>instance_eval</code>), the object itself is the &#8220;monad&#8221; that abstracts and carries the computational context of the block.</p>
+<p>It&#8217;s easy to generate data with dependencies (QuickCheck&#8217;s Coarbitrary). To generate a random array of integer with a random (but bounded) length,</p>
+<div>
+<pre>
+<code class='ruby'>Rant.gen.value {
+n = range(0,100)
+sized(n) { array(:integer) }
+<p>}</code><br />
+  </pre></p>
+</div>
+<p>Rant also provides extension to Test::Unit for property testing. In Rant&#8217;s test suite, you can see that it checks if the <code>integer</code> it generates is always a <code>Fixnum</code>,</p>
+<div>
+<pre>
+<code class='ruby'>require 'rant/check'
+<p>should &quot;generate Fixnum only&quot; do<br />
+  property_of  {<br />
+    integer<br />
+  }.check { |i|<br />
+    assert i.is_a?(Fixnum)<br />
+  }<br />
+end</code><br />
+  </pre></p>
+</div>
+<p>Funnily enough, this trivial property actually caught a bug! I messed up an upper bound by an order of magnitude, and <code>integer</code> was generating <code>Bignum</code> s.</p>
+<p>Rant is only ~300 <span class="caps">LOC</span>. You can find out more here: <a href="http://github.com/hayeah/rant/tree/master">http://github.com/hayeah/rant/tree/master</a>.</p>
+<h1>One Trick Pony</h1>
+<p>One thing I found interesting after writing Rant is that its design shares family resemblance to <a href="http://github.com/hayeah/rubish/tree/master">Rubish</a>, my Ruby shell. Both Rant and Rubish are designed around</p>
+<div>
+<pre>
+<code class='ruby'>obj.instance_eval(&amp;amp;block)</code>
+</pre>
+</div>
+<p>In Rant&#8217;s case, the <span class="caps">DSL</span> evaluator is a random generator, and in Rubish, the <span class="caps">DSL</span> interpreter is the shell object. Generically, a <span class="caps">DSL</span> designed this way is something like,</p>
+<div>
+<pre>
+<code class='ruby'>obj.method {
+keyword1 &quot;syntax&quot;, &quot;syntax&quot;
+keyword2 &quot;syntax&quot;, &quot;syntax&quot;
+<p>}</code><br />
+  </pre></p>
+</div>
+<p>where the keywords are just the callable methods of <code>obj</code>. In otherwords, the &#8220;<span class="caps">DSL</span>&#8221; and its interpreter is just the object itself!</p>
+<p>This technique is nice, because it&#8217;s easy to extend the <span class="caps">DSL</span> with new methods, thanks to how open Ruby is. You can extend either the class of <span class="caps">DSL</span> itself, or just an instance of the <span class="caps">DSL</span>, on the singleton object.</p>
+<p>The problem with extending the <span class="caps">DSL</span> class, though, is that it makes it more risky to combine multiple extensions written by different people. The more extensions you want to use, the riskier it is.</p>
+<p>With Rubish, a <code>Workspace</code> object manages all the bindings visible to the shell. To extend the shell, we just extend an instance object of <code>Workspace</code>, like so,</p>
+<div>
+<pre>
+<code class='ruby'># This is found in the Rubish test suite.
+<ol>
+	<li>It augments the workspace with test</li>
+	<li>assertions.<br />
+WS = Rubish.session.current_workspace<br />
+WS.extend Test::Unit::Assertions</code><br />
+  </pre><br />
+</div></li>
+</ol>
+<p>Extending a <span class="caps">DSL</span> singleton object on a per-use basis has important advantages:</p>
+<ol>
+	<li><strong>Subclassing is almost never needed.</strong> I find that I achieve better orthogonality by distributing methods into a flat space of Mixins, rather than a hierarchy of classes. This also keeps the codebase lean.</li>
+	<li><strong>Plugin writers don&#8217;t have to worry about name conflicts.</strong> The user is responsible to make sure that two Mixins indeed can mix. Otherwise, just mix them into different objects.</li>
+</ol>
+<p>I think the wonderful thing about <a href="http://en.wikipedia.org/wiki/Prototype-based_programming">prototype-based</a> extension mechanism is that we are allowed do really horrible, tasteless, but convenient things on an object, but the mess is localized to that singleton.</p>
+</div>
+
+
+<div id="profile">
+  Howard Yeh
+</div>
+
+<div id="comments">
+  <a href="http://www.metacircus.com/hacking/2009/04/10/look-ma-no-monads.html#disqus_thread">Comments</a>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/metacircus/embed.js"></script>
+  <noscript><a href="http://metacircus.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+  </div>
+
+  <div class="sidebar">
+    <div id="about" class="section">
+      <h3>About Me</h3>
+      <img src="/images/profile.jpg"></img>
+      <p><b>Howard Yeh</b>. Thinker. Traveller. Entrepreneur. Hacker. Violinist. </p>
+      <p>
+        Howard is a Rails freelancer. He is now travelling the world, spending
+        less money than staying at home. After 6 months of travel, he saved more
+        money in the bank than when he started. Everything he owns fits in a 25L
+        backpack.
+      </p>
+      <p class="follow">
+        <em>
+          You should <a href="http://twitter.com/hayeah"><b>follow me</b></a>
+          around the world.
+        </em>
+      </p>
+    </div>
+
+    <div id="subscribe" class="section links">
+      <h3><img src="/images/feed-icon16x16.png"/>Subscribe</h3>
+      <a href="http://feeds2.feedburner.com/metacircus">Via RSS feed</a>
+      <a href="#">Get updates by email</a>
+    </div>
+
+    <div id="contact" class="section links">
+      <h3>Contact Me</h3>
+      <a href="mailto:hayeah@gmail.com">hayeah@gmail.com</a>
+      <a href="http://twitter.com/hayeah">Follow me on <img src="/images/twitter.png"/> Twitter</a>
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="contact">
+      <p>
+        <b>Howard Yeh</b>
+        <br/>
+        <a href="mailto:hayeah@gmail.com">hayeah@gmail.com</a>
+        <br/>
+        <a href="http://twitter.com/hayeah"><b>@hayeah</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7576362-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metacircus/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+</body>
+</html>
