@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-08-24T03:59:00+08:00</updated>
+ <updated>2011-08-24T04:25:17+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -892,8 +892,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
    <link href="http://www.metacircus.com/writings/2009/11/02/circle-of-hope.html"/>
    <updated>2009-11-02T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2009/11/02/circle-of-hope</id>
-   <content type="html">&lt;h1&gt;Circle of Hope&lt;/h1&gt;
-&lt;p&gt;A daemon sat by himeslf crying, for he no longer could fly. There were still so many blessings and love in his charge to give, but he could no longer fly. The joy and happiness he must share, but could not, weighed heavily on his shoulders, anchoring him to Earth.&lt;/p&gt;
+   <content type="html">&lt;p&gt;A daemon sat by himeslf crying, for he no longer could fly. There were still so many blessings and love in his charge to give, but he could no longer fly. The joy and happiness he must share, but could not, weighed heavily on his shoulders, anchoring him to Earth.&lt;/p&gt;
 &lt;p&gt;So the daemon of happiness and joy became known among the villagers for his profound sorrow. A river of tear ran through the village, springing from where he sat. But the water was too bitter for fish to thrive.&lt;/p&gt;
 &lt;p&gt;&amp;#8220;If only the sun would come out for long enough,&amp;#8221; muttered the daemon, crying into his hands, &amp;#8220;then the wetness that weighs down my wings would evaporate, so I can fly again.&amp;#8221; But the sun never did come out for long enough, so the daemon kept crying into his river of tear.&lt;/p&gt;
 &lt;p&gt;Parents warned their children of ever going near the unlucky daemon, for fear of their drowning in his sorrow.&lt;/p&gt;
@@ -1287,8 +1286,7 @@ end&lt;/code&gt;&lt;br /&gt;
    <link href="http://www.metacircus.com/writings/2008/11/30/how-you-see-the-fullness-of-my-being.html"/>
    <updated>2008-11-30T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/30/how-you-see-the-fullness-of-my-being</id>
-   <content type="html">&lt;h1&gt;How You See The Fullness of My Being&lt;/h1&gt;
-&lt;p&gt;I led her by her hands into the garden I have become. I had no idea&lt;br /&gt;
+   <content type="html">&lt;p&gt;I led her by her hands into the garden I have become. I had no idea&lt;br /&gt;
 why she wanted to see it– I knew the garden by heart, and there was&lt;br /&gt;
 nothing beautiful in it.&lt;/p&gt;
 &lt;p&gt;First, I took her to a flower patch near the edge of the garden. An&lt;br /&gt;
@@ -1380,8 +1378,7 @@ She looked into the shrub and gasped,&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/11/29/when-imagination-falls-silent.html"/>
    <updated>2008-11-29T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/29/when-imagination-falls-silent</id>
-   <content type="html">&lt;h1&gt;When Imagination Falls Silent&lt;/h1&gt;
-&lt;p&gt;A ventriloquist was hopelessly in love with his wooden dummy. His&lt;br /&gt;
+   <content type="html">&lt;p&gt;A ventriloquist was hopelessly in love with his wooden dummy. His&lt;br /&gt;
 wooden dummy was in love with him. At least that’s what he told me.&lt;/p&gt;
 &lt;p&gt;“But a dummy is a dummy! It doesn’t speak! It is you that speaks!” I&lt;br /&gt;
 tried to reason with his absurdity. He looked at me with some pity, as&lt;br /&gt;
@@ -1421,8 +1418,7 @@ dead, and his dummy sold at an auction.&lt;/p&gt;</content>
    <link href="http://www.metacircus.com/writings/2008/11/24/what-accompanies-my-journey.html"/>
    <updated>2008-11-24T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/24/what-accompanies-my-journey</id>
-   <content type="html">&lt;h1&gt;What Accompanies My Journey&lt;/h1&gt;
-&lt;p&gt;A centipede is hiking up a treadmill. He doesn’t know what for, but&lt;br /&gt;
+   <content type="html">&lt;p&gt;A centipede is hiking up a treadmill. He doesn’t know what for, but&lt;br /&gt;
 watching the counter going up makes him feel at the same time&lt;br /&gt;
 accomplished and urgent for more.&lt;/p&gt;
 &lt;p&gt;The centipede sometimes pauses to reflect what the counting up could&lt;br /&gt;
@@ -1458,8 +1454,7 @@ possibly mean for me?”&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/11/17/why-i-became-wise.html"/>
    <updated>2008-11-17T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/17/why-i-became-wise</id>
-   <content type="html">&lt;h1&gt;Why I Became Wise&lt;/h1&gt;
-&lt;p&gt;A child was lost in the woods of my consciousness. A place populated&lt;br /&gt;
+   <content type="html">&lt;p&gt;A child was lost in the woods of my consciousness. A place populated&lt;br /&gt;
 by Wild Machineries and Wondering Beasts.&lt;/p&gt;
 &lt;p&gt;Wondering Beasts that devoured his simplicity. They hid in the&lt;br /&gt;
 bushes, hung from the trees, pounced at him from behind, and lept out&lt;br /&gt;
@@ -1491,8 +1486,7 @@ enough to float him into the air.&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/11/12/how-loud-my-hollowness-is.html"/>
    <updated>2008-11-12T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/12/how-loud-my-hollowness-is</id>
-   <content type="html">&lt;h1&gt;How Loud My Hollowness Is&lt;/h1&gt;
-&lt;p&gt;I am a wonderfully written book. Beautifully illustrated and&lt;br /&gt;
+   <content type="html">&lt;p&gt;I am a wonderfully written book. Beautifully illustrated and&lt;br /&gt;
 meticulously typeset. I come in two volumes, choked full of epigrams,&lt;br /&gt;
 aphorisms, wit, and passages that break your heart, yet at the same&lt;br /&gt;
 time gladden your spirit.&lt;/p&gt;
@@ -1511,8 +1505,7 @@ depth to appreciate me. This is only natural.&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/11/10/why-play-pretend.html"/>
    <updated>2008-11-10T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/10/why-play-pretend</id>
-   <content type="html">&lt;h1&gt;Why Play Pretend&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-10-bookstore.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-10-bookstore.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;I opened a bookstore in the hypothetical, deep in the mountain, and&lt;br /&gt;
 overlooking the sea. I have the books categorized according to&lt;br /&gt;
 feelings. Besides “Laughters”, I have “Warm and Fuzzy Feelings”.&lt;br /&gt;
@@ -1539,8 +1532,7 @@ him a book completely different, but with the same cover.&lt;/p&gt;</content>
    <link href="http://www.metacircus.com/writings/2008/11/09/how-to-say-i-love-u.html"/>
    <updated>2008-11-09T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/09/how-to-say-i-love-u</id>
-   <content type="html">&lt;h1&gt;When To Say “I Love ¿ou”&lt;/h1&gt;
-&lt;p&gt;First, you must fast for twelve days and twelve nights. On the&lt;br /&gt;
+   <content type="html">&lt;p&gt;First, you must fast for twelve days and twelve nights. On the&lt;br /&gt;
 twelveth night, which coincides with the full moon, split open the&lt;br /&gt;
 throat of a fatten goat and offer its blood to the gods. Say your&lt;br /&gt;
 prayer, so you may become pious. But beware, say nothing of your love.&lt;/p&gt;
@@ -1571,8 +1563,7 @@ you”, only the last step remains.&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/11/08/where-i-find-loneliness.html"/>
    <updated>2008-11-08T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/08/where-i-find-loneliness</id>
-   <content type="html">&lt;h1&gt;Where I Find Loneliness&lt;/h1&gt;
-&lt;p&gt;Narcissistic people are lonely people.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Narcissistic people are lonely people.&lt;/p&gt;
 &lt;p&gt;I have a dear old friend, who takes a mirror with him wherever he&lt;br /&gt;
 goes. Every few seconds, he’d glance into the mirror. Never long.&lt;br /&gt;
 Glances. Only to make sure that he’s still there, the same familiar&lt;br /&gt;
@@ -1595,8 +1586,7 @@ And in their eyes, he would finally find himself.&lt;/p&gt;</content>
    <link href="http://www.metacircus.com/writings/2008/11/05/where-my-secrets-are.html"/>
    <updated>2008-11-05T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/05/where-my-secrets-are</id>
-   <content type="html">&lt;h1&gt;Where My Secrets Are&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-05-field.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-05-field.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;There are different ways to keep secrets.&lt;/p&gt;
 &lt;p&gt;When I am secretly in love with a girl, I&amp;#8217;d tell all her friends, and&lt;br /&gt;
 beg them never, not ever, to tell her.&lt;/p&gt;
@@ -1613,8 +1603,7 @@ against the tree that had grown.&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2008/11/03/how-i-know-i-am-in-loved.html"/>
    <updated>2008-11-03T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/03/how-i-know-i-am-in-loved</id>
-   <content type="html">&lt;h1&gt;How I Know I Am In Loved&lt;/h1&gt;
-&lt;p&gt;When I am 80 years old, old and bald, I&amp;#8217;d clip a lock of her silver&lt;br /&gt;
+   <content type="html">&lt;p&gt;When I am 80 years old, old and bald, I&amp;#8217;d clip a lock of her silver&lt;br /&gt;
 hair while she is sleeping (being careful not to wake her from her&lt;br /&gt;
 dream). And deep in the night, I&amp;#8217;d go see a fortune teller.&lt;/p&gt;
 &lt;p&gt;&amp;#8220;Who is she?&amp;#8221; I&amp;#8217;d ask the Gypsy Woman as I hand her one single strand&lt;br /&gt;
@@ -1638,8 +1627,7 @@ me so.&amp;#8221;&lt;/p&gt;</content>
    <link href="http://www.metacircus.com/writings/2008/11/02/how-i-got-my-scar.html"/>
    <updated>2008-11-02T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/02/how-i-got-my-scar</id>
-   <content type="html">&lt;h1&gt;How I Got My Scar&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-02-scar.jpg&quot; title=&quot;a scar worth crying about is also worth laughing over.&quot; alt=&quot;a scar worth crying about is also worth laughing over.&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-02-scar.jpg&quot; title=&quot;a scar worth crying about is also worth laughing over.&quot; alt=&quot;a scar worth crying about is also worth laughing over.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;It was a sunny autumn day. I was sitting under a maple tree reading a&lt;br /&gt;
 book. She was resting her head on my thigh, her eyes closed, showering&lt;br /&gt;
 under the blueness of the sky.&lt;/p&gt;

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Coffin For Two
+tag: play
 ---
 
 __An optimist and a pessimist buried in a coffin together. They lie facing each other. A candle burns between them.__

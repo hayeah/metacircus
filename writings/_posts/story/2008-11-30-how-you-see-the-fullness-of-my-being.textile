@@ -1,9 +1,8 @@
 ---
 layout: post
 title: How You See The Fullness of My Being
+tag: story
 ---
-
-h1. How You See The Fullness of My Being
 
 I led her by her hands into the garden I have become. I had no idea
 why she wanted to see it– I knew the garden by heart, and there was

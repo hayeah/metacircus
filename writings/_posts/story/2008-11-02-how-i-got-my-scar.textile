@@ -1,9 +1,8 @@
 ---
 layout: post
 title: How I Got My Scar
+tag: story
 ---
-
-h1. How I Got My Scar
 
 !/images/img-2008-11-02-scar.jpg(a scar worth crying about is also worth laughing over.)!
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: me and
+tag: poem
 ---
 
 this is a poem i wrote 

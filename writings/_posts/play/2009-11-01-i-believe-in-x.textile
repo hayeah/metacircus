@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Do You Believe in X?
+tag: play
 ---
 
 __There had been a long pause in the car. The silence between them was punctuated by occasional comments on random things, and questions more meant to be rhetorical than answered, as well as superficial agreements and disagreements to reassert their familiarty with each other. The words uttered were less meant to go through, than to hang about in the air, and let fade like incense.__

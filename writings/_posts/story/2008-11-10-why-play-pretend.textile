@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Why Play Pretend
+tag: story
 ---
-
-h1. Why Play Pretend
 
 !/images/img-2008-11-10-bookstore.jpg!
 

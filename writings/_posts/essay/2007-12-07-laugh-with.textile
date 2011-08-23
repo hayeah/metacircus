@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Laugh With
+tag: essay
 ---
 
 We laugh.

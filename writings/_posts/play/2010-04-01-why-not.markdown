@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why Not?
+tag: play
 ---
 
 _They would never have met in life. But here they are, in death,

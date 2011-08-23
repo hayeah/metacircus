@@ -1,9 +1,8 @@
 ---
 layout: post
 title: When To Say “I Love ¿ou”
+tag: story
 ---
-
-h1. When To Say “I Love ¿ou”
 
 First, you must fast for twelve days and twelve nights. On the
 twelveth night, which coincides with the full moon, split open the

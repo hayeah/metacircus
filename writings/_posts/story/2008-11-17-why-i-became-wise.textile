@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Why I Became Wise
+tag: story
 ---
-
-h1. Why I Became Wise
 
 A child was lost in the woods of my consciousness. A place populated
 by Wild Machineries and Wondering Beasts.

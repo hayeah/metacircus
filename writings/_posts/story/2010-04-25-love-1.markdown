@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Love - 1
+tag: story
 ---
 
 # Love 1

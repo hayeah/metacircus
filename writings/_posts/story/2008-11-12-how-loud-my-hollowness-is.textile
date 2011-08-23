@@ -1,9 +1,8 @@
 ---
 layout: post
 title: How Loud My Hollowness Is
+tag: story
 ---
-
-h1. How Loud My Hollowness Is
 
 I am a wonderfully written book. Beautifully illustrated and
 meticulously typeset. I come in two volumes, choked full of epigrams,

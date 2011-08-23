@@ -1,9 +1,8 @@
 ---
 title: Where I Find Loneliness
 layout: post
+tag: story
 ---
-
-h1. Where I Find Loneliness
 
 Narcissistic people are lonely people.
 

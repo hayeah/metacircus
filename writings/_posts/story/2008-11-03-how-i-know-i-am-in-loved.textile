@@ -1,9 +1,8 @@
 ---
 layout: post
 title: How I Know I Am In Loved
+tag: story
 ---
-
-h1. How I Know I Am In Loved
 
 When I am 80 years old, old and bald, I'd clip a lock of her silver
 hair while she is sleeping (being careful not to wake her from her

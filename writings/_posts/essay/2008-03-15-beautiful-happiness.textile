@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Beautiful Happiness
+tag: essay
 ---
 
 Monster Trucks are Beautiful.

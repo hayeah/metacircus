@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Circle of Hope
+tag: story
 ---
-
-h1. Circle of Hope
 
 A daemon sat by himeslf crying, for he no longer could fly. There were still so many blessings and love in his charge to give, but he could no longer fly. The joy and happiness he must share, but could not, weighed heavily on his shoulders, anchoring him to Earth.
 
