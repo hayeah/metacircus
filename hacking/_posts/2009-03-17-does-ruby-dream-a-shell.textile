@@ -1,0 +1,108 @@
+---
+layout: post
+title: Does Ruby Dream An Eclectic Shell?
+---
+
+h1. Does Ruby Dream An Eclectic Shell?
+
+Whenever I encounter something that sounds even slightly hard to do in Bash, I'd think: "hmmm, how do I do this in Bash? Oh, I know, I'll use Ruby." So I never actually bothered to learn Bash. Better for my sanity.
+
+But sometimes in the depth of night, contemplating my eventual existential end, I'd think to myself, hmmm, wouldn't it be nice to have a shell that's consistent, expressive, powerful, concise, and *FUN* to use?
+
+I was motivated by two thoughts:
+
+# Ruby's syntax makes a *plausible* shell.
+# Ruby itself makes a *compelling* shell.
+
+So I wrote a Ruby shell called "Rubish":http://github.com/hayeah/rubish/tree/master. Rubish, like Ruby, *is object oriented* from the ground up, and it only uses Ruby syntax (*it has no metasyntax* of its own). And unlike Bash, Rubish is not rubbish. (Always fun to bash Bash).
+
+In a series of articles, I'll write about Rubish itself, its design, and what potentials it could have (aside from being yet another attempt at programmatic shell that's merely __quaint__.).
+
+Along the way, I'll have digressions about the internals of Rubish to demostrate metaprogramming techniques in Ruby. Feel free to skip these, but I hope they would stimulate your hacking muscles as they did mine. For example, what use is a class that has all its methods undefined (I wonder if Ruby classes have castration anxiety)?
+
+{% highlight ruby %}
+class Mu
+  self.public_instance_methods.each do |m|
+    self.send(:undef_method,m)
+  end
+end
+{% endhighlight %}
+
+For the rest of this article, I'd like to ask you to imagine how you'd design a Ruby shell yourself.
+
+h1. Now, Imagine!
+
+Ruby's syntax is concise enough that in the degenerate case, it's like any other Unix shell.
+
+<pre class="terminal">
+> ls
+> ls :la # i.e. ls -la
+> ls "-l *"
+</pre>
+
+Command evaluations are just method calls handled by the shell object. Of course, since we are @eval@ ing, any Ruby expression is valid.
+
+<pre class="terminal">
+> 1+1
+2
+> "abcd" == "dcba"
+false
+</pre>
+
+Since it's Ruby, it follows that we can abstract unix commands as objects.
+
+<pre class="terminal">
+> @cmd = ls ; false
+false
+> @cmd.inspect
+"<#Rubish::Executable @cmd=\"ls\">"
+</pre>
+
+Because commands are objects, it's easy to build extra functionalities for them with Ruby. All these extensions to unix commands are just be __ad hoc__ wrappers that munge lines from a pipe. So unlike "PowerShell(TM)":http://en.wikipedia.org/wiki/Powershell, Rubish assumes no specialized support from the underlying platform.
+
+You could, for example, imagine a mixin for the @ls@ command (I say "imagine", because this is not necessarily useful or even pretty. But it illustrates the possibilities).
+
+{% highlight ruby %}
+# we'll mix this into the an Executable instance
+module LsMixin
+  def each_file(filter=nil)
+    # Executable#each yields to a block each line
+    # of the executable's output.
+    self.each do |line|
+      if filter.nil? or line =~ filter
+        f = File.new(line)
+        yield(f)
+      end
+    end
+  end
+end
+{% endhighlight %}
+
+Then you could extend @ls@ so you yield to a block each line of its output as a Ruby File object,
+
+<pre class="terminal">
+# use the filter to include only *.rb
+> ls.extend(LsMixin).each_file(/.rb$/) { |f|... }
+</pre>
+
+Actually, you could use it for find as well.
+
+<pre class="terminal">
+> find.extend(LsMixin).each_file { |f|... }
+</pre>
+
+To summarize again,
+
+# Ruby's concise syntax makes a *plausible* shell.
+# Ruby itself makes a *compelling* shell.
+
+In the next article, I'd like to give you a tour of Rubish. And before we go into Rubish itself, I'd love to know how *YOU* would design a Ruby shell given these ideas. So take a coffee break, and imagine :)
+
+Check out these shells for inspirations:
+
+* "iPython":http://ipython.scipy.org/moin/ is in Python. It has fairly extensive metasyntax and magic to make it practical. Whereas for Rubish, I chose not to add any metasyntax, because Ruby's own is (arguably) good enough.
+
+* "rush":http://rush.heroku.com is another ruby shell by "Adam Wiggins":http://adam.blog.heroku.com. I actually wanted to call my shell Rush. But he got there first. Rush is far more Rubyesque than Unixy. And it's more designed for handling multiple machines over network. Rubish tries to fuse better with Unix, but keeping with Ruby's spirit.
+
+* "scsh":http://www.scsh.net/ is a shell in scheme. Being a Lisp weenie, how can I not mention this? Scsh is the work of Olin Shivers, implemented on "Scheme48":http://groups.csail.mit.edu/mac/projects/s48/. Shivers' "acknowledgement":http://www.scsh.net/docu/html/man.html is worth reading. I couldn't get scsh to work though.
+

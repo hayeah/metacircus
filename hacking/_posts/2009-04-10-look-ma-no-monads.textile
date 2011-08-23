@@ -1,0 +1,158 @@
+---
+layout: post
+title: Sinful QuickChecking in Ruby
+---
+
+In the first section, I'll rant about how hard it was to learn monads (tried to, anyway). The second section I'll write about "Rant":http://github.com/hayeah/rant/tree/master, an *imperative* random data generator and property checker inspired by "Quickcheck":http://www.cs.chalmers.se/~rjmh/QuickCheck/. "Rushcheck":http://rushcheck.rubyforge.org/ is a more faithful port of Quickcheck by Daisuke Ikegami, as it uses the monadic style, and mostly the same operators.
+
+Rant, in contrast, is full of sin.
+
+You might like Rant, if you can't wrap your head around monads. That's OK! As St. Augustine would say, may the power and purity of Functional Programming save me, but not yet.
+
+
+h1. Monads-- It Means Ignorance is Bliss
+
+I think it's fair to say that monadic style is the "pons asinorum":http://en.wikipedia.org/wiki/Pons_asinorum of Haskell programming. It's embarrasing how much brain cycles I burned on reading "all":http://www.haskell.org/tutorial/monads.html "the":http://en.wikibooks.org/wiki/Haskell/Understanding_monads "tutorials":http://stefan-klinger.de/files/monadGuide.pdf "and":http://citeseer.ist.psu.edu/576538.html "introductory":http://homepages.inf.ed.ac.uk/wadler/papers/essence/essence.ps.gz "papers":http://homepages.inf.ed.ac.uk/wadler/papers/monads/monads.ps.gz on monads I could find. It is just really, really, really tough.
+
+Purity, laziness, and a powerful type system make many neat tricks possible in Haskell. Like "circular programming":http://calculist.blogspot.com/2005/07/circular-programming-in-haskell.html, in which you can compute on a value that's computed in the future. It's also neat how it's a common technique to derive results algebraically ("Universality of Fold":http://www.cs.nott.ac.uk/~gmh/fold.pdf, "Pretty Printing":http://www.cs.chalmers.se/~rjmh/Papers/pretty.html). Seriously, Haskell is executable mathematics.
+
+But at the end of my Haskell adventure, I got the strangest feeling that a lot of what I was learning was to do things I already know how to do in other languages, but now in ways so highly abstracted by formalisms and convoluted by derivations, that I no longer recognized it.
+
+The last straw, I remember, was reading about "generic programming":http://www.cs.vu.nl/boilerplate/ in Haskell. I had a really hard time with those papers. Then I realized, hey, WTF, _if I want to do generic programming, why not just use a dynamic language that SUPPORTS generic programming_, rather than putting on losing fight against the type system?
+
+So... I gave up crossing the bridge, and conceded to remain an ignorant, though perhaps repentant, fool.
+
+Then I started sinning again. I used side effects. I destructively updated my data structures. I used loops rather than tail recursions. I had global variables. AND I USED IO!
+
+And it felt _soooo_ good.
+
+
+h1. Look Ma, No Monads
+
+Having left Haskell, I really pined for "Quickcheck":http://www.cs.chalmers.se/~rjmh/QuickCheck/. I want something like it for my day to day work, to check my tests against structured random data. And furthermore, since I am capable of generating random data, I could also use it to generate database fixtures!
+
+I looked at Rushcheck, the Ruby port of Quickcheck, and all the terribleness of monads came back to me. To create a custom generator in RushCheck, you do something like:
+
+{% highlight ruby %}
+class Candy
+  extend RushCheck::Arbitrary
+
+  def self.arbitrary
+    RushCheck::Gen.new do |n, r|
+      r2 = r
+      name, price = [String, Integer].map do |c|
+        r1, r2 = r2.split
+        c.arbitrary.value(n. r1)
+      end
+    price = - price if price < 0 # trick
+      new(name, price)
+    end
+  end
+end
+{% endhighlight %}
+
+Seriously hardcore! Rushcheck is cool, but monads in Ruby is just too crazy. (Rushcheck, is orphaned. I created a github repo for it "here":http://github.com/hayeah/rushcheck/tree/master).
+
+I just can't figure it out. *BUT I REALLY WANT TO USE IT!* So I rolled my own, which actually wasn't so hard. I call it *Rant*-- RandomlyType. At its core is an imperative random generator that generates structured data, and property testing is just a trivial extension of Test::Unit using the generator.
+
+It is easy to Rant. To generate a random Candy, you say,
+
+{% highlight ruby %}
+require 'rant'
+# 'string' returns a random printable string
+# 'float' returns a random float
+Rant.gen.value {
+  Candy.new(string,float)
+}
+{% endhighlight %}
+
+To generate a hundred Candies,
+
+{% highlight ruby %}
+Rant.gen.map(100) {
+  Candy.new(string,float)
+}
+{% endhighlight %}
+
+Or generate a hundred pairs of Candies,
+
+{% highlight ruby %}
+Rant.gen.map(100) {
+  [Candy.new(string,float),Candy.new(string,float)]
+}
+{% endhighlight %}
+
+The reason Rant is lot easier to use and implement, no surprise, is because it doesn't use the monadic style. Because Ruby lacks support for higher-order programming, monadic style is impractical for real use.
+
+In an imperative language, something like QuickCheck doesn't actually _need_ to be in monadic style in the first place. The particular monad QuickCheck defines and uses only abstracts over two things: size of the datastructure to generate, and the state of the random sequence generator. But, as Yogi Berra once said, the easiest way to represent states in a stateful language is to use states!
+
+Ruby is an imperative language, so we can ask each instance of Rant generator to keep structure size as its instance variable. And the Ruby interpreter takes care of the state of the random sequence generator. We just call @rand@. Easy.
+
+In other words, when a block of code gets executed within an object (with @instance_eval@), the object itself is the "monad" that abstracts and carries the computational context of the block.
+
+It's easy to generate data with dependencies (QuickCheck's Coarbitrary). To generate a random array of integer with a random (but bounded) length,
+
+{% highlight ruby %}
+Rant.gen.value {
+ n = range(0,100)
+ sized(n) { array(:integer) }
+}
+{% endhighlight %}
+
+Rant also provides extension to Test::Unit for property testing. In Rant's test suite, you can see that it checks if the @integer@ it generates is always a @Fixnum@,
+
+{% highlight ruby %}
+require 'rant/check'
+should "generate Fixnum only" do
+  property_of  {
+    integer
+  }.check { |i|
+    assert i.is_a?(Fixnum)
+  }
+end
+{% endhighlight %}
+
+Funnily enough, this trivial property actually caught a bug! I messed up an upper bound by an order of magnitude, and @integer@ was generating @Bignum@ s.
+
+Rant is only ~300 LOC. You can find out more here: "http://github.com/hayeah/rant/tree/master":http://github.com/hayeah/rant/tree/master.
+
+
+h1. One Trick Pony
+
+One thing I found interesting after writing Rant is that its design shares family resemblance to "Rubish":http://github.com/hayeah/rubish/tree/master, my Ruby shell. Both Rant and Rubish are designed around
+
+{% highlight ruby %}
+obj.instance_eval(&block)
+{% endhighlight %}
+
+In Rant's case, the DSL evaluator is a random generator, and in Rubish, the DSL interpreter is the shell object. Generically, a DSL designed this way is something like,
+
+{% highlight ruby %}
+obj.method {
+  keyword1 "syntax", "syntax"
+  keyword2 "syntax", "syntax"
+}
+{% endhighlight %}
+
+where the keywords are just the callable methods of @obj@. In otherwords, the "DSL" and its interpreter is just the object itself!
+
+This technique is nice, because it's easy to extend the DSL with new methods, thanks to how open Ruby is. You can extend either the class of DSL itself, or just an instance of the DSL, on the singleton object.
+
+The problem with extending the DSL class, though, is that it makes it more risky to combine multiple extensions written by different people. The more extensions you want to use, the riskier it is.
+
+With Rubish, a @Workspace@ object manages all the bindings visible to the shell. To extend the shell, we just extend an instance object of @Workspace@, like so,
+
+{% highlight ruby %}
+# This is found in the Rubish test suite.
+# It augments the workspace with test
+# assertions.
+WS = Rubish.session.current_workspace
+WS.extend Test::Unit::Assertions
+{% endhighlight %}
+
+Extending a DSL singleton object on a per-use basis has important advantages:
+
+# *Subclassing is almost never needed.* I find that I achieve better orthogonality by distributing methods into a flat space of Mixins, rather than a hierarchy of classes. This also keeps the codebase lean.
+# *Plugin writers don't have to worry about name conflicts.* The user is responsible to make sure that two Mixins indeed can mix. Otherwise, just mix them into different objects.
+
+I think the wonderful thing about "prototype-based":http://en.wikipedia.org/wiki/Prototype-based_programming extension mechanism is that we are allowed do really horrible, tasteless, but convenient things on an object, but the mess is localized to that singleton.

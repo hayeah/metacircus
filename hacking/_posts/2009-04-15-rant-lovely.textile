@@ -1,0 +1,74 @@
+---
+layout: post
+title: Rant Lovely
+---
+
+I wrote a simple love letter generator with "Rantly":http://github.com/hayeah/rantly/tree/master.
+
+{% highlight ruby %}
+require 'rantly/silly'
+# generate a love letter with 3 paragraphs
+Rantly::Silly.love_letter(3)
+{% endhighlight %}
+
+And get something like,
+
+<pre>
+my unbelievable lighthouse:
+
+as a incredible fearful captive, that my heart
+aches is never quite enough for you, my shiny
+desire. when my loin burns, my lighthouse, i feel
+the need to think of you, but this is not because
+my soul is awed, but rather a symptom of my being
+your ultimate unremarkable servant. do not think
+that saying 'my spirit wanders and wonders'
+suffices to show the depth of how my spine pines,
+because more than that, we would read poetry to
+each other with shiny joy 
+
+because you are my beloved, and i am your
+burning menial captive, no, rather your ultimate
+undeserving captive, i believe we would hug with
+glittering joy. because you are my beacon, and i
+am your ultimate insignificant captive, no, rather
+your unbelievable unremarkable lapdog, i hope to
+god we would whisper empty nothings into each
+others' ears with joyous joy. because you are my
+dove, and i am your incredible undeserving
+servant, no, rather your ultimate insignificant
+captive, i will that we would nurture joyous
+angels, so the world becomes all the more
+glittering..
+
+do not think that saying 'my loin burns' suffices
+to show the depth of how my spirit wanders and
+wonders, because more than that, we would nurture
+holy angels, so you, my virgin goddess, would
+continue to live.. when my heart aches, my
+existential solution, i feel the need to dream of
+us together, but this is not because my soul is
+awed, but rather a symptom of my being your most
+unremarkable slave.
+
+your ultimate insignificant lapdog
+
+ps: every once in a while i dream of us together,
+and hope that we would whisper empty nothings into
+each others' ears with shiny calm 
+</pre>
+
+You can see the source "here":http://github.com/hayeah/rantly/blob/master/lib/rantly/silly.rb
+
+What I think is neat is that the love generator is a DSL built on top of Rant's core. You get an extended instance of the DSL "interpreter" like so,
+
+{% highlight ruby %}
+r = Rantly.new.extend(Rantly::Silly::Love)
+{% endhighlight %}
+
+and use it to generate a randomly sized array of pedestal labels:
+
+{% highlight ruby %}
+r.value {array(integer(0..5)){pedestal_label}}
+# => ["virgin goddess", "desire", "lighthouse"]
+{% endhighlight %}
