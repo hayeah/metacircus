@@ -2,6 +2,7 @@
 layout: post
 title: Heart of Stone
 tag: story
+published: false
 ---
 
 ... and so the embroider's lover knelt beside her body, and started to
