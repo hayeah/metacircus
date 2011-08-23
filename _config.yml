@@ -1,4 +1,5 @@
 server: true
 auto: true
 pygments: false
+exclude: Gemfile, Gemfile.lock, config.ru, ideas
 
