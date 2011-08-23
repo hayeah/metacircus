@@ -212,6 +212,15 @@ ul.posts {
 #post {
 }
 
+.tweet_this {
+  height: 1em;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+.tweet_this iframe {
+	height: 1.3em;
+}
+
   /* standard */
   #post blockquote {
     border: 1px solid #ddd;
