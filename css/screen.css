@@ -51,6 +51,10 @@ table {
   font: 100%;
 }
 
+.clear {
+  _display: none;
+  clear: both;
+}
 /*****************************************************************************/
 /*
 /* Home
@@ -81,9 +85,54 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: left;
-  width: 40em;
+  width: 60em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
+  position: relative;
+}
+
+.site .main {
+  padding-right: 3em;
+  float: left;
+  width: 37em;
+}
+
+.sidebar {
+ margin-left: -3px;
+ float: left;
+ width: 20em;
+}
+
+.sidebar div.section {
+  margin-bottom: 2em;
+}
+
+#about img {
+  width: 125px;
+  height: 125px;
+}
+
+#about .follow a:visited {
+  color: #00a;
+}
+
+#subscribe h3 img {
+  margin-right: 0.3em;
+}
+
+.sidebar .links a {
+  display: block;
+  text-decoration: underline;
+  color: #222;
+}
+
+.sidebar .links a:visited {
+  color: #222;
+}
+
+.sidebar .links a:hover {
+  _text-decoration: none;
+  color: #666;
 }
 
 .title {
@@ -112,7 +161,7 @@ ul.posts {
   }
 
   .site .meta {
-    color: #aaa;
+    color: #777;
   }
 
   .site .footer {
@@ -149,7 +198,6 @@ ul.posts {
 /*****************************************************************************/
 
 #post {
-  
 }
 
   /* standard */
