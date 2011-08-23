@@ -3,6 +3,7 @@ source "http://rubygems.org"
 
 gem 'jekyll'
 gem 'RedCloth'
+gem 'heroku'
 
 group :production do
   gem 'rack'
