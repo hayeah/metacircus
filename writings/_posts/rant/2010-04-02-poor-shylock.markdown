@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Poor Shylock
+tag: thought
 ---
 
 Greentea said that all my characters are depressed. Nothing good ever

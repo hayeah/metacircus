@@ -12,6 +12,13 @@ description: A blog by Howard Yeh, a travelling entrepreneur, on startup, progra
     {% endfor %}
   </ul>
 
+  <h1>Thoughts</h1>
+  <ul class="posts">
+    {% for post in site.tags.thought %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> </li>
+    {% endfor %}
+  </ul>
+  
   <h1>Stories</h1>
   <ul class="posts">
     {% for post in site.tags.story %}

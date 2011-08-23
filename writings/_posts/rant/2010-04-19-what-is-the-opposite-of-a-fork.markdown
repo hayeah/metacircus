@@ -1,6 +1,7 @@
 ---
 layout: post
-title: What is The Opposite of a Fork
+title: What is The Opposite of a Fork?
+tag: thought
 ---
 
 It is always tempting to think in dualistic terms: us vs them, black

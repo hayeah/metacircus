@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-08-24T05:18:33+08:00</updated>
+ <updated>2011-08-24T05:36:25+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -117,22 +117,6 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>
-   <title>Declaration of Love</title>
-   <link href="http://www.metacircus.com/writings/2010/05/30/declaration-of-love.html"/>
-   <updated>2010-05-30T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/writings/2010/05/30/declaration-of-love</id>
-   <content type="html">&lt;p&gt;Oh man. I am so happy.&lt;/p&gt;
-
-&lt;p&gt;The future is completely unknown.&lt;/p&gt;
-
-&lt;p&gt;But I am giddy. Of freedom.&lt;/p&gt;
-
-&lt;p&gt;I am happy. I don&amp;#8217;t know what will happen. But everything is wonderful.&lt;/p&gt;
-
-&lt;p&gt;It is my life. It radiates with light. It floats with lightness. It is beautiful. Lovely. Love.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Who Brought Fire?</title>
    <link href="http://www.metacircus.com/writings/2010/05/22/who-brought-fire.html"/>
    <updated>2010-05-22T00:00:00+08:00</updated>
@@ -151,7 +135,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>
-   <title>One Thing</title>
+   <title>Just One Thing</title>
    <link href="http://www.metacircus.com/writings/2010/04/20/one-thing.html"/>
    <updated>2010-04-20T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/20/one-thing</id>
@@ -163,7 +147,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>
-   <title>What is The Opposite of a Fork</title>
+   <title>What is The Opposite of a Fork?</title>
    <link href="http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork.html"/>
    <updated>2010-04-19T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork</id>
@@ -466,7 +450,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  </entry>
  
  <entry>
-   <title>Lecture 7 on Nietzsche</title>
+   <title>Live It. And Dream Some More</title>
    <link href="http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche.html"/>
    <updated>2010-04-07T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche</id>
@@ -478,7 +462,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
 
 &lt;p&gt;The idea that there could be a perfection of being where I could be free of worries, longings, sadness, hopes, wants, regrets, is intellectually seductive. That wonderful illusion of coherency comes only at the expense of ignoring life.&lt;/p&gt;
 
-&lt;p&gt;I am watching a lecture series on Nietzsche&amp;#8217;s philosophy. Every lecture I receive something wonderfully life-affirming. Lecture 7 is concluded on these notes,&lt;/p&gt;
+&lt;p&gt;I am watching a lecture series on Nietzsche&amp;#8217;s philosophy. Every lecture I receive something wonderfully life-affirming. Lecture 7 was concluded thusly,&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Schopenhauer ultimately seems to think that meaning, purpose, is to be found in a kind of rationality. That&amp;#8217;s what Kant thought. Nevertheless, what Nietzsche points out, and I think very powerfully, is that the meaning of life is to be found not in reason, not in rationality, not in some calculation, much less in theology, but the meaning of life is to be found in the passions, that it&amp;#8217;s creativity, it&amp;#8217;s being devoted to causes, it&amp;#8217;s being dedicated to something &amp;#8211; another person, a project, an art. That&amp;#8217;s what gives life meaning. And so pessimism is overcome as the aesthetic phenomenon, not as a reason, not as a rational enterprise, but, rather, by something you really care about, something you feel deeply passionate about. &amp;#8211; &lt;em&gt;Robert Soloman&lt;/em&gt;&lt;/p&gt;
@@ -486,7 +470,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
 
 &lt;p&gt;Rather than seeking perfection, I could see life as a dynamic process, continuously unfolding. It is music, and we all dance to it.&lt;/p&gt;
 
-&lt;p&gt;Meaning isn&amp;#8217;t some ghostly Platonic treasure. God is dead, and soon enough, we will all be dead. What Meanings are to be found in the ruins of religions and philosophy? Meaningfulness is a feeling. It comes right out of living.&lt;/p&gt;
+&lt;p&gt;Meaning isn&amp;#8217;t some ghostly Platonic gift. God is dead, and soon enough, we will all be dead. What Meanings are to be found in the ruins of religions and philosophy? Meaningfulness is a feeling. It comes right out of living.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;If your life burned well, poetry is just the ash. &amp;#8211; &lt;em&gt;Leonard Cohen&lt;/em&gt;&lt;/p&gt;

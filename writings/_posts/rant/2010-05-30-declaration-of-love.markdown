@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Declaration of Love"
+tag: thought
+published: false
 ---
 
 Oh man. I am so happy.

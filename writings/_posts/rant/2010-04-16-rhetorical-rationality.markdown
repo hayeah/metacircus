@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rhetorical Rationality
+tag: thought
 ---
 
 Thinking of ourselves as rational creatures, we often resort to
