@@ -258,6 +258,15 @@ ul.posts {
     background-color: #333;
   }
 
+#post .splash img {
+  width: 95%;
+}
+
+#post .splash i {
+  margin-top: -2em;
+  display: block;
+}
+
 #related {
   margin-top: 2em;
 }
