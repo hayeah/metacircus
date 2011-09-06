@@ -4,13 +4,152 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-09-04T03:40:30+08:00</updated>
+ <updated>2011-09-07T03:07:09+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
    <email>hayeah@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>A Lispy Abuse of Ruby</title>
+   <link href="http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html"/>
+   <updated>2011-09-07T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax</id>
+   <content type="html">&lt;p&gt;I wrote a dialect of Lisp in Ruby. I call it ComaLisp. It looks like,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(ComaLisp {
+   (let [:a,1], [:b, 2] {
+      (defun [:foo,:a,:b,:c] {
+         (let [:d, 6] {
+            (list a, b, c, d)})})
+      (list a, b, (foo 3, 4, 5))})})&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is &lt;strong&gt;VALID&lt;/strong&gt; Ruby syntax under 1.9! I kid you not.&lt;/p&gt;
+
+&lt;h2 id='i_have_a_confession_to_make'&gt;I have a confession to make&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src='http://p.twimg.com/AYrd9DACAAIBr7F.png' alt='I Love Parens' /&gt;&lt;/p&gt;
+
+&lt;p&gt;I love Lisp&amp;#8217;s syntax. Or rather, the lack thereof. But people might not like such austere minimalism. So ComaLisp has braces and curlies, and a liberal sprinkling of commas. It is a delicious syntatic soup fortified with extra punctuation marks. Yum.&lt;/p&gt;
+
+&lt;h2 id='install_comalisp'&gt;Install ComaLisp&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install comalisp&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then in the IRB&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require &amp;#39;comalisp&amp;#39;
+(ComaLisp {
+   (puts &amp;quot;hello world&amp;quot;)
+  })
+# &amp;quot;hello world&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Voila!&lt;/p&gt;
+
+&lt;h2 id='introduction_to_comalisp_list_algebra'&gt;Introduction To ComaLisp: List Algebra&lt;/h2&gt;
+
+&lt;p&gt;For the following examples, we assume that the code is run in the ComaLisp DSL context:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(ComaLisp {
+   ... code here ...
+  })&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In ComaLisp, lists and conses are simply represented by array.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(list 1, 2, 3) # =&amp;gt; [1,2,3]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, the fact that lists are represented by arrays is an implementation detail. You can&amp;#8217;t rely on that. You should consider whatever returned by &lt;code&gt;list&lt;/code&gt; as an abstract datatype, and only use the provided functions in ComaLisp to operate on lists. (More pain the better, right?)&lt;/p&gt;
+
+&lt;p&gt;The good old &lt;code&gt;car&lt;/code&gt; and &lt;code&gt;cdr&lt;/code&gt; work as you&amp;#8217;d expect.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(car (list 1, 2, 3)) == 1
+(cdr (list 1, 2, 3)) == (list 2, 3) == [2,3]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can add a new element onto the list by using &lt;code&gt;cons&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(cons 1, (list 2, 3)) == (list 1, 2, 3) == [1,2,3]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, the perennial question when designing a Lisp dialect, what is the empty list? I decided to use &lt;code&gt;[]&lt;/code&gt; as the empty list, not nil. This way the list/cons algebra works out.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# the empty list is []
+(list) == []
+# the empty list is a fixpoint for car
+(car (list)) == (car (car (list))) == ... == []
+# the empty list is a fixpoint for cdr
+(cdr (list)) == (cdr (cdr (list))) == ... == []&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, because the list is represented by an array, it&amp;#8217;s not possible to have an improper list like in a real Lisp.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(cons 1 2) =&amp;gt; &amp;#39;(1 . 2) # not possible&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In ComaLisp, the second argument to cons &lt;em&gt;must&lt;/em&gt; be a list&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(cons 1, (list))&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='declare_local_variables'&gt;Declare Local Variables&lt;/h2&gt;
+
+&lt;p&gt;Although ComaLisp is 100% compatible with Ruby, and you can use local variables just as in Ruby, that would be cheating. Use &lt;code&gt;let&lt;/code&gt; to declare variables in ComaLisp!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let [:a,1],[:b,2] {
+  (list a,b)}) == (list 1, 2)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each let defines a new scope. You can shadow variables with nested lets.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let [:a,1], [:b,2] {
+  (let [:a,3] {
+     (list a, b)
+   })}) == (list 3, 2)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='define_function'&gt;Define Function&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;#8217;s how you define a function in ComaLisp&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(ComaLisp {
+  (defun [:foo,:a,:b] {
+     (list a, b)})
+  (foo 1, 2)}) == (list 1, 2)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='invoking_function'&gt;Invoking Function&lt;/h2&gt;
+
+&lt;p&gt;ComaLisp, being a functional language, allows you to apply functions dynamically.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# call
+(ComaLisp {
+  (defun [:foo,:a,:b] {
+     (list a, b)})
+  (call :foo, 1, 2)}) == (list 1, 2)
+  
+# apply
+(ComaLisp {
+  (defun [:foo,:a,:b] {
+     (list a, b)})
+  (apply :foo, [1, 2])}) == (list 1, 2)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='oop_integration_with_ruby'&gt;OOP Integration With Ruby&lt;/h2&gt;
+
+&lt;p&gt;The best that ComaLisp has to offer is probably its tight integration with Ruby&amp;#8217;s powerful object system. If you have a native Ruby object, you can invoke its methods the Lisp way,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(map [-1,-2,-3] { |e|
+  (abs e)}) == [1,2,3]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='what_to_hack_on'&gt;What To Hack On&lt;/h2&gt;
+
+&lt;p&gt;If you find this interesting, feel free to fork &lt;a href='https://github.com/hayeah/ComaLisp'&gt;ComaLisp&lt;/a&gt;. Two things you can hack on:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Use method_missing to generate cadr, caar, cdar, cadr, etc.&lt;/li&gt;
+
+&lt;li&gt;ComaLisp lacks a macro system.&lt;/li&gt;
+
+&lt;li&gt;A REPL for ComaLisp&lt;/li&gt;
+
+&lt;li&gt;Port ComaLisp to JRuby, Rubinius, etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What crazy ideas do you have for ComaLisp? Discuss on Hacker News.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Happiness Begets Creativity</title>
