@@ -144,4 +144,4 @@ If you find this interesting, feel free to fork [ComaLisp](https://github.com/ha
 3. A REPL for ComaLisp
 4. Port ComaLisp to JRuby, Rubinius, etc.
 
-What crazy ideas do you have for ComaLisp? Discuss on Hacker News.
+What crazy ideas do you have for ComaLisp? [Discuss on Hacker News](http://news.ycombinator.com/item?id=2966859).
