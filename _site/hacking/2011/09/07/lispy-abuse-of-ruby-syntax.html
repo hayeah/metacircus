@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>A Lispy Abuse of Ruby - Howard Yeh | Metacircus</title>
+   <meta name="author" content="Howard Yeh" />
+   
+   <link href="http://feeds2.feedburner.com/metacircus" rel="alternate" title="Metacircus" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <h1><a href="/">Metacircus <span class="name"> by Howard Yeh </span></a></h1>
+    <h2 class="meta">Words Are But Shattered Mirror of Thoughts</h2>
+  </div>
+
+  <div class="main">
+    <div id="post">
+  <h1>A Lispy Abuse of Ruby</h1>
+<p>I wrote a dialect of Lisp in Ruby. I call it ComaLisp. It looks like,</p>
+
+<pre><code>(ComaLisp {
+   (let [:a,1], [:b, 2] {
+      (defun [:foo,:a,:b,:c] {
+         (let [:d, 6] {
+            (list a, b, c, d)})})
+      (list a, b, (foo 3, 4, 5))})})</code></pre>
+
+<p>This is <strong>VALID</strong> Ruby syntax under 1.9! I kid you not.</p>
+
+<h2 id='i_have_a_confession_to_make'>I have a confession to make</h2>
+
+<p><img src='http://p.twimg.com/AYrd9DACAAIBr7F.png' alt='I Love Parens' /></p>
+
+<p>I love Lisp&#8217;s syntax. Or rather, the lack thereof. But people might not like such austere minimalism. So ComaLisp has braces and curlies, and a liberal sprinkling of commas. It is a delicious syntatic soup fortified with extra punctuation marks. Yum.</p>
+
+<h2 id='install_comalisp'>Install ComaLisp</h2>
+
+<pre><code>gem install comalisp</code></pre>
+
+<p>Then in the IRB</p>
+
+<pre><code>require &#39;comalisp&#39;
+(ComaLisp {
+   (puts &quot;hello world&quot;)
+  })
+# &quot;hello world&quot;</code></pre>
+
+<p>Voila!</p>
+
+<h2 id='introduction_to_comalisp_list_algebra'>Introduction To ComaLisp: List Algebra</h2>
+
+<p>For the following examples, we assume that the code is run in the ComaLisp DSL context:</p>
+
+<pre><code>(ComaLisp {
+   ... code here ...
+  })</code></pre>
+
+<p>In ComaLisp, lists and conses are simply represented by array.</p>
+
+<pre><code>(list 1, 2, 3) # =&gt; [1,2,3]</code></pre>
+
+<p>However, the fact that lists are represented by arrays is an implementation detail. You can&#8217;t rely on that. You should consider whatever returned by <code>list</code> as an abstract datatype, and only use the provided functions in ComaLisp to operate on lists. (More pain the better, right?)</p>
+
+<p>The good old <code>car</code> and <code>cdr</code> work as you&#8217;d expect.</p>
+
+<pre><code>(car (list 1, 2, 3)) == 1
+(cdr (list 1, 2, 3)) == (list 2, 3) == [2,3]</code></pre>
+
+<p>We can add a new element onto the list by using <code>cons</code>.</p>
+
+<pre><code>(cons 1, (list 2, 3)) == (list 1, 2, 3) == [1,2,3]</code></pre>
+
+<p>Now, the perennial question when designing a Lisp dialect, what is the empty list? I decided to use <code>[]</code> as the empty list, not nil. This way the list/cons algebra works out.</p>
+
+<pre><code># the empty list is []
+(list) == []
+# the empty list is a fixpoint for car
+(car (list)) == (car (car (list))) == ... == []
+# the empty list is a fixpoint for cdr
+(cdr (list)) == (cdr (cdr (list))) == ... == []</code></pre>
+
+<p>However, because the list is represented by an array, it&#8217;s not possible to have an improper list like in a real Lisp.</p>
+
+<pre><code>(cons 1 2) =&gt; &#39;(1 . 2) # not possible</code></pre>
+
+<p>In ComaLisp, the second argument to cons <em>must</em> be a list</p>
+
+<pre><code>(cons 1, (list))</code></pre>
+
+<h2 id='declare_local_variables'>Declare Local Variables</h2>
+
+<p>Although ComaLisp is 100% compatible with Ruby, and you can use local variables just as in Ruby, that would be cheating. Use <code>let</code> to declare variables in ComaLisp!</p>
+
+<pre><code>(let [:a,1],[:b,2] {
+  (list a,b)}) == (list 1, 2)</code></pre>
+
+<p>Each let defines a new scope. You can shadow variables with nested lets.</p>
+
+<pre><code>(let [:a,1], [:b,2] {
+  (let [:a,3] {
+     (list a, b)
+   })}) == (list 3, 2)</code></pre>
+
+<h2 id='define_function'>Define Function</h2>
+
+<p>Here&#8217;s how you define a function in ComaLisp</p>
+
+<pre><code>(ComaLisp {
+  (defun [:foo,:a,:b] {
+     (list a, b)})
+  (foo 1, 2)}) == (list 1, 2)</code></pre>
+
+<h2 id='invoking_function'>Invoking Function</h2>
+
+<p>ComaLisp, being a functional language, allows you to apply functions dynamically.</p>
+
+<pre><code># call
+(ComaLisp {
+  (defun [:foo,:a,:b] {
+     (list a, b)})
+  (call :foo, 1, 2)}) == (list 1, 2)
+  
+# apply
+(ComaLisp {
+  (defun [:foo,:a,:b] {
+     (list a, b)})
+  (apply :foo, [1, 2])}) == (list 1, 2)</code></pre>
+
+<h2 id='oop_integration_with_ruby'>OOP Integration With Ruby</h2>
+
+<p>The best that ComaLisp has to offer is probably its tight integration with Ruby&#8217;s powerful object system. If you have a native Ruby object, you can invoke its methods the Lisp way,</p>
+
+<pre><code>(map [-1,-2,-3] { |e|
+  (abs e)}) == [1,2,3]</code></pre>
+
+<h2 id='what_to_hack_on'>What To Hack On</h2>
+
+<p>If you find this interesting, feel free to fork <a href='https://github.com/hayeah/ComaLisp'>ComaLisp</a>. Two things you can hack on:</p>
+
+<ol>
+<li>Use method_missing to generate cadr, caar, cdar, cadr, etc.</li>
+
+<li>ComaLisp lacks a macro system.</li>
+
+<li>A REPL for ComaLisp</li>
+
+<li>Port ComaLisp to JRuby, Rubinius, etc.</li>
+</ol>
+
+<p>What crazy ideas do you have for ComaLisp? <a href='http://news.ycombinator.com/item?id=2966859'>Discuss on Hacker News</a>.</p>
+</div>
+
+<div class="tweet_this">
+  <iframe allowtransparency="true" frameborder="0" scrolling="no"
+        src="http://platform.twitter.com/widgets/tweet_button.html?count=none&text=A Lispy Abuse of Ruby"
+        style="width:130px; height:20px; margin: 0px"></iframe>
+</div>
+
+<div id="comments">
+  <a href="http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html#disqus_thread">Comments</a>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/metacircus/embed.js"></script>
+  <noscript><a href="http://metacircus.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+  </div>
+
+  <div class="sidebar">
+    <div id="about" class="section">
+      <h3>About Me</h3>
+      <img title="Howard Yeh's Likeness" alt="Howard Yeh's Likeness" src="/images/howard-yeh.jpg"></img>
+      <p><b>Howard Yeh</b>. Thinker. Traveller. Entrepreneur. Hacker. Violinist. </p>
+      <p>
+        Howard is a Rails freelancer. He is now travelling the world, spending
+        less money than staying at home. After 6 months of travel, he saved more
+        money in the bank than when he started. Everything he owns fits in a 25L
+        backpack.
+      </p>
+      <p class="follow">
+        <em>
+          You should <a href="http://twitter.com/hayeah"><b>follow me</b></a>
+          around the world.
+        </em>
+      </p>
+    </div>
+
+    <div id="subscribe" class="section links">
+      <h3><img src="/images/feed-icon16x16.png"/>Subscribe</h3>
+      <a href="http://feeds2.feedburner.com/metacircus">Via RSS feed</a>
+      <a href="http://feedburner.google.com/fb/a/mailverify?uri=metacircus&amp;loc=en_US">Get updates by email</a>
+    </div>
+
+    <div id="contact" class="section links">
+      <h3>Contact Me</h3>
+      <a href="mailto:hayeah@gmail.com">hayeah@gmail.com</a>
+      <a href="http://twitter.com/hayeah">Follow me on <img src="/images/twitter.png"/> Twitter</a>
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="contact">
+      <p>
+        <b>Howard Yeh</b>
+        <br/>
+        <a href="mailto:hayeah@gmail.com">hayeah@gmail.com</a>
+        <br/>
+        <a href="http://twitter.com/hayeah"><b>@hayeah</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7576362-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metacircus/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+</body>
+</html>
