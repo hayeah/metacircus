@@ -9,28 +9,3 @@ use Rack::TryStatic,
     :try => ['.html', 'index.html', '/index.html'] # try these postfixes sequentially
 # otherwise 404 NotFound
 run lambda { [404, {'Content-Type' => 'text/html'}, ['whoops! Not Found']]}
-
-
-# static = Rack::Static.new \
-#   :urls => ["/css", "/images"],
-#   :root => "_site"
-
-# use Rack::Static
-  
-
-# homepage = lambda do |env|
-#     [
-#      200, 
-#      {
-#        'Content-Type'  => 'text/html', 
-#        'Cache-Control' => 'public, max-age=0' 
-#      },
-#      File.open('_site/index.html', File::RDONLY)
-#     ]
-# end
-
-# map "/" do
-#   run homepage
-# end
-
- 
