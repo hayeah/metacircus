@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-09-07T11:55:19+08:00</updated>
+ <updated>2011-09-07T13:54:07+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -13,42 +13,10 @@
 
  
  <entry>
-   <title>Second Degree Homoiconicity</title>
-   <link href="http://www.metacircus.com/hacking/2011/09/07/comalisp-second-degree-homoiconic.html"/>
-   <updated>2011-09-07T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/hacking/2011/09/07/comalisp-second-degree-homoiconic</id>
-   <content type="html">&lt;p&gt;Is &lt;a href='http://metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html'&gt;ComaLisp&lt;/a&gt; homoiconic?&lt;/p&gt;
-
-&lt;p&gt;I wish it is, so I did some research to see if I can argue that it is. (If I can argue that it is already homoiconic, then I don&amp;#8217;t have to work to make it so).&lt;/p&gt;
-
-&lt;p&gt;The origin of the term is from &lt;a href='http://en.wikipedia.org/wiki/Homoiconicity'&gt;TRAC&lt;/a&gt;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Because TRAC procedures and text have the same representation inside and outside the processor, the term homoiconic is applicable, from homo meaning the same, and icon meaning representation.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;By this definition, ComaLisp is not homoiconic, because the Ruby interpreter executes AST, not the source text. However, with some work, ComaLisp could be second degree homoiconic.&lt;/p&gt;
-
-&lt;p&gt;There is the gem &lt;a href='http://liveast.rubyforge.org/'&gt;LiveAst&lt;/a&gt;. It can turn a method or block into AST. It also adds Kernel#ast_eval. With LiveAst, we can achieve 2nd-degree homoiconicity in Ruby,&lt;/p&gt;
-
-&lt;p&gt;Text =&amp;gt; AST =&amp;gt; Interpreter =&amp;gt; AST =&amp;gt; Text&lt;/p&gt;
-
-&lt;p&gt;Whereas a conventional Lisp would be 1st-degree homoiconic, i.e.,&lt;/p&gt;
-
-&lt;p&gt;AST =&amp;gt; Interpreter =&amp;gt; AST&lt;/p&gt;
-
-&lt;h2 id='is_thinking_homoiconic'&gt;Is Thinking Homoiconic?&lt;/h2&gt;
-
-&lt;p&gt;If the &amp;#8220;stuff&amp;#8221; of thought is the same as thought itself, then it is 1st-degree homoiconic. But if language is an intermediary of thought, and thought itself is a meta-language (see &lt;a href='http://www.amazon.com/Foundations-Language-Meaning-Grammar-Evolution/dp/0199264376/ref=sr_1_2?ie=UTF8&amp;amp;qid=1315366216&amp;amp;sr=8-2'&gt;Jackendoff&lt;/a&gt;), then the it is 2nd-degree homoiconic.&lt;/p&gt;
-
-&lt;p&gt;Discuss on &lt;a href='http://news.ycombinator.com/item?id=2968276'&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>A Lispy Abuse of Ruby</title>
-   <link href="http://www.metacircus.com/hacking/2011/09/06/lispy-abuse-of-ruby-syntax.html"/>
-   <updated>2011-09-06T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/hacking/2011/09/06/lispy-abuse-of-ruby-syntax</id>
+   <link href="http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html"/>
+   <updated>2011-09-07T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax</id>
    <content type="html">&lt;p&gt;I wrote a dialect of Lisp in Ruby. I call it ComaLisp. It looks like,&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(ComaLisp {
@@ -181,6 +149,38 @@
 &lt;/ol&gt;
 
 &lt;p&gt;What crazy ideas do you have for ComaLisp? &lt;a href='http://news.ycombinator.com/item?id=2966859'&gt;Discuss on Hacker News&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Second Degree Homoiconicity</title>
+   <link href="http://www.metacircus.com/hacking/2011/09/07/comalisp-second-degree-homoiconic.html"/>
+   <updated>2011-09-07T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/hacking/2011/09/07/comalisp-second-degree-homoiconic</id>
+   <content type="html">&lt;p&gt;Is &lt;a href='http://metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html'&gt;ComaLisp&lt;/a&gt; homoiconic?&lt;/p&gt;
+
+&lt;p&gt;I wish it is, so I did some research to see if I can argue that it is. (If I can argue that it is already homoiconic, then I don&amp;#8217;t have to work to make it so).&lt;/p&gt;
+
+&lt;p&gt;The origin of the term is from &lt;a href='http://en.wikipedia.org/wiki/Homoiconicity'&gt;TRAC&lt;/a&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Because TRAC procedures and text have the same representation inside and outside the processor, the term homoiconic is applicable, from homo meaning the same, and icon meaning representation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By this definition, ComaLisp is not homoiconic, because the Ruby interpreter executes AST, not the source text. However, with some work, ComaLisp could be second degree homoiconic.&lt;/p&gt;
+
+&lt;p&gt;There is the gem &lt;a href='http://liveast.rubyforge.org/'&gt;LiveAst&lt;/a&gt;. It can turn a method or block into AST. It also adds Kernel#ast_eval. With LiveAst, we can achieve 2nd-degree homoiconicity in Ruby,&lt;/p&gt;
+
+&lt;p&gt;Text =&amp;gt; AST =&amp;gt; Interpreter =&amp;gt; AST =&amp;gt; Text&lt;/p&gt;
+
+&lt;p&gt;Whereas a conventional Lisp would be 1st-degree homoiconic, i.e.,&lt;/p&gt;
+
+&lt;p&gt;AST =&amp;gt; Interpreter =&amp;gt; AST&lt;/p&gt;
+
+&lt;h2 id='is_thinking_homoiconic'&gt;Is Thinking Homoiconic?&lt;/h2&gt;
+
+&lt;p&gt;If the &amp;#8220;stuff&amp;#8221; of thought is the same as thought itself, then it is 1st-degree homoiconic. But if language is an intermediary of thought, and thought itself is a meta-language (see &lt;a href='http://www.amazon.com/Foundations-Language-Meaning-Grammar-Evolution/dp/0199264376/ref=sr_1_2?ie=UTF8&amp;amp;qid=1315366216&amp;amp;sr=8-2'&gt;Jackendoff&lt;/a&gt;), then the it is 2nd-degree homoiconic.&lt;/p&gt;
+
+&lt;p&gt;Discuss on &lt;a href='http://news.ycombinator.com/item?id=2968276'&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;</content>
  </entry>
  
  <entry>
