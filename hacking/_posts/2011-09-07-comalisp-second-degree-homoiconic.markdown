@@ -32,4 +32,4 @@ a meta-language (see
 [Jackendoff](http://www.amazon.com/Foundations-Language-Meaning-Grammar-Evolution/dp/0199264376/ref=sr_1_2?ie=UTF8&qid=1315366216&sr=8-2)),
 then the it is 2nd-degree homoiconic.
 
-Discuss on Hacker News.
+Discuss on [Hacker News](http://news.ycombinator.com/item?id=2968276).
