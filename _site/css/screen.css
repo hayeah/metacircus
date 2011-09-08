@@ -1,3 +1,5 @@
+/* @override http://localhost:4000/css/screen.css */
+
 /* @override http://localhost:9292/css/screen.css */
 
 /*****************************************************************************/
@@ -215,6 +217,16 @@ ul.posts {
 /*****************************************************************************/
 
 #post {
+ position: relative;
+}
+
+#sharebox {
+ position: fixed;
+ top: 160px;
+ margin-left: -70px;
+ border: 0px solid red;
+ height: 60px;
+ width: 70px;
 }
 
 .tweet_this {
