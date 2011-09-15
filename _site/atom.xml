@@ -4,13 +4,157 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-09-09T00:17:52+08:00</updated>
+ <updated>2011-09-15T09:59:17+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
    <email>hayeah@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>6 Steps I Took From Idea To Launch</title>
+   <link href="http://www.metacircus.com/hacking/2011/09/14/6-steps-i-took-from-idea-to-launch.html"/>
+   <updated>2011-09-14T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/hacking/2011/09/14/6-steps-i-took-from-idea-to-launch</id>
+   <content type="html">&lt;p&gt;&lt;img src='http://farm3.static.flickr.com/2768/4460525589_783067f199.jpg' alt='wise old man' /&gt;&lt;/p&gt;
+
+&lt;p&gt;A visitor in New York City was asking an old man for direction, &amp;#8220;excuse me, how do I get to Carnegie Hall?&amp;#8221; The old man, at once senile and wise, answered:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Practice. Practice. Practice.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So it is with Lean Startup.&lt;/p&gt;
+
+&lt;h1 id='lean_kata'&gt;Lean Kata&lt;/h1&gt;
+
+&lt;p&gt;I thought that my ideas are so great, that I just need to code, put in some metrics, add some A/B tests, then I&amp;#8217;d be on my way to lean epiphanies and success. Of course, it wasn&amp;#8217;t that easy.&lt;/p&gt;
+
+&lt;p&gt;I thought that the lean approach is just a bag of techniques and tricks that I can pick and choose as I wish. I thought I could simply graft the lean techniques onto what I already knew: coding.&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;#8217;t take learning seriously. So up until now, I left behind a lot of half-hatched ideas and dead code in my wake. I felt like a murderer of ideas.&lt;/p&gt;
+
+&lt;p&gt;To benefit from lean thinking, I eventually realized, I had to step out of my comfort zone with programming, and focus on the lean practice itself. That&amp;#8217;s why I dececided to undertake a &amp;#8220;Lean Kata&amp;#8221;. Like doing a Code Kata, I focused myself on learning, rather than accomplishing. I am glad I went through it.&lt;/p&gt;
+
+&lt;p&gt;What follows is what I did to launch &lt;em&gt;FaceOff&lt;/em&gt;, a &lt;a href='http://getFaceOff.com'&gt;Chrome extension to block &amp;#8220;like&amp;#8221; button&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id='1_idea'&gt;1. Idea&lt;/h1&gt;
+
+&lt;p&gt;For the Lean Kata, I was against using one of my own &lt;span style='text-decoration:line-through;'&gt;brilliant&lt;/span&gt; retarded ideas.&lt;/p&gt;
+
+&lt;p&gt;I noticed on Hacker News &lt;a href='http://www.jwz.org/blog/2011/09/surprise-facebook-doesnt-like-privacy-countermeasures/'&gt;a blog post&lt;/a&gt; about the Facebook like button by Jamie Zawinski. The like button tracks you even if you don&amp;#8217;t click on it. By merely visiting a page and loading the like button, Facebook knows that you&amp;#8217;ve been there. Facebook, in fact, knows more about you than your mom.&lt;/p&gt;
+
+&lt;p&gt;Personally I am not super paranoid about Facebook. But seeing the number of upvotes on that post, I thought it was a safe bet.&lt;/p&gt;
+
+&lt;p&gt;The German tech site Heise linked to in Jaime Zawinsky&amp;#8217;s post already proposed a &lt;a href='http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html'&gt;2-click like button&lt;/a&gt; that seemed pretty compelling. So I thought I could make a Chrome extension that implements it.&lt;/p&gt;
+
+&lt;p&gt;At this point, I knew that people are paranoid about Facebook. But there already exists a Chrome extension that blocks Facebook outright. I didn&amp;#8217;t know if people would want a Chrome extension specifically for the 2-click like button.&lt;/p&gt;
+
+&lt;h1 id='2_mvp'&gt;2. MVP&lt;/h1&gt;
+
+&lt;p&gt;It was 2am in the morning, and I was going to bed. But I thought, oh what the heck, let me quickly create a mock and put it up somewhere.&lt;/p&gt;
+
+&lt;p&gt;I decided to take a more paranoia mongering approach. It is easier to pin the fear to a person, than the abstract idea of privacy. So I thought I&amp;#8217;d model the marketing message after 1984&amp;#8217;s &amp;#8220;Big Brother Is Watching&amp;#8221;, and villanize Mark Zuckerberg, probably somewhat unfairly. Furthermore, it would enhance the villainy by adding a profit motive. Nobody wants to know that Facebook is going to make a cool $1B by sacraficing our culture&amp;#8217;s collective privacy.&lt;/p&gt;
+
+&lt;p&gt;I made the mocks with Balsamiq and pushed it on Github. It looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='https://a248.e.akamai.net/assets.github.com/img/bba1be44947273f17155badbc42dd70ba7d0829c/687474703a2f2f6870686f746f732d617368342e666263646e2e6e65742f3333383236315f3235343737313237373838373835355f3130303030303634393533343939365f3835313136345f383036363230365f6f2e6a7067' alt='FaceOff Mock' /&gt;&lt;/p&gt;
+
+&lt;p&gt;I added a clear call to action in the README: &amp;#8220;watch this repository if you are interested&amp;#8221;. At this point I had &lt;em&gt;0 lines of code&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The next day there were 50 watchers on the repo. I was satisfied that there was interest for this project.&lt;/p&gt;
+
+&lt;h1 id='3_coding'&gt;3. Coding&lt;/h1&gt;
+
+&lt;p&gt;I spent the next day coding. The prototype was done that afternoon. It could block like buttons embedded by an iframe, but not those using the Facebook Markup Language (FBML). I spent an extra day fixing that problem.&lt;/p&gt;
+
+&lt;p&gt;This was the easy part. In hindsight, I should&amp;#8217;ve just moved on and work on the landing page so I can release FaceOff earlier, and fix the problem later.&lt;/p&gt;
+
+&lt;h1 id='4_landing_page_design'&gt;4. Landing Page Design&lt;/h1&gt;
+
+&lt;p&gt;I asked my friend &lt;a href='http://twitter.com/bearwithclaws'&gt;@bearwithclaws&lt;/a&gt;, of &lt;a href='http://hackermonthly.com/'&gt;Hacker Monthly&lt;/a&gt;, to do the design (you should subscribe to his magazine, because it&amp;#8217;s the best way to keep up with Hacker News without having to obessively check it every 30 seconds).&lt;/p&gt;
+
+&lt;p&gt;He came up with the idea to use Mark Zuckerberg&amp;#8217;s profile pictures as part of the demo. So when the like button is blocked, Mark Z. is facing away and isn&amp;#8217;t watching. And when the like button is enabled, Mark Z. is facing your way, and is watching. I thought that was pretty funny, and not too malicious.&lt;/p&gt;
+
+&lt;p&gt;We stole those pictures from Wired magazine&amp;#8217;s &lt;a href='http://www.wired.com/techbiz/startups/news/2007/09/ff_facebook'&gt;profile of Mark Zuckerberg&lt;/a&gt;. I guess we can afford a few good laughs until Wired send me a cease and desist letter to take the pictures down (hopefully never).&lt;/p&gt;
+
+&lt;p&gt;Check out the final &lt;a href='http://getfaceoff.com'&gt;landing page for FaceOff&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id='5_metrics__ab_testing'&gt;5. Metrics &amp;amp; A/B Testing&lt;/h1&gt;
+
+&lt;p&gt;I&amp;#8217;ve always included Google Analytics for my projects. But to be honest, I never learned much from Google Analytics. Rather, it is to me a fun ego booster that allowed me to see a spike when people are checking out my stuff, and a corresponding spike in my sense of well-being.&lt;/p&gt;
+
+&lt;p&gt;This time I set out to do something different. I thought about the things I wanted to find out.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;What is the conversion rate for downloading the extension?&lt;/li&gt;
+
+&lt;li&gt;What is the conversion rate for Twitter following?&lt;/li&gt;
+
+&lt;li&gt;What is the conversion rate for Github watching/forking?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With these goals in mind, I could design the metrics I needed to track, rather than vanity stats I wanted to track.&lt;/p&gt;
+
+&lt;p&gt;I decided to try out &lt;a href='http://getclicky.com'&gt;GetClicky&lt;/a&gt;, just so I can use a different tool. I learned from &lt;a href='http://www.amazon.com/Peopleware-Productive-Projects-Teams-Second/dp/0932633439/ref=sr_1_1?ie=UTF8&amp;amp;qid=1316019451&amp;amp;sr=8-1'&gt;PeopleWare&lt;/a&gt; that a productivity gain often follow from merely doing something different. So I thought using a different tool would force me to look at data from a fresh perspective.&lt;/p&gt;
+
+&lt;p&gt;For the Lean Kata, I vowed to include at least one A/B test. I looked for an obvious improvement. I decided to try &lt;a href='http://visualwebsiteoptimizer.com'&gt;Visual Website Optimizer&lt;/a&gt;, because it seems to be the easiest way for a beginner to start A/B testing.&lt;/p&gt;
+
+&lt;p&gt;I was expecting my A/B testing tool to prove to me that the obvious improvement I came up with would increase conversion. The result of the A/B test was surprising. Needless to say, A/B testing proved me wrong. I changed,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://i467.photobucket.com/albums/rr40/hdyeh2000/control.png' alt='control' /&gt;&lt;/p&gt;
+
+&lt;p&gt;To,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://i467.photobucket.com/albums/rr40/hdyeh2000/variation.png' alt='variation' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Making the description of the extension more visual I thought was a clear win. Yet it turned out that this &amp;#8220;obvious improvement&amp;#8221; resulted in a 20% decrease in conversion rate.&lt;/p&gt;
+
+&lt;h1 id='6_launch'&gt;6. Launch&lt;/h1&gt;
+
+&lt;p&gt;I submitted FaceOff to Hacker News on a weekend. My rationale was that hackers and entrepreneurs don&amp;#8217;t rest on weekends, but PR firms do. So on weekends there would be roughly the same amount of votes as weekdays, but distributed over fewer submissions. Thus on a weekend, my submission might have a lesser risk getting swept away by others.&lt;/p&gt;
+
+&lt;p&gt;I got 3 friends to upvote within the first hour to increase the chance of it appearing on the front page. (Everybody does this, right?)&lt;/p&gt;
+
+&lt;p&gt;I also posted on Reddit.&lt;/p&gt;
+
+&lt;p&gt;Then I tweeted about it. And that was that.&lt;/p&gt;
+
+&lt;h1 id='stats'&gt;Stats&lt;/h1&gt;
+
+&lt;p&gt;I launched on September 11th.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://i467.photobucket.com/albums/rr40/hdyeh2000/09-11-stats.png' alt='visitors' /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;10am: 235 visitors&lt;/li&gt;
+
+&lt;li&gt;11am: 252 visitors&lt;/li&gt;
+
+&lt;li&gt;12am: 265 visitors&lt;/li&gt;
+
+&lt;li&gt;1pm: 102 visitors&lt;/li&gt;
+
+&lt;li&gt;2pm: 59 visitors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href='http://getfaceoff.com'&gt;getFaceOff.com&lt;/a&gt; had 1,070 visitors that day.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The extension was downloaded 238 times. Conversion rate was ~22%.&lt;/li&gt;
+
+&lt;li&gt;The Github repo was visited 65 times. Resulting in 6 new watchers. 0.5%.&lt;/li&gt;
+
+&lt;li&gt;My Twitter profile was visited 20 times. Resulting in 7 new followers. 0.6%.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;About 80% of the visits came from HackerNews. Less than 10 visits came from Reddit. It would&amp;#8217;ve made more sense if I posted on the programming SubReddit. Not many hits from both Twitter and Facebook. {what&amp;#8217;s not many?}&lt;/p&gt;
+
+&lt;p&gt;There was a drop of traffic from Hacker News at around 1pm, due to the FaceOff submission falling off from the front page. Which was rather surprising. It fell to 27th in rank, with 19 votes, at one hour old. The 24th and 25th in rank are both one hour old, yet with 3 votes each.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://i467.photobucket.com/albums/rr40/hdyeh2000/hn-votes.png' alt='HN Votes' /&gt;&lt;/p&gt;
+
+&lt;p&gt;My guess is it got flagged by a moderator. Oh well.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>A Lispy Abuse of Ruby</title>
