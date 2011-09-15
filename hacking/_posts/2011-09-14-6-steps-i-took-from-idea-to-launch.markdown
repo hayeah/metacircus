@@ -202,4 +202,4 @@ could focus my energy on learning the lean techniques. I even made 1 Malaysian
 ringgit from [@mohdrafie](http://twitter.com/mohdrafie). Kaching! First cent
 from somebody other than my mom.
 
-Would you like to do a Lean Kata as well? Discuss on Hacker News.
+Would you like to do a Lean Kata as well? [Discuss on Hacker News](http://news.ycombinator.com/item?id=3001182).
