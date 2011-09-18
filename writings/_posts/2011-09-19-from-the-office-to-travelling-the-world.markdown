@@ -169,12 +169,13 @@ getaway. There really wasn't much to do there in the Winter.
 
 I met some interesting people there. People who go to a surf town in the dead of
 Winter are by that selection bias pretty weird. There was a divorced man seeking
-new life. He also lost his business. There was an old programmer who did Cobol
-for living. There was also a woman who was a life coach. One breakfast she was
-teaching a tough looking, bouncer type of guy how to listen with more
-empathy. And there was a German guy who travelled across Canada for 2 months. He
-couchsurfed all the way, and the only two nights he paid was to stay in the
-hostel in Tofino.
+new life. He also lost his business. There was a retired programmer who did
+Cobol for living. There was also a woman who was a life coach. One breakfast she
+was teaching a tough looking, bouncer type of guy how to listen with more
+empathy. Two geologists from the Univeristy of Alberta were crazy enough to have
+gone surfing in winter's bitter cold water. And there was a German guy who
+travelled across Canada for 2 months. He couchsurfed all the way, and the only
+two nights he paid was to stay in the hostel in Tofino.
 
 During the day I explored Tofino. I worked in the evening, and sometimes in the
 afternoon when it rained. I averaged about 4~5 billable hours of work each
