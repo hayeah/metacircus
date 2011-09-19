@@ -273,3 +273,5 @@ faith we can have. Have faith in life, that it would turn out alright. _Que Sera
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/tnmrIK1paSs" frameborder="0">
 </iframe>
+
+Discuss on [Hacker News](http://news.ycombinator.com/item?id=3013876)
