@@ -156,7 +156,7 @@ were remote, and two were local in Vancouver.
 <span class="caption">Sunset at Tofino</span>
 
 As I was picking up freelancing gigs, I got serious about travelling.
-@romansnitko told me that he was going to live in Thailand for 6 months, and
+[Roman Snitko](http://twitter.com/romansnitko) told me that he was going to live in Thailand for 6 months, and
 invited me to go. When he was there last time, he rented a new vacation condo
 unit for $450 a month. The building had a roof top swimming pool overseeing the
 ocean, and a gym. He said that in Thailand he could easily live for less than
