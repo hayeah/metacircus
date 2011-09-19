@@ -1,3 +1,5 @@
+/* @override http://me:4000/css/screen.css */
+
 /* @override http://localhost:4000/css/screen.css */
 
 /* @override http://localhost:9292/css/screen.css */
@@ -227,6 +229,10 @@ ul.posts {
  border: 0px solid red;
  height: 60px;
  width: 70px;
+}
+
+#post .caption {
+    font-style: italic;
 }
 
 .tweet_this {
