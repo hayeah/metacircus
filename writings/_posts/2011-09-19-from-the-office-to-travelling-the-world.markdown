@@ -4,6 +4,9 @@ title: From The Office To Travelling The World
 tag: thought
 ---
 
+![My Office Building](http://farm3.static.flickr.com/2444/3953133869_8b6b3e12c7.jpg)
+<br/> _My Office Building_
+
 15 months ago on a sunny June Friday I decided to quit my job. I still remember
 the moment. It was like falling in love. I walked out of the office onto the
 street, feeling like I've lost half my weight. Each step I took I felt
@@ -64,6 +67,9 @@ Isn't is weird that in modernity the core of our identity isn't God, nation, or
 family, but job, and all that a job would imply.
 
 # Preparing For Change
+
+<img src="http://hphotos-sjc1.fbcdn.net/286163_239860299378953_100000649534996_801492_3516690_o.jpg" style="width: 500px" alt="Empty Sign"/>
+<span class="caption"> Empty Sign. Qinghai, China </span>
 
 It is not possible to change overnight. Quitting, like turning 30 (or whatever),
 is just an arbitrary marker. It doesn't magically, with a puff of smoke, make
@@ -146,6 +152,9 @@ were remote, and two were local in Vancouver.
 
 # Getting Ready To Go
 
+![Sunset at Tofino](http://farm6.static.flickr.com/5007/5279903412_1faf6589d1.jpg)
+<span class="caption">Sunset at Tofino</span>
+
 As I was picking up freelancing gigs, I got serious about travelling.
 @romansnitko told me that he was going to live in Thailand for 6 months, and
 invited me to go. When he was there last time, he rented a new vacation condo
@@ -185,7 +194,7 @@ The solution to the noise problem? Earplugs.
 
 # Taking Off
 
-In December, I ended the lease to my much beloved apartment, and moved back
+In December, I ended the lease to my beloved apartment, and moved back
 home. Living with my parents, I thought, would give me the extra motivation to
 move on with my life. Indeed, it was dreadful moving back. I was ready to do
 everything I could to get the hell out.
@@ -209,6 +218,10 @@ could take a week off to adjust when I got to Thailand.
 On Janunary 25th, I took off.
 
 # On The Road
+
+![Mount Hua Plank Walk](http://a2.sphotos.ak.fbcdn.net/hphotos-ak-snc6/269121_223365577695092_100000649534996_742558_8365642_n.jpg?dl=1)
+
+<span class="caption"> Plank Walk at Mount Hua. I waz there! </span>
 
 In 9 months, I've been to Thailand, Hong Kong, Cambodia, China, Korea, and
 Malaysia. The pace of my travelling is slow compared to others. A couple I met
@@ -257,3 +270,6 @@ always seems to work out fine in the end, one thing leading to another.
 
 In this godless age, with the absence of providence, this is perhaps one sort of
 faith we can have. Have faith in life, that it would turn out alright. _Que Sera Sera._
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/tnmrIK1paSs" frameborder="0">
+</iframe>
