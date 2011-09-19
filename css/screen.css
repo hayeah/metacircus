@@ -235,6 +235,11 @@ ul.posts {
     font-style: italic;
 }
 
+#post .followme {
+	font-size: 1.3em;
+	font-style: italic;
+}
+
 .tweet_this {
   height: 1em;
   margin-bottom: 2em;
