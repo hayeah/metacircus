@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-09-19T23:27:57+08:00</updated>
+ <updated>2011-10-17T15:27:55+07:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -13,9 +13,71 @@
 
  
  <entry>
+   <title>The One Item TODO List</title>
+   <link href="http://www.metacircus.com/writings/2011/10/17/one-item-todo-list.html"/>
+   <updated>2011-10-17T00:00:00+07:00</updated>
+   <id>http://www.metacircus.com/writings/2011/10/17/one-item-todo-list</id>
+   <content type="html">&lt;p&gt;I fail at TODO list. Every time I tried I failed in the same way. It would work at first, and I&amp;#8217;d feel good about the initial rush of productivity increase (real or delusional). Then inevitably the list would get bigger, with stale items left in it like rotten fruits. Eventually I&amp;#8217;d abandon my TODO list.&lt;/p&gt;
+
+&lt;p&gt;Maybe you feel the same.&lt;/p&gt;
+
+&lt;p&gt;The key, I think, is to realize how fallible I am. Since my &lt;a href='http://www.nytimes.com/2008/04/02/opinion/02aamodt.htm'&gt;will power is weak and limited&lt;/a&gt;, I have to be efficient with its use. I can&amp;#8217;t afford to use any of it to fight my TODO list. My productivity system needs to be as simple as possible.&lt;/p&gt;
+
+&lt;p&gt;It should be as if it doesn&amp;#8217;t exist.&lt;/p&gt;
+
+&lt;h1 id='daily_action'&gt;Daily Action&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Every night before I go to sleep, I decide what I want to do the next day&lt;/strong&gt;. Out of the dozens of things I want/need/anxious to do, I&amp;#8217;d pick one. Just one. The next day I&amp;#8217;d focus myself doing it. &lt;em&gt;Everything else I let go&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#8217;s it.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#8217;t need to write a &lt;a href='http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/ref=sr_1_1?ie=UTF8&amp;amp;qid=1318836563&amp;amp;sr=8-1'&gt;National Bestselling Book&lt;/a&gt; about The System&amp;#8482;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve found that it helps to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rephrase the goal as an action&lt;/strong&gt;. Instead of saying &amp;#8220;practice Lean Startup methodology&amp;#8221;, say &amp;#8220;A/B test font-size to see if it increases Twitter following conversion rate&amp;#8221;.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Be specific&lt;/strong&gt;. Instead of &amp;#8220;write a blog post&amp;#8221;, set the goal to be &amp;#8220;write a 500 words blog post about the one item todo list&amp;#8221;.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Have a clear ending&lt;/strong&gt;. Instead of &amp;#8220;learn iPhone programming&amp;#8221;, say &amp;#8220;read 2 chapters from Beginning iPhone Programming&amp;#8221;.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Be conservative&lt;/strong&gt;. It is more important to succeed than to be ambitious. We often overestimate how much we can do in a day, but underestimate what we can accomplish in a year. &lt;em&gt;If you consistently succeed, you are more likely to stick to it&lt;/em&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Write the action down&lt;/strong&gt;. The physical action of writing it down helps to clarify the action. Your action might be clear in your head, but when you try to write it down you might realize, &amp;#8220;oh, it&amp;#8217;s not specific enough&amp;#8221;, or &amp;#8220;oh, it&amp;#8217;s not actually actionable&amp;#8221;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id='in_the_unlikely_event_of_failure'&gt;In The Unlikely Event of Failure&amp;#8230;&lt;/h1&gt;
+
+&lt;p&gt;You will fail. Some days you will fail to finish your action. For days at a time, you might fail to follow the system. A productivity system needs be resilient to failure because failure is inevitable.&lt;/p&gt;
+
+&lt;p&gt;What do you do if you failed to finish your daily action? Don&amp;#8217;t panic. Don&amp;#8217;t feel guilty. It is easy to recover. You have a few options for the next day:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Set the same todo&lt;/strong&gt;. Sometime I&amp;#8217;d forget about the daily todo and do something else altogether. That&amp;#8217;s ok. If I still consider the todo my top priority, I&amp;#8217;ll do that the next day.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Set a smaller todo&lt;/strong&gt;. Maybe I tried to finish it, but failed. I&amp;#8217;d make a smaller todo. If I failed to finish a blog post, the next day I might want to &amp;#8220;finish the outline for the blog post on topic X&amp;#8221;.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Reprioritize&lt;/strong&gt;. Maybe something else becomes more important, then the next day I&amp;#8217;d do that.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Give up&lt;/strong&gt;. Maybe again and again I&amp;#8217;d fail to finish a todo, and I&amp;#8217;d become angry and frustrated. It happens sometimes. In which case, it is better to simply leave it unfinished. Just move on to something else.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id='the_anxiety_of_focus'&gt;The Anxiety of Focus&lt;/h1&gt;
+
+&lt;p&gt;There&amp;#8217;s a strange anxiety when you limit yourself to only one action a day. What if I finish my TODO too early? What do I do with the rest of the day? &lt;em&gt;What if I succeed?&lt;/em&gt; This is the pscyhological paradox of focus.&lt;/p&gt;
+
+&lt;p&gt;Warren Buffet said that most people would be a better investor if they limit themselves to only 7 trades in their lives. But what if I miss out on a great investment opportunity in the recent Albertan oil sands?&lt;/p&gt;
+
+&lt;p&gt;Having just one action a day forces me to prioritize. When I finished, maybe it&amp;#8217;s better that I do nothing else for the rest of the day.&lt;/p&gt;
+
+&lt;p&gt;Read a nice poem or something.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>From The Office To Travelling The World</title>
    <link href="http://www.metacircus.com/writings/2011/09/19/from-the-office-to-travelling-the-world.html"/>
-   <updated>2011-09-19T00:00:00+08:00</updated>
+   <updated>2011-09-19T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2011/09/19/from-the-office-to-travelling-the-world</id>
    <content type="html">&lt;p&gt;&lt;img src='http://farm3.static.flickr.com/2444/3953133869_8b6b3e12c7.jpg' alt='My Office Building' /&gt; &lt;br /&gt; &lt;em&gt;My Office Building&lt;/em&gt;&lt;/p&gt;
 
@@ -146,7 +208,7 @@
  <entry>
    <title>6 Steps I Took From Idea To Launch</title>
    <link href="http://www.metacircus.com/hacking/2011/09/14/6-steps-i-took-from-idea-to-launch.html"/>
-   <updated>2011-09-14T00:00:00+08:00</updated>
+   <updated>2011-09-14T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2011/09/14/6-steps-i-took-from-idea-to-launch</id>
    <content type="html">&lt;p&gt;&lt;img src='http://farm3.static.flickr.com/2768/4460525589_783067f199.jpg' alt='wise old man' /&gt;&lt;/p&gt;
 
@@ -268,7 +330,7 @@
  <entry>
    <title>A Lispy Abuse of Ruby</title>
    <link href="http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html"/>
-   <updated>2011-09-07T00:00:00+08:00</updated>
+   <updated>2011-09-07T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax</id>
    <content type="html">&lt;p&gt;I wrote a dialect of Lisp in Ruby. I call it ComaLisp. It looks like,&lt;/p&gt;
 
@@ -407,7 +469,7 @@
  <entry>
    <title>Second Degree Homoiconicity</title>
    <link href="http://www.metacircus.com/hacking/2011/09/07/comalisp-second-degree-homoiconic.html"/>
-   <updated>2011-09-07T00:00:00+08:00</updated>
+   <updated>2011-09-07T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2011/09/07/comalisp-second-degree-homoiconic</id>
    <content type="html">&lt;p&gt;Is &lt;a href='http://metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html'&gt;ComaLisp&lt;/a&gt; homoiconic?&lt;/p&gt;
 
@@ -439,7 +501,7 @@
  <entry>
    <title>Happiness Begets Creativity</title>
    <link href="http://www.metacircus.com/writings/2011/09/04/happiness-begets-creativity.html"/>
-   <updated>2011-09-04T00:00:00+08:00</updated>
+   <updated>2011-09-04T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2011/09/04/happiness-begets-creativity</id>
    <content type="html">&lt;p&gt;Creativity is not constant. Some days I am happier than others, and those days ideas overrun me. The lead weight of self-consciousness is made buoyant by the lightness of heart. On creative days, I am not just lighter. I become weightless. I float.&lt;/p&gt;
 
@@ -457,7 +519,7 @@
  <entry>
    <title>Travelling is Slow Suicide</title>
    <link href="http://www.metacircus.com/writings/2011/08/24/travelling-is-slow-suicide.html"/>
-   <updated>2011-08-24T00:00:00+08:00</updated>
+   <updated>2011-08-24T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2011/08/24/travelling-is-slow-suicide</id>
    <content type="html">&lt;p&gt;Chatting, I said that &amp;#8220;选择长期旅行应该算是一种慢性自杀。环境的变化一点一滴地渗 透，而取代了原来的自我&amp;#8221;. Choosing long-term tavel is perhaps a kind of slow suicide. The changes in the environment slowly saturate me, and replace my original self bit by bit.&lt;/p&gt;
 
@@ -473,7 +535,7 @@
  <entry>
    <title>Playing Git Like A Violin</title>
    <link href="http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin.html"/>
-   <updated>2011-02-18T00:00:00+08:00</updated>
+   <updated>2011-02-18T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin</id>
    <content type="html">&lt;p&gt;People think that playing the violin is hard. But that&amp;#8217;s only when you are learning and practicing. When you are &lt;em&gt;actually&lt;/em&gt; playing, it&amp;#8217;s as natural as breathing. So it is with Git. After a couple years of use, and the help of a few aliases, my git usage now comes as easily as music from a familiar piece:&lt;/p&gt;
 
@@ -565,7 +627,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>Forest Song</title>
    <link href="http://www.metacircus.com/writings/2011/02/06/forest-song.html"/>
-   <updated>2011-02-06T00:00:00+08:00</updated>
+   <updated>2011-02-06T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2011/02/06/forest-song</id>
    <content type="html">&lt;p&gt;I dreamed of us as a tree, and my limbs growing into yours, and you swallowing me up with your embrace. This growth is driven by life, and binds us by life. And slowly we are dying, by growing into one.&lt;/p&gt;
 
@@ -577,7 +639,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>Who Brought Fire?</title>
    <link href="http://www.metacircus.com/writings/2010/05/22/who-brought-fire.html"/>
-   <updated>2010-05-22T00:00:00+08:00</updated>
+   <updated>2010-05-22T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/05/22/who-brought-fire</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Bread is the most everyday and familiar of foods, the sturdy staff of life on which hundreds of generations have leaned for sustenance. It also represents a truly remarkable discovery, a lively pole on which the young human imagination may well have vaulted forward in insight and inspiration. For our prehistoric ancestors it would have been a startling sign of the natural world&amp;#8217;s hidden potential for being transformed, and their own ability to shape natural materials to human desires. &amp;#8211; Harold McGee &lt;em&gt;On Food And Cooking&lt;/em&gt;&lt;/p&gt;
@@ -595,7 +657,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>Just One Thing</title>
    <link href="http://www.metacircus.com/writings/2010/04/20/one-thing.html"/>
-   <updated>2010-04-20T00:00:00+08:00</updated>
+   <updated>2010-04-20T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/20/one-thing</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;The greatest weight.&lt;/em&gt; What, if some day or night a demon were to steal afer you into your loneliest loneliness and say to you: &amp;#8220;This life as you now live it and have lived it, you will have to live once more and innumerable times more; and there will be nothing new in it, but every pain and every joy and every thought and sigh and everything unutterably small or great in your life will have to return to you, all in the same succession and sequence&amp;#8211; even this spider and this moonlight between the trees, and even this moment and I myself. The eternal hourglass of existence is turned upside down again and again, and your with it, speck of dust!&amp;#8221; Would you not throw yourself down and gnash your teeth and curse the demon who spoke thus? Or have you once experienced a tremendous moment when you would have answered him: &amp;#8220;You are a god and never have I heard anything more divine.&amp;#8221; If this thought gained posession of you, it would change you as you are or perhaps crush you. The question in each and every thing, &amp;#8220;Do you desire this once more and innumerable times more?&amp;#8221; would like upon your actions as the greatest weight. Or how well disposed would you have to become to yourself and to life to &lt;em&gt;crave nothing more fervently&lt;/em&gt; than this ultimate confirmation and seal? &amp;#8211; &lt;em&gt;The Gay Science&lt;/em&gt;, Aphorism 341&lt;/p&gt;
@@ -607,7 +669,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>What is The Opposite of a Fork?</title>
    <link href="http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork.html"/>
-   <updated>2010-04-19T00:00:00+08:00</updated>
+   <updated>2010-04-19T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork</id>
    <content type="html">&lt;p&gt;It is always tempting to think in dualistic terms: us vs them, black and white, dark and light, work and play, life and death, love and hate. It seems natural that for any X, there&amp;#8217;s always the opposite of X.&lt;/p&gt;
 
@@ -625,7 +687,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>PHP is Plenty Good</title>
    <link href="http://www.metacircus.com/hacking/2010/04/17/real-values.html"/>
-   <updated>2010-04-17T00:00:00+08:00</updated>
+   <updated>2010-04-17T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/17/real-values</id>
    <content type="html">&lt;p&gt;Many hackers I respect say how great Jon Bentley&amp;#8217;s &lt;a href='http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880'&gt;&lt;em&gt;Programming Pearls&lt;/em&gt;&lt;/a&gt; is. I finally bought my own copy, and it really is that good. I am reading column 6, &lt;em&gt;Perspective on Performance&lt;/em&gt;, which starts with a case study about optimizing the n-body problem, done by Andrew Appel. Initially, for n=10000, it would take a year, and at the end, it took less than a day, more than 400x improvement. I was so struck by the story, that I stopped reading, to quote the case in full:&lt;/p&gt;
 
@@ -671,7 +733,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>Rhetorical Rationality</title>
    <link href="http://www.metacircus.com/writings/2010/04/16/rhetorical-rationality.html"/>
-   <updated>2010-04-16T00:00:00+08:00</updated>
+   <updated>2010-04-16T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/16/rhetorical-rationality</id>
    <content type="html">&lt;p&gt;Thinking of ourselves as rational creatures, we often resort to rhetorical techniques to sound rational rather than putting in the effort to actually think. As David Hume pointed out, an argument is often invented after we have already decided on a conclusion. So an argument is rhetorical in the sense that it is designed to persuade so-called &amp;#8220;rational beings&amp;#8221;. We do not generally arrive at Truth via an argument.&lt;/p&gt;
 
@@ -727,7 +789,7 @@ g cm &amp;#39;a new commit&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>Proc.new And Lambda Are Only 99.9% the Same</title>
    <link href="http://www.metacircus.com/hacking/2010/04/13/Proc-new-and-lambda-are-only.html"/>
-   <updated>2010-04-13T00:00:00+08:00</updated>
+   <updated>2010-04-13T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/13/Proc-new-and-lambda-are-only</id>
    <content type="html">&lt;p&gt;Proc.new And Lambda Are Only 99.9% the Same. Which is to say, not at all the same. 99.9% of the time it&amp;#8217;s ok to use lambda, proc, and Proc.new interchangeably. So I do (shame on me).&lt;/p&gt;
 
@@ -792,7 +854,7 @@ b.call(3,4) # fails&lt;/code&gt;&lt;/pre&gt;
  <entry>
    <title>Exploring Ruby Internals with GDB and DTrace</title>
    <link href="http://www.metacircus.com/hacking/2010/04/11/exploring-ruby-internals.html"/>
-   <updated>2010-04-11T00:00:00+08:00</updated>
+   <updated>2010-04-11T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/11/exploring-ruby-internals</id>
    <content type="html">&lt;p&gt;It is always very hard to learn a large code base, especially initially, when there&amp;#8217;s not even a vague idea of how things fit into a structure. This overall picture of the code base is the crucial first step. After that, it becomes much easier to see an arbitrary fragment of code, and guess what it does.&lt;/p&gt;
 
@@ -910,7 +972,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  <entry>
    <title>Live It. And Dream Some More</title>
    <link href="http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche.html"/>
-   <updated>2010-04-07T00:00:00+08:00</updated>
+   <updated>2010-04-07T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche</id>
    <content type="html">&lt;p&gt;I always feel the pressure that I gotta be somewhere, I gotta do something, I gotta be somebody. Being goal-driven, there&amp;#8217;s always the sense that &lt;em&gt;something&lt;/em&gt;, when it is finally achieved, will provide a lasting satisfaction.&lt;/p&gt;
 
@@ -938,7 +1000,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  <entry>
    <title>Poor Shylock</title>
    <link href="http://www.metacircus.com/writings/2010/04/02/poor-shylock.html"/>
-   <updated>2010-04-02T00:00:00+08:00</updated>
+   <updated>2010-04-02T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/02/poor-shylock</id>
    <content type="html">&lt;p&gt;Greentea said that all my characters are depressed. Nothing good ever happens to them. All lonely, and never find love.&lt;/p&gt;
 
@@ -968,7 +1030,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  <entry>
    <title>Why Not?</title>
    <link href="http://www.metacircus.com/writings/2010/04/01/why-not.html"/>
-   <updated>2010-04-01T00:00:00+08:00</updated>
+   <updated>2010-04-01T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/01/why-not</id>
    <content type="html">&lt;p&gt;&lt;em&gt;They would never have met in life. But here they are, in death, sharing a bench at a deserted station, waiting for the train to come to take them away. A withered old man, and a young man in his 20s.&lt;/em&gt;&lt;/p&gt;
 
@@ -1146,7 +1208,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  <entry>
    <title>The Glass Chamber</title>
    <link href="http://www.metacircus.com/writings/2010/03/30/the-glass-chamber.html"/>
-   <updated>2010-03-30T00:00:00+08:00</updated>
+   <updated>2010-03-30T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2010/03/30/the-glass-chamber</id>
    <content type="html">&lt;p&gt;&lt;em&gt;I&amp;#8217;ve been told that if only we could hear each other, then we would fall in love. What separates us, always, isn&amp;#8217;t space, but vacuum. We can be close, yet never be together. We stand facing each other, but are incapable of seeing each other. So it is, we are doomed to eternal loneliness. Yearning for a love, clearly seen, within grasp, but separated by a glass wall.&lt;/em&gt;&lt;/p&gt;
 
@@ -1314,7 +1376,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  <entry>
    <title>Circle of Hope</title>
    <link href="http://www.metacircus.com/writings/2009/11/02/circle-of-hope.html"/>
-   <updated>2009-11-02T00:00:00+08:00</updated>
+   <updated>2009-11-02T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2009/11/02/circle-of-hope</id>
    <content type="html">&lt;p&gt;A daemon sat by himeslf crying, for he no longer could fly. There were still so many blessings and love in his charge to give, but he could no longer fly. The joy and happiness he must share, but could not, weighed heavily on his shoulders, anchoring him to Earth.&lt;/p&gt;
 &lt;p&gt;So the daemon of happiness and joy became known among the villagers for his profound sorrow. A river of tear ran through the village, springing from where he sat. But the water was too bitter for fish to thrive.&lt;/p&gt;
@@ -1334,7 +1396,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
  <entry>
    <title>Do You Believe in X?</title>
    <link href="http://www.metacircus.com/writings/2009/11/01/i-believe-in-x.html"/>
-   <updated>2009-11-01T00:00:00+08:00</updated>
+   <updated>2009-11-01T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2009/11/01/i-believe-in-x</id>
    <content type="html">&lt;p&gt;&lt;i&gt;There had been a long pause in the car. The silence between them was punctuated by occasional comments on random things, and questions more meant to be rhetorical than answered, as well as superficial agreements and disagreements to reassert their familiarty with each other. The words uttered were less meant to go through, than to hang about in the air, and let fade like incense.&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;A. Do you believe in X?&lt;/p&gt;
@@ -1401,7 +1463,7 @@ A. You are not making any sense at all.&lt;/p&gt;
  <entry>
    <title>Rant Lovely</title>
    <link href="http://www.metacircus.com/hacking/2009/04/15/rant-lovely.html"/>
-   <updated>2009-04-15T00:00:00+08:00</updated>
+   <updated>2009-04-15T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2009/04/15/rant-lovely</id>
    <content type="html">&lt;p&gt;I wrote a simple love letter generator with &lt;a href=&quot;http://github.com/hayeah/rantly/tree/master&quot;&gt;Rantly&lt;/a&gt;.&lt;/p&gt;
 &lt;div&gt;
@@ -1479,7 +1541,7 @@ each others' ears with shiny calm
  <entry>
    <title>Sinful QuickChecking in Ruby</title>
    <link href="http://www.metacircus.com/hacking/2009/04/10/look-ma-no-monads.html"/>
-   <updated>2009-04-10T00:00:00+08:00</updated>
+   <updated>2009-04-10T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2009/04/10/look-ma-no-monads</id>
    <content type="html">&lt;p&gt;In the first section, I&amp;#8217;ll rant about how hard it was to learn monads (tried to, anyway). The second section I&amp;#8217;ll write about &lt;a href=&quot;http://github.com/hayeah/rant/tree/master&quot;&gt;Rant&lt;/a&gt;, an &lt;strong&gt;imperative&lt;/strong&gt; random data generator and property checker inspired by &lt;a href=&quot;http://www.cs.chalmers.se/~rjmh/QuickCheck/&quot;&gt;Quickcheck&lt;/a&gt;. &lt;a href=&quot;http://rushcheck.rubyforge.org/&quot;&gt;Rushcheck&lt;/a&gt; is a more faithful port of Quickcheck by Daisuke Ikegami, as it uses the monadic style, and mostly the same operators.&lt;/p&gt;
 &lt;p&gt;Rant, in contrast, is full of sin.&lt;/p&gt;
@@ -1614,7 +1676,7 @@ WS.extend Test::Unit::Assertions&lt;/code&gt;&lt;br /&gt;
  <entry>
    <title>Does Ruby Dream An Eclectic Shell?</title>
    <link href="http://www.metacircus.com/hacking/2009/03/17/does-ruby-dream-a-shell.html"/>
-   <updated>2009-03-17T00:00:00+08:00</updated>
+   <updated>2009-03-17T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/hacking/2009/03/17/does-ruby-dream-a-shell</id>
    <content type="html">&lt;p&gt;Whenever I encounter something that sounds even slightly hard to do in Bash, I&amp;#8217;d think: &amp;#8220;hmmm, how do I do this in Bash? Oh, I know, I&amp;#8217;ll use Ruby.&amp;#8221; So I never actually bothered to learn Bash. Better for my sanity.&lt;/p&gt;
 &lt;p&gt;But sometimes in the depth of night, contemplating my eventual existential end, I&amp;#8217;d think to myself, hmmm, wouldn&amp;#8217;t it be nice to have a shell that&amp;#8217;s consistent, expressive, powerful, concise, and &lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;FUN&lt;/span&gt;&lt;/strong&gt; to use?&lt;/p&gt;
@@ -1708,7 +1770,7 @@ end&lt;/code&gt;&lt;br /&gt;
  <entry>
    <title>The Fullness of My Being</title>
    <link href="http://www.metacircus.com/writings/2008/11/30/how-you-see-the-fullness-of-my-being.html"/>
-   <updated>2008-11-30T00:00:00+08:00</updated>
+   <updated>2008-11-30T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/30/how-you-see-the-fullness-of-my-being</id>
    <content type="html">&lt;p&gt;I led her by her hands into the garden I have become. I had no idea why she wanted to see it– I knew the garden by heart, and there was nothing beautiful in it.&lt;/p&gt;
 &lt;p&gt;First, I took her to a flower patch near the edge of the garden. An ill tended patch of nameless, withering flowers. I thought she’d lose interest, so we can quickly get out of the garden. But she looked at it, and said, quietly, “it’s beautiful”.&lt;/p&gt;
@@ -1739,7 +1801,7 @@ end&lt;/code&gt;&lt;br /&gt;
  <entry>
    <title>When Imagination Falls Silent</title>
    <link href="http://www.metacircus.com/writings/2008/11/29/when-imagination-falls-silent.html"/>
-   <updated>2008-11-29T00:00:00+08:00</updated>
+   <updated>2008-11-29T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/29/when-imagination-falls-silent</id>
    <content type="html">&lt;p&gt;A ventriloquist was hopelessly in love with his wooden dummy. His wooden dummy was in love with him. At least that’s what he told me.&lt;/p&gt;
 &lt;p&gt;“But a dummy is a dummy! It doesn’t speak! It is you that speaks!” I tried to reason with his absurdity. He looked at me with some pity, as though he couldn’t comprehend my naivete, and said, “no one in the world knows her better than me.” And to prove it, he kissed her on the whorls of her cheeks. “See how she’s blushing,” he said triumphantly.&lt;/p&gt;
@@ -1768,7 +1830,7 @@ indifference any longer.&lt;/p&gt;
  <entry>
    <title>What Accompanies My Journey</title>
    <link href="http://www.metacircus.com/writings/2008/11/24/what-accompanies-my-journey.html"/>
-   <updated>2008-11-24T00:00:00+08:00</updated>
+   <updated>2008-11-24T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/24/what-accompanies-my-journey</id>
    <content type="html">&lt;p&gt;A centipede is hiking up a treadmill. He doesn’t know what for, but watching the counter going up makes him feel at the same time accomplished and urgent for more.&lt;/p&gt;
 &lt;p&gt;The centipede sometimes pauses to reflect what the counting up could mean. Maybe at 100,000 something would happen. (only 7,399 ticks away!)&lt;/p&gt;
@@ -1789,7 +1851,7 @@ indifference any longer.&lt;/p&gt;
  <entry>
    <title>Why I Became Wise</title>
    <link href="http://www.metacircus.com/writings/2008/11/17/why-i-became-wise.html"/>
-   <updated>2008-11-17T00:00:00+08:00</updated>
+   <updated>2008-11-17T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/17/why-i-became-wise</id>
    <content type="html">&lt;p&gt;A child was lost in the woods of my consciousness. A place populated&lt;br /&gt;
 by Wild Machineries and Wondering Beasts.&lt;/p&gt;
@@ -1821,7 +1883,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>How Loud My Hollowness Is</title>
    <link href="http://www.metacircus.com/writings/2008/11/12/how-loud-my-hollowness-is.html"/>
-   <updated>2008-11-12T00:00:00+08:00</updated>
+   <updated>2008-11-12T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/12/how-loud-my-hollowness-is</id>
    <content type="html">&lt;p&gt;I am a wonderfully written tome. Beautifully illustrated and meticulously typeset. I come in two volumes, choked full of epigrams, aphorisms, wit, and passages that break your heart, yet at the same time gladden your spirit.&lt;/p&gt;
 &lt;p&gt;I don’t need to be read.&lt;/p&gt;
@@ -1834,7 +1896,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>Why Play Pretend</title>
    <link href="http://www.metacircus.com/writings/2008/11/10/why-play-pretend.html"/>
-   <updated>2008-11-10T00:00:00+08:00</updated>
+   <updated>2008-11-10T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/10/why-play-pretend</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/img-2008-11-10-bookstore.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;I opened a bookstore in the hypothetical, deep in the mountain, and overlooking the sea. I have the books categorized according to feelings. Besides “Laughters”, I have “Warm and Fuzzy Feelings”. Besides “Loves for My Family”, I have “Vague Feelings of Inadequacy.”&lt;/p&gt;
@@ -1848,7 +1910,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>How To Say “I Love You”</title>
    <link href="http://www.metacircus.com/writings/2008/11/09/how-to-say-i-love-u.html"/>
-   <updated>2008-11-09T00:00:00+08:00</updated>
+   <updated>2008-11-09T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/09/how-to-say-i-love-u</id>
    <content type="html">&lt;p&gt;First, you must fast for twelve days and twelve nights. On the twelveth night, which coincides with the full moon, split open the throat of a fatten goat and offer its blood to the gods. Say your prayer, so you may become pious. But beware, say nothing of your love.&lt;/p&gt;
 &lt;p&gt;Then you must write a poem. It should be badly rhymed. It should contain two or three words you didn’t know before, and allusions to Greek Goddesses whose names you don’t know how to pronounce. The poem should talk about how beautiful flowers and birds are. But beware, say nothing of your love.&lt;/p&gt;
@@ -1863,7 +1925,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>Where I Find Loneliness</title>
    <link href="http://www.metacircus.com/writings/2008/11/08/where-i-find-loneliness.html"/>
-   <updated>2008-11-08T00:00:00+08:00</updated>
+   <updated>2008-11-08T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/08/where-i-find-loneliness</id>
    <content type="html">&lt;p&gt;Narcissistic people are lonely people.&lt;/p&gt;
 &lt;p&gt;I have a dear old friend, who takes a mirror with him wherever he goes. Every few seconds, he&amp;#8217;d glance into the mirror. Never long. Glances. Only to make sure that he&amp;#8217;s still there, the same familiar nose. He is deathly afraid that if he looks away for too long, he&amp;#8217;d forget who he is.&lt;/p&gt;
@@ -1875,7 +1937,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>Where My Secrets Are</title>
    <link href="http://www.metacircus.com/writings/2008/11/05/where-my-secrets-are.html"/>
-   <updated>2008-11-05T00:00:00+08:00</updated>
+   <updated>2008-11-05T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/05/where-my-secrets-are</id>
    <content type="html">&lt;p&gt;There are different ways to keep secrets.&lt;/p&gt;
 &lt;p&gt;When I am secretly in love with a girl, I&amp;#8217;d tell all her friends, and beg them never, not ever, to tell her.&lt;/p&gt;
@@ -1886,7 +1948,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>How I Know I Am In Loved</title>
    <link href="http://www.metacircus.com/writings/2008/11/03/how-i-know-i-am-in-loved.html"/>
-   <updated>2008-11-03T00:00:00+08:00</updated>
+   <updated>2008-11-03T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/03/how-i-know-i-am-in-loved</id>
    <content type="html">&lt;p&gt;When I am 80 years old, old and bald, I&amp;#8217;d clip a lock of her silver hair while she is sleeping (being careful not to wake her from her dream). And deep in the night, I&amp;#8217;d go see a fortune teller.&lt;/p&gt;
 &lt;p&gt;&amp;#8220;Who is she?&amp;#8221; I&amp;#8217;d ask the Gypsy Woman as I hand her one single strand of hair (I&amp;#8217;d be keeping most of it for myself). As I did that, I would have inadvertently shown her the name engraved on my ring. The Gypsy Woman would peer into her crystal ball, into my past, and say, &amp;#8220;she is your light.&amp;#8221; And she&amp;#8217;d be right.&lt;/p&gt;
@@ -1898,7 +1960,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>How I Got My Scar</title>
    <link href="http://www.metacircus.com/writings/2008/11/02/how-i-got-my-scar.html"/>
-   <updated>2008-11-02T00:00:00+08:00</updated>
+   <updated>2008-11-02T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/11/02/how-i-got-my-scar</id>
    <content type="html">&lt;p&gt;It was a sunny autumn day. I was sitting under a maple tree reading a book. She was resting her head on my thigh, her eyes closed, showering under the blueness of the sky.&lt;/p&gt;
 &lt;p&gt;She told my thigh a joke. It laughed so hard, it splitted open in the middle, and light shone out. She was startled. But my thigh kept laughing, and laughing. And the light grew more intense.&lt;/p&gt;
@@ -1909,7 +1971,7 @@ enough to float him into the air.&lt;/p&gt;
  <entry>
    <title>me and</title>
    <link href="http://www.metacircus.com/writings/2008/06/08/me-and.html"/>
-   <updated>2008-06-08T00:00:00+08:00</updated>
+   <updated>2008-06-08T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/06/08/me-and</id>
    <content type="html">&lt;p&gt;this is a poem i wrote &lt;br /&gt;
 for me and&lt;/p&gt;
@@ -1961,7 +2023,7 @@ a song of me&lt;/p&gt;
  <entry>
    <title>The Meditation of Urban Project X</title>
    <link href="http://www.metacircus.com/writings/2008/04/25/meditation-of-urban-x.html"/>
-   <updated>2008-04-25T00:00:00+08:00</updated>
+   <updated>2008-04-25T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/04/25/meditation-of-urban-x</id>
    <content type="html">&lt;p&gt;I see through the #2-e31 security camera at the West End of Tanglewood, a black man surrounded by police. The black man is holding a grocery bag; his image reflects off the sunglasses of the policemen as though in a house of horror. The policemen are emotionless, telling the man to stay calm. But the man is terrified by the dozen of his own image shouting back at himself. The time is Oct 21st, 1:34pm. The camera image is black and white.&lt;/p&gt;
 &lt;p&gt;I am Urban Project X, my citizens call me Urban X, or simply X. I am the 3rd largest City by population, 10th by area, 8th by crime rate, 1st by housing price inflation, 2nd by wealth, and 1st by the number of underground brothels in operation. I see myself and my citizens through the 850,000 cameras installed all over the city. More are added each day. These are the windows of my soul.&lt;/p&gt;
@@ -2005,7 +2067,7 @@ a song of me&lt;/p&gt;
  <entry>
    <title>Beautiful Happiness</title>
    <link href="http://www.metacircus.com/writings/2008/03/15/beautiful-happiness.html"/>
-   <updated>2008-03-15T00:00:00+08:00</updated>
+   <updated>2008-03-15T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/03/15/beautiful-happiness</id>
    <content type="html">&lt;p&gt;Monster Trucks are Beautiful.&lt;/p&gt;
 &lt;p&gt;Beauty is important to me. I never knew how to defend my sense of beauty, except with a childish tantrum, &amp;#8220;This is my sense of beauty, and if you disagree with me, you are an idiot&amp;#8221;. At the same time that I find certain objects beautiful, the image of a monster truck leaping over flatten cars imposes itself upon my mind.&lt;/p&gt;
@@ -2078,7 +2140,7 @@ Lispnik: &amp;#8220;Buddha is big, has hairy armpits, and laughs.&amp;#8221;&lt;
  <entry>
    <title>Self-Help for Emo Kids</title>
    <link href="http://www.metacircus.com/writings/2008/02/25/self-help-for-emo-kids.html"/>
-   <updated>2008-02-25T00:00:00+08:00</updated>
+   <updated>2008-02-25T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/02/25/self-help-for-emo-kids</id>
    <content type="html">&lt;p&gt;Do you feel bad that you are not fulfilling your full potential? Are there things you know you can do, but for one reason or another, you are not doing? Perhaps life is too demanding. Perhaps job is too draining. Perhaps love is too consuming. But deep down, you know you can &lt;i&gt;be&lt;/i&gt; much more. Right?&lt;/p&gt;
 &lt;p&gt;So you read self-help books.&lt;/p&gt;
@@ -2172,7 +2234,7 @@ Lispnik: &amp;#8220;Buddha is big, has hairy armpits, and laughs.&amp;#8221;&lt;
  <entry>
    <title>Be</title>
    <link href="http://www.metacircus.com/writings/2008/02/17/be.html"/>
-   <updated>2008-02-17T00:00:00+08:00</updated>
+   <updated>2008-02-17T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2008/02/17/be</id>
    <content type="html">&lt;p&gt;everything has been said&lt;br /&gt;
 nothing can be said&lt;br /&gt;
@@ -2206,7 +2268,7 @@ maybe.&lt;/p&gt;
  <entry>
    <title>Laugh With</title>
    <link href="http://www.metacircus.com/writings/2007/12/07/laugh-with.html"/>
-   <updated>2007-12-07T00:00:00+08:00</updated>
+   <updated>2007-12-07T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2007/12/07/laugh-with</id>
    <content type="html">&lt;p&gt;We laugh.&lt;/p&gt;
 &lt;p&gt;We laugh with friends. We laugh at others: the retarded, the deformed, the impoverished, and people of another race, religion, or nationality. At our most humble (or most pretentious) moment, we perhaps even laugh at ourselves. We sneer, scorn, and scoff. We grin, giggle, and guffaw. Comedy reveals a deeper meaning, yet we often find comedy in the meaningless. We find infinite shades of irony, sarcasm, and satire in the infinite varieties of human experience. Why do we laugh?&lt;/p&gt;
@@ -2245,7 +2307,7 @@ Wilson is an elegant writer. Thought provoking. Though after 30 years, it’s le
  <entry>
    <title>Coffin For Two</title>
    <link href="http://www.metacircus.com/writings/2007/05/13/coffin-for-two.html"/>
-   <updated>2007-05-13T00:00:00+08:00</updated>
+   <updated>2007-05-13T00:00:00+07:00</updated>
    <id>http://www.metacircus.com/writings/2007/05/13/coffin-for-two</id>
    <content type="html">&lt;p&gt;&lt;i&gt;An optimist and a pessimist buried in a coffin together. They lie facing each other. A candle burns between them.&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;A: The smell of earth.&lt;/p&gt;
