@@ -26,7 +26,7 @@ one. The next day I'd focus myself doing it. _Everything else I let go_.
 
 That's it.
 
-I don't need to write a
+You don't need to read a
 [National Bestselling Book](http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/ref=sr_1_1?ie=UTF8&qid=1318836563&sr=8-1)
 about The System&trade;.
 
