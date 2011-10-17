@@ -60,7 +60,7 @@ succeed?_ This is the pscyhological paradox of focus.
 
 Warren Buffet said that most people would be a better investor if they limit
 themselves to only 7 trades in their lives. But what if I miss out on a great
-investment opportunity in the recent Albertan oil sands?
+investment opportunity in the Albertan oil sands?
 
 Having just one action a day forces me to prioritize. When I finished, maybe
 it's better that I do nothing else for the rest of the day.
