@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The One Item TODO List
-tag: draft
+tag: thought
 ---
 
 I fail at TODO list. Every time I tried I failed in the same way. It would work
