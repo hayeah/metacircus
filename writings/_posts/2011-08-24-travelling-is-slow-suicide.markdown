@@ -9,8 +9,8 @@ Chatting, I said that "选择长期旅行应该算是一种慢性自杀。环境
 suicide. The changes in the environment slowly saturate me, and replace my
 original self bit by bit.
  
-I was baffled why people won't do anything to change their lives if they don't
-like it. Why won't they quit their jobs? They have the money, what are they
+I was baffled by why people wouldn't do anything to change their lives if they didn't
+like it. Why wouldn't they quit their jobs? They have the money, what are they
 afraid of? A friend asked me if I thought of that people may not want to travel
 like me. Which struck me as true.
  
