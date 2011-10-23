@@ -239,6 +239,14 @@ ul.posts {
  width: 70px;
 }
 
+#post hr {
+	margin: 1em 0;
+}
+
+#post ul, #post ol {
+	margin-bottom: 1em;
+}
+
 #post .caption {
     font-style: italic;
 }
@@ -300,7 +308,6 @@ ul.posts {
    
 #post p {
 	margin-top: 0em;
-	line-height: 1.3em;
 }
 
 #post .splash img {
