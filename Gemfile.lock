@@ -16,6 +16,7 @@ GEM
       directory_watcher (>= 1.1.1)
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
+    kramdown (0.13.3)
     launchy (2.0.5)
       addressable (~> 2.2.6)
     liquid (2.2.2)
@@ -37,5 +38,6 @@ DEPENDENCIES
   RedCloth
   heroku
   jekyll
+  kramdown
   rack
   rack-contrib
