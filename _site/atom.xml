@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-10-24T00:51:16-07:00</updated>
+ <updated>2011-10-24T00:56:55-07:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -92,7 +92,7 @@ scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Exercise: how do you make flet nestable? As in,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exercise&lt;/strong&gt;: how do you make flet nestable? As in,&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;flet&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fun1&lt;/span&gt;

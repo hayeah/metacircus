@@ -84,7 +84,7 @@ flet do
 end
 {% endhighlight %}
 
-Exercise: how do you make flet nestable? As in,
+__Exercise__: how do you make flet nestable? As in,
 
 {% highlight ruby %}
 flet do
