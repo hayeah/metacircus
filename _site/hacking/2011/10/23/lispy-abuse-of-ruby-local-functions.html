@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>
+     
+       Lispy Abuse of Ruby: Local Functions - Howard Yeh | Metacircus
+     
+   </title>
+   <meta name="author" content="Howard Yeh" />
+   
+   <link href="http://feeds2.feedburner.com/metacircus" rel="alternate" title="Metacircus" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <h1><a href="/">Metacircus <span class="name"> by Howard Yeh </span></a></h1>
+    <h2 class="meta">Words Are But Shattered Mirror of Thoughts</h2>
+  </div>
+
+  <div class="main">
+    <div id="post">
+  <h1 class='post-title'>Lispy Abuse of Ruby: Local Functions</h1>
+<p>If Ruby were a person, the court would put a restraining order prohibiting my
+appearance in her vicinity (I somehow think of Ruby as a girl). But since
+there&rsquo;s now law against it, I am free to bend and abuse her for my devious
+pleasures.</p>
+
+<p>Functional languages like Lisp and Haskell make it easy to define highly
+granular scopes. It&rsquo;s possible to define a local function, and restrict its
+scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:</p>
+
+<div class="highlight"><pre><code class="scheme"><span class="p">(</span><span class="k">let </span><span class="p">((</span><span class="nf">fun1</span> <span class="p">(</span><span class="k">lambda </span><span class="p">()</span> <span class="mi">1</span><span class="p">)))</span>
+  <span class="p">(</span><span class="nb">list </span><span class="p">(</span><span class="nf">fun1</span><span class="p">)</span> <span class="c1">; first element</span>
+        <span class="p">(</span><span class="k">let </span><span class="p">((</span><span class="nf">fun2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">()</span> <span class="mi">2</span><span class="p">)))</span> <span class="p">(</span><span class="nf">fun2</span><span class="p">))</span> <span class="c1">; second element</span>
+        <span class="p">))</span>
+        
+<span class="c1">;; =&gt; (list 1 2)</span>
+</code></pre>
+</div>
+
+<p>In this example, <code>fun1</code> is a helper method for building the list. And <code>fun2</code> is
+even more restrictive in scope. <code>fun2</code> is only available for building the second
+element of the list.</p>
+
+<p>Closer to home, you can do the same in Javascript:</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="kd">function</span> <span class="nx">fun1</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">1</span> <span class="p">};</span>
+  <span class="k">return</span> <span class="p">[</span><span class="nx">fun1</span><span class="p">(),</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">fun2</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">2</span> <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">fun2</span><span class="p">();</span>
+  <span class="p">})()];</span>
+<span class="p">})();</span>
+</code></pre>
+</div>
+
+<p>Unfortunately though, we need to create one anonymous function each time we want a
+scope <a href="#better">[1]</a>.</p>
+
+<p>In Ruby, this is as close as it gets,</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">test</span>
+ <span class="n">fun1</span> <span class="o">=</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="mi">1</span> <span class="p">}</span>
+ <span class="n">fun2</span> <span class="o">=</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="mi">2</span> <span class="p">}</span>
+ <span class="o">[</span><span class="n">fun1</span><span class="o">.</span><span class="p">(),</span><span class="n">fun2</span><span class="o">.</span><span class="p">()</span><span class="o">]</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<p>The scoping isn&rsquo;t right. And so clumsy. How can we do better?</p>
+
+<h1 id="bwahahahahahahahaha">Bwahahahahahahahaha~~~~~</h1>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">flet</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+  <span class="n">mod</span> <span class="o">=</span> <span class="no">Module</span><span class="o">.</span><span class="n">new</span>
+  <span class="n">mod</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+  <span class="n">mod</span><span class="o">.</span><span class="n">module_eval</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<p>This allows you to do something like</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">flet</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">fun1</span>
+    <span class="mi">1</span>
+  <span class="k">end</span>
+  <span class="o">[</span><span class="n">fun1</span><span class="p">,</span><span class="n">flet</span> <span class="k">do</span>
+     <span class="k">def</span> <span class="nf">fun2</span>
+       <span class="mi">2</span>
+     <span class="k">end</span>
+     <span class="n">fun2</span>
+   <span class="k">end</span><span class="o">]</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<p>Exercise: how do you make flet nestable? As in,</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">flet</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">fun1</span>
+    <span class="mi">1</span>
+  <span class="k">end</span>
+  <span class="n">flet</span> <span class="k">do</span>
+    <span class="k">def</span> <span class="nf">fun2</span>
+      <span class="mi">2</span>
+    <span class="k">end</span>
+    <span class="o">[</span><span class="n">fun1</span><span class="p">,</span><span class="n">fun2</span><span class="o">]</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<p>Note that in this example <code>fun1</code> is called in the scope of the inner flet.</p>
+
+<p>Leave your answer in the comments ; )</p>
+
+<hr />
+
+<p><span id="better">[1]</span>
+It looks much better in CoffeeScript:</p>
+
+<div class="highlight"><pre><code class="coffeescript"><span class="p">(</span><span class="o">-&gt;</span>
+ <span class="nv">fun1 = </span><span class="o">-&gt;</span> <span class="mi">1</span>
+ <span class="p">[</span><span class="nx">fun1</span><span class="p">(),(</span><span class="o">-&gt;</span> <span class="p">(</span><span class="nv">fun2 = </span><span class="o">-&gt;</span> <span class="mi">2</span><span class="p">);</span> <span class="nx">fun2</span><span class="p">())()]</span>
+<span class="p">)</span>  
+</code></pre>
+</div>
+
+<p>OK&hellip; maybe not much better.</p>
+
+  <div id="sharebox">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Lispy Abuse of Ruby: Local Functions" data-count="vertical" data-via="hayeah">Tweet</a>
+  </div>
+
+  <p class="followme">
+    If you like my writing you should follow me on <a href="http://twitter.com/hayeah">Twitter</a>.
+  </p>
+</div>
+
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<div id="comments">
+  <a href="http://www.metacircus.com/hacking/2011/10/23/lispy-abuse-of-ruby-local-functions.html#disqus_thread">Comments</a>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/metacircus/embed.js"></script>
+  <noscript><a href="http://metacircus.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+  </div>
+
+  <div id="topbar">
+    <div class="nav">
+      <a href="/">home</a>
+      <a href="/about_howard_yeh.html">about</a>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <img title="Howard Yeh's Likeness" alt="Howard Yeh's Likeness" src="/images/howard-yeh.jpg"></img>
+        <p><b>Howard Yeh</b>. Thinker. Traveller. Entrepreneur. Hacker. Violinist. </p>
+        <p>
+          Howard is a Rails freelancer. He is now travelling the world, spending
+          less money than staying at home. After 6 months of travel, he saved more
+          money in the bank than when he started. Everything he owns fits in a 25L
+          backpack.
+          <a href="/about_howard_yeh.html">More</a>
+        </p>
+        <p class="follow">
+          <em>
+            You should <a href="http://twitter.com/hayeah"><b>follow me</b></a>
+            around the world.
+          </em>
+        </p>
+      </div>
+    
+
+    <div id="subscribe" class="section links">
+      <h3><img src="/images/feed-icon16x16.png"/>Subscribe</h3>
+      <a href="http://feeds2.feedburner.com/metacircus">Via RSS feed</a>
+      <a href="http://feedburner.google.com/fb/a/mailverify?uri=metacircus&amp;loc=en_US">Get updates by email</a>
+    </div>
+
+    <div id="contact" class="section links">
+      <h3>Contact Me</h3>
+      <a href="mailto:howard@metacircus.com">howard@metacircus.com</a>
+      <a href="http://twitter.com/hayeah">Follow me on <img src="/images/twitter.png"/> Twitter</a>
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="nav">
+      <a href="/">home</a>
+      <a href="/about_howard_yeh.html">about</a>
+    </div>
+    <div class="contact">
+      <p>
+        <b>Howard Yeh</b>
+        <br/>
+        <a href="mailto:howard@metacircus.com">howard@metacircus.com</a>
+        <br/>
+        <a href="http://twitter.com/hayeah"><b>@hayeah</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- GetClicky -->
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(66479153);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7576362-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metacircus/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+</body>
+</html>
