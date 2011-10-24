@@ -1,6 +1,6 @@
 ---
-layout: post
 title: A Lispy Abuse of Ruby
+layout: post
 ---
 
 I wrote a dialect of Lisp in Ruby. I call it ComaLisp. It looks like,
