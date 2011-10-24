@@ -31,4 +31,4 @@ I've found that it helps to:
 + __Be conservative__. It is more important to succeed than to be ambitious. We often overestimate how much we can do in a day, but underestimate what we can accomplish in a year. _If you consistently succeed, you are more likely to stick to it_.
 + __Write the action down__. The physical action of writing it down helps to clarify the action. Your action might be clear in your head, but when you try to write it down you might realize, "oh, it's not specific enough", or "oh, it's not actually actionable".
 
-Discuss on [HackerNews](http://news.ycombinator.com/edit?id=3151791)
+Discuss on [HackerNews](http://news.ycombinator.com/item?id=3151791)
