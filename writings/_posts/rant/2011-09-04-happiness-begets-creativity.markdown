@@ -29,6 +29,6 @@ moments make you happy.
 Who have you appreciated today?
 
 <span class='splash'>
- <img alt="Boy playing. Shanghai back alley." title="Boy playing. Shanghai back alley." src="http://i467.photobucket.com/albums/rr40/hdyeh2000/IMG_4838.jpg"></img>
+ <img alt="Boy playing. Shanghai back alley." title="Boy playing. Shanghai back alley." src="http://i467.photobucket.com/albums/rr40/hdyeh2000/IMG_4838.jpg"/>
  <i> Boy playing. Shanghai. </i>
 </span>

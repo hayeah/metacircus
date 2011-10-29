@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-10-24T14:59:00-07:00</updated>
+ <updated>2011-10-28T17:58:31-07:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -480,21 +480,21 @@ on learning the lean techniques, rather than accomplishing.&lt;/p&gt;
 extension to block &amp;ldquo;like&amp;rdquo; button&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#s1&quot;&gt; 1. Idea &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s2&quot;&gt; 2. MVP &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s3&quot;&gt; 3. Coding &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s4&quot;&gt; 4. Landing Page Design &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s5&quot;&gt; 5. Metrics &amp;amp; A/B Testing &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s6&quot;&gt; 6. Launch &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s7&quot;&gt; Stats   &lt;/a&gt;
-&amp;lt;/br&amp;gt;
+&lt;br /&gt;
 &lt;a href=&quot;#s8&quot;&gt; Conclusion   &lt;/a&gt;
-&amp;lt;/br&amp;gt;&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;s1&quot;&gt; 1. Idea &lt;/h1&gt;
 
@@ -896,7 +896,7 @@ moments make you happy.&lt;/p&gt;
 &lt;p&gt;Who have you appreciated today?&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;splash&quot;&gt;
- &lt;img alt=&quot;Boy playing. Shanghai back alley.&quot; title=&quot;Boy playing. Shanghai back alley.&quot; src=&quot;http://i467.photobucket.com/albums/rr40/hdyeh2000/IMG_4838.jpg&quot; /&gt;&amp;lt;/img&amp;gt;
+ &lt;img alt=&quot;Boy playing. Shanghai back alley.&quot; title=&quot;Boy playing. Shanghai back alley.&quot; src=&quot;http://i467.photobucket.com/albums/rr40/hdyeh2000/IMG_4838.jpg&quot; /&gt;
  &lt;i&gt; Boy playing. Shanghai. &lt;/i&gt;
 &lt;/span&gt;&lt;/p&gt;
 </content>

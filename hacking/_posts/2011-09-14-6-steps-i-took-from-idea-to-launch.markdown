@@ -33,21 +33,21 @@ What follows is what I did to launch _FaceOff_, a [Chrome
 extension to block "like" button](http://getFaceOff.com).
 
 <a href="#s1"> 1. Idea </a>
-</br>
+<br/>
 <a href="#s2"> 2. MVP </a>
-</br>
+<br/>
 <a href="#s3"> 3. Coding </a>
-</br>
+<br/>
 <a href="#s4"> 4. Landing Page Design </a>
-</br>
+<br/>
 <a href="#s5"> 5. Metrics &amp; A/B Testing </a>
-</br>
+<br/>
 <a href="#s6"> 6. Launch </a>
-</br>
+<br/>
 <a href="#s7"> Stats   </a>
-</br>
+<br/>
 <a href="#s8"> Conclusion   </a>
-</br>
+<br/>
 
 <h1 id="s1"> 1. Idea </h1>
 
