@@ -68,3 +68,4 @@ slide deck sticks too much to the party line, IMO. I liked James insight into
 company culture. IMVU is remarkable in its appetite for change and
 experimentation with its work processes.
 
+[Discuss on Hacker News](http://news.ycombinator.com/item?id=3171112)
