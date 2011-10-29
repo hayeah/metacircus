@@ -37,122 +37,96 @@
       (defun [:foo,:a,:b,:c] {
          (let [:d, 6] {
             (list a, b, c, d)})})
-      (list a, b, (foo 3, 4, 5))})})
-</code></pre>
+      (list a, b, (foo 3, 4, 5))})})</code></pre>
 
 <p>This is <strong>VALID</strong> Ruby syntax under 1.9! I kid you not.</p>
 
-<h2 id="i-have-a-confession-to-make">I have a confession to make</h2>
+<h2 id='i_have_a_confession_to_make'>I have a confession to make</h2>
 
-<p><img src="http://p.twimg.com/AYrd9DACAAIBr7F.png" alt="I Love Parens" /></p>
+<p><img src='http://p.twimg.com/AYrd9DACAAIBr7F.png' alt='I Love Parens' /></p>
 
-<p>I love Lisp&rsquo;s syntax. Or rather, the lack thereof. But people might not like
-such austere minimalism. So ComaLisp has braces and curlies, and a liberal
-sprinkling of commas. It is a delicious syntatic soup fortified with extra
-punctuation marks. Yum.</p>
+<p>I love Lisp&#8217;s syntax. Or rather, the lack thereof. But people might not like such austere minimalism. So ComaLisp has braces and curlies, and a liberal sprinkling of commas. It is a delicious syntatic soup fortified with extra punctuation marks. Yum.</p>
 
-<h2 id="install-comalisp">Install ComaLisp</h2>
+<h2 id='install_comalisp'>Install ComaLisp</h2>
 
-<pre><code>gem install comalisp
-</code></pre>
+<pre><code>gem install comalisp</code></pre>
 
 <p>Then in the IRB</p>
 
-<pre><code>require 'comalisp'
+<pre><code>require &#39;comalisp&#39;
 (ComaLisp {
-   (puts "hello world")
+   (puts &quot;hello world&quot;)
   })
-# "hello world"
-</code></pre>
+# &quot;hello world&quot;</code></pre>
 
 <p>Voila!</p>
 
-<h2 id="introduction-to-comalisp-list-algebra">Introduction To ComaLisp: List Algebra</h2>
+<h2 id='introduction_to_comalisp_list_algebra'>Introduction To ComaLisp: List Algebra</h2>
 
-<p>For the following examples, we assume that the code is run in the ComaLisp
-DSL context:</p>
+<p>For the following examples, we assume that the code is run in the ComaLisp DSL context:</p>
 
 <pre><code>(ComaLisp {
    ... code here ...
-  })
-</code></pre>
+  })</code></pre>
 
 <p>In ComaLisp, lists and conses are simply represented by array.</p>
 
-<pre><code>(list 1, 2, 3) # =&gt; [1,2,3]
-</code></pre>
+<pre><code>(list 1, 2, 3) # =&gt; [1,2,3]</code></pre>
 
-<p>However, the fact that lists are represented by arrays is an implementation
-detail. You can&rsquo;t rely on that. You should consider whatever returned by <code>list</code>
-as an abstract datatype, and only use the provided functions in ComaLisp to
-operate on lists. (More pain the better, right?)</p>
+<p>However, the fact that lists are represented by arrays is an implementation detail. You can&#8217;t rely on that. You should consider whatever returned by <code>list</code> as an abstract datatype, and only use the provided functions in ComaLisp to operate on lists. (More pain the better, right?)</p>
 
-<p>The good old <code>car</code> and <code>cdr</code> work as you&rsquo;d expect.</p>
+<p>The good old <code>car</code> and <code>cdr</code> work as you&#8217;d expect.</p>
 
 <pre><code>(car (list 1, 2, 3)) == 1
-(cdr (list 1, 2, 3)) == (list 2, 3) == [2,3]
-</code></pre>
+(cdr (list 1, 2, 3)) == (list 2, 3) == [2,3]</code></pre>
 
 <p>We can add a new element onto the list by using <code>cons</code>.</p>
 
-<pre><code>(cons 1, (list 2, 3)) == (list 1, 2, 3) == [1,2,3]
-</code></pre>
+<pre><code>(cons 1, (list 2, 3)) == (list 1, 2, 3) == [1,2,3]</code></pre>
 
-<p>Now, the perennial question when designing a Lisp dialect, what is the empty
-list? I decided to use <code>[]</code> as the empty list, not nil. This way the list/cons
-algebra works out.</p>
+<p>Now, the perennial question when designing a Lisp dialect, what is the empty list? I decided to use <code>[]</code> as the empty list, not nil. This way the list/cons algebra works out.</p>
 
 <pre><code># the empty list is []
 (list) == []
 # the empty list is a fixpoint for car
 (car (list)) == (car (car (list))) == ... == []
 # the empty list is a fixpoint for cdr
-(cdr (list)) == (cdr (cdr (list))) == ... == []
-</code></pre>
+(cdr (list)) == (cdr (cdr (list))) == ... == []</code></pre>
 
-<p>However, because the list is represented by an array, it&rsquo;s not possible to have
-an improper list like in a real Lisp.</p>
+<p>However, because the list is represented by an array, it&#8217;s not possible to have an improper list like in a real Lisp.</p>
 
-<pre><code>(cons 1 2) =&gt; '(1 . 2) # not possible
-</code></pre>
+<pre><code>(cons 1 2) =&gt; &#39;(1 . 2) # not possible</code></pre>
 
 <p>In ComaLisp, the second argument to cons <em>must</em> be a list</p>
 
-<pre><code>(cons 1, (list))
-</code></pre>
+<pre><code>(cons 1, (list))</code></pre>
 
-<h2 id="declare-local-variables">Declare Local Variables</h2>
+<h2 id='declare_local_variables'>Declare Local Variables</h2>
 
-<p>Although ComaLisp is 100% compatible with Ruby, and you can use local variables
-just as in Ruby, that would be cheating. Use <code>let</code> to declare variables in
-ComaLisp!</p>
+<p>Although ComaLisp is 100% compatible with Ruby, and you can use local variables just as in Ruby, that would be cheating. Use <code>let</code> to declare variables in ComaLisp!</p>
 
 <pre><code>(let [:a,1],[:b,2] {
-  (list a,b)}) == (list 1, 2)
-</code></pre>
+  (list a,b)}) == (list 1, 2)</code></pre>
 
 <p>Each let defines a new scope. You can shadow variables with nested lets.</p>
 
 <pre><code>(let [:a,1], [:b,2] {
   (let [:a,3] {
      (list a, b)
-   })}) == (list 3, 2)
-</code></pre>
+   })}) == (list 3, 2)</code></pre>
 
-<h2 id="define-function">Define Function</h2>
+<h2 id='define_function'>Define Function</h2>
 
-<p>Here&rsquo;s how you define a function in ComaLisp</p>
+<p>Here&#8217;s how you define a function in ComaLisp</p>
 
 <pre><code>(ComaLisp {
   (defun [:foo,:a,:b] {
      (list a, b)})
-  (foo 1, 2)}) == (list 1, 2)
-</code></pre>
+  (foo 1, 2)}) == (list 1, 2)</code></pre>
 
-<h2 id="invoking-function">Invoking Function</h2>
+<h2 id='invoking_function'>Invoking Function</h2>
 
-<p>ComaLisp, being a functional language, allows you to apply functions
-dynamically.</p>
+<p>ComaLisp, being a functional language, allows you to apply functions dynamically.</p>
 
 <pre><code># call
 (ComaLisp {
@@ -164,32 +138,30 @@ dynamically.</p>
 (ComaLisp {
   (defun [:foo,:a,:b] {
      (list a, b)})
-  (apply :foo, [1, 2])}) == (list 1, 2)
-</code></pre>
+  (apply :foo, [1, 2])}) == (list 1, 2)</code></pre>
 
-<h2 id="oop-integration-with-ruby">OOP Integration With Ruby</h2>
+<h2 id='oop_integration_with_ruby'>OOP Integration With Ruby</h2>
 
-<p>The best that ComaLisp has to offer is probably its tight integration with
-Ruby&rsquo;s powerful object system. If you have a native Ruby object, you can invoke
-its methods the Lisp way,</p>
+<p>The best that ComaLisp has to offer is probably its tight integration with Ruby&#8217;s powerful object system. If you have a native Ruby object, you can invoke its methods the Lisp way,</p>
 
 <pre><code>(map [-1,-2,-3] { |e|
-  (abs e)}) == [1,2,3]
-</code></pre>
+  (abs e)}) == [1,2,3]</code></pre>
 
-<h2 id="what-to-hack-on">What To Hack On</h2>
+<h2 id='what_to_hack_on'>What To Hack On</h2>
 
-<p>If you find this interesting, feel free to fork <a href="https://github.com/hayeah/ComaLisp">ComaLisp</a>. Two things you can hack on:</p>
+<p>If you find this interesting, feel free to fork <a href='https://github.com/hayeah/ComaLisp'>ComaLisp</a>. Two things you can hack on:</p>
 
 <ol>
-  <li>Use method_missing to generate cadr, caar, cdar, cadr, etc.</li>
-  <li>ComaLisp lacks a macro system.</li>
-  <li>A REPL for ComaLisp</li>
-  <li>Port ComaLisp to JRuby, Rubinius, etc.</li>
+<li>Use method_missing to generate cadr, caar, cdar, cadr, etc.</li>
+
+<li>ComaLisp lacks a macro system.</li>
+
+<li>A REPL for ComaLisp</li>
+
+<li>Port ComaLisp to JRuby, Rubinius, etc.</li>
 </ol>
 
-<p>What crazy ideas do you have for ComaLisp? <a href="http://news.ycombinator.com/item?id=2966859">Discuss on Hacker News</a>.</p>
-
+<p>What crazy ideas do you have for ComaLisp? <a href='http://news.ycombinator.com/item?id=2966859'>Discuss on Hacker News</a>.</p>
   <div id="sharebox">
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="A Lispy Abuse of Ruby" data-count="vertical" data-via="hayeah">Tweet</a>
   </div>
