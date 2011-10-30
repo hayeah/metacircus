@@ -38,3 +38,5 @@ coutless attempts. They are no prophets.
 The one person that seems oracular is Ron Conway. He doesn't sound very
 smart. Yet he is somehow always there, at the right place at the right time with
 the right people.
+
+[Discuss On Hacker News](http://news.ycombinator.com/item?id=3174530)
