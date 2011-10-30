@@ -4,13 +4,39 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2011-10-28T21:27:56-07:00</updated>
+ <updated>2011-10-30T00:37:50-07:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
    <email>hayeah@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Startup School 2011 Notes</title>
+   <link href="http://www.metacircus.com/startup/2011/10/29/startup-school-2011.html"/>
+   <updated>2011-10-29T00:00:00-07:00</updated>
+   <id>http://www.metacircus.com/startup/2011/10/29/startup-school-2011</id>
+   <content type="html">&lt;p&gt;I attended YCombinator&amp;#8217;s StartupSchool 2011. &lt;a href='/startup/sus2011.txt'&gt;You can download my notes here&lt;/a&gt;. Some memorable quotes:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Building a company is like baking a cake&amp;#8230; sometimes the eggs get on the roof.&lt;/em&gt; &lt;br /&gt;&amp;#8211; Marc Andreessen&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;There&amp;#8217;s nothing quite more permanent than a temporary business model.&lt;/em&gt; &lt;br /&gt;&amp;#8211; Matt Mullenweg&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You&amp;#8217;ll spend the next 5 years of your life on your startup, don&amp;#8217;t choose your idea lightly.&lt;/em&gt; &lt;br /&gt;&amp;#8211; Paul Graham&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;One of my more honest investors pulled me aside&amp;#8230;&lt;/em&gt; &lt;br /&gt;&amp;#8211; Max Levchin&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In your heads is the future of innovation.&lt;/em&gt; &lt;br /&gt;&amp;#8211; Ron Conway&lt;/p&gt;
+
+&lt;p&gt;I thought Mark Pincus&amp;#8217; interview with Jessica Livingston really brought these leaders of innovation back to human scale. Though Mark Pincus is dealing with problems a world away from what I am dealing with, he&amp;#8217;s nevertheless figuring things out as he goes, and fretting that he doesn&amp;#8217;t know how.&lt;/p&gt;
+
+&lt;p&gt;The common thread that binds all these entrepreneurs is how clueless they once were. They learned along the way. But even now they don&amp;#8217;t have a magic crystal ball to look into. They don&amp;#8217;t have an unerring instinct to guide them. They fret. They agonize over decisions. They make mistakes. They figure things out and learn.&lt;/p&gt;
+
+&lt;p&gt;They are tinkerers, supremely adapt at finding something that works after coutless attempts. They are no prophets.&lt;/p&gt;
+
+&lt;p&gt;The one person that seems oracular is Ron Conway. He doesn&amp;#8217;t sound very smart. Yet he is somehow always there, at the right place at the right time with the right people.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>The IMVU Story According To Its VP of Engineering</title>
