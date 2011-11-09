@@ -92,3 +92,5 @@ Google AdWords incentivize people to create relevant ads:
 > Brad Geddes - _Advanced Google AdWords_
 
 I think that's pretty cool.
+
+[On Hacker News](http://news.ycombinator.com/item?id=3216234)
