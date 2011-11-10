@@ -1,22 +1,11 @@
 (function() {
-  var track_links, tracking_context;
+  var track_links;
   $(function() {
-    track("visit");
+    track("view");
     return track_links();
   });
   window.track = function(name, properties, cb) {
-    properties = $.extend(tracking_context(), properties);
     return mpq.track(name, properties, cb);
-  };
-  tracking_context = function() {
-    var ctx, uri;
-    ctx = {};
-    if (document.referrer && document.referrer !== "") {
-      uri = parseUri(document.referrer);
-      ctx.referrer = uri.host;
-    }
-    ctx.path = document.location.pathname;
-    return ctx;
   };
   track_links = function() {
     return $("a").click(function() {

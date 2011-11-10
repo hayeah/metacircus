@@ -1,21 +1,10 @@
 $ ->
-  track("visit")
+  track("view")
   track_links()
 
 
 window.track = (name,properties,cb) ->
-  properties = $.extend tracking_context(), properties
   mpq.track(name,properties,cb)
-
-tracking_context = () ->
-  ctx = {}
-  if document.referrer && document.referrer != ""
-    uri = parseUri(document.referrer)
-    ctx.referrer = uri.host
-
-  ctx.path = document.location.pathname
-
-  ctx
 
 track_links = () ->
   $("a").click ->
