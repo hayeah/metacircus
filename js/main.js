@@ -1,22 +1,31 @@
 (function() {
-  var track_links;
+  var track_links, tracking_context;
   $(function() {
     track("view");
     return track_links();
   });
   window.track = function(name, properties, cb) {
-    return mpq.track(name, properties, cb);
+    return mpq.track(name, tracking_context(properties), cb);
   };
   track_links = function() {
-    return $("a").click(function() {
+    return $("a").each(function() {
       var a;
       a = $(this);
-      return track("link", {
+      return mpq.track_links(a, "link", tracking_context({
         text: a.text(),
         href: a.attr("href"),
         id: a.attr("id")
-      });
+      }));
     });
+  };
+  tracking_context = function(props) {
+    var ctx;
+    if (props == null) {
+      props = {};
+    }
+    ctx = {};
+    ctx.path = document.location.pathname;
+    return $.extend(ctx, props);
   };
   window.parseUri = function(str) {
     var i, m, o, uri;

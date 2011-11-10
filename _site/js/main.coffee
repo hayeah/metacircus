@@ -4,12 +4,17 @@ $ ->
 
 
 window.track = (name,properties,cb) ->
-  mpq.track(name,properties,cb)
+  mpq.track(name,tracking_context(properties),cb)
 
 track_links = () ->
-  $("a").click ->
+  $("a").each ->
     a = $(this)
-    track("link",text: a.text(),href: a.attr("href"),id: a.attr("id"))
+    mpq.track_links(a,"link",tracking_context({text: a.text(),href: a.attr("href"),id: a.attr("id")}))
+
+tracking_context = (props={}) ->
+  ctx = {}
+  ctx.path = document.location.pathname
+  $.extend ctx, props
 
 # http://blog.stevenlevithan.com/archives/parseuri?a=10&b=11
 window.parseUri = (str) ->
