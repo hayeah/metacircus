@@ -33,15 +33,27 @@
   <div class="main">
     <div id="post">
   <h1 class='post-title'>Proc.new And Lambda Are Only 99.9% the Same</h1>
-<p>Proc.new And Lambda Are Only 99.9% the Same. Which is to say, not at all the same. 99.9% of the time it&#8217;s ok to use lambda, proc, and Proc.new interchangeably. So I do (shame on me).</p>
+<p>Proc.new And Lambda Are Only 99.9% the Same. Which is to say, not at
+all the same. 99.9% of the time it&rsquo;s ok to use lambda, proc, and
+Proc.new interchangeably. So I do (shame on me).</p>
 
-<p>I prefer using lambda when I am doing functional style programming in Ruby, passing around many closures, because the syntax is less chunky than Proc.new. Trivial preference that shouldn&#8217;t matter.</p>
+<p>I prefer using lambda when I am doing functional style programming in
+Ruby, passing around many closures, because the syntax is less chunky
+than Proc.new. Trivial preference that shouldn&rsquo;t matter.</p>
 
 <p>Except that it does. And it hurts a lot when it does.</p>
 
-<p>Most of the time I get away with it&#8230; but Chinese has a lovely saying, a moral admonition, that &#8220;the more you walk the dark road, the more ghouls you <em>will</em> see.&#8221; So sooner or later I am bound to run into an edge case that makes my code to behave in unexpected ways.</p>
+<p>Most of the time I get away with it&hellip; but Chinese has a lovely
+saying, a moral admonition, that &ldquo;the more you walk the dark road, the
+more ghouls you <em>will</em> see.&rdquo; So sooner or later I am bound to run into
+an edge case that makes my code to behave in unexpected ways.</p>
 
-<p>This kind of bugs are especially insidious, since I&#8217;ve been conditioned (or, I&#8217;ve conditioned myself) to think that Proc.new and Lambda are the same. On some level I know they are different, of course, but I am so used to using them interchangeably, that there&#8217;s a lacuna in my vision that makes it hard to suspect the problem could arise from using Lambda instead of Proc.new, or vice versa.</p>
+<p>This kind of bugs are especially insidious, since I&rsquo;ve been
+conditioned (or, I&rsquo;ve conditioned myself) to think that Proc.new and
+Lambda are the same. On some level I know they are different, of
+course, but I am so used to using them interchangeably, that there&rsquo;s a
+lacuna in my vision that makes it hard to suspect the problem could
+arise from using Lambda instead of Proc.new, or vice versa.</p>
 
 <p>I had a recent bug that boils down to this:</p>
 
@@ -58,13 +70,22 @@ fn = lambda { |(a,b)| [a,b] }
 p test1(&amp;pr) # =&gt; [1,2]
 p test1(&amp;fn) # =&gt; [1,2]
 p test2(&amp;pr) # =&gt; [1,2]
-p test2(&amp;fn) # =&gt; wrong number of arguments (1 for 2) (ArgumentError)</code></pre>
+p test2(&amp;fn) # =&gt; wrong number of arguments (1 for 2) (ArgumentError)
+</code></pre>
 
-<p>Why doesn&#8217;t it work? It turns out that lambda is stricter than block about the argument list. The arity for both <code>fn</code> and <code>pr</code> is actually two. While a lambda complains, a Proc.new magically takes apart the array argument.</p>
+<p>Why doesn&rsquo;t it work? It turns out that lambda is stricter than block
+about the argument list. The arity for both <code>fn</code> and <code>pr</code> is actually
+two. While a lambda complains, a Proc.new magically takes apart the
+array argument.</p>
 
-<p>The weird part is, <code>fn</code> and <code>pr</code> behave the same way if they are <code>yield</code>ed to, but not when they are being <code>block.call</code>ed. Yay for random Ruby esoteric trivia.</p>
+<p>The weird part is, <code>fn</code> and <code>pr</code> behave the same way if they are
+<code>yield</code>ed to, but not when they are being <code>block.call</code>ed. Yay for
+random Ruby esoteric trivia.</p>
 
-<p><em>Bonus round</em>. We know that the <code>return</code> keyword returns from lambda, regardless of where lambda closure was created (unlike Proc.new, for which <code>return</code> always return from the method context where the Proc.new closure was created). But&#8230;</p>
+<p><em>Bonus round</em>. We know that the <code>return</code> keyword returns from lambda,
+regardless of where lambda closure was created (unlike Proc.new, for
+which <code>return</code> always return from the method context where the
+Proc.new closure was created). But&hellip;</p>
 
 <pre><code>def test1(&amp;block)
   block.call
@@ -76,21 +97,37 @@ def test2
   yield
 end
 
-test2(&amp;lambda { return }) # unexpected return (LocalJumpError)</code></pre>
+test2(&amp;lambda { return }) # unexpected return (LocalJumpError)
+</code></pre>
 
-<p>In this case, the return preserves its semantic if called via <code>block.call</code>, but not when <code>yield</code>ed, exactly the opposite as in the previous case. Pretty weird huh? That&#8217;ll be on Thursday&#8217;s quiz.</p>
+<p>In this case, the return preserves its semantic if called via
+<code>block.call</code>, but not when <code>yield</code>ed, exactly the opposite as in the
+previous case. Pretty weird huh? That&rsquo;ll be on Thursday&rsquo;s quiz.</p>
 
 <p>Now, for a trick question.</p>
 
 <pre><code>b = Proc.new { |(a,b)| [a,b] }
 b.call(1,2) # ok
-b.call(3,4) # fails</code></pre>
+b.call(3,4) # fails
+</code></pre>
 
-<p>Why does it fail? Hint, it&#8217;s fixed in Ruby1.9. And this bug I actually ran into in production code. It was not as balatant as this example, and involves indeterminism introduced by threads. So that was a lot of fun in the painful sense of the word, in the butt.</p>
+<p>Why does it fail? Hint, it&rsquo;s fixed in Ruby1.9. And this bug I actually
+ran into in production code. It was not as balatant as this example,
+and involves indeterminism introduced by threads. So that was a lot of
+fun in the painful sense of the word, in the butt.</p>
 
-<p>The moral of the story is that the Python Zen, TOOWTDI (There&#8217;s Only One Way To Do It), is a sage advice. But Ruby isn&#8217;t Python, as there are many ways to chunkify a bacon. So the responsibility is on us individually. If there&#8217;s no compelling reason to use one approach over the other, <em>always</em> (*) go with the same default.</p>
+<p>The moral of the story is that the Python Zen, TOOWTDI (There&rsquo;s Only
+One Way To Do It), is a sage advice. But Ruby isn&rsquo;t Python, as there
+are many ways to chunkify a bacon. So the responsibility is on us
+individually. If there&rsquo;s no compelling reason to use one approach over
+the other, <em>always</em> (*) go with the same default.</p>
 
-<p>(*) Confession: for a while, I only used <code>if</code>, and never <code>unless</code>. Srly. I&#8217;ve since given that up. This is a good example of Poe&#8217;s Law, &#8220;Without a winking smiley or other blatant display of humor, it is impossible to create a parody of Fundamentalism that SOMEONE won&#8217;t mistake for the real thing.&#8221;</p>
+<p>(*) Confession: for a while, I only used <code>if</code>, and never
+<code>unless</code>. Srly. I&rsquo;ve since given that up. This is a good example
+of Poe&rsquo;s Law, &ldquo;Without a winking smiley or other blatant display of
+humor, it is impossible to create a parody of Fundamentalism that
+SOMEONE won&rsquo;t mistake for the real thing.&rdquo;</p>
+
   <div id="sharebox">
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="Proc.new And Lambda Are Only 99.9% the Same" data-count="vertical" data-via="hayeah">Tweet</a>
   </div>

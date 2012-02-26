@@ -33,51 +33,69 @@
   <div class="main">
     <div id="post">
   <h1 class='post-title'>How Google Ad Ranking Maximizes Profit</h1>
-<p>Greed, as they say on Wall Street, is good. And that, for Google, is in fact <em>mathematically true</em>.</p>
+<p>Greed, as they say on Wall Street, is good. And that, for Google, is in fact
+<em>mathematically true</em>.</p>
 
-<p>I was reading <a href='http://certifiedknowledge.org/blog/'>Brad Geddes</a>&#8217;s book <a href='http://www.amazon.com/gp/product/0470500239/ref=as_li_ss_tl?ie=UTF8&amp;tag=metacircus-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0470500239'>Advanced Google AdWords</a>, to learn how to use AdWords. Naively (like me), you might think at first that it would make sense to put the highest bidder first. But no. Google ranks ads by CTR (click-through rate) * max CPC (cost per cick).</p>
+<p>I was reading <a href="http://certifiedknowledge.org/blog/">Brad Geddes</a>&rsquo;s book <a href="http://www.amazon.com/gp/product/0470500239/ref=as_li_ss_tl?ie=UTF8&amp;tag=metacircus-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0470500239">Advanced Google AdWords</a>,
+to learn how to use AdWords. Naively (like me), you might think at first
+that it would make sense to put the highest bidder first. But no. Google
+ranks ads by CTR (click-through rate) * max CPC (cost per cick).</p>
 
 <p>Why? <em>Because doing that maximizes profit.</em></p>
 
-<p>It makes sense if you think about it. If somebody is paying $100 per click for an ad, but doesn&#8217;t get any click, then Google makes nothing. But it wasn&#8217;t clear to me whether this ranking strategy is indeed <em>THE</em> mathematically optimal strategy.</p>
+<p>It makes sense if you think about it. If somebody is paying $100 per click for
+an ad, but doesn&rsquo;t get any click, then Google makes nothing. But it wasn&rsquo;t clear
+to me whether this ranking strategy is indeed <em>THE</em> mathematically optimal
+strategy.</p>
 
-<p>I am a nerd. So I couldn&#8217;t just let that slide by.</p>
+<p>I am a nerd. So I couldn&rsquo;t just let that slide by.</p>
 
 <p>I had to prove it.</p>
 
-<h1 id='sanity_check'>Sanity Check</h1>
+<h1 id="sanity-check">Sanity Check</h1>
 
-<p>So we want to prove that ranking by CTR * CPC maximizes profit. Before setting out to prove it, I did a quick sanity check so I wouldn&#8217;t go on a wild goose chase. Suppose there are two ads.</p>
+<p>So we want to prove that ranking by CTR * CPC maximizes profit. Before setting
+out to prove it, I did a quick sanity check so I wouldn&rsquo;t go on a wild goose
+chase. Suppose there are two ads.</p>
 
 <ul>
-<li>Zoloft. CTR = 50%. CPC = $10</li>
-
-<li>Prozac. CTR = 100%. CPC = $5</li>
+  <li>Zoloft. CTR = 50%. CPC = $10</li>
+  <li>Prozac. CTR = 100%. CPC = $5</li>
 </ul>
 
-<p>If there are 100 searches for anti-depressants, 50 would click on the Zoloft ad, and Google makes $500. Given the same 100 searches, 100 would click on the Prozac ad, and Google makes $500.</p>
+<p>If there are 100 searches for anti-depressants, 50 would click on the Zoloft ad,
+and Google makes $500. Given the same 100 searches, 100 would click on the
+Prozac ad, and Google makes $500.</p>
 
-<p>It&#8217;s a toss-up. If you randomly distribute traffic between these two ads, Google makes the same amount. There is no reason for Google to prefer one over the other. Playing around with the CTR and CPC of the ads by adjusting them up and down, it&#8217;s clear that the formula works.</p>
+<p>It&rsquo;s a toss-up. If you randomly distribute traffic between these two ads, Google
+makes the same amount. There is no reason for Google to prefer one over the
+other. Playing around with the CTR and CPC of the ads by adjusting them up and
+down, it&rsquo;s clear that the formula works.</p>
 
-<h1 id='the_proof'>The Proof</h1>
+<h1 id="the-proof">The Proof</h1>
 
-<p>Given that there are n ads ranked in order of CTR_n * CPC_n. Assume as given that the impressions received by these ads, N_n, is strictly decreasing (ad 1 is seen more than ad 2, and ad 2 is seen more than ad 3, etc&#8230;).</p>
+<p>Given that there are n ads ranked in order of CTR_n * CPC_n. Assume as given
+that the impressions received by these ads, N_n, is strictly decreasing (ad 1
+is seen more than ad 2, and ad 2 is seen more than ad 3, etc&hellip;).</p>
 
-<p>If this is not the optimal strategy, then there is an alternate ranking that would yield higher earning. Earning from some ad of rank n is</p>
+<p>If this is not the optimal strategy, then there is an alternate ranking that
+would yield higher earning. Earning from some ad of rank n is</p>
 
 <p>E_n = N_n * CTR_n * CPC_n</p>
 
-<p>Let&#8217;s rewrite CTR_n * CPC_n as P_n. So earning for the n-th ad would be</p>
+<p>Let&rsquo;s rewrite CTR_n * CPC_n as P_n. So earning for the n-th ad would be</p>
 
 <p>E_n = N_n * P_n</p>
 
-<p>For the said hypothesized alternate ranking, there should exist a pair of P_a and P_b such that a outranks b, but if we switch them, the total earning would increase. Or as an equation, there should be P_a, P_b (for a &gt; b) such that,</p>
+<p>For the said hypothesized alternate ranking, there should exist a pair of P_a
+and P_b such that a outranks b, but if we switch them, the total earning would
+increase. Or as an equation, there should be P_a, P_b (for a &gt; b) such that,</p>
 
 <p>(1) (N_a * P_b + N_b * P_a) &gt; (N_a * P_a + N_b * P_b)</p>
 
 <p>We want to show that this is impossible. By rearranging the terms,</p>
 
-<p>(2) (N_a * P_b - N_b * P_b) &gt; (N_a * P_a - N_b * P_a)</p>
+<p>(2) (N_a * P_b - N_b * P_b) &gt; (N_a * P_a -  N_b * P_a)</p>
 
 <p>Then factoring,</p>
 
@@ -87,23 +105,30 @@
 
 <p>(4) P_b &gt; P_a</p>
 
-<p>Which violates the given that P_a &gt; P_b for any a &gt; b. So (1) cannot be true for any pair of a,b. QED.</p>
+<p>Which violates the given that P_a &gt; P_b for any a &gt; b. So (1) cannot be true for
+any pair of a,b. QED.</p>
 
-<h1 id='when_i_was_10_i_thought_girls_are_gross'>When I Was 10, I Thought Girls Are Gross</h1>
+<h1 id="when-i-was-10-i-thought-girls-are-gross">When I Was 10, I Thought Girls Are Gross</h1>
 
-<p>I thought marketing is gross. I didn&#8217;t think that I&#8217;d enjoy learning about marketing. Why should I force somebody to buy my crap? Why should I become an <a href='http://godaddy.com'>expert pain in the ass</a>?</p>
+<p>I thought marketing is gross. I didn&rsquo;t think that I&rsquo;d enjoy learning about
+marketing. Why should I force somebody to buy my crap? Why should I become an
+<a href="http://godaddy.com">expert pain in the ass</a>?</p>
 
-<p>Marketing, like everything else, can be a force of good or evil. You can trick people into buying shit that doesn&#8217;t work. Or you can build something awesome, and tell people about it.</p>
+<p>Marketing, like everything else, can be a force of good or evil. You can trick
+people into buying shit that doesn&rsquo;t work. Or you can build something awesome,
+and tell people about it.</p>
 
 <p>Google AdWords incentivize people to create relevant ads:</p>
 
 <blockquote>
-<p>By incorporating a combination of both bid prices and how many clicks those ads received, Google managed to maximize how much they made on any single search results page. This simple change also created an environment where a small company with a more compelling offer could have its ad displayed higher in a [search result page] than a large national company who did not take the time to create relevant ads. Price no longer trumped relevancy. Having the most money did not ensure the most clicks or visibility. Advertisers had to choose keywords that were more relevant to their products and create ads to match. Brad Geddes - <em>Advanced Google AdWords</em></p>
+  <p>By incorporating a combination of both bid prices and how many clicks those ads received, Google managed to maximize how much they made on any single search results page. This simple change also created an environment where a small company with a more compelling offer could have its ad displayed higher in a [search result page] than a large national company who did not take the time to create relevant ads. Price no longer trumped relevancy. Having the most money did not ensure the most clicks or visibility. Advertisers had to choose keywords that were more relevant to their products and create ads to match.
+Brad Geddes - <em>Advanced Google AdWords</em></p>
 </blockquote>
 
-<p>I think that&#8217;s pretty cool.</p>
+<p>I think that&rsquo;s pretty cool.</p>
 
-<p><a href='http://news.ycombinator.com/item?id=3216234'>On Hacker News</a></p>
+<p><a href="http://news.ycombinator.com/item?id=3216234">On Hacker News</a></p>
+
   <div id="sharebox">
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="How Google Ad Ranking Maximizes Profit" data-count="vertical" data-via="hayeah">Tweet</a>
   </div>

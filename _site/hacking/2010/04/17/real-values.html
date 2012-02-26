@@ -33,45 +33,78 @@
   <div class="main">
     <div id="post">
   <h1 class='post-title'>PHP is Plenty Good</h1>
-<p>Many hackers I respect say how great Jon Bentley&#8217;s <a href='http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880'><em>Programming Pearls</em></a> is. I finally bought my own copy, and it really is that good. I am reading column 6, <em>Perspective on Performance</em>, which starts with a case study about optimizing the n-body problem, done by Andrew Appel. Initially, for n=10000, it would take a year, and at the end, it took less than a day, more than 400x improvement. I was so struck by the story, that I stopped reading, to quote the case in full:</p>
+<p>Many hackers I respect say how great Jon Bentley&rsquo;s <a href="http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880"><em>Programming
+Pearls</em></a>
+is. I finally bought my own copy, and it really is that good. I am
+reading column 6, <em>Perspective on Performance</em>, which starts with a
+case study about optimizing the n-body problem, done by Andrew
+Appel. Initially, for n=10000, it would take a year, and at the end,
+it took less than a day, more than 400x improvement. I was so struck
+by the story, that I stopped reading, to quote the case in full:</p>
 
 <ul>
-<li>
-<p><em>Algorithms and Data Structures.</em> Appel&#8217;s first priority was to find an efficient algorithm. He was able to reduce the O(n^2) cost per time step to O(n log n) by representing the physical objects as leaves in a binary tree; higher nodes represent clusters of objects. The force operating on a particular object can be approximated by the force exerted by the large clusters; Appel showed that this approximation does not bias the simulation. The tree has roughly log n levels, and the resulting O(n log n) algorithm is similar in spirit to the divide-and-conquer algorithm in Section 8.3. This change reduced the run time of the program by a factor of 12.</p>
-</li>
-
-<li>
-<p><em>Algorithm Tuning.</em> The simple algorithm always uses small time steps to handle the rare case that two particles come close to one another. The tree data structure allows such pairs to be recognized and handled by a special function. That doubles the time step size and thereby halves the run time of the program.</p>
-</li>
-
-<li>
-<p><em>Data Structure Reorganization.</em> The tree that represents the initial set of objects is quite poor at representing later sets. Reconfiguring the data structure at each time step costs a little time, but reduces the number of local calculations and thereby halves the total run time.</p>
-</li>
-
-<li>
-<p><em>Code Tuning.</em> Due to additional numerical accuracy provided by the tree, 64-bit double-precision floating point numbers could be replaced by 32-bit single-precision numbers; that change halved the run time. Profiling the program showed that 98 percent of the run time was spent in one function; rewriting that code in assembly language increased its speed by a factor of 2.5.</p>
-</li>
-
-<li>
-<p><em>Hardware.</em> After all the above changes, the program still required <strong>two days of time on a departmental machine that cost a quarter of a million dollars</strong>, and several runs of the program were desired. Appel therefore moved the program to a slightly more expensive machine equipped with a floating point accelerator, which halved its run time again.</p>
-</li>
+  <li>
+    <p><em>Algorithms and Data Structures.</em> Appel&rsquo;s first priority was to find an efficient algorithm. He was able to reduce the O(n^2) cost per time step to O(n log n) by representing the physical objects as leaves in a binary tree; higher nodes represent clusters of objects. The force operating on a particular object can be approximated by the force exerted by the large clusters; Appel showed that this approximation does not bias the simulation. The tree has roughly log n levels, and the resulting O(n log n) algorithm is similar in spirit to the divide-and-conquer algorithm in Section 8.3. This change reduced the run time of the program by a factor of 12.</p>
+  </li>
+  <li>
+    <p><em>Algorithm Tuning.</em> The simple algorithm always uses small time steps to handle the rare case that two particles come close to one another. The tree data structure allows such pairs to be recognized and handled by a special function. That doubles the time step size and thereby halves the run time of the program.</p>
+  </li>
+  <li>
+    <p><em>Data Structure Reorganization.</em> The tree that represents the initial set of objects is quite poor at representing later sets. Reconfiguring the data structure at each time step costs a little time, but reduces the number of local calculations and thereby halves the total run time.</p>
+  </li>
+  <li>
+    <p><em>Code Tuning.</em> Due to additional numerical accuracy provided by the tree, 64-bit double-precision floating point numbers could be replaced by 32-bit single-precision numbers; that change halved the run time. Profiling the program showed that 98 percent of the run time was spent in one function; rewriting that code in assembly language increased its speed by a factor of 2.5.</p>
+  </li>
+  <li>
+    <p><em>Hardware.</em> After all the above changes, the program still required <strong>two days of time on a departmental machine that cost a quarter of a million dollars</strong>, and several runs of the program were desired. Appel therefore moved the program to a slightly more expensive machine equipped with a floating point accelerator, which halved its run time again.</p>
+  </li>
 </ul>
 
-<p>End quote. <strong>QUARTER OF A MILLION DOLLARS</strong>! <em>1985 dollars</em>. That is amazing. The length to which Appel had gone for performance tuning had <em>REAL</em> values, not just some idle academic challenge.</p>
+<p>End quote. <strong>QUARTER OF A MILLION DOLLARS</strong>! <em>1985 dollars</em>.  That is
+amazing. The length to which Appel had gone for performance tuning had
+<em>REAL</em> values, not just some idle academic challenge.</p>
 
-<p>This case also reminds me to ask tough questions: what is it about what I do, how I do it, that has <em>ramifications in reality</em>?. How much value are my tests worth? How much value is my continuous integration setup? Do I have an expectation of what and how much feature X would give me, so at least I know if I had fallen short of that expectation.</p>
+<p>This case also reminds me to ask tough questions: what is it about
+what I do, how I do it, that has <em>ramifications in reality</em>?. How much
+value are my tests worth? How much value is my continuous integration
+setup? Do I have an expectation of what and how much feature X would
+give me, so at least I know if I had fallen short of that expectation.</p>
 
-<p>There are metrics that clearly matters. How much profit am I making? How fast is my audience growing? These are fine, hard facts. But I don&#8217;t even know where to begin to find out if the &#8220;intangibles&#8221; matter at all. How do I even know that my code is &#8220;maintainable&#8221;? What does it mean for my code to be &#8220;well tested&#8221;? I certainly have a sense of Beauty (without the scare-quotes), but again, can I afford Beauty?</p>
+<p>There are metrics that clearly matters. How much profit am I making?
+How fast is my audience growing? These are fine, hard facts. But I
+don&rsquo;t even know where to begin to find out if the &ldquo;intangibles&rdquo; matter
+at all. How do I even know that my code is &ldquo;maintainable&rdquo;? What does
+it mean for my code to be &ldquo;well tested&rdquo;? I certainly have a sense of
+Beauty (without the scare-quotes), but again, can I afford Beauty?</p>
 
-<p>Lacking any good evidence, perhaps all we have to go on is common sense. Beyond a certain point, whatever practice that we adopt can become a fetish. Does 100% test coverage matter? Most likely not. If absolute reliability is crucial, say nuclear reactor control, you don&#8217;t get reliability out of test coverage anyway. Reliability comes out of redundancy.</p>
+<p>Lacking any good evidence, perhaps all we have to go on is common
+sense. Beyond a certain point, whatever practice that we adopt can
+become a fetish. Does 100% test coverage matter? Most likely not. If
+absolute reliability is crucial, say nuclear reactor control, you
+don&rsquo;t get reliability out of test coverage anyway. Reliability comes
+out of redundancy.</p>
 
-<p>Some testing is surely good, so my common sense (qua experience) tells me, but when does it become a fetish? Does code metric matter? My common sense (qua maybe prejudice) says it&#8217;s bullshit.</p>
+<p>Some testing is surely good, so my common sense (qua experience) tells
+me, but when does it become a fetish? Does code metric matter? My
+common sense (qua maybe prejudice) says it&rsquo;s bullshit.</p>
 
-<p>For everything, there&#8217;s a point of diminishing return. Extreme programming&#8217;s motto is that if X is good, then more X the better. Testing is good, so test always. Which is obviously insane, but probably said to be provocative. Individually we have to decide when good enough is enough. Sometimes good is more than enough, so a waste of time.</p>
+<p>For everything, there&rsquo;s a point of diminishing return. Extreme
+programming&rsquo;s motto is that if X is good, then more X the
+better. Testing is good, so test always. Which is obviously insane,
+but probably said to be provocative. Individually we have to decide
+when good enough is enough. Sometimes good is more than enough, so a
+waste of time.</p>
 
-<p>And stepping out a bit, I have serious doubt that minute technical decisions matter. Programming anxieties such as how we mock objects, or if we are violating Single Responsibility Principle, or we have hard couplings, or a class has too many dependencies, or we violate the Law of Demeter&#8230; maybe none of it really matters.</p>
+<p>And stepping out a bit, I have serious doubt that minute technical
+decisions matter. Programming anxieties such as how we mock objects,
+or if we are violating Single Responsibility Principle, or we have
+hard couplings, or a class has too many dependencies, or we violate
+the Law of Demeter&hellip; maybe none of it really matters.</p>
 
-<p>What matters is to have your product out there for people to use. PHP is plenty good, and Ruby (or your favourite toy) won&#8217;t save you from shit business idea.</p>
+<p>What matters is to have your product out there for people to use. PHP
+is plenty good, and Ruby (or your favourite toy) won&rsquo;t save you from
+shit business idea.</p>
+
   <div id="sharebox">
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="PHP is Plenty Good" data-count="vertical" data-via="hayeah">Tweet</a>
   </div>

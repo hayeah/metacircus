@@ -33,89 +33,115 @@
   <div class="main">
     <div id="post">
   <h1 class='post-title'>Lispy Abuse of Ruby: Local Functions</h1>
-<p>If Ruby were a person, the court would put a restraining order prohibiting my appearance in her vicinity (I somehow think of Ruby as a girl). But since there&#8217;s now law against it, I am free to bend and abuse her for my devious pleasures.</p>
+<p>If Ruby were a person, the court would put a restraining order prohibiting my
+appearance in her vicinity (I somehow think of Ruby as a girl). But since
+there&rsquo;s now law against it, I am free to bend and abuse her for my devious
+pleasures.</p>
 
-<p>Functional languages like Lisp and Haskell make it easy to define highly granular scopes. It&#8217;s possible to define a local function, and restrict its scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:</p>
-<div class='highlight'><pre><code class='scheme'><span class='p'>(</span><span class='k'>let </span><span class='p'>((</span><span class='nf'>fun1</span> <span class='p'>(</span><span class='k'>lambda </span><span class='p'>()</span> <span class='mi'>1</span><span class='p'>)))</span>
-  <span class='p'>(</span><span class='nb'>list </span><span class='p'>(</span><span class='nf'>fun1</span><span class='p'>)</span> <span class='c1'>; first element</span>
-        <span class='p'>(</span><span class='k'>let </span><span class='p'>((</span><span class='nf'>fun2</span> <span class='p'>(</span><span class='k'>lambda </span><span class='p'>()</span> <span class='mi'>2</span><span class='p'>)))</span> <span class='p'>(</span><span class='nf'>fun2</span><span class='p'>))</span> <span class='c1'>; second element</span>
-        <span class='p'>))</span>
+<p>Functional languages like Lisp and Haskell make it easy to define highly
+granular scopes. It&rsquo;s possible to define a local function, and restrict its
+scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:</p>
+
+<div class="highlight"><pre><code class="scheme"><span class="p">(</span><span class="k">let </span><span class="p">((</span><span class="nf">fun1</span> <span class="p">(</span><span class="k">lambda </span><span class="p">()</span> <span class="mi">1</span><span class="p">)))</span>
+  <span class="p">(</span><span class="nb">list </span><span class="p">(</span><span class="nf">fun1</span><span class="p">)</span> <span class="c1">; first element</span>
+        <span class="p">(</span><span class="k">let </span><span class="p">((</span><span class="nf">fun2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">()</span> <span class="mi">2</span><span class="p">)))</span> <span class="p">(</span><span class="nf">fun2</span><span class="p">))</span> <span class="c1">; second element</span>
+        <span class="p">))</span>
         
-<span class='c1'>;; =&gt; (list 1 2)</span>
+<span class="c1">;; =&gt; (list 1 2)</span>
 </code></pre>
 </div>
-<p>In this example, <code>fun1</code> is a helper method for building the list. And <code>fun2</code> is even more restrictive in scope. <code>fun2</code> is only available for building the second element of the list.</p>
+
+<p>In this example, <code>fun1</code> is a helper method for building the list. And <code>fun2</code> is
+even more restrictive in scope. <code>fun2</code> is only available for building the second
+element of the list.</p>
 
 <p>Closer to home, you can do the same in Javascript:</p>
-<div class='highlight'><pre><code class='javascript'><span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
-  <span class='kd'>function</span> <span class='nx'>fun1</span><span class='p'>()</span> <span class='p'>{</span> <span class='k'>return</span> <span class='mi'>1</span> <span class='p'>};</span>
-  <span class='k'>return</span> <span class='p'>[</span><span class='nx'>fun1</span><span class='p'>(),</span> <span class='p'>(</span><span class='kd'>function</span> <span class='p'>()</span> <span class='p'>{</span>
-    <span class='kd'>function</span> <span class='nx'>fun2</span><span class='p'>()</span> <span class='p'>{</span> <span class='k'>return</span> <span class='mi'>2</span> <span class='p'>};</span>
-    <span class='k'>return</span> <span class='nx'>fun2</span><span class='p'>();</span>
-  <span class='p'>})()];</span>
-<span class='p'>})();</span>
+
+<div class="highlight"><pre><code class="javascript"><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="kd">function</span> <span class="nx">fun1</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">1</span> <span class="p">};</span>
+  <span class="k">return</span> <span class="p">[</span><span class="nx">fun1</span><span class="p">(),</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">fun2</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">2</span> <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">fun2</span><span class="p">();</span>
+  <span class="p">})()];</span>
+<span class="p">})();</span>
 </code></pre>
 </div>
-<p>Unfortunately though, we need to create one anonymous function each time we want a scope <a href='#better'>[1]</a>.</p>
+
+<p>Unfortunately though, we need to create one anonymous function each time we want a
+scope <a href="#better">[1]</a>.</p>
 
 <p>In Ruby, this is as close as it gets,</p>
-<div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>test</span>
- <span class='n'>fun1</span> <span class='o'>=</span> <span class='nb'>lambda</span> <span class='p'>{</span> <span class='mi'>1</span> <span class='p'>}</span>
- <span class='n'>fun2</span> <span class='o'>=</span> <span class='nb'>lambda</span> <span class='p'>{</span> <span class='mi'>2</span> <span class='p'>}</span>
- <span class='o'>[</span><span class='n'>fun1</span><span class='o'>.</span><span class='p'>(),</span><span class='n'>fun2</span><span class='o'>.</span><span class='p'>()</span><span class='o'>]</span>
-<span class='k'>end</span>
-</code></pre>
-</div>
-<p>The scoping isn&#8217;t right. And so clumsy. How can we do better?</p>
 
-<h1 id='bwahahahahahahahaha'>Bwahahahahahahahaha~~~~~</h1>
-<div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>flet</span><span class='p'>(</span><span class='o'>&amp;</span><span class='n'>block</span><span class='p'>)</span>
-  <span class='n'>mod</span> <span class='o'>=</span> <span class='no'>Module</span><span class='o'>.</span><span class='n'>new</span>
-  <span class='n'>mod</span><span class='o'>.</span><span class='n'>extend</span><span class='p'>(</span><span class='n'>mod</span><span class='p'>)</span>
-  <span class='n'>mod</span><span class='o'>.</span><span class='n'>module_eval</span><span class='p'>(</span><span class='o'>&amp;</span><span class='n'>block</span><span class='p'>)</span>
-<span class='k'>end</span>
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">test</span>
+ <span class="n">fun1</span> <span class="o">=</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="mi">1</span> <span class="p">}</span>
+ <span class="n">fun2</span> <span class="o">=</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="mi">2</span> <span class="p">}</span>
+ <span class="o">[</span><span class="n">fun1</span><span class="o">.</span><span class="p">(),</span><span class="n">fun2</span><span class="o">.</span><span class="p">()</span><span class="o">]</span>
+<span class="k">end</span>
 </code></pre>
 </div>
+
+<p>The scoping isn&rsquo;t right. And so clumsy. How can we do better?</p>
+
+<h1 id="bwahahahahahahahaha">Bwahahahahahahahaha~~~~~</h1>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">flet</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+  <span class="n">mod</span> <span class="o">=</span> <span class="no">Module</span><span class="o">.</span><span class="n">new</span>
+  <span class="n">mod</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+  <span class="n">mod</span><span class="o">.</span><span class="n">module_eval</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
 <p>This allows you to do something like</p>
-<div class='highlight'><pre><code class='ruby'><span class='n'>flet</span> <span class='k'>do</span>
-  <span class='k'>def</span> <span class='nf'>fun1</span>
-    <span class='mi'>1</span>
-  <span class='k'>end</span>
-  <span class='o'>[</span><span class='n'>fun1</span><span class='p'>,</span><span class='n'>flet</span> <span class='k'>do</span>
-     <span class='k'>def</span> <span class='nf'>fun2</span>
-       <span class='mi'>2</span>
-     <span class='k'>end</span>
-     <span class='n'>fun2</span>
-   <span class='k'>end</span><span class='o'>]</span>
-<span class='k'>end</span>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">flet</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">fun1</span>
+    <span class="mi">1</span>
+  <span class="k">end</span>
+  <span class="o">[</span><span class="n">fun1</span><span class="p">,</span><span class="n">flet</span> <span class="k">do</span>
+     <span class="k">def</span> <span class="nf">fun2</span>
+       <span class="mi">2</span>
+     <span class="k">end</span>
+     <span class="n">fun2</span>
+   <span class="k">end</span><span class="o">]</span>
+<span class="k">end</span>
 </code></pre>
 </div>
+
 <p><strong>Exercise</strong>: how do you make flet nestable? As in,</p>
-<div class='highlight'><pre><code class='ruby'><span class='n'>flet</span> <span class='k'>do</span>
-  <span class='k'>def</span> <span class='nf'>fun1</span>
-    <span class='mi'>1</span>
-  <span class='k'>end</span>
-  <span class='n'>flet</span> <span class='k'>do</span>
-    <span class='k'>def</span> <span class='nf'>fun2</span>
-      <span class='mi'>2</span>
-    <span class='k'>end</span>
-    <span class='o'>[</span><span class='n'>fun1</span><span class='p'>,</span><span class='n'>fun2</span><span class='o'>]</span>
-  <span class='k'>end</span>
-<span class='k'>end</span>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">flet</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">fun1</span>
+    <span class="mi">1</span>
+  <span class="k">end</span>
+  <span class="n">flet</span> <span class="k">do</span>
+    <span class="k">def</span> <span class="nf">fun2</span>
+      <span class="mi">2</span>
+    <span class="k">end</span>
+    <span class="o">[</span><span class="n">fun1</span><span class="p">,</span><span class="n">fun2</span><span class="o">]</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 </code></pre>
 </div>
+
 <p>Note that in this example <code>fun1</code> is called in the scope of the inner flet.</p>
 
 <p>Leave your answer in the comments ; )</p>
-<hr /><span id='better'>[1]</span>
-<p>It looks much better in CoffeeScript:</p>
-<div class='highlight'><pre><code class='coffeescript'><span class='p'>(</span><span class='o'>-&gt;</span>
- <span class='nv'>fun1 = </span><span class='o'>-&gt;</span> <span class='mi'>1</span>
- <span class='p'>[</span><span class='nx'>fun1</span><span class='p'>(),(</span><span class='o'>-&gt;</span> <span class='p'>(</span><span class='nv'>fun2 = </span><span class='o'>-&gt;</span> <span class='mi'>2</span><span class='p'>);</span> <span class='nx'>fun2</span><span class='p'>())()]</span>
-<span class='p'>)</span>  
+
+<hr />
+
+<p><span id="better">[1]</span>
+It looks much better in CoffeeScript:</p>
+
+<div class="highlight"><pre><code class="coffeescript"><span class="p">(</span><span class="o">-&gt;</span>
+ <span class="nv">fun1 = </span><span class="o">-&gt;</span> <span class="mi">1</span>
+ <span class="p">[</span><span class="nx">fun1</span><span class="p">(),(</span><span class="o">-&gt;</span> <span class="p">(</span><span class="nv">fun2 = </span><span class="o">-&gt;</span> <span class="mi">2</span><span class="p">);</span> <span class="nx">fun2</span><span class="p">())()]</span>
+<span class="p">)</span>  
 </code></pre>
 </div>
-<p>OK&#8230; maybe not much better.</p>
+
+<p>OK&hellip; maybe not much better.</p>
+
   <div id="sharebox">
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="Lispy Abuse of Ruby: Local Functions" data-count="vertical" data-via="hayeah">Tweet</a>
   </div>
