@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>
+     
+       Exploring Ruby Internals with GDB and DTrace - Howard Yeh | Metacircus
+     
+   </title>
+   <meta name="author" content="Howard Yeh" />
+   
+   <link href="http://feeds2.feedburner.com/metacircus" rel="alternate" title="Metacircus" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <script src="http://code.jquery.com/jquery-1.7.min.js" type="text/javascript"></script>
+   <script src="/js/main.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <h1><a href="/">Metacircus <span class="name"> by Howard Yeh </span></a></h1>
+    <h2 class="meta">Words Are But Shattered Mirror of Thoughts</h2>
+  </div>
+
+  <div class="main">
+    <div id="post">
+  <h1 class='post-title'>Exploring Ruby Internals with GDB and DTrace</h1>
+<p>It is always very hard to learn a large code base, especially
+initially, when there&rsquo;s not even a vague idea of how things fit into a
+structure. This overall picture of the code base is the crucial first
+step. After that, it becomes much easier to see an arbitrary fragment
+of code, and guess what it does.</p>
+
+<p>It is this first step that&rsquo;s the hardest. It is a gestalt process,
+where out of a sea of random information miraculously emerges
+understanding. I would pretty much pick a place, and start to randomly
+walk through the files, then hope for the best.</p>
+
+<p>It&rsquo;s hard. But GDB and DTrace can help! (Though now you have three
+problems instead of one.)</p>
+
+<h1 id="whats-going-on">What&rsquo;s Going On?</h1>
+
+<p>First, we need to figure out what&rsquo;s going on. The plan is to evaluate
+a Ruby expression, and let DTrace tell us what are involved. Let&rsquo;s
+just start the irb. We also want to know the pid of the irb, so DTrace
+and GDB can get a handle of it.</p>
+
+<pre><code>&gt; irb
+&gt; 1 + 1
+=&gt; 2 #win!
+&gt; Process.pid
+=&gt; 31415 # or whatever.
+</code></pre>
+
+<p>Now, we&rsquo;ll write a DTrace script to peek into it,</p>
+
+<pre><code># function_calls.d
+pid31415:ruby:rb_*:entry {
+  @obj[probefunc] = count();
+}
+</code></pre>
+
+<p>and run it in another terminal session,</p>
+
+<pre><code>&gt; sudo dtrace -s function_calls.d -p 31415
+dtrace: script 'object.d' matched 1175 probes
+# Go back to the irb and run stuff.
+# When you are happy, hit interrupt
+^C
+</code></pre>
+
+<p>and get a dump of all the ruby functions being called while evaluating
+the expression you typed into irb:</p>
+
+<pre><code>...
+rb_gc_force_recycle                                              76
+rb_ivar_get                                                     168
+rb_newobj                                                       199
+rb_call                                                         323
+rb_call0                                                        323
+rb_eval                                                         840
+</code></pre>
+
+<p>With this, we get a rough idea of what functions are important in the
+interpreter. Right off the bat, you know <code>rb_eval</code> is central to the
+interpreter. But <code>rb_gc_force_recycle</code>, what is that? Uh, NVM, let&rsquo;s
+keep going. How do I find <code>rb_eval</code>?</p>
+
+<p>Before you get greppy, let&rsquo;s go into GDB.</p>
+
+<pre><code>&gt; gdb ruby 31415
+(gdb) info func rb_eval
+All functions matching regular expression "rb_eval":
+File eval.c:
+VALUE rb_eval_cmd(VALUE, VALUE, int);
+VALUE rb_eval_string(const char *);
+VALUE rb_eval_string_protect(const char *, int *);
+VALUE rb_eval_string_wrap(const char *, int *);
+static VALUE rb_eval(VALUE, NODE *);
+(gdb)
+</code></pre>
+
+<p>Oh wow, and I know the type information too. And look, I also found
+out about <code>rb_eval_string</code>. I guess it evals a string?</p>
+
+<pre><code>(gdb) p rb_eval_string("false")
+$7 = 0  # uh, ok?
+(gdb) p rb_eval_string("true")
+$8 = 2  # hm, i guess it's a magic constant
+(gdb) p rb_eval_string("nil")
+$9 = 4  # another magic constant
+(gdb) p rb_eval_string("1")
+$10 = 3 # wtf?
+</code></pre>
+
+<p>Turns out that a Ruby <code>VALUE</code> is just a pointer type. If the least
+significant bit is 1, then it&rsquo;s an integer, if it&rsquo;s 0, then it&rsquo;s a
+ruby object. We shift right by one bit to get back the integer value.</p>
+
+<pre><code>(gdb) p rb_eval_string("10")
+$13 = 21
+(gdb) p rb_eval_string("5+5") &gt;&gt; 1
+$17 = 10
+</code></pre>
+
+<p>Yup. And 0 is false, 2 is true, nil is 4. These are common values, so
+it makes sense to use magic constants. In particular, false is 0,
+because more than just a convention, that helps with CPU&rsquo;s speculative
+execution (I guess?).</p>
+
+<p>I am curious about arrays too. No problem! No need to ask GOD, ask GDB.</p>
+
+<pre><code>(gdb) info func rb_array
+All functions matching regular expression "rb_array":
+(gdb) # oops. nothing? let me try again
+(gdb) info func rb_ary
+static VALUE rb_ary_transpose(VALUE);
+static VALUE rb_ary_uniq(VALUE);
+static VALUE rb_ary_uniq_bang(VALUE);
+static VALUE rb_ary_unshift_m(int, VALUE *, VALUE);
+static VALUE rb_ary_values_at(int, VALUE *, VALUE);
+static VALUE rb_ary_zip(int, VALUE *, VALUE);
+(gdb) # bingo!
+</code></pre>
+
+<p>I think it&rsquo;s pretty awesome that we can learn all this stuff without
+even going into the source code. Maybe by know you want to see some
+code?  Is it time now to download Ruby source, and fire up your
+favourite editor? Maybe not.</p>
+
+<pre><code>(gdb) list rb_eval
+2950
+2951    static VALUE
+2952    rb_eval(self, n)
+2953        VALUE self;
+2954        NODE *n;
+2955    {
+2956        NODE * volatile contnode = 0;
+2957        NODE * volatile node = n;
+2958        int state;
+2959        volatile VALUE result = Qnil;
+</code></pre>
+
+<p>Whoooo! I didn&rsquo;t even have to grep.</p>
+
+<p>Arthur C. Clarke said that any sufficiently advanced technology is
+indistinguishable from magic. Magic already took place some 25 years
+ago! GDB is like IRB on steroid for the Ruby internals on a pony.</p>
+
+<p>Now let&rsquo;s play around some more with DTrace! &hellip;</p>
+
+<p>But I am tired. I&rsquo;ll write about DTrace in a post.</p>
+
+
+  <div id="sharebox">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Exploring Ruby Internals with GDB and DTrace" data-count="vertical" data-via="hayeah">Tweet</a>
+  </div>
+
+  <p class="followme">
+    If you like my writing you should follow me on <a href="http://twitter.com/hayeah">Twitter</a>.
+  </p>
+</div>
+
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<div id="comments">
+  <a href="http://www.metacircus.com/hacking/2010/04/11/exploring-ruby-internals.html#disqus_thread">Comments</a>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/metacircus/embed.js"></script>
+  <noscript><a href="http://metacircus.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+  </div>
+
+  <div id="topbar">
+    <div class="nav">
+      <a href="/">home</a>
+      <a href="/about_howard_yeh.html">about</a>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <img title="Howard Yeh's Likeness" alt="Howard Yeh's Likeness" src="/images/howard-yeh.jpg"></img>
+        <p><b>Howard Yeh</b>. Thinker. Traveller. Entrepreneur. Hacker. Violinist. </p>
+        <p>
+          Howard is a Rails freelancer. He is now travelling the world, spending
+          less money than staying at home. After 6 months of travel, he saved more
+          money in the bank than when he started. Everything he owns fits in a 25L
+          backpack.
+          <a href="/about_howard_yeh.html">More</a>
+        </p>
+        <p class="follow">
+          <em>
+            You should <a href="http://twitter.com/hayeah"><b>follow me</b></a>
+            around the world.
+          </em>
+        </p>
+      </div>
+    
+
+    <div id="subscribe" class="section links">
+      <h3><img src="/images/feed-icon16x16.png"/>Subscribe</h3>
+      <a href="http://feeds2.feedburner.com/metacircus">Via RSS feed</a>
+      <a href="http://feedburner.google.com/fb/a/mailverify?uri=metacircus&amp;loc=en_US">Get updates by email</a>
+    </div>
+
+    <div id="contact" class="section links">
+      <h3>Contact Me</h3>
+      <a href="mailto:howard@metacircus.com">howard@metacircus.com</a>
+      <a href="http://twitter.com/hayeah">Follow me on <img src="/images/twitter.png"/> Twitter</a>
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="nav">
+      <a href="/">home</a>
+      <a href="/about_howard_yeh.html">about</a>
+    </div>
+    <div class="contact">
+      <p>
+        <b>Howard Yeh</b>
+        <br/>
+        <a href="mailto:howard@metacircus.com">howard@metacircus.com</a>
+        <br/>
+        <a href="http://twitter.com/hayeah"><b>@hayeah</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- GetClicky -->
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(66479153);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7576362-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- start Mixpanel -->
+<script type="text/javascript">var mpq=[];mpq.push(["init","f19e328b6691dea4d28df9fc3f01ad9d"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+</script>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metacircus/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+</body>
+</html>

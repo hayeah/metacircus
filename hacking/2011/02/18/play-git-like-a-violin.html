@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>
+     
+       Playing Git Like A Violin - Howard Yeh | Metacircus
+     
+   </title>
+   <meta name="author" content="Howard Yeh" />
+   
+   <link href="http://feeds2.feedburner.com/metacircus" rel="alternate" title="Metacircus" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <script src="http://code.jquery.com/jquery-1.7.min.js" type="text/javascript"></script>
+   <script src="/js/main.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <h1><a href="/">Metacircus <span class="name"> by Howard Yeh </span></a></h1>
+    <h2 class="meta">Words Are But Shattered Mirror of Thoughts</h2>
+  </div>
+
+  <div class="main">
+    <div id="post">
+  <h1 class='post-title'>Playing Git Like A Violin</h1>
+<p>People think that playing the violin is hard. But
+that&rsquo;s only when you are learning and
+practicing. When you are <em>actually</em> playing, it&rsquo;s
+as natural as breathing. So it is with Git. After
+a couple years of use, and the help of a few
+aliases, my git usage now comes as easily as music
+from a familiar piece:</p>
+
+<pre><code>git caa
+git ca
+git s
+git l
+git r1
+git rh 330183
+git s
+git d
+git cm 'a new commit'
+</code></pre>
+
+<p>All of us at one point or another kept a private
+cheat sheet of common git commands. I know I
+did. After a while, I gained enough experience
+with Git to know the common tasks that I do all
+the time. These common tasks I have created
+aliases for.</p>
+
+<p>Very often, after I&rsquo;ve made a commit, I&rsquo;d keep
+wanting to make small fixes to it, like fussing
+around with spaces, or renaming variables, or
+rewording the comments, or minor refactoring of
+the code. These changes are too small to worth
+their own commits (that would only clutter up the
+history). So I&rsquo;d rather if these changes belong to
+the commit I already have. I&rsquo;d do:</p>
+
+<pre><code>git commit -a --amend -C HEAD
+</code></pre>
+
+<p>This adds all the changes to the staging area, and
+commit it as an amendment to the previous commit,
+using the same commit message. Effectively, I am
+saying: &ldquo;put whatever I&rsquo;ve done into the previous
+commit.&rdquo;</p>
+
+<p>For this usage pattern, I have created an alias in
+my <code>~/.gitconfig</code>, like so:</p>
+
+<pre><code>[alias]
+  caa = commit -a --amend -C HEAD
+</code></pre>
+
+<p>Then ever after, I&rsquo;d type <code>git caa</code> whenever I
+wanted to do the same thing. Another pattern I use
+a lot is to create a commit for the changes I&rsquo;ve
+done, all in one step:</p>
+
+<pre><code>git commit -a -m 'commit message'
+</code></pre>
+
+<p>This I&rsquo;d create another alias:</p>
+
+<pre><code>[alias]
+  cma = commit -a -m
+</code></pre>
+
+<p>Then ever after, I&rsquo;d type <code>g cma</code>. 90% of the
+time, <code>git caa</code> and <code>git cma</code> cover my commit
+needs. If you ask me what they stand for, I
+honestly can&rsquo;t tell you, because these commands
+are so short, they are ingrained in my muscle
+memory. I don&rsquo;t think about what I am doing with
+Git, just as when I am playing an arpegio on the
+violin, I don&rsquo;t think about the notes
+individually.</p>
+
+<p>Here are all my git aliases. I hope you find some
+of them useful to integrate into your Git
+workflow.</p>
+
+<pre><code>[alias]
+  # I like using the interactive mode to make complex commits
+  ai = add --interactive
+
+  # All the aliases relate to commits. Note that
+  # they are grouped by common prefixes, so I don't
+  # confuse what I want done by accident.
+  c = commit
+  # commit with a message
+  cm = commit -m
+  cma = commit -a -m
+  # amending the previous commit
+  ca = commit --amend
+  caa = commit -a --amend -C HEAD
+
+  # reset
+  ## soft resets
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  ## hard resets
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh1 = reset HEAD^^ --hard
+
+  # shortcuts for commands
+  s = status
+  d = diff
+  a = add
+  co = checkout
+  b = branch
+  l = log
+  f = fetch
+  r = reset
+  p = push
+</code></pre>
+
+<p>Cherry on top: I aliased <code>g</code> as <code>git</code> in my bash
+shell. What I actually do is:</p>
+
+<pre><code>g caa
+g ca
+g s
+g l
+g r1
+g rh 330183
+g s
+g d
+g cm 'a new commit'
+</code></pre>
+
+  <div id="sharebox">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Playing Git Like A Violin" data-count="vertical" data-via="hayeah">Tweet</a>
+  </div>
+
+  <p class="followme">
+    If you like my writing you should follow me on <a href="http://twitter.com/hayeah">Twitter</a>.
+  </p>
+</div>
+
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<div id="comments">
+  <a href="http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin.html#disqus_thread">Comments</a>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/metacircus/embed.js"></script>
+  <noscript><a href="http://metacircus.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+  </div>
+
+  <div id="topbar">
+    <div class="nav">
+      <a href="/">home</a>
+      <a href="/about_howard_yeh.html">about</a>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <img title="Howard Yeh's Likeness" alt="Howard Yeh's Likeness" src="/images/howard-yeh.jpg"></img>
+        <p><b>Howard Yeh</b>. Thinker. Traveller. Entrepreneur. Hacker. Violinist. </p>
+        <p>
+          Howard is a Rails freelancer. He is now travelling the world, spending
+          less money than staying at home. After 6 months of travel, he saved more
+          money in the bank than when he started. Everything he owns fits in a 25L
+          backpack.
+          <a href="/about_howard_yeh.html">More</a>
+        </p>
+        <p class="follow">
+          <em>
+            You should <a href="http://twitter.com/hayeah"><b>follow me</b></a>
+            around the world.
+          </em>
+        </p>
+      </div>
+    
+
+    <div id="subscribe" class="section links">
+      <h3><img src="/images/feed-icon16x16.png"/>Subscribe</h3>
+      <a href="http://feeds2.feedburner.com/metacircus">Via RSS feed</a>
+      <a href="http://feedburner.google.com/fb/a/mailverify?uri=metacircus&amp;loc=en_US">Get updates by email</a>
+    </div>
+
+    <div id="contact" class="section links">
+      <h3>Contact Me</h3>
+      <a href="mailto:howard@metacircus.com">howard@metacircus.com</a>
+      <a href="http://twitter.com/hayeah">Follow me on <img src="/images/twitter.png"/> Twitter</a>
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="nav">
+      <a href="/">home</a>
+      <a href="/about_howard_yeh.html">about</a>
+    </div>
+    <div class="contact">
+      <p>
+        <b>Howard Yeh</b>
+        <br/>
+        <a href="mailto:howard@metacircus.com">howard@metacircus.com</a>
+        <br/>
+        <a href="http://twitter.com/hayeah"><b>@hayeah</b></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- GetClicky -->
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(66479153);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7576362-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- start Mixpanel -->
+<script type="text/javascript">var mpq=[];mpq.push(["init","f19e328b6691dea4d28df9fc3f01ad9d"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+</script>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metacircus/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+</body>
+</html>
