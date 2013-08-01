@@ -35,8 +35,8 @@
   <h1 class='post-title'>6 Steps I Took From Idea To Launch</h1>
 <p><img src="http://farm3.static.flickr.com/2768/4460525589_783067f199.jpg" alt="wise old man" /></p>
 
-<p>A visitor in New York City was asking an old man for direction, &ldquo;excuse me, how
-do I get to Carnegie Hall?&rdquo; The old man, at once senile and wise, answered:</p>
+<p>A visitor in New York City was asking an old man for direction, “excuse me, how
+do I get to Carnegie Hall?” The old man, at once senile and wise, answered:</p>
 
 <p><em>Practice. Practice. Practice.</em></p>
 
@@ -45,22 +45,22 @@ do I get to Carnegie Hall?&rdquo; The old man, at once senile and wise, answered
 <h1 id="lean-kata">Lean Kata</h1>
 
 <p>I thought that my ideas are so great, that I just need to code, put in some
-metrics, add some A/B tests, then I&rsquo;d be on my way to lean epiphanies and
+metrics, add some A/B tests, then I’d be on my way to lean epiphanies and
 success. I thought that the lean approach is just a bag of techniques and tricks
 that I can pick and choose as I wish. I thought I could simply graft the lean
 techniques onto what I already knew: coding.</p>
 
-<p>I didn&rsquo;t take learning seriously. So up until now, I left behind a lot of
+<p>I didn’t take learning seriously. So up until now, I left behind a lot of
 half-hatched ideas and dead code in my wake. I felt like a murderer of
 ideas.</p>
 
 <p>To benefit from lean thinking, I eventually realized, I had to step out of my
-comfort zone with programming, and focus on the lean practice itself. That&rsquo;s why
-I dececided to undertake a &ldquo;Lean Kata&rdquo;. Like doing a Code Kata, I focused myself
+comfort zone with programming, and focus on the lean practice itself. That’s why
+I dececided to undertake a “Lean Kata”. Like doing a Code Kata, I focused myself
 on learning the lean techniques, rather than accomplishing.</p>
 
 <p>What follows is what I did to launch <em>FaceOff</em>, a <a href="http://getFaceOff.com">Chrome
-extension to block &ldquo;like&rdquo; button</a>.</p>
+extension to block “like” button</a>.</p>
 
 <p><a href="#s1"> 1. Idea </a>
 <br />
@@ -84,28 +84,28 @@ extension to block &ldquo;like&rdquo; button</a>.</p>
 <p>For the Lean Kata, I was against using one of my own <span style="text-decoration:line-through;">brilliant</span> retarded ideas.</p>
 
 <p>I noticed on Hacker News <a href="http://www.jwz.org/blog/2011/09/surprise-facebook-doesnt-like-privacy-countermeasures/">a blog post</a> about the Facebook like
-button by Jamie Zawinski. The like button tracks you even if you don&rsquo;t click on
+button by Jamie Zawinski. The like button tracks you even if you don’t click on
 it. By merely visiting a page and loading the like button, Facebook knows that
-you&rsquo;ve been there. Facebook, in fact, knows more about you than your mom.</p>
+you’ve been there. Facebook, in fact, knows more about you than your mom.</p>
 
-<p>The German tech site Heise linked to in Jaime Zawinsky&rsquo;s post already proposed a
+<p>The German tech site Heise linked to in Jaime Zawinsky’s post already proposed a
 <a href="http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html">2-click like
 button</a>
 that seemed pretty compelling. So I thought I could make a Chrome extension that
 implements it.</p>
 
 <p>At this point, I knew that people are paranoid about Facebook. But there already
-exists a Chrome extension that blocks Facebook outright. I didn&rsquo;t know if people
+exists a Chrome extension that blocks Facebook outright. I didn’t know if people
 would want a Chrome extension specifically for the 2-click like button.</p>
 
 <h1 id="s2"> 2. MVP </h1>
 
 <p>I decided to take a more paranoia mongering approach. It is easier to pin the
-fear to a person, than the abstract idea of privacy. So I thought I&rsquo;d model the
-marketing message after 1984&rsquo;s &ldquo;Big Brother Is Watching&rdquo;, and villanize Mark
+fear to a person, than the abstract idea of privacy. So I thought I’d model the
+marketing message after 1984’s “Big Brother Is Watching”, and villanize Mark
 Zuckerberg. Furthermore, it would enhance the villainy by adding a profit
 motive. Nobody wants to know that Facebook is going to make a cool $1B by
-sacraficing our culture&rsquo;s collective privacy.</p>
+sacraficing our culture’s collective privacy.</p>
 
 <p>I made the mocks with Balsamiq and pushed it on Github. It looks like this:</p>
 
@@ -120,22 +120,22 @@ interest for this project.</p>
 block like buttons embedded by an iframe, but not those using the Facebook
 Markup Language (FBML). I spent an extra day fixing that problem.</p>
 
-<p>This was the easy part. In hindsight, I should&rsquo;ve just moved on and work on the
+<p>This was the easy part. In hindsight, I should’ve just moved on and work on the
 landing page so I can release FaceOff earlier, and fix the problem later.</p>
 
 <h1 id="s4"> 4. Landing Page Design </h1>
 
 <p>I asked my friend <a href="http://twitter.com/bearwithclaws">@bearwithclaws</a>, of
 <a href="http://hackermonthly.com/">Hacker Monthly</a>, to do the design (you should
-subscribe to his magazine, because it&rsquo;s the best way to keep up with Hacker News
+subscribe to his magazine, because it’s the best way to keep up with Hacker News
 without having to obessively check it every 30 seconds).</p>
 
-<p>He came up with the idea to use Mark Zuckerberg&rsquo;s profile pictures as part of
-the demo. So when the like button is blocked, Mark Z. is facing away and isn&rsquo;t
+<p>He came up with the idea to use Mark Zuckerberg’s profile pictures as part of
+the demo. So when the like button is blocked, Mark Z. is facing away and isn’t
 watching. And when the like button is enabled, Mark Z. is facing your way, and is
 watching. I thought that was pretty funny, and not too malicious.</p>
 
-<p>We stole those pictures from Wired magazine&rsquo;s <a href="http://www.wired.com/techbiz/startups/news/2007/09/ff_facebook">profile of Mark
+<p>We stole those pictures from Wired magazine’s <a href="http://www.wired.com/techbiz/startups/news/2007/09/ff_facebook">profile of Mark
 Zuckerberg</a>. I
 guess we can afford a few good laughs until Wired send me a cease and desist
 letter to take the pictures down (hopefully never).</p>
@@ -144,7 +144,7 @@ letter to take the pictures down (hopefully never).</p>
 
 <h1 id="s5"> 5. Metrics &amp; A/B Testing </h1>
 
-<p>I&rsquo;ve always included Google Analytics for my projects. But to be honest, I never
+<p>I’ve always included Google Analytics for my projects. But to be honest, I never
 learned much from Google Analytics. Rather, it is to me a fun ego booster that
 allowed me to see a spike when people are checking out my stuff, and a
 corresponding spike in my sense of well-being.</p>
@@ -182,13 +182,13 @@ surprising. Needless to say, A/B testing proved me wrong. I changed,</p>
 <p><img src="http://i467.photobucket.com/albums/rr40/hdyeh2000/variation.png" alt="variation" /></p>
 
 <p>Making the description of the extension more visual I thought was a clear
-win. Yet it turned out that this &ldquo;obvious improvement&rdquo; resulted in a 20%
+win. Yet it turned out that this “obvious improvement” resulted in a 20%
 decrease in conversion rate.</p>
 
 <h1 id="s6"> 6. Launch </h1>
 
 <p>I submitted FaceOff to Hacker News on a weekend. My rationale was that hackers
-and entrepreneurs don&rsquo;t rest on weekends, but PR firms do. So on weekends there
+and entrepreneurs don’t rest on weekends, but PR firms do. So on weekends there
 would be roughly the same amount of votes as weekdays, but distributed over
 fewer submissions. Thus on a weekend, my submission might have a lesser risk
 getting swept away by others.</p>

@@ -34,8 +34,8 @@
     <div id="post">
   <h1 class='post-title'>Playing Git Like A Violin</h1>
 <p>People think that playing the violin is hard. But
-that&rsquo;s only when you are learning and
-practicing. When you are <em>actually</em> playing, it&rsquo;s
+that’s only when you are learning and
+practicing. When you are <em>actually</em> playing, it’s
 as natural as breathing. So it is with Git. After
 a couple years of use, and the help of a few
 aliases, my git usage now comes as easily as music
@@ -59,14 +59,14 @@ with Git to know the common tasks that I do all
 the time. These common tasks I have created
 aliases for.</p>
 
-<p>Very often, after I&rsquo;ve made a commit, I&rsquo;d keep
+<p>Very often, after I’ve made a commit, I’d keep
 wanting to make small fixes to it, like fussing
 around with spaces, or renaming variables, or
 rewording the comments, or minor refactoring of
 the code. These changes are too small to worth
 their own commits (that would only clutter up the
-history). So I&rsquo;d rather if these changes belong to
-the commit I already have. I&rsquo;d do:</p>
+history). So I’d rather if these changes belong to
+the commit I already have. I’d do:</p>
 
 <pre><code>git commit -a --amend -C HEAD
 </code></pre>
@@ -74,8 +74,8 @@ the commit I already have. I&rsquo;d do:</p>
 <p>This adds all the changes to the staging area, and
 commit it as an amendment to the previous commit,
 using the same commit message. Effectively, I am
-saying: &ldquo;put whatever I&rsquo;ve done into the previous
-commit.&rdquo;</p>
+saying: “put whatever I’ve done into the previous
+commit.”</p>
 
 <p>For this usage pattern, I have created an alias in
 my <code>~/.gitconfig</code>, like so:</p>
@@ -84,28 +84,28 @@ my <code>~/.gitconfig</code>, like so:</p>
   caa = commit -a --amend -C HEAD
 </code></pre>
 
-<p>Then ever after, I&rsquo;d type <code>git caa</code> whenever I
+<p>Then ever after, I’d type <code>git caa</code> whenever I
 wanted to do the same thing. Another pattern I use
-a lot is to create a commit for the changes I&rsquo;ve
+a lot is to create a commit for the changes I’ve
 done, all in one step:</p>
 
 <pre><code>git commit -a -m 'commit message'
 </code></pre>
 
-<p>This I&rsquo;d create another alias:</p>
+<p>This I’d create another alias:</p>
 
 <pre><code>[alias]
   cma = commit -a -m
 </code></pre>
 
-<p>Then ever after, I&rsquo;d type <code>g cma</code>. 90% of the
+<p>Then ever after, I’d type <code>g cma</code>. 90% of the
 time, <code>git caa</code> and <code>git cma</code> cover my commit
 needs. If you ask me what they stand for, I
-honestly can&rsquo;t tell you, because these commands
+honestly can’t tell you, because these commands
 are so short, they are ingrained in my muscle
-memory. I don&rsquo;t think about what I am doing with
+memory. I don’t think about what I am doing with
 Git, just as when I am playing an arpegio on the
-violin, I don&rsquo;t think about the notes
+violin, I don’t think about the notes
 individually.</p>
 
 <p>Here are all my git aliases. I hope you find some

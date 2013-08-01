@@ -1,0 +1,452 @@
+# Paul Graham & Marc Andreessen Interview
+
+on if Marc Andreessen foresaw what was to follow from the Netscape browser:
+  what he didn't forsee was the unlock of creativity. new things. new ideas.
+    not for things that already existed
+
+plain text in all the protocols.
+  so people could view source.
+    that people could just do it was instrumental to the web's success
+  at the time people thought binary. Text was a crazy idea
+    optimization was neccesary. anybody sane thought transmission should be byte by byte.
+
+invention of the <img> tag
+  some people wanted the net "pure". just for the physcist (har har)
+  image made newspaper, etc. possible
+
+netscape was "unbelievably good" at dealing with broken html
+  added things that were "needed"
+    javascript
+    ssl
+
+started in 22. mistakes?
+  would you do anything different?
+    a) from what you know now
+      they were getting qualitative data, but there was no instrumentation of their browser. they didn't know to instrument it.
+      idea of "social" didn't exist. they would've done flock. integrated with your friends.
+      payment didn't exist yet. no clear way to do it. now they would've put a "pay now" button.
+         which would've changed what the internet is now today. would've been e-commerce way earlier, with more paid-content, and earlier.
+    b) from what you knew then
+  back then nobody knew each other. very sparse network. no information sharing.
+
+how did you grow so fast? both in revenue and people
+  army of sales
+  1,500 in sales, out of 3,000
+  "building a company is like baking a cake"
+    you have to add all these things at the right time.
+    it was really hard to bake the cake in 3 minutes
+  learned from Jim Clark: "engineer need to be in the heart of the company"
+    ahead of his time
+
+company that does not continue to innovate start to go stale
+  this is why you need the engineers at the core
+  "move fast and break stuff"
+  bible at the time was "crossing the chasm"
+
+wish could've spent more time on people
+
+it's incredibly hard to hire that fast.
+  it takes time to integrate people
+  you'd hire somebody from Sun, then because you are hiring so fast, sun people whould just pull more people from sun
+    people from different companies brought their own culture.
+    Netscape ended up with a lot of DNA from other companies, just because there were cliques as a result of the hiring process
+
+why did you start a VC rather another company?
+  bigger impact
+  experimented by being angel investors
+  what have you learned? from 3 you founded, and those you funded
+    the technical founders who become CEO are the best
+    "engineer who becomes a entrepnreuer who becomes a CEO... there's something magical about that
+    3 distinct skillsets.
+  what's the big surprise?
+    CEO is a learnable skill. They are not just born. Learn sales. Learn how to manage. You can learn on the fly.
+      you have to have want to learn, you can do it. getting trained, getting educated
+      surround yourself with mentors, coaches, people who can help you. bulid an executive team around you.
+
+# James Lindenbaum, Heroku
+
+It's hard to build for developers, but it's very rewarding.
+
+Before they were consulting. Based in LA
+
+poka-yoke
+  a lean manufucaturing idea.
+  a thing that's in there that prevents you from making mistake.
+  if you can screw up, how can you prevent people from making mistake.
+  a lot of such devices are in Heroku's design.
+
+immediately started getting attention/traction when they launched
+
+"pull a paul graham". PG would talk to you about something, then bring up something complete related.
+  he talked about Heroku, then out of nowhere, "you guys should kill Oracle"
+
+they had a lot of traction, but they felt they didn't have "product market fit"
+  people weren't doing anything valuable
+  they saw a segmentation problem
+    people using the web tool were just playing around, trying it out
+    serious people used git push
+      they pivoted, and focused on those using git push / API
+        hard decision at the time, because they were getting so excited, and getting traction.
+
+they ended up rebranding Heroku. Came up with "herokugarden", a user friendly version.
+  Herokugarden is a friendly place you go to learn Rails.
+
+they focused on the developer. rebranded heroku itself to be more "hackerish"
+  business people would go to the landing page, and be like, no, wtf is this? i don't understand a word
+
+things are moving to become services
+    this is the new way applications will be built
+    
+what's the next thing? polyglot programming.
+
+why they joined salesforce
+  salesforce knows how to sell cloud to enterprise.
+  salesforce allows them to make the biggest impact
+  "best" for the mission
+  they probably could make more money if they didn't sell
+
+heroku is independent
+  they own everything
+  could use salesforce's leverage
+
+they hired matz.
+  admire him for focusing on developers
+  matz's focus on developer happiness lead to rails, which lead to heroku. heritage
+  it was a great honor for them
+
+this model is just taking off
+  runtime in the middle, services out there
+
+call for action
+ "start more cloud services. not for everybody, but it's worth it"
+ 
+understanding how to scale the team was the biggest challenge
+  they reorganize the team every few months
+
+# Jim Goetz - Sequoia Capital
+
+Founder
+ everybody started unknown.
+ tenacious
+Idea
+Timing - is it too late
+
+A billion of smart phones in 18 month. I can get to 20B in 2020.
+
+half of who they back are immingrants
+
+# Matt Mullenweg
+
+First 100k are the hardest
+
+Wordpress was not written from sketch. From moveable type (which at the time had 90% marketshare)
+
+php & mysql: "it ran easily anywhere"
+
+at the very beginning, more developers than users (it's always like that)
+
+be your most passionate user
+  to create a good UX, you need to be (or sleep with) a person that uses your product everyday.
+    this is the only way you can feel the pain
+
+1.0 is the loneliest number
+  check this out: ma.tt/2010/11/one-point-oh
+
+wordpress was one of the first to adopt webstandards and css
+  because of that, they got a lot of early adopters who cared about it
+
+it's important to get it out to real users
+  there's nothing better than the crucible of real usage
+
+"remember the silent majority"
+  internet is almost designed to reward the most vocal, and those looking for a debate
+
+famous five-minute-install
+  it was not famous. "I made it up"
+  it was easy at all, but compared to competitors, it was
+    {marginal advantage was enough}
+
+"there's nothing quite more permanent than a temporary business model"
+
+"you need a better taglne"
+
+You have to set the bar that everybody follows. That is part of being your passionate user.
+
+support@ should be everybody@
+  do this for as long as you can possibly keep up
+
+version 1.2, 822 downloads a day
+version 2.0  5,115 downloads a day
+
+After CNet, Started automatic.
+  At first, worked on Akismet.
+    Fight spam.
+  Wasn't sure if there was space for a blogging company.
+    There was MySpace, Google Blog, AOL
+
+They originally had revenue from hosting companies. When starting wordpress.com, they were going to lose that revenue. They weren't sure if there was money to be made.
+
+Passionate people: they signed up for a crappy product
+
+# Mark Pincus
+
+The earlier years seem more exciting and romantic. In retrospect.
+  exciting, but few and far in between.
+    feels like many things could kill it
+
+tribe.net
+  didn't fail fast. fail fast if you can
+
+"what do i want to do for the next 10,20 years?"
+  i want to do consumer product.
+  it's hard to fail fast.
+    after you found out, it's Series B, 30 people company
+
+how about i build a large audience first, then try to go from there?
+  was looking at acquiring CNet
+  then facebook opened up their platform. it was a mind boggling opportunity
+    you have all these audience ready for your product
+
+decide what you want. then take your risks around that
+
+biggest lesson from tribe
+  value engineering time.
+    brutal on testing. does this thing we are doing help?
+  where's the heat? where's the candy? what is it that we absolutely know people wanted?
+  we try to figure out what people want
+    poer game: 80% they clicked on fold, they'd stay in for the next game.
+      what can we give them to do while they are waiting?
+      WHATEVER we needed to do to spice up our poker game. strippers. dancins gnmoes.
+  we try to find metrics that would repeat
+
+i feel like we are launching a new startup every week
+  each game is like a startup.
+  many things has to come together for something to work
+    people must really want something. must tune into that.
+    what is the essence? what's the unique value position?
+    if you describe it in 5 words, if you send those 5 words, would your mother want it?
+
+Zynga wants to make games instantly social, without you doing any work
+  lots and lots of metrics in the backend. how good are we at socialness?
+  how quickly does a user find friends? how engaged is the user with friends?
+  are there features we can change to amp up the socialness
+
+lesson learned in the previous startups.
+  "i had a lot of scars from tribe"
+  what would Pincus do again?
+    build a house you would want to live in.
+    do you want to work on this for the next 10 years? if you have convicition, it's much easier to press on
+    *go all in. give everything you have. don't figure out an exit path.
+
+"why am I a serial entrepnerues: I kept failing. I couldn't build a sustainable company"
+
+surprises?
+  he never had this level of product success before zynga.
+  march 7, 2008
+    first day a virtual good was sold.
+    wow. why would people pay for poker chips they can't cash out.
+      but they would!
+
+after tribe, he had a lot of coaching
+  it's good to have somebody that tells you: you are not thinking big enough
+
+Jeff Bezo
+  after 300 people, your company is going to be different. the people you are hiring are not going to remember the founding.
+  they don't have the muscle memory for startup, and they will be risk adverse.
+  your job as a CEO to the end of your days, will be to get them not to be risk-adverse.
+    Bezo was right. But he didn't give an answer.
+
+Mark Z
+  singular focus.
+  
+biggest mistake first founders make
+  once you have a product and a biz plan, most ppl prioritize over the wrong thing
+    prioritize keeping total control of your destiny
+  they want to look for people to invest, to see if they have a good idea
+  what is your big macro goal? write it down. connect the dots.
+    if you don't have the goal, you'll be making lots of compromises.
+    if you don't have the goal clear your mind, you won't be on that path
+
+# Paul Graham Office Hour
+
+When reading about YC applications:
+ so many people the desire precede idea
+    most ideas are derivative
+ best ideas are from people trying to solve problems
+ look for problems. look for something broken. there's where good ideas come from.
+
+identify the initial users that are having the most pain
+  users that are most desperate
+
+if it works, you are gonna take 5 years to pull it through.
+  you should do something that matters and you can do 5 years for.
+
+the oracle speaks: for dating web-sites, build a matchmaking tool, for matchmakers. Cultivate busy bodies. You can break the chicken and egg problem. The matchmaker would be like a dating website with population of N=1.
+
+# Mark Zuckerberg
+
+Most companies mess up by being too slow, by being to precise.
+  you want to make mistake on both sides.
+    mess up by beign both too fast, and too slow, so you are in the middle.
+      in order to find market equilibirum, you have to make mistakes on both sides
+   the biggest risk is not taking any risks
+     in a world thats changing so fast, you WILL fail if you don't do stuff, and making changes
+       this is the biggest risk
+
+one of the defining characterstic of facebook is that they are an extremely technical company
+  when you have technical people who think about these problem and think about the product all throughout the stack, you have something special
+  people making the product decisions also know the technical tradeoffs. that's special.
+
+the direction is social. everything would be better if your friends were there.
+
+when setting up company "we literally knew nothing"
+  made lots of mistakes. kept iterating.
+
+we didn't go into it to build a company.
+  a company is the best way to align talented people to make the changes you want in the world.
+  they get rewarded both financially, and fulfilling the mission
+
+the way to scale is to decompose the problem. 50~3000 is more or less the same for Mark Z.
+  there are some complications, politics, etc.
+
+"friends being there" is a feature.
+  growth, scaling, and the company competence for that are designed around that core feature.
+  growth for facebook is something deeper. deeper for facebook than other companies
+  they have a growth team. once you have a product, and ready for growth, should centralize that competence.
+
+once you have a core product, help your user to take advantage of your product as easily as possible
+  for facebook "10" is the magic number. If you have 10 friends, you have enough stuff to keep coming back for
+    so they do things to focus on you getting 10 friends
+
+on selling companies
+  ultimately, it's about what you want to do.
+
+"we really have no idea what we were doing"
+
+AS CEO, build the product. Recruit people to build the product.
+
+1000 things going on at the same time, but only a couple things that matters.
+  you can be so bad at so many things, as long as you get the things that matter right
+  stays focus on customer. being unique and valuable.
+  you are gonna make a lot of mistakes. it'll be ok.
+    people only remember what is good.
+
+JL: what do you do right to win?
+  the awesomest thing here is you can just try it. and see if it works.
+  how MZ works:
+    you really need to start with a passion. you want this thing to exist. people want it. you are just pulled along.
+    do something that you like.
+
+the past 5 years is getting people to get connected on the internet
+  the next 5 years is going to be about what people build with this connectedness
+  you can build on the social graph, or you don't
+    if you don't you'll die. the graph is not about the facebook app.
+  like when internet was wiring up
+    if you worked on CD-ROM, you die
+    if you worked on Internet, you live
+
+If you are a beginner and you don't know anything, the valley is a good place to start.
+  there are things you can't learn on your own, but if you are here you can learn from people
+  "If I am starting now, I'd probably not bother"
+    why not? short-term focus here.
+      people want to start a company, just to start a company.
+      people don't commit to doing things
+  the average time spent in a job in seattle is twice in silicon valley
+
+There's an advantage to doing things different from everyone else.
+  There's probably a reason why people aren't doing it the same way, but
+  You could fail miserably, but that's how you really win.
+  Maybe there's a way to express this mathematically, but... don't know?
+
+He asks his employee "what are you doing differently from others"
+
+# Jason Cohen, Palantir
+
+You can pay somebody to get work done, but you can't pay somebody to drink red bull and work for months abd months.
+  Do what you love.
+
+# Max Levchin
+
+Topic: Founder & Co-Founder
+
+4 failed startups. then paypal, then another
+
+"I am one of those crazy guys who can't get enough of this stuff"
+
+the job of a co-founder is not like "man... we are fucked", and he's like "ya, we are fucked"
+  at the lowest point, the cofounder's job is to provide support when you are most beat
+  getting emotional and practical support
+
+respect
+
+if you feel it's not going to work... break up.
+  if you ever have doubt that this person could be your co-founder, run away. It would never work.
+
+how to fire someone, and it feels free for you and the person you are firing
+ "i'd like to ask you to resign"
+   it works. every time. doesn't know why it works, but it makes it better.
+
+don't confuse "hard" and "valuable"
+  if you have a really hard problem to solve, ask if it's valuable for anyone.
+  if the answer is no, don't bother
+
+"once of my more honest investors pulled me aside..."
+
+"the underpant gnome business model"
+  collect underpants.
+  ...?
+  Profit!
+
+something that plaques us is fear of failure, and lack of objective
+  nothing matters except passion for product
+    all other emotions, like fear and embarrasment, are extraneous.
+  starting a company requires an odd emotional detachment
+
+# Ron Conway
+
+Topic: The Defining Entrepreneur
+
+"In your heads is the future of innovation"
+
+The traits and lessons "Ronco" (what PG calls Ron Conway) learned from the
+defining entrepreneurs of the last 20 years.
+
+"Think Big. As ambitious as you want to be. Go for it."
+
+usually a product visionary.
+  owns the mind of your customers.
+
+decisiveness
+make a decision and move forward
+clear vision, and make sure the entire team shares the vision
+listens well, but strong welled 
+moving fast
+24/7 work ethic
+be relentless. be scrappy. always keep a bootstrap mentality
+lead by example
+execution is everything
+make mistakes, but learn from it
+trust your gut
+your reputation is your biggest asset. don't compromise your reputation as you build your business.
+
+larry & sergei
+  were sponges of learning about business
+
+# Drew Houston
+
+Everything big starts small.
+
+Everyone starts out clueless.
+
+There are benefits from never having done it before.
+
+Take on more than you're "ready" for (and get used to that feeling)
+
+the fastest way to learn about startups is to join one
+
+put yourself in a position where you are going to be pulled to learn
+
+surround yourself with kindred spirits:
+  "you are the average of your 5 closest friends"
+
+If things work out, you can actually change the world.

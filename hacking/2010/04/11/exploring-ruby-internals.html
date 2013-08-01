@@ -34,23 +34,23 @@
     <div id="post">
   <h1 class='post-title'>Exploring Ruby Internals with GDB and DTrace</h1>
 <p>It is always very hard to learn a large code base, especially
-initially, when there&rsquo;s not even a vague idea of how things fit into a
+initially, when there’s not even a vague idea of how things fit into a
 structure. This overall picture of the code base is the crucial first
 step. After that, it becomes much easier to see an arbitrary fragment
 of code, and guess what it does.</p>
 
-<p>It is this first step that&rsquo;s the hardest. It is a gestalt process,
+<p>It is this first step that’s the hardest. It is a gestalt process,
 where out of a sea of random information miraculously emerges
 understanding. I would pretty much pick a place, and start to randomly
 walk through the files, then hope for the best.</p>
 
-<p>It&rsquo;s hard. But GDB and DTrace can help! (Though now you have three
+<p>It’s hard. But GDB and DTrace can help! (Though now you have three
 problems instead of one.)</p>
 
-<h1 id="whats-going-on">What&rsquo;s Going On?</h1>
+<h1 id="whats-going-on">What’s Going On?</h1>
 
-<p>First, we need to figure out what&rsquo;s going on. The plan is to evaluate
-a Ruby expression, and let DTrace tell us what are involved. Let&rsquo;s
+<p>First, we need to figure out what’s going on. The plan is to evaluate
+a Ruby expression, and let DTrace tell us what are involved. Let’s
 just start the irb. We also want to know the pid of the irb, so DTrace
 and GDB can get a handle of it.</p>
 
@@ -61,7 +61,7 @@ and GDB can get a handle of it.</p>
 =&gt; 31415 # or whatever.
 </code></pre>
 
-<p>Now, we&rsquo;ll write a DTrace script to peek into it,</p>
+<p>Now, we’ll write a DTrace script to peek into it,</p>
 
 <pre><code># function_calls.d
 pid31415:ruby:rb_*:entry {
@@ -92,10 +92,10 @@ rb_eval                                                         840
 
 <p>With this, we get a rough idea of what functions are important in the
 interpreter. Right off the bat, you know <code>rb_eval</code> is central to the
-interpreter. But <code>rb_gc_force_recycle</code>, what is that? Uh, NVM, let&rsquo;s
+interpreter. But <code>rb_gc_force_recycle</code>, what is that? Uh, NVM, let’s
 keep going. How do I find <code>rb_eval</code>?</p>
 
-<p>Before you get greppy, let&rsquo;s go into GDB.</p>
+<p>Before you get greppy, let’s go into GDB.</p>
 
 <pre><code>&gt; gdb ruby 31415
 (gdb) info func rb_eval
@@ -123,7 +123,7 @@ $10 = 3 # wtf?
 </code></pre>
 
 <p>Turns out that a Ruby <code>VALUE</code> is just a pointer type. If the least
-significant bit is 1, then it&rsquo;s an integer, if it&rsquo;s 0, then it&rsquo;s a
+significant bit is 1, then it’s an integer, if it’s 0, then it’s a
 ruby object. We shift right by one bit to get back the integer value.</p>
 
 <pre><code>(gdb) p rb_eval_string("10")
@@ -134,7 +134,7 @@ $17 = 10
 
 <p>Yup. And 0 is false, 2 is true, nil is 4. These are common values, so
 it makes sense to use magic constants. In particular, false is 0,
-because more than just a convention, that helps with CPU&rsquo;s speculative
+because more than just a convention, that helps with CPU’s speculative
 execution (I guess?).</p>
 
 <p>I am curious about arrays too. No problem! No need to ask GOD, ask GDB.</p>
@@ -152,7 +152,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
 (gdb) # bingo!
 </code></pre>
 
-<p>I think it&rsquo;s pretty awesome that we can learn all this stuff without
+<p>I think it’s pretty awesome that we can learn all this stuff without
 even going into the source code. Maybe by know you want to see some
 code?  Is it time now to download Ruby source, and fire up your
 favourite editor? Maybe not.</p>
@@ -170,15 +170,15 @@ favourite editor? Maybe not.</p>
 2959        volatile VALUE result = Qnil;
 </code></pre>
 
-<p>Whoooo! I didn&rsquo;t even have to grep.</p>
+<p>Whoooo! I didn’t even have to grep.</p>
 
 <p>Arthur C. Clarke said that any sufficiently advanced technology is
 indistinguishable from magic. Magic already took place some 25 years
 ago! GDB is like IRB on steroid for the Ruby internals on a pony.</p>
 
-<p>Now let&rsquo;s play around some more with DTrace! &hellip;</p>
+<p>Now let’s play around some more with DTrace! …</p>
 
-<p>But I am tired. I&rsquo;ll write about DTrace in a post.</p>
+<p>But I am tired. I’ll write about DTrace in a post.</p>
 
 
   <div id="sharebox">

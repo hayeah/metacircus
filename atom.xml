@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2012-02-27T01:09:52+08:00</updated>
+ <updated>2013-08-01T23:50:34+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -17,8 +17,8 @@
    <link href="http://www.metacircus.com/writings/2012/02/27/i-pray-to-walt-whitman.html"/>
    <updated>2012-02-27T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2012/02/27/i-pray-to-walt-whitman</id>
-   <content type="html">&lt;p&gt;I wish there&amp;rsquo;s more stability in me. Once I am home, I have to face
-myself. Being with people is a rather poor palliative. There&amp;rsquo;s something special
+   <content type="html">&lt;p&gt;I wish there’s more stability in me. Once I am home, I have to face
+myself. Being with people is a rather poor palliative. There’s something special
 about being in the wild. Neuroticism hangs in a city like a smog. None of that in
 the mountains and the sea. They are too big for that.&lt;/p&gt;
 
@@ -50,15 +50,15 @@ Mobil. Some family wineries.&lt;/p&gt;
 
 &lt;p&gt;There seems to be a two separate components to sustainability. One is
 sustainability of a business as a profit earning entity (keeping everyone paid),
-and the other is sustainability as legacy. There really aren&amp;rsquo;t that many hundred
+and the other is sustainability as legacy. There really aren’t that many hundred
 years businesses.&lt;/p&gt;
 
 &lt;p&gt;It seems that once a company had innovated, their sustainability is an attribute
 of how well it maintains power. To last that long, a hundred years company almost
 always have to be political too.&lt;/p&gt;
 
-&lt;p&gt;It&amp;rsquo;s just really, really, really hard to remain profitable under the constant
-onslaught of Schumpeterian &lt;a href=&quot;http://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy#Creative_destruction&quot;&gt;creative destruction&lt;/a&gt;. Capitalism&amp;rsquo;s drive for
+&lt;p&gt;It’s just really, really, really hard to remain profitable under the constant
+onslaught of Schumpeterian &lt;a href=&quot;http://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy#Creative_destruction&quot;&gt;creative destruction&lt;/a&gt;. Capitalism’s drive for
 efficiency exerts a relentless downward pressure on profit.&lt;/p&gt;
 
 &lt;p&gt;Once a company found a way to create profit by innovating, other companies would
@@ -68,7 +68,7 @@ so often done) to seek to protect its profit through political means (e.g. &lt;a
 
 &lt;h2 id=&quot;legacy-and-death&quot;&gt;Legacy And Death&lt;/h2&gt;
 
-&lt;p&gt;Given that it&amp;rsquo;s so hard to remain innovative, wouldn&amp;rsquo;t it be better to let a
+&lt;p&gt;Given that it’s so hard to remain innovative, wouldn’t it be better to let a
 company die after it had been innovative, rather than sticking around to
 &lt;a href=&quot;http://netscape.aol.com/&quot;&gt;interfere with new innovators&lt;/a&gt; (e.g. Microsoft)?&lt;/p&gt;
 
@@ -96,7 +96,7 @@ to die. So it is that old companies have to die to make way for innovation.&lt;/
    <content type="html">&lt;p&gt;Greed, as they say on Wall Street, is good. And that, for Google, is in fact
 &lt;em&gt;mathematically true&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;I was reading &lt;a href=&quot;http://certifiedknowledge.org/blog/&quot;&gt;Brad Geddes&lt;/a&gt;&amp;rsquo;s book &lt;a href=&quot;http://www.amazon.com/gp/product/0470500239/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=metacircus-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399369&amp;amp;creativeASIN=0470500239&quot;&gt;Advanced Google AdWords&lt;/a&gt;,
+&lt;p&gt;I was reading &lt;a href=&quot;http://certifiedknowledge.org/blog/&quot;&gt;Brad Geddes&lt;/a&gt;’s book &lt;a href=&quot;http://www.amazon.com/gp/product/0470500239/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=metacircus-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399369&amp;amp;creativeASIN=0470500239&quot;&gt;Advanced Google AdWords&lt;/a&gt;,
 to learn how to use AdWords. Naively (like me), you might think at first
 that it would make sense to put the highest bidder first. But no. Google
 ranks ads by CTR (click-through rate) * max CPC (cost per cick).&lt;/p&gt;
@@ -104,18 +104,18 @@ ranks ads by CTR (click-through rate) * max CPC (cost per cick).&lt;/p&gt;
 &lt;p&gt;Why? &lt;em&gt;Because doing that maximizes profit.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;It makes sense if you think about it. If somebody is paying $100 per click for
-an ad, but doesn&amp;rsquo;t get any click, then Google makes nothing. But it wasn&amp;rsquo;t clear
+an ad, but doesn’t get any click, then Google makes nothing. But it wasn’t clear
 to me whether this ranking strategy is indeed &lt;em&gt;THE&lt;/em&gt; mathematically optimal
 strategy.&lt;/p&gt;
 
-&lt;p&gt;I am a nerd. So I couldn&amp;rsquo;t just let that slide by.&lt;/p&gt;
+&lt;p&gt;I am a nerd. So I couldn’t just let that slide by.&lt;/p&gt;
 
 &lt;p&gt;I had to prove it.&lt;/p&gt;
 
 &lt;h1 id=&quot;sanity-check&quot;&gt;Sanity Check&lt;/h1&gt;
 
 &lt;p&gt;So we want to prove that ranking by CTR * CPC maximizes profit. Before setting
-out to prove it, I did a quick sanity check so I wouldn&amp;rsquo;t go on a wild goose
+out to prove it, I did a quick sanity check so I wouldn’t go on a wild goose
 chase. Suppose there are two ads.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -127,23 +127,23 @@ chase. Suppose there are two ads.&lt;/p&gt;
 and Google makes $500. Given the same 100 searches, 100 would click on the
 Prozac ad, and Google makes $500.&lt;/p&gt;
 
-&lt;p&gt;It&amp;rsquo;s a toss-up. If you randomly distribute traffic between these two ads, Google
+&lt;p&gt;It’s a toss-up. If you randomly distribute traffic between these two ads, Google
 makes the same amount. There is no reason for Google to prefer one over the
 other. Playing around with the CTR and CPC of the ads by adjusting them up and
-down, it&amp;rsquo;s clear that the formula works.&lt;/p&gt;
+down, it’s clear that the formula works.&lt;/p&gt;
 
 &lt;h1 id=&quot;the-proof&quot;&gt;The Proof&lt;/h1&gt;
 
 &lt;p&gt;Given that there are n ads ranked in order of CTR_n * CPC_n. Assume as given
 that the impressions received by these ads, N_n, is strictly decreasing (ad 1
-is seen more than ad 2, and ad 2 is seen more than ad 3, etc&amp;hellip;).&lt;/p&gt;
+is seen more than ad 2, and ad 2 is seen more than ad 3, etc…).&lt;/p&gt;
 
 &lt;p&gt;If this is not the optimal strategy, then there is an alternate ranking that
 would yield higher earning. Earning from some ad of rank n is&lt;/p&gt;
 
 &lt;p&gt;E_n = N_n * CTR_n * CPC_n&lt;/p&gt;
 
-&lt;p&gt;Let&amp;rsquo;s rewrite CTR_n * CPC_n as P_n. So earning for the n-th ad would be&lt;/p&gt;
+&lt;p&gt;Let’s rewrite CTR_n * CPC_n as P_n. So earning for the n-th ad would be&lt;/p&gt;
 
 &lt;p&gt;E_n = N_n * P_n&lt;/p&gt;
 
@@ -170,12 +170,12 @@ any pair of a,b. QED.&lt;/p&gt;
 
 &lt;h1 id=&quot;when-i-was-10-i-thought-girls-are-gross&quot;&gt;When I Was 10, I Thought Girls Are Gross&lt;/h1&gt;
 
-&lt;p&gt;I thought marketing is gross. I didn&amp;rsquo;t think that I&amp;rsquo;d enjoy learning about
+&lt;p&gt;I thought marketing is gross. I didn’t think that I’d enjoy learning about
 marketing. Why should I force somebody to buy my crap? Why should I become an
 &lt;a href=&quot;http://godaddy.com&quot;&gt;expert pain in the ass&lt;/a&gt;?&lt;/p&gt;
 
 &lt;p&gt;Marketing, like everything else, can be a force of good or evil. You can trick
-people into buying shit that doesn&amp;rsquo;t work. Or you can build something awesome,
+people into buying shit that doesn’t work. Or you can build something awesome,
 and tell people about it.&lt;/p&gt;
 
 &lt;p&gt;Google AdWords incentivize people to create relevant ads:&lt;/p&gt;
@@ -185,7 +185,7 @@ and tell people about it.&lt;/p&gt;
 Brad Geddes - &lt;em&gt;Advanced Google AdWords&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I think that&amp;rsquo;s pretty cool.&lt;/p&gt;
+&lt;p&gt;I think that’s pretty cool.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=3216234&quot;&gt;On Hacker News&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -196,39 +196,39 @@ Brad Geddes - &lt;em&gt;Advanced Google AdWords&lt;/em&gt;&lt;/p&gt;
    <link href="http://www.metacircus.com/startup/2011/10/29/startup-school-2011.html"/>
    <updated>2011-10-29T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/startup/2011/10/29/startup-school-2011</id>
-   <content type="html">&lt;p&gt;I attended YCombinator&amp;rsquo;s StartupSchool 2011. &lt;a href=&quot;/startup/sus2011.txt&quot;&gt;You can download my notes
+   <content type="html">&lt;p&gt;I attended YCombinator’s StartupSchool 2011. &lt;a href=&quot;/startup/sus2011.txt&quot;&gt;You can download my notes
 here&lt;/a&gt;. Some memorable quotes:&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Building a company is like baking a cake&amp;hellip; sometimes the eggs get on the roof.&lt;/em&gt;
-&lt;br /&gt;&amp;ndash; Marc Andreessen&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Building a company is like baking a cake… sometimes the eggs get on the roof.&lt;/em&gt;
+&lt;br /&gt;– Marc Andreessen&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;There&amp;rsquo;s nothing quite more permanent than a temporary business model.&lt;/em&gt;
-&lt;br /&gt;&amp;ndash; Matt Mullenweg&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;There’s nothing quite more permanent than a temporary business model.&lt;/em&gt;
+&lt;br /&gt;– Matt Mullenweg&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;You&amp;rsquo;ll spend the next 5 years of your life on your startup, don&amp;rsquo;t choose your idea lightly.&lt;/em&gt;
-&lt;br /&gt;&amp;ndash; Paul Graham&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You’ll spend the next 5 years of your life on your startup, don’t choose your idea lightly.&lt;/em&gt;
+&lt;br /&gt;– Paul Graham&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;One of my more honest investors pulled me aside&amp;hellip;&lt;/em&gt;
-&lt;br /&gt;&amp;ndash; Max Levchin&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One of my more honest investors pulled me aside…&lt;/em&gt;
+&lt;br /&gt;– Max Levchin&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;In your heads is the future of innovation.&lt;/em&gt;
-&lt;br /&gt;&amp;ndash; Ron Conway&lt;/p&gt;
+&lt;br /&gt;– Ron Conway&lt;/p&gt;
 
-&lt;p&gt;I thought Mark Pincus&amp;rsquo; interview with Jessica Livingston really brought these
+&lt;p&gt;I thought Mark Pincus’ interview with Jessica Livingston really brought these
 leaders of innovation back to human scale. Though Mark Pincus is dealing with
-problems a world away from what I am dealing with, he&amp;rsquo;s nevertheless figuring
-things out as he goes, and fretting that he doesn&amp;rsquo;t know how.&lt;/p&gt;
+problems a world away from what I am dealing with, he’s nevertheless figuring
+things out as he goes, and fretting that he doesn’t know how.&lt;/p&gt;
 
 &lt;p&gt;The common thread that binds all these entrepreneurs is how clueless they once
-were. They learned along the way. But even now they don&amp;rsquo;t have a magic crystal
-ball to look into. They don&amp;rsquo;t have an unerring instinct to guide them. They
+were. They learned along the way. But even now they don’t have a magic crystal
+ball to look into. They don’t have an unerring instinct to guide them. They
 fret. They agonize over decisions. They make mistakes. They figure things
 out and learn.&lt;/p&gt;
 
 &lt;p&gt;They are tinkerers, supremely adapt at finding something that works after
 coutless attempts. They are no prophets.&lt;/p&gt;
 
-&lt;p&gt;The one person that seems oracular is Ron Conway. He doesn&amp;rsquo;t sound very
+&lt;p&gt;The one person that seems oracular is Ron Conway. He doesn’t sound very
 smart. Yet he is somehow always there, at the right place at the right time with
 the right people.&lt;/p&gt;
 
@@ -241,10 +241,10 @@ the right people.&lt;/p&gt;
    <link href="http://www.metacircus.com/startup/2011/10/28/the-IMVU-story-according-to-vp-engineering.html"/>
    <updated>2011-10-28T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/startup/2011/10/28/the-IMVU-story-according-to-vp-engineering</id>
-   <content type="html">&lt;p&gt;I was at &lt;a href=&quot;http://twitter.com/jamesbirchler&quot;&gt;James Birchler&lt;/a&gt;&amp;rsquo;s talk, hosted by
+   <content type="html">&lt;p&gt;I was at &lt;a href=&quot;http://twitter.com/jamesbirchler&quot;&gt;James Birchler&lt;/a&gt;’s talk, hosted by
 &lt;a href=&quot;http://twitter.com/richcollins&quot;&gt;Rich Collins&lt;/a&gt; of the San Francisco &lt;a href=&quot;http://www.meetup.com/Lean-Startup-Circle/&quot;&gt;Lean
 Startup Circle&lt;/a&gt;. James is the VP
-Engineering at IMVU. James&amp;rsquo; account gave me another perspective of the IMVU
+Engineering at IMVU. James’ account gave me another perspective of the IMVU
 story that is different from the somewhat sanitized/idealized account given by
 Eric Ries.&lt;/p&gt;
 
@@ -255,7 +255,7 @@ root analysis was performed to ensure that the problem would not recur.&lt;/p&gt
 
 &lt;p&gt;Great story.&lt;/p&gt;
 
-&lt;p&gt;James talked about the same thing. But he added that they don&amp;rsquo;t do it at IMVU
+&lt;p&gt;James talked about the same thing. But he added that they don’t do it at IMVU
 anymore. They no longer could interrupt everyone whenever there was a build
 problem.&lt;/p&gt;
 
@@ -267,11 +267,11 @@ messier.&lt;/p&gt;
 &lt;p&gt;Another example is the IMVU UI redesign. The old IMVU, over a period of time,
 accmulated features. Each new UI component was an improvement. The IMVU client
 eventually became like the dashboard of a nuclear reactor. They knew it was
-complicated. But hey, who&amp;rsquo;s to argue with the improved metrics? The company felt
+complicated. But hey, who’s to argue with the improved metrics? The company felt
 that the UI was wrong, but nobody wanted to shoot the elephant in the room.&lt;/p&gt;
 
 &lt;p&gt;Then a group within the company started to work on a redesign. James said that
-the group at first worked in secret. The project would&amp;rsquo;ve been
+the group at first worked in secret. The project would’ve been
 killed. Eventually the new simplified and polished design prevailed. With the
 flip of a switch (and presmuably sighs of relief), IMVU moved over to the new
 design. Revenue went up and up from there.&lt;/p&gt;
@@ -282,25 +282,25 @@ design. Revenue went up and up from there.&lt;/p&gt;
 
 &lt;p&gt;Yet the redesign was a non-evolutionary leap. If the normal activity of Lean
 Startup consists of experiments that lead to incremental, evolutionary
-improvements, then how do you achieve the sort of &lt;a href=&quot;http://en.wikipedia.org/wiki/Paradigm_shift&quot;&gt;&amp;ldquo;paradigm
-shift&amp;rdquo;&lt;/a&gt; like IMVU&amp;rsquo;s redesign?&lt;/p&gt;
+improvements, then how do you achieve the sort of &lt;a href=&quot;http://en.wikipedia.org/wiki/Paradigm_shift&quot;&gt;“paradigm
+shift”&lt;/a&gt; like IMVU’s redesign?&lt;/p&gt;
 
 &lt;p&gt;Vision.&lt;/p&gt;
 
 &lt;p&gt;For somebody like Steve Jobs, the vision is so strong, and right, that the
 company could just follow the vision, and likely arrive somewhere good. And what
 is vision good for? Delivering value. What IMVU is learning now is that nothing
-else matters. Just ask &amp;ldquo;is what I am doing delivering value for our customers?&amp;rdquo;&lt;/p&gt;
+else matters. Just ask “is what I am doing delivering value for our customers?”&lt;/p&gt;
 
-&lt;p&gt;The lesson learned is that for a company, it isn&amp;rsquo;t enough to learn a set of
+&lt;p&gt;The lesson learned is that for a company, it isn’t enough to learn a set of
 techniques. Techniques are for normal daily operation. More importantly, you
 need a culture that helps you to relentlessly pursue your vision and deliver
 customer value.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;You can see James&amp;rsquo; slides, &lt;a href=&quot;http://www.slideshare.net/jamesbirchler/experimenting-your-way-to-success-applying-lean-startup-principles-to-product-development-at-imvu&quot;&gt;&amp;ldquo;Experimenting Your Way To
-Success&amp;rdquo;&lt;/a&gt;. The
+&lt;p&gt;You can see James’ slides, &lt;a href=&quot;http://www.slideshare.net/jamesbirchler/experimenting-your-way-to-success-applying-lean-startup-principles-to-product-development-at-imvu&quot;&gt;“Experimenting Your Way To
+Success”&lt;/a&gt;. The
 slide deck sticks too much to the party line, IMO. I liked James insight into
 company culture. IMVU is remarkable in its appetite for change and
 experimentation with its work processes.&lt;/p&gt;
@@ -316,11 +316,11 @@ experimentation with its work processes.&lt;/p&gt;
    <id>http://www.metacircus.com/hacking/2011/10/23/lispy-abuse-of-ruby-local-functions</id>
    <content type="html">&lt;p&gt;If Ruby were a person, the court would put a restraining order prohibiting my
 appearance in her vicinity (I somehow think of Ruby as a girl). But since
-there&amp;rsquo;s now law against it, I am free to bend and abuse her for my devious
+there’s now law against it, I am free to bend and abuse her for my devious
 pleasures.&lt;/p&gt;
 
 &lt;p&gt;Functional languages like Lisp and Haskell make it easy to define highly
-granular scopes. It&amp;rsquo;s possible to define a local function, and restrict its
+granular scopes. It’s possible to define a local function, and restrict its
 scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;scheme&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fun1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
@@ -329,8 +329,7 @@ scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:&lt;/p&gt;
         &lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
         
 &lt;span class=&quot;c1&quot;&gt;;; =&amp;gt; (list 1 2)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In this example, &lt;code&gt;fun1&lt;/code&gt; is a helper method for building the list. And &lt;code&gt;fun2&lt;/code&gt; is
 even more restrictive in scope. &lt;code&gt;fun2&lt;/code&gt; is only available for building the second
@@ -345,8 +344,7 @@ element of the list.&lt;/p&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;})()];&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Unfortunately though, we need to create one anonymous function each time we want a
 scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
@@ -358,10 +356,9 @@ scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
  &lt;span class=&quot;n&quot;&gt;fun2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fun1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The scoping isn&amp;rsquo;t right. And so clumsy. How can we do better?&lt;/p&gt;
+&lt;p&gt;The scoping isn’t right. And so clumsy. How can we do better?&lt;/p&gt;
 
 &lt;h1 id=&quot;bwahahahahahahahaha&quot;&gt;Bwahahahahahahahaha~~~~~&lt;/h1&gt;
 
@@ -370,8 +367,7 @@ scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
   &lt;span class=&quot;n&quot;&gt;mod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;mod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module_eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This allows you to do something like&lt;/p&gt;
 
@@ -386,8 +382,7 @@ scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
      &lt;span class=&quot;n&quot;&gt;fun2&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Exercise&lt;/strong&gt;: how do you make flet nestable? As in,&lt;/p&gt;
 
@@ -402,8 +397,7 @@ scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
     &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fun1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Note that in this example &lt;code&gt;fun1&lt;/code&gt; is called in the scope of the inner flet.&lt;/p&gt;
 
@@ -414,14 +408,13 @@ scope &lt;a href=&quot;#better&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span id=&quot;better&quot;&gt;[1]&lt;/span&gt;
 It looks much better in CoffeeScript:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;coffeescript&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nv&quot;&gt;fun1 = &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fun1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fun2 = &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())()]&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;coffeescript&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nv&quot;&gt;fun1 = &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fun1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fun2 = &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())()]&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;OK&amp;hellip; maybe not much better.&lt;/p&gt;
+&lt;p&gt;OK… maybe not much better.&lt;/p&gt;
 </content>
  </entry>
  
@@ -431,32 +424,32 @@ It looks much better in CoffeeScript:&lt;/p&gt;
    <updated>2011-10-17T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2011/10/17/one-item-todo-list</id>
    <content type="html">&lt;p&gt;I fail at TODO list. Every time I tried I failed in the same way. It would work
-at first, and I&amp;rsquo;d feel good about the initial rush of productivity increase
+at first, and I’d feel good about the initial rush of productivity increase
 (real or delusional). Then inevitably the list would get bigger, with stale
-items left in it like rotten fruits. Eventually I&amp;rsquo;d abandon my TODO list.&lt;/p&gt;
+items left in it like rotten fruits. Eventually I’d abandon my TODO list.&lt;/p&gt;
 
 &lt;p&gt;Maybe you feel the same.&lt;/p&gt;
 
 &lt;h1 id=&quot;daily-action&quot;&gt;Daily Action&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Every night before I go to sleep, I decide what I want to do the next
-day&lt;/strong&gt;. Out of the dozens of things I want/need/anxious to do, I&amp;rsquo;d pick one. Just
-one. The next day I&amp;rsquo;d focus myself doing it. &lt;em&gt;Everything else I let go&lt;/em&gt;.&lt;/p&gt;
+day&lt;/strong&gt;. Out of the dozens of things I want/need/anxious to do, I’d pick one. Just
+one. The next day I’d focus myself doing it. &lt;em&gt;Everything else I let go&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;That&amp;rsquo;s it.&lt;/p&gt;
+&lt;p&gt;That’s it.&lt;/p&gt;
 
-&lt;p&gt;You don&amp;rsquo;t need to read a
+&lt;p&gt;You don’t need to read a
 &lt;a href=&quot;http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/ref=sr_1_1?ie=UTF8&amp;amp;qid=1318836563&amp;amp;sr=8-1&quot;&gt;National Bestselling Book&lt;/a&gt;
-about The System&amp;trade;.&lt;/p&gt;
+about The System™.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;ve found that it helps to:&lt;/p&gt;
+&lt;p&gt;I’ve found that it helps to:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Rephrase the goal as an action&lt;/strong&gt;. Instead of saying &amp;ldquo;practice Lean Startup methodology&amp;rdquo;, say &amp;ldquo;A/B test font-size to see if it increases Twitter following conversion rate&amp;rdquo;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Be specific&lt;/strong&gt;. Instead of &amp;ldquo;write a blog post&amp;rdquo;, set the goal to be &amp;ldquo;write a 500 words blog post about the one item todo list&amp;rdquo;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Have a clear ending&lt;/strong&gt;. Instead of &amp;ldquo;learn iPhone programming&amp;rdquo;, say &amp;ldquo;read 2 chapters from Beginning iPhone Programming&amp;rdquo;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Rephrase the goal as an action&lt;/strong&gt;. Instead of saying “practice Lean Startup methodology”, say “A/B test font-size to see if it increases Twitter following conversion rate”.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Be specific&lt;/strong&gt;. Instead of “write a blog post”, set the goal to be “write a 500 words blog post about the one item todo list”.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Have a clear ending&lt;/strong&gt;. Instead of “learn iPhone programming”, say “read 2 chapters from Beginning iPhone Programming”.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Be conservative&lt;/strong&gt;. It is more important to succeed than to be ambitious. We often overestimate how much we can do in a day, but underestimate what we can accomplish in a year. &lt;em&gt;If you consistently succeed, you are more likely to stick to it&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Write the action down&lt;/strong&gt;. The physical action of writing it down helps to clarify the action. Your action might be clear in your head, but when you try to write it down you might realize, &amp;ldquo;oh, it&amp;rsquo;s not specific enough&amp;rdquo;, or &amp;ldquo;oh, it&amp;rsquo;s not actually actionable&amp;rdquo;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Write the action down&lt;/strong&gt;. The physical action of writing it down helps to clarify the action. Your action might be clear in your head, but when you try to write it down you might realize, “oh, it’s not specific enough”, or “oh, it’s not actually actionable”.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Discuss on &lt;a href=&quot;http://news.ycombinator.com/item?id=3151791&quot;&gt;HackerNews&lt;/a&gt;&lt;/p&gt;
@@ -473,16 +466,16 @@ about The System&amp;trade;.&lt;/p&gt;
 
 &lt;p&gt;15 months ago on a sunny June Friday I decided to quit my job. I still remember
 the moment. It was like falling in love. I walked out of the office onto the
-street, feeling like I&amp;rsquo;ve lost half my weight. Each step I took I felt
+street, feeling like I’ve lost half my weight. Each step I took I felt
 lighter. I was walking on the moon.&lt;/p&gt;
 
 &lt;p&gt;15 months later, I am homeless.&lt;/p&gt;
 
-&lt;p&gt;I am in Kuala Lumpur. For the past 9 months, I&amp;rsquo;ve been travelling in Asia, and
+&lt;p&gt;I am in Kuala Lumpur. For the past 9 months, I’ve been travelling in Asia, and
 working on the road. In 9 months, I have saved more money than when I first
 started travelling, thanks to the low living cost in Asia.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;It&amp;rsquo;s cheaper to travel than to stay home.&lt;/em&gt; I spend less than $1000 a month, all
+&lt;p&gt;&lt;em&gt;It’s cheaper to travel than to stay home.&lt;/em&gt; I spend less than $1000 a month, all
 in.&lt;/p&gt;
 
 &lt;p&gt;I assume that you too want to travel. You have your reasons to travel. Or you
@@ -497,37 +490,37 @@ with a one-way ticket.&lt;/p&gt;
 
 &lt;h1 id=&quot;the-fear-and-trembling-of-quitting&quot;&gt;The Fear And Trembling of Quitting&lt;/h1&gt;
 
-&lt;p&gt;The simple, if banal, truth about quitting is that &amp;ldquo;you&amp;rsquo;ll most likely be
-fine&amp;rdquo;. The practical problems of making enough money to live (i.e. having food,
+&lt;p&gt;The simple, if banal, truth about quitting is that “you’ll most likely be
+fine”. The practical problems of making enough money to live (i.e. having food,
 having a place to sleep) are easy to solve. The real difficulty lies elsewhere.&lt;/p&gt;
 
 &lt;p&gt;The decision to quit is an existential choice. I think for many of us it is not
 so much the steady income of a job that is difficult to give up, but the image
 of who we are. Our identity is inextricably bound up with what we do.&lt;/p&gt;
 
-&lt;p&gt;When you go to a party and people ask you what you do, it&amp;rsquo;s difficult to have a
-ready answer if you don&amp;rsquo;t have a job. And the questions asked in a party over
+&lt;p&gt;When you go to a party and people ask you what you do, it’s difficult to have a
+ready answer if you don’t have a job. And the questions asked in a party over
 amiable drinks are but pale shadows of the questions you will ask yourself when
 you are alone.&lt;/p&gt;
 
 &lt;p&gt;The real difficulty of quitting is taking up the responsibility to define who
 you are. Or maybe you are already satisfied with who you are. In which case,
-obviously, there&amp;rsquo;s no reason to quit. But if you DO decide that you want to
-quit, it take a lot of courage. There&amp;rsquo;s always fear and trembling before you
+obviously, there’s no reason to quit. But if you DO decide that you want to
+quit, it take a lot of courage. There’s always fear and trembling before you
 take the leap.&lt;/p&gt;
 
 &lt;p&gt;The existential worries (alas, angst) of not having a job is separate from the
 practical worries of making a living, but very easy to confuse. You might worry
-about paying your rent if you don&amp;rsquo;t have a job, when in fact it is the challenge
+about paying your rent if you don’t have a job, when in fact it is the challenge
 to your identity that is the true source of unrest.&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s a simple answer to the practical worry of paying rent: don&amp;rsquo;t pay the
-rent. End your lease. This is exactly what I&amp;rsquo;ve done as part of my preparation
+&lt;p&gt;Here’s a simple answer to the practical worry of paying rent: don’t pay the
+rent. End your lease. This is exactly what I’ve done as part of my preparation
 to start travelling. The practical problem is easy. The hard part is determining
-what to do if you don&amp;rsquo;t have an apartment, nor the job necessary to support that
+what to do if you don’t have an apartment, nor the job necessary to support that
 lifestyle.&lt;/p&gt;
 
-&lt;p&gt;Isn&amp;rsquo;t is weird that in modernity the core of our identity isn&amp;rsquo;t God, nation, or
+&lt;p&gt;Isn’t is weird that in modernity the core of our identity isn’t God, nation, or
 family, but job, and all that a job would imply.&lt;/p&gt;
 
 &lt;h1 id=&quot;preparing-for-change&quot;&gt;Preparing For Change&lt;/h1&gt;
@@ -536,22 +529,22 @@ family, but job, and all that a job would imply.&lt;/p&gt;
 &lt;span class=&quot;caption&quot;&gt; Empty Sign. Qinghai, China &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;It is not possible to change overnight. Quitting, like turning 30 (or whatever),
-is just an arbitrary marker. It doesn&amp;rsquo;t magically, with a puff of smoke, make
+is just an arbitrary marker. It doesn’t magically, with a puff of smoke, make
 you a different person. You need to prepare for change.&lt;/p&gt;
 
 &lt;p&gt;The biggest danger with quitting is to carry on the same old habits and
 thinking. If so, then eventually what happens is you find another job. You
-shouldn&amp;rsquo;t quit today. But you should start changing now.&lt;/p&gt;
+shouldn’t quit today. But you should start changing now.&lt;/p&gt;
 
-&lt;p&gt;I didn&amp;rsquo;t quit my job then immediately was able to find contract work. I didn&amp;rsquo;t
+&lt;p&gt;I didn’t quit my job then immediately was able to find contract work. I didn’t
 move to Asia right away and work remote, and making American wages while
-enjoying Asia&amp;rsquo;s low cost of living. It took 7 months before I was able to leave
+enjoying Asia’s low cost of living. It took 7 months before I was able to leave
 Vancouver.&lt;/p&gt;
 
 &lt;h1 id=&quot;startup-dream-miserable-failure&quot;&gt;Startup Dream. Miserable Failure.&lt;/h1&gt;
 
 &lt;p&gt;Immediately after quitting, I started working on my project. I was building
-&amp;ldquo;reremind.me&amp;rdquo; with a friend. It&amp;rsquo;s a social network for people suffering
+“reremind.me” with a friend. It’s a social network for people suffering
 depression. I envisioned it as a colloborative psychotherapy platform. Inspired
 by Cognitive Behavioural Therapy, and research in Learned Optimism.&lt;/p&gt;
 
@@ -560,11 +553,11 @@ techniques would be precisely the same techniques that can help themselves. By
 helping and comforting others suffering similar problems, they gain the
 experience and clarity to help themselves.&lt;/p&gt;
 
-&lt;p&gt;It didn&amp;rsquo;t work out.&lt;/p&gt;
+&lt;p&gt;It didn’t work out.&lt;/p&gt;
 
-&lt;p&gt;Then I worked on another idea called &amp;ldquo;jummp.in&amp;rdquo;. It didn&amp;rsquo;t work out either. By
-the time I was doing jummp.in, I was starting to realize &amp;ldquo;oh shit, I have no
-idea what the fuck I am doing&amp;rdquo;, in exactly those words. It wasn&amp;rsquo;t working
+&lt;p&gt;Then I worked on another idea called “jummp.in”. It didn’t work out either. By
+the time I was doing jummp.in, I was starting to realize “oh shit, I have no
+idea what the fuck I am doing”, in exactly those words. It wasn’t working
 out.&lt;/p&gt;
 
 &lt;p&gt;I learned frontend development though. I was strictly a backend Rails developer
@@ -574,37 +567,37 @@ more attractive as a freelancer.&lt;/p&gt;
 
 &lt;h1 id=&quot;transitioning-to-freelancing-by-being-visible&quot;&gt;Transitioning To Freelancing By Being Visible.&lt;/h1&gt;
 
-&lt;p&gt;I had 6 months to go before I&amp;rsquo;d be out of cash and sleeping on the street.&lt;/p&gt;
+&lt;p&gt;I had 6 months to go before I’d be out of cash and sleeping on the street.&lt;/p&gt;
 
-&lt;p&gt;Freelancing was completely new to me. I didn&amp;rsquo;t know where to find work, how much
+&lt;p&gt;Freelancing was completely new to me. I didn’t know where to find work, how much
 to charge, how to negotiate, taxes, or even how to give project estimate. I
-didn&amp;rsquo;t have a lawyer, and my mom was my accountant.&lt;/p&gt;
+didn’t have a lawyer, and my mom was my accountant.&lt;/p&gt;
 
 &lt;p&gt;Contrary to all startup advice about being commited to my goal, I was
 preparing for my freelancing career while I was still working on jummp.in.
 I wanted to give myself plenty of time to get started.&lt;/p&gt;
 
 &lt;p&gt;The single most important thing you need to do to start freelancing is to be
-visible. One way to be visible is to have your own projects. The projects don&amp;rsquo;t
+visible. One way to be visible is to have your own projects. The projects don’t
 have to be popular (or even useful). They just need to be there. If a potential
-client wants to see what you&amp;rsquo;ve done, you should have something to show. That
+client wants to see what you’ve done, you should have something to show. That
 makes all the difference.&lt;/p&gt;
 
-&lt;p&gt;Another way to achieve visibility (again, you don&amp;rsquo;t have to be famous or
+&lt;p&gt;Another way to achieve visibility (again, you don’t have to be famous or
 popular) is going to different meetups. It is most effective if you give talks
 for your local meetups. If you have your own projects, you can talk about your
-projects. If you don&amp;rsquo;t have a project, you can talk about other people&amp;rsquo;s
+projects. If you don’t have a project, you can talk about other people’s
 project. But giving talks gives you instant credibility. I think it is the most
 effective way to achieve visibility.&lt;/p&gt;
 
 &lt;p&gt;While it is crucial to go to meetups and events, beware, though, of
-&amp;ldquo;networking&amp;rdquo;. I am a shy person. For me, networking doesn&amp;rsquo;t come naturally.
+“networking”. I am a shy person. For me, networking doesn’t come naturally.
 Often I hate it so much that I just want to curl into fetal position right on
-the floor and hum a lullaby to myself. But because I don&amp;rsquo;t network for pleasure,
+the floor and hum a lullaby to myself. But because I don’t network for pleasure,
 it was easier for me to focus on what I wanted to get out of it, rather than
 just having fun.&lt;/p&gt;
 
-&lt;p&gt;When you are visible, you start to get lucky. You&amp;rsquo;d start getting referrals from
+&lt;p&gt;When you are visible, you start to get lucky. You’d start getting referrals from
 friends. The only problem is that it takes time. Having projects you can talk
 about would speed up that process considerably.&lt;/p&gt;
 
@@ -625,20 +618,20 @@ invited me to go. When he was there last time, he rented a new vacation condo
 unit for $450 a month. The building had a roof top swimming pool overseeing the
 ocean, and a gym. He said that in Thailand he could easily live for less than
 $1000 all in. That blew my mind. In Vancouver, I was paying $1200 in rent
-alone. I was very interested, but I wasn&amp;rsquo;t sure if I could actually work from a
+alone. I was very interested, but I wasn’t sure if I could actually work from a
 different country. How about timezone difference? How good is the Internet in
 developing countries?&lt;/p&gt;
 
 &lt;p&gt;Of the first two clients I had, one was in Seattle and one was in New York, so I
 already had experience with remote clients. The only problem was that I always
-worked from home, where I had total control over my work environment. I&amp;rsquo;ve
+worked from home, where I had total control over my work environment. I’ve
 always needed a very quiet place to work. The least bit of noise distracts me. I
-can&amp;rsquo;t, for example, work listening to music.&lt;/p&gt;
+can’t, for example, work listening to music.&lt;/p&gt;
 
 &lt;p&gt;If I were to travel, I had to make sure that I can get work done on the road. As
 an experiment, I decided to visit Tofino for a week. Tofino is a busy resort
-town in the summer, famous for its surfs. In the winter though, it&amp;rsquo;s a perfect
-getaway. There really wasn&amp;rsquo;t much to do there in the Winter.&lt;/p&gt;
+town in the summer, famous for its surfs. In the winter though, it’s a perfect
+getaway. There really wasn’t much to do there in the Winter.&lt;/p&gt;
 
 &lt;p&gt;I met some interesting people there. People who go to a surf town in the dead of
 Winter are by that selection bias pretty weird. There was a divorced man seeking
@@ -646,7 +639,7 @@ new life. He also lost his business. There was a retired programmer who did
 Cobol for living. There was also a woman who was a life coach. One breakfast she
 was teaching a tough looking, bouncer type of guy how to listen with more
 empathy. Two geologists from the Univeristy of Alberta were crazy enough to have
-gone surfing in winter&amp;rsquo;s bitter cold water. And there was a German guy who
+gone surfing in winter’s bitter cold water. And there was a German guy who
 travelled across Canada for 2 months. He couchsurfed all the way, and the only
 two nights he paid was to stay in the hostel in Tofino.&lt;/p&gt;
 
@@ -665,16 +658,16 @@ everything I could to get the hell out.&lt;/p&gt;
 
 &lt;p&gt;After the New Year, I started to prepare for the trip itself. I bought a one-way
 ticket to Thailand. I renewed my passport, and got the visas for China and
-India. I informed my credit card company that I&amp;rsquo;d be out of country. I bought
-travel insurance. I got an international driver&amp;rsquo;s license. I changed my ATM
-card&amp;rsquo;s PIN from 6 digits to 4 (some country&amp;rsquo;s ATMs can&amp;rsquo;t take 6 digit PINs). I
+India. I informed my credit card company that I’d be out of country. I bought
+travel insurance. I got an international driver’s license. I changed my ATM
+card’s PIN from 6 digits to 4 (some country’s ATMs can’t take 6 digit PINs). I
 sold my iMac. I sold my stocks at a significant loss. I got my taxes ready for
 the year.&lt;/p&gt;
 
 &lt;p&gt;I bought the stuff I needed to travel. I wanted to travel light. I had a 25L
-backpack into which I had to fit everything I need. My packing rule was that I&amp;rsquo;d
-leave out anything if I wouldn&amp;rsquo;t use everyday. If I wasn&amp;rsquo;t sure I&amp;rsquo;d need
-something, I&amp;rsquo;d leave it out. If I could get something locally, I&amp;rsquo;d leave it out.&lt;/p&gt;
+backpack into which I had to fit everything I need. My packing rule was that I’d
+leave out anything if I wouldn’t use everyday. If I wasn’t sure I’d need
+something, I’d leave it out. If I could get something locally, I’d leave it out.&lt;/p&gt;
 
 &lt;p&gt;Two weeks before the flight, I was putting in extra hours for my clients, so I
 could take a week off to adjust when I got to Thailand.&lt;/p&gt;
@@ -687,18 +680,18 @@ could take a week off to adjust when I got to Thailand.&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;caption&quot;&gt; Plank Walk at Mount Hua. I waz there! &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;In 9 months, I&amp;rsquo;ve been to Thailand, Hong Kong, Cambodia, China, Korea, and
+&lt;p&gt;In 9 months, I’ve been to Thailand, Hong Kong, Cambodia, China, Korea, and
 Malaysia. The pace of my travelling is slow compared to others. A couple I met
 in Korea who also travelled for 9 months had also visited India, Nepal, Laos,
 Vietnam, and Australia. I took my time.&lt;/p&gt;
 
-&lt;p&gt;I scheduled three days of work for every one or two day&amp;rsquo;s travelling. When I had
-to travel by bus or train to another place, I&amp;rsquo;d take the next day or two to
+&lt;p&gt;I scheduled three days of work for every one or two day’s travelling. When I had
+to travel by bus or train to another place, I’d take the next day or two to
 work, and rest from travelling. In effect, I was alternating between work and
-travel. When I was tired from working, I&amp;rsquo;d go see things. When I was tired of
-travelling, I&amp;rsquo;d work on things.&lt;/p&gt;
+travel. When I was tired from working, I’d go see things. When I was tired of
+travelling, I’d work on things.&lt;/p&gt;
 
-&lt;p&gt;This system wasn&amp;rsquo;t foolproof. It failed me when I travelled to Siem Reap
+&lt;p&gt;This system wasn’t foolproof. It failed me when I travelled to Siem Reap
 to visit Angkor Wat. As I was especially tired from the trip to Siem Reap, I
 took the first three days to work. I booked a guide to take me to see Angkor Wat
 starting on the fourth day. Unfortunately on the third day I got a nasty skin
@@ -707,27 +700,27 @@ Angkor Wat before going back to Bangkok. But by that night the inflammation was
 hurting like hell and spreading. So next morning I left Cambodia, before I had a
 chance to see Angkor with my own eyes.&lt;/p&gt;
 
-&lt;p&gt;Been there, didn&amp;rsquo;t do it, but got the postcards.&lt;/p&gt;
+&lt;p&gt;Been there, didn’t do it, but got the postcards.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-schrdingers-state-of-being&quot;&gt;The Schrödinger&amp;rsquo;s State of Being&lt;/h1&gt;
+&lt;h1 id=&quot;the-schrdingers-state-of-being&quot;&gt;The Schrödinger’s State of Being&lt;/h1&gt;
 
-&lt;p&gt;To be sure, getting to this point wasn&amp;rsquo;t as smooth and planned as this narrative
+&lt;p&gt;To be sure, getting to this point wasn’t as smooth and planned as this narrative
 might suggest. In reality, I met many dead ends, and went into detours. I was
 fraught with doubts, and endlessly exploring different opportunities. Much of
 what happend was ad hoc and opportunistic.&lt;/p&gt;
 
-&lt;p&gt;What I didn&amp;rsquo;t tell you in this story is that while I was doing all this, I was
+&lt;p&gt;What I didn’t tell you in this story is that while I was doing all this, I was
 also interviewing for jobs. I was actively sabotaging my own plan to
-travel. Luckily, I didn&amp;rsquo;t get lucky with job hunting.&lt;/p&gt;
+travel. Luckily, I didn’t get lucky with job hunting.&lt;/p&gt;
 
 &lt;p&gt;It seems miraculous. Life, to a great extent, cannot be planned or
-predicted. Much of it depends on chance. Had I found a job, I would&amp;rsquo;ve been in
-San Francisco busting my ass for a startup. My plan to travel would&amp;rsquo;ve come to
+predicted. Much of it depends on chance. Had I found a job, I would’ve been in
+San Francisco busting my ass for a startup. My plan to travel would’ve come to
 naught.&lt;/p&gt;
 
 &lt;p&gt;Was I lucky or what?&lt;/p&gt;
 
-&lt;p&gt;Maybe the lesson isn&amp;rsquo;t that I was lucky enough to fail to get a job. The real
+&lt;p&gt;Maybe the lesson isn’t that I was lucky enough to fail to get a job. The real
 lesson, rather, is a stoic appreciation for whatever life has in store. Whatever
 happens to me, I should make the best of it. It is a sort of optimism. Life
 always seems to work out fine in the end, one thing leading to another.&lt;/p&gt;
@@ -749,8 +742,8 @@ faith we can have. Have faith in life, that it would turn out alright. &lt;em&gt
    <id>http://www.metacircus.com/hacking/2011/09/14/6-steps-i-took-from-idea-to-launch</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;http://farm3.static.flickr.com/2768/4460525589_783067f199.jpg&quot; alt=&quot;wise old man&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;A visitor in New York City was asking an old man for direction, &amp;ldquo;excuse me, how
-do I get to Carnegie Hall?&amp;rdquo; The old man, at once senile and wise, answered:&lt;/p&gt;
+&lt;p&gt;A visitor in New York City was asking an old man for direction, “excuse me, how
+do I get to Carnegie Hall?” The old man, at once senile and wise, answered:&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Practice. Practice. Practice.&lt;/em&gt;&lt;/p&gt;
 
@@ -759,22 +752,22 @@ do I get to Carnegie Hall?&amp;rdquo; The old man, at once senile and wise, answ
 &lt;h1 id=&quot;lean-kata&quot;&gt;Lean Kata&lt;/h1&gt;
 
 &lt;p&gt;I thought that my ideas are so great, that I just need to code, put in some
-metrics, add some A/B tests, then I&amp;rsquo;d be on my way to lean epiphanies and
+metrics, add some A/B tests, then I’d be on my way to lean epiphanies and
 success. I thought that the lean approach is just a bag of techniques and tricks
 that I can pick and choose as I wish. I thought I could simply graft the lean
 techniques onto what I already knew: coding.&lt;/p&gt;
 
-&lt;p&gt;I didn&amp;rsquo;t take learning seriously. So up until now, I left behind a lot of
+&lt;p&gt;I didn’t take learning seriously. So up until now, I left behind a lot of
 half-hatched ideas and dead code in my wake. I felt like a murderer of
 ideas.&lt;/p&gt;
 
 &lt;p&gt;To benefit from lean thinking, I eventually realized, I had to step out of my
-comfort zone with programming, and focus on the lean practice itself. That&amp;rsquo;s why
-I dececided to undertake a &amp;ldquo;Lean Kata&amp;rdquo;. Like doing a Code Kata, I focused myself
+comfort zone with programming, and focus on the lean practice itself. That’s why
+I dececided to undertake a “Lean Kata”. Like doing a Code Kata, I focused myself
 on learning the lean techniques, rather than accomplishing.&lt;/p&gt;
 
 &lt;p&gt;What follows is what I did to launch &lt;em&gt;FaceOff&lt;/em&gt;, a &lt;a href=&quot;http://getFaceOff.com&quot;&gt;Chrome
-extension to block &amp;ldquo;like&amp;rdquo; button&lt;/a&gt;.&lt;/p&gt;
+extension to block “like” button&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#s1&quot;&gt; 1. Idea &lt;/a&gt;
 &lt;br /&gt;
@@ -798,28 +791,28 @@ extension to block &amp;ldquo;like&amp;rdquo; button&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For the Lean Kata, I was against using one of my own &lt;span style=&quot;text-decoration:line-through;&quot;&gt;brilliant&lt;/span&gt; retarded ideas.&lt;/p&gt;
 
 &lt;p&gt;I noticed on Hacker News &lt;a href=&quot;http://www.jwz.org/blog/2011/09/surprise-facebook-doesnt-like-privacy-countermeasures/&quot;&gt;a blog post&lt;/a&gt; about the Facebook like
-button by Jamie Zawinski. The like button tracks you even if you don&amp;rsquo;t click on
+button by Jamie Zawinski. The like button tracks you even if you don’t click on
 it. By merely visiting a page and loading the like button, Facebook knows that
-you&amp;rsquo;ve been there. Facebook, in fact, knows more about you than your mom.&lt;/p&gt;
+you’ve been there. Facebook, in fact, knows more about you than your mom.&lt;/p&gt;
 
-&lt;p&gt;The German tech site Heise linked to in Jaime Zawinsky&amp;rsquo;s post already proposed a
+&lt;p&gt;The German tech site Heise linked to in Jaime Zawinsky’s post already proposed a
 &lt;a href=&quot;http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html&quot;&gt;2-click like
 button&lt;/a&gt;
 that seemed pretty compelling. So I thought I could make a Chrome extension that
 implements it.&lt;/p&gt;
 
 &lt;p&gt;At this point, I knew that people are paranoid about Facebook. But there already
-exists a Chrome extension that blocks Facebook outright. I didn&amp;rsquo;t know if people
+exists a Chrome extension that blocks Facebook outright. I didn’t know if people
 would want a Chrome extension specifically for the 2-click like button.&lt;/p&gt;
 
 &lt;h1 id=&quot;s2&quot;&gt; 2. MVP &lt;/h1&gt;
 
 &lt;p&gt;I decided to take a more paranoia mongering approach. It is easier to pin the
-fear to a person, than the abstract idea of privacy. So I thought I&amp;rsquo;d model the
-marketing message after 1984&amp;rsquo;s &amp;ldquo;Big Brother Is Watching&amp;rdquo;, and villanize Mark
+fear to a person, than the abstract idea of privacy. So I thought I’d model the
+marketing message after 1984’s “Big Brother Is Watching”, and villanize Mark
 Zuckerberg. Furthermore, it would enhance the villainy by adding a profit
 motive. Nobody wants to know that Facebook is going to make a cool $1B by
-sacraficing our culture&amp;rsquo;s collective privacy.&lt;/p&gt;
+sacraficing our culture’s collective privacy.&lt;/p&gt;
 
 &lt;p&gt;I made the mocks with Balsamiq and pushed it on Github. It looks like this:&lt;/p&gt;
 
@@ -834,22 +827,22 @@ interest for this project.&lt;/p&gt;
 block like buttons embedded by an iframe, but not those using the Facebook
 Markup Language (FBML). I spent an extra day fixing that problem.&lt;/p&gt;
 
-&lt;p&gt;This was the easy part. In hindsight, I should&amp;rsquo;ve just moved on and work on the
+&lt;p&gt;This was the easy part. In hindsight, I should’ve just moved on and work on the
 landing page so I can release FaceOff earlier, and fix the problem later.&lt;/p&gt;
 
 &lt;h1 id=&quot;s4&quot;&gt; 4. Landing Page Design &lt;/h1&gt;
 
 &lt;p&gt;I asked my friend &lt;a href=&quot;http://twitter.com/bearwithclaws&quot;&gt;@bearwithclaws&lt;/a&gt;, of
 &lt;a href=&quot;http://hackermonthly.com/&quot;&gt;Hacker Monthly&lt;/a&gt;, to do the design (you should
-subscribe to his magazine, because it&amp;rsquo;s the best way to keep up with Hacker News
+subscribe to his magazine, because it’s the best way to keep up with Hacker News
 without having to obessively check it every 30 seconds).&lt;/p&gt;
 
-&lt;p&gt;He came up with the idea to use Mark Zuckerberg&amp;rsquo;s profile pictures as part of
-the demo. So when the like button is blocked, Mark Z. is facing away and isn&amp;rsquo;t
+&lt;p&gt;He came up with the idea to use Mark Zuckerberg’s profile pictures as part of
+the demo. So when the like button is blocked, Mark Z. is facing away and isn’t
 watching. And when the like button is enabled, Mark Z. is facing your way, and is
 watching. I thought that was pretty funny, and not too malicious.&lt;/p&gt;
 
-&lt;p&gt;We stole those pictures from Wired magazine&amp;rsquo;s &lt;a href=&quot;http://www.wired.com/techbiz/startups/news/2007/09/ff_facebook&quot;&gt;profile of Mark
+&lt;p&gt;We stole those pictures from Wired magazine’s &lt;a href=&quot;http://www.wired.com/techbiz/startups/news/2007/09/ff_facebook&quot;&gt;profile of Mark
 Zuckerberg&lt;/a&gt;. I
 guess we can afford a few good laughs until Wired send me a cease and desist
 letter to take the pictures down (hopefully never).&lt;/p&gt;
@@ -858,7 +851,7 @@ letter to take the pictures down (hopefully never).&lt;/p&gt;
 
 &lt;h1 id=&quot;s5&quot;&gt; 5. Metrics &amp;amp; A/B Testing &lt;/h1&gt;
 
-&lt;p&gt;I&amp;rsquo;ve always included Google Analytics for my projects. But to be honest, I never
+&lt;p&gt;I’ve always included Google Analytics for my projects. But to be honest, I never
 learned much from Google Analytics. Rather, it is to me a fun ego booster that
 allowed me to see a spike when people are checking out my stuff, and a
 corresponding spike in my sense of well-being.&lt;/p&gt;
@@ -896,13 +889,13 @@ surprising. Needless to say, A/B testing proved me wrong. I changed,&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://i467.photobucket.com/albums/rr40/hdyeh2000/variation.png&quot; alt=&quot;variation&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Making the description of the extension more visual I thought was a clear
-win. Yet it turned out that this &amp;ldquo;obvious improvement&amp;rdquo; resulted in a 20%
+win. Yet it turned out that this “obvious improvement” resulted in a 20%
 decrease in conversion rate.&lt;/p&gt;
 
 &lt;h1 id=&quot;s6&quot;&gt; 6. Launch &lt;/h1&gt;
 
 &lt;p&gt;I submitted FaceOff to Hacker News on a weekend. My rationale was that hackers
-and entrepreneurs don&amp;rsquo;t rest on weekends, but PR firms do. So on weekends there
+and entrepreneurs don’t rest on weekends, but PR firms do. So on weekends there
 would be roughly the same amount of votes as weekdays, but distributed over
 fewer submissions. Thus on a weekend, my submission might have a lesser risk
 getting swept away by others.&lt;/p&gt;
@@ -977,7 +970,7 @@ from somebody other than my mom.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://p.twimg.com/AYrd9DACAAIBr7F.png&quot; alt=&quot;I Love Parens&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I love Lisp&amp;rsquo;s syntax. Or rather, the lack thereof. But people might not like
+&lt;p&gt;I love Lisp’s syntax. Or rather, the lack thereof. But people might not like
 such austere minimalism. So ComaLisp has braces and curlies, and a liberal
 sprinkling of commas. It is a delicious syntatic soup fortified with extra
 punctuation marks. Yum.&lt;/p&gt;
@@ -989,7 +982,7 @@ punctuation marks. Yum.&lt;/p&gt;
 
 &lt;p&gt;Then in the IRB&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;require 'comalisp'
+&lt;pre&gt;&lt;code&gt;require &#39;comalisp&#39;
 (ComaLisp {
    (puts &quot;hello world&quot;)
   })
@@ -1014,11 +1007,11 @@ DSL context:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;However, the fact that lists are represented by arrays is an implementation
-detail. You can&amp;rsquo;t rely on that. You should consider whatever returned by &lt;code&gt;list&lt;/code&gt;
+detail. You can’t rely on that. You should consider whatever returned by &lt;code&gt;list&lt;/code&gt;
 as an abstract datatype, and only use the provided functions in ComaLisp to
 operate on lists. (More pain the better, right?)&lt;/p&gt;
 
-&lt;p&gt;The good old &lt;code&gt;car&lt;/code&gt; and &lt;code&gt;cdr&lt;/code&gt; work as you&amp;rsquo;d expect.&lt;/p&gt;
+&lt;p&gt;The good old &lt;code&gt;car&lt;/code&gt; and &lt;code&gt;cdr&lt;/code&gt; work as you’d expect.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(car (list 1, 2, 3)) == 1
 (cdr (list 1, 2, 3)) == (list 2, 3) == [2,3]
@@ -1041,10 +1034,10 @@ algebra works out.&lt;/p&gt;
 (cdr (list)) == (cdr (cdr (list))) == ... == []
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;However, because the list is represented by an array, it&amp;rsquo;s not possible to have
+&lt;p&gt;However, because the list is represented by an array, it’s not possible to have
 an improper list like in a real Lisp.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;(cons 1 2) =&amp;gt; '(1 . 2) # not possible
+&lt;pre&gt;&lt;code&gt;(cons 1 2) =&amp;gt; &#39;(1 . 2) # not possible
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;In ComaLisp, the second argument to cons &lt;em&gt;must&lt;/em&gt; be a list&lt;/p&gt;
@@ -1072,7 +1065,7 @@ ComaLisp!&lt;/p&gt;
 
 &lt;h2 id=&quot;define-function&quot;&gt;Define Function&lt;/h2&gt;
 
-&lt;p&gt;Here&amp;rsquo;s how you define a function in ComaLisp&lt;/p&gt;
+&lt;p&gt;Here’s how you define a function in ComaLisp&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(ComaLisp {
   (defun [:foo,:a,:b] {
@@ -1101,7 +1094,7 @@ dynamically.&lt;/p&gt;
 &lt;h2 id=&quot;oop-integration-with-ruby&quot;&gt;OOP Integration With Ruby&lt;/h2&gt;
 
 &lt;p&gt;The best that ComaLisp has to offer is probably its tight integration with
-Ruby&amp;rsquo;s powerful object system. If you have a native Ruby object, you can invoke
+Ruby’s powerful object system. If you have a native Ruby object, you can invoke
 its methods the Lisp way,&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(map [-1,-2,-3] { |e|
@@ -1131,7 +1124,7 @@ its methods the Lisp way,&lt;/p&gt;
    <content type="html">&lt;p&gt;Is &lt;a href=&quot;http://metacircus.com/hacking/2011/09/07/lispy-abuse-of-ruby-syntax.html&quot;&gt;ComaLisp&lt;/a&gt; homoiconic?&lt;/p&gt;
 
 &lt;p&gt;I wish it is, so I did some research to see if I can argue that it is. (If I can
-argue that it is already homoiconic, then I don&amp;rsquo;t have to work to make it so).&lt;/p&gt;
+argue that it is already homoiconic, then I don’t have to work to make it so).&lt;/p&gt;
 
 &lt;p&gt;The origin of the term is from &lt;a href=&quot;http://en.wikipedia.org/wiki/Homoiconicity&quot;&gt;TRAC&lt;/a&gt;,&lt;/p&gt;
 
@@ -1153,7 +1146,7 @@ second degree homoiconic.&lt;/p&gt;
 
 &lt;h2 id=&quot;is-thinking-homoiconic&quot;&gt;Is Thinking Homoiconic?&lt;/h2&gt;
 
-&lt;p&gt;If the &amp;ldquo;stuff&amp;rdquo; of thought is the same as thought itself, then it is 1st-degree
+&lt;p&gt;If the “stuff” of thought is the same as thought itself, then it is 1st-degree
 homoiconic. But if language is an intermediary of thought, and thought itself is
 a meta-language (see
 &lt;a href=&quot;http://www.amazon.com/Foundations-Language-Meaning-Grammar-Evolution/dp/0199264376/ref=sr_1_2?ie=UTF8&amp;amp;qid=1315366216&amp;amp;sr=8-2&quot;&gt;Jackendoff&lt;/a&gt;),
@@ -1174,18 +1167,18 @@ lead weight of self-consciousness is made buoyant
 by the lightness of heart. On creative days, I am
 not just lighter. I become weightless. I float.&lt;/p&gt;
 
-&lt;p&gt;When I am creative, it&amp;rsquo;s not so much that I get
+&lt;p&gt;When I am creative, it’s not so much that I get
 better ideas. Rather, because I feel happier,
 everything seems better. When I am happy, I am
 more willing to listen to myself, so I get more
 ideas. And given more ideas, some of them would be
 good.&lt;/p&gt;
 
-&lt;p&gt;Don&amp;rsquo;t torture your brain to be creative when you
-don&amp;rsquo;t feel good. Just give up trying. It&amp;rsquo;s like
+&lt;p&gt;Don’t torture your brain to be creative when you
+don’t feel good. Just give up trying. It’s like
 wringing sap out of dry dead wood. Instead, work
 harder to be happy. But beware of the fallacy of
-wanting to fix your life in some big way. It won&amp;rsquo;t
+wanting to fix your life in some big way. It won’t
 make you any happier. Instead, pay attention to
 the little details in life that matter. The
 moments make you happy.&lt;/p&gt;
@@ -1204,20 +1197,20 @@ moments make you happy.&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2011/08/24/travelling-is-slow-suicide.html"/>
    <updated>2011-08-24T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2011/08/24/travelling-is-slow-suicide</id>
-   <content type="html">&lt;p&gt;Chatting, I said that &amp;ldquo;选择长期旅行应该算是一种慢性自杀。环境的变化一点一滴地渗
-透，而取代了原来的自我&amp;rdquo;.  Choosing long-term tavel is perhaps a kind of slow
+   <content type="html">&lt;p&gt;Chatting, I said that “选择长期旅行应该算是一种慢性自杀。环境的变化一点一滴地渗
+透，而取代了原来的自我”.  Choosing long-term tavel is perhaps a kind of slow
 suicide. The changes in the environment slowly saturate me, and replace my
 original self bit by bit.&lt;/p&gt;
 
-&lt;p&gt;I was baffled by why people wouldn&amp;rsquo;t do anything to change their lives if they didn&amp;rsquo;t
-like it. Why wouldn&amp;rsquo;t they quit their jobs? They have the money, what are they
+&lt;p&gt;I was baffled by why people wouldn’t do anything to change their lives if they didn’t
+like it. Why wouldn’t they quit their jobs? They have the money, what are they
 afraid of? A friend asked me if I thought of that people may not want to travel
 like me. Which struck me as true.&lt;/p&gt;
 
 &lt;p&gt;I remembered how much I hated my life. It was easy for me to give up everything
 and go. I have zero regret that I did. It may be true that a person hates his
 job, and hates his boss. But there are other things they are not willing to give
-up. Often a good life is putting up with things you don&amp;rsquo;t like so you may enjoy
+up. Often a good life is putting up with things you don’t like so you may enjoy
 things you do value. Maybe for some people a shit job is a fair trade to be able
 to watch TV at home after work. Being content, why would they want to travel?&lt;/p&gt;
 
@@ -1235,8 +1228,8 @@ Petrona Towers. Actually pretty cool.&lt;/p&gt;
    <updated>2011-02-18T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2011/02/18/play-git-like-a-violin</id>
    <content type="html">&lt;p&gt;People think that playing the violin is hard. But
-that&amp;rsquo;s only when you are learning and
-practicing. When you are &lt;em&gt;actually&lt;/em&gt; playing, it&amp;rsquo;s
+that’s only when you are learning and
+practicing. When you are &lt;em&gt;actually&lt;/em&gt; playing, it’s
 as natural as breathing. So it is with Git. After
 a couple years of use, and the help of a few
 aliases, my git usage now comes as easily as music
@@ -1250,7 +1243,7 @@ git r1
 git rh 330183
 git s
 git d
-git cm 'a new commit'
+git cm &#39;a new commit&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;All of us at one point or another kept a private
@@ -1260,14 +1253,14 @@ with Git to know the common tasks that I do all
 the time. These common tasks I have created
 aliases for.&lt;/p&gt;
 
-&lt;p&gt;Very often, after I&amp;rsquo;ve made a commit, I&amp;rsquo;d keep
+&lt;p&gt;Very often, after I’ve made a commit, I’d keep
 wanting to make small fixes to it, like fussing
 around with spaces, or renaming variables, or
 rewording the comments, or minor refactoring of
 the code. These changes are too small to worth
 their own commits (that would only clutter up the
-history). So I&amp;rsquo;d rather if these changes belong to
-the commit I already have. I&amp;rsquo;d do:&lt;/p&gt;
+history). So I’d rather if these changes belong to
+the commit I already have. I’d do:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git commit -a --amend -C HEAD
 &lt;/code&gt;&lt;/pre&gt;
@@ -1275,8 +1268,8 @@ the commit I already have. I&amp;rsquo;d do:&lt;/p&gt;
 &lt;p&gt;This adds all the changes to the staging area, and
 commit it as an amendment to the previous commit,
 using the same commit message. Effectively, I am
-saying: &amp;ldquo;put whatever I&amp;rsquo;ve done into the previous
-commit.&amp;rdquo;&lt;/p&gt;
+saying: “put whatever I’ve done into the previous
+commit.”&lt;/p&gt;
 
 &lt;p&gt;For this usage pattern, I have created an alias in
 my &lt;code&gt;~/.gitconfig&lt;/code&gt;, like so:&lt;/p&gt;
@@ -1285,28 +1278,28 @@ my &lt;code&gt;~/.gitconfig&lt;/code&gt;, like so:&lt;/p&gt;
   caa = commit -a --amend -C HEAD
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then ever after, I&amp;rsquo;d type &lt;code&gt;git caa&lt;/code&gt; whenever I
+&lt;p&gt;Then ever after, I’d type &lt;code&gt;git caa&lt;/code&gt; whenever I
 wanted to do the same thing. Another pattern I use
-a lot is to create a commit for the changes I&amp;rsquo;ve
+a lot is to create a commit for the changes I’ve
 done, all in one step:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;git commit -a -m 'commit message'
+&lt;pre&gt;&lt;code&gt;git commit -a -m &#39;commit message&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This I&amp;rsquo;d create another alias:&lt;/p&gt;
+&lt;p&gt;This I’d create another alias:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[alias]
   cma = commit -a -m
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then ever after, I&amp;rsquo;d type &lt;code&gt;g cma&lt;/code&gt;. 90% of the
+&lt;p&gt;Then ever after, I’d type &lt;code&gt;g cma&lt;/code&gt;. 90% of the
 time, &lt;code&gt;git caa&lt;/code&gt; and &lt;code&gt;git cma&lt;/code&gt; cover my commit
 needs. If you ask me what they stand for, I
-honestly can&amp;rsquo;t tell you, because these commands
+honestly can’t tell you, because these commands
 are so short, they are ingrained in my muscle
-memory. I don&amp;rsquo;t think about what I am doing with
+memory. I don’t think about what I am doing with
 Git, just as when I am playing an arpegio on the
-violin, I don&amp;rsquo;t think about the notes
+violin, I don’t think about the notes
 individually.&lt;/p&gt;
 
 &lt;p&gt;Here are all my git aliases. I hope you find some
@@ -1318,7 +1311,7 @@ workflow.&lt;/p&gt;
   ai = add --interactive
 
   # All the aliases relate to commits. Note that
-  # they are grouped by common prefixes, so I don't
+  # they are grouped by common prefixes, so I don&#39;t
   # confuse what I want done by accident.
   c = commit
   # commit with a message
@@ -1361,7 +1354,7 @@ g r1
 g rh 330183
 g s
 g d
-g cm 'a new commit'
+g cm &#39;a new commit&#39;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
  </entry>
@@ -1399,12 +1392,12 @@ back, and create more dreams of trees.&lt;/p&gt;
    <updated>2010-05-22T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/05/22/who-brought-fire</id>
    <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;Bread is the most everyday and familiar of foods, the sturdy staff of life on which hundreds of generations have leaned for sustenance. It also represents a truly remarkable discovery, a lively pole on which the young human imagination may well have vaulted forward in insight and inspiration. For our prehistoric ancestors it would have been a startling sign of the natural world&amp;rsquo;s hidden potential for being transformed, and their own ability to shape natural materials to human desires. &amp;ndash;  Harold McGee &lt;em&gt;On Food And Cooking&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;Bread is the most everyday and familiar of foods, the sturdy staff of life on which hundreds of generations have leaned for sustenance. It also represents a truly remarkable discovery, a lively pole on which the young human imagination may well have vaulted forward in insight and inspiration. For our prehistoric ancestors it would have been a startling sign of the natural world’s hidden potential for being transformed, and their own ability to shape natural materials to human desires. –  Harold McGee &lt;em&gt;On Food And Cooking&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Only a food writer could sing a semi-religious paean to bread. &amp;ldquo;A
+&lt;p&gt;Only a food writer could sing a semi-religious paean to bread. “A
 lively pole on which the young human imagination may well have vaulted
-forward&amp;rdquo;, really?&lt;/p&gt;
+forward”, really?&lt;/p&gt;
 
 &lt;p&gt;But going meta, each profession perhaps is wont to overestimate its
 importance to humanity. Fact is, there had been so many turning points
@@ -1412,8 +1405,8 @@ in the history of humanity. Fire. Language. Agriculture.
 Bread. Citystate. The Gutenberg press. Sanitation. The Internet. Paris
 Hilton.&lt;/p&gt;
 
-&lt;p&gt;These &amp;ldquo;turning points&amp;rdquo; are not revolutionary. It&amp;rsquo;s not like one day we
-don&amp;rsquo;t have the Internet, the next day we do. It took time. An idea
+&lt;p&gt;These “turning points” are not revolutionary. It’s not like one day we
+don’t have the Internet, the next day we do. It took time. An idea
 needs to take root in society, and grow into it. It is not the idea
 itself, but the society accepting that idea, and reifying an almost
 ghostly abstraction to concrete things that affect real lives. Society
@@ -1431,11 +1424,11 @@ to humanity was not Prometheus, but the moms that used it to make food.&lt;/p&gt
    <updated>2010-04-20T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/20/one-thing</id>
    <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;The greatest weight.&lt;/em&gt; What, if some day or night a demon were to steal afer you into your loneliest loneliness and say to you: &amp;ldquo;This life as you now live it and have lived it, you will have to live once more and innumerable times more; and there will be nothing new in it, but every pain and every joy and every thought and sigh and everything unutterably small or great in your life will have to return to you, all in the same succession and sequence&amp;ndash; even this spider and this moonlight between the trees, and even this moment and I myself. The eternal hourglass of existence is turned upside down again and again, and your with it, speck of dust!&amp;rdquo;
-Would you not throw yourself down and gnash your teeth and curse the demon who spoke thus? Or have you once experienced a tremendous moment when you would have answered him: &amp;ldquo;You are a god and never have I heard anything more divine.&amp;rdquo; If this thought gained posession of you, it would change you as you are or perhaps crush you. The question in each and every thing, &amp;ldquo;Do you desire this once more and innumerable times more?&amp;rdquo; would like upon your actions as the greatest weight. Or how well disposed would you have to become to yourself and to life to &lt;em&gt;crave nothing more fervently&lt;/em&gt; than this ultimate confirmation and seal? &amp;ndash; &lt;em&gt;The Gay Science&lt;/em&gt;, Aphorism 341&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;The greatest weight.&lt;/em&gt; What, if some day or night a demon were to steal afer you into your loneliest loneliness and say to you: “This life as you now live it and have lived it, you will have to live once more and innumerable times more; and there will be nothing new in it, but every pain and every joy and every thought and sigh and everything unutterably small or great in your life will have to return to you, all in the same succession and sequence– even this spider and this moonlight between the trees, and even this moment and I myself. The eternal hourglass of existence is turned upside down again and again, and your with it, speck of dust!”
+Would you not throw yourself down and gnash your teeth and curse the demon who spoke thus? Or have you once experienced a tremendous moment when you would have answered him: “You are a god and never have I heard anything more divine.” If this thought gained posession of you, it would change you as you are or perhaps crush you. The question in each and every thing, “Do you desire this once more and innumerable times more?” would like upon your actions as the greatest weight. Or how well disposed would you have to become to yourself and to life to &lt;em&gt;crave nothing more fervently&lt;/em&gt; than this ultimate confirmation and seal? – &lt;em&gt;The Gay Science&lt;/em&gt;, Aphorism 341&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;It&amp;rsquo;s never too late. Just one thing is enough to make it all
+&lt;p&gt;It’s never too late. Just one thing is enough to make it all
 worthwhile.&lt;/p&gt;
 </content>
  </entry>
@@ -1447,33 +1440,33 @@ worthwhile.&lt;/p&gt;
    <id>http://www.metacircus.com/writings/2010/04/19/what-is-the-opposite-of-a-fork</id>
    <content type="html">&lt;p&gt;It is always tempting to think in dualistic terms: us vs them, black
 and white, dark and light, work and play, life and death, love and
-hate. It seems natural that for any X, there&amp;rsquo;s always the opposite of
+hate. It seems natural that for any X, there’s always the opposite of
 X.&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;If you are not a liberal, then you are a conservative.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;“If you are not a liberal, then you are a conservative.”&lt;/p&gt;
 
-&lt;p&gt;Many of these &amp;ldquo;opposites&amp;rdquo; are nonsense. Marvin Minsky in &lt;a href=&quot;http://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135/ref=sr_1_1&quot;&gt;The Society of Mind&lt;/a&gt;
-has a wonderful example, where he asks &amp;ldquo;what is the opposite of a
-fork?&amp;rdquo;  Is it a spoon? Or is it a knife? Sometimes &amp;ldquo;the opposite&amp;rdquo;
-simply doesn&amp;rsquo;t exist.&lt;/p&gt;
+&lt;p&gt;Many of these “opposites” are nonsense. Marvin Minsky in &lt;a href=&quot;http://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135/ref=sr_1_1&quot;&gt;The Society of Mind&lt;/a&gt;
+has a wonderful example, where he asks “what is the opposite of a
+fork?”  Is it a spoon? Or is it a knife? Sometimes “the opposite”
+simply doesn’t exist.&lt;/p&gt;
 
-&lt;p&gt;The way we think in opposites can sometimes be dysfunctional. I don&amp;rsquo;t
-want to be poor, so I must be rich. I don&amp;rsquo;t want to remain unmarried,
-so I should get married. I don&amp;rsquo;t want to live anymore (for example),
+&lt;p&gt;The way we think in opposites can sometimes be dysfunctional. I don’t
+want to be poor, so I must be rich. I don’t want to remain unmarried,
+so I should get married. I don’t want to live anymore (for example),
 so I must kill myself.&lt;/p&gt;
 
-&lt;p&gt;The problem with all these &amp;ldquo;opposites&amp;rdquo; is that they are only opposites
+&lt;p&gt;The problem with all these “opposites” is that they are only opposites
 by definition. They are just words. In life, though, being unmarried
 or married has much more complex ramifications than the uncomplicated
 fact of having a marriage certificate or not. Remaining a bachelor
-entails one set of life patterns, and marriage another. That I don&amp;rsquo;t
+entails one set of life patterns, and marriage another. That I don’t
 want to be a bachelor (for example) does not cleanly lead to the
 adoption of marriage.&lt;/p&gt;
 
 &lt;p&gt;Of course, reality be as it may, my thinking still prefers to ignore
 it, and think in opposites. So whenever I find myself thinking in
 opposites that seem too neat, I become suspicious, and remind myself
-of the question &amp;ldquo;what is the opposite of a fork?&amp;rdquo; When abstract ideas
+of the question “what is the opposite of a fork?” When abstract ideas
 work out too neatly, details are invariably sacrificed.&lt;/p&gt;
 
 </content>
@@ -1484,7 +1477,7 @@ work out too neatly, details are invariably sacrificed.&lt;/p&gt;
    <link href="http://www.metacircus.com/hacking/2010/04/17/real-values.html"/>
    <updated>2010-04-17T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/17/real-values</id>
-   <content type="html">&lt;p&gt;Many hackers I respect say how great Jon Bentley&amp;rsquo;s &lt;a href=&quot;http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880&quot;&gt;&lt;em&gt;Programming
+   <content type="html">&lt;p&gt;Many hackers I respect say how great Jon Bentley’s &lt;a href=&quot;http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880&quot;&gt;&lt;em&gt;Programming
 Pearls&lt;/em&gt;&lt;/a&gt;
 is. I finally bought my own copy, and it really is that good. I am
 reading column 6, &lt;em&gt;Perspective on Performance&lt;/em&gt;, which starts with a
@@ -1495,7 +1488,7 @@ by the story, that I stopped reading, to quote the case in full:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Algorithms and Data Structures.&lt;/em&gt; Appel&amp;rsquo;s first priority was to find an efficient algorithm. He was able to reduce the O(n^2) cost per time step to O(n log n) by representing the physical objects as leaves in a binary tree; higher nodes represent clusters of objects. The force operating on a particular object can be approximated by the force exerted by the large clusters; Appel showed that this approximation does not bias the simulation. The tree has roughly log n levels, and the resulting O(n log n) algorithm is similar in spirit to the divide-and-conquer algorithm in Section 8.3. This change reduced the run time of the program by a factor of 12.&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Algorithms and Data Structures.&lt;/em&gt; Appel’s first priority was to find an efficient algorithm. He was able to reduce the O(n^2) cost per time step to O(n log n) by representing the physical objects as leaves in a binary tree; higher nodes represent clusters of objects. The force operating on a particular object can be approximated by the force exerted by the large clusters; Appel showed that this approximation does not bias the simulation. The tree has roughly log n levels, and the resulting O(n log n) algorithm is similar in spirit to the divide-and-conquer algorithm in Section 8.3. This change reduced the run time of the program by a factor of 12.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;em&gt;Algorithm Tuning.&lt;/em&gt; The simple algorithm always uses small time steps to handle the rare case that two particles come close to one another. The tree data structure allows such pairs to be recognized and handled by a special function. That doubles the time step size and thereby halves the run time of the program.&lt;/p&gt;
@@ -1523,24 +1516,24 @@ give me, so at least I know if I had fallen short of that expectation.&lt;/p&gt;
 
 &lt;p&gt;There are metrics that clearly matters. How much profit am I making?
 How fast is my audience growing? These are fine, hard facts. But I
-don&amp;rsquo;t even know where to begin to find out if the &amp;ldquo;intangibles&amp;rdquo; matter
-at all. How do I even know that my code is &amp;ldquo;maintainable&amp;rdquo;? What does
-it mean for my code to be &amp;ldquo;well tested&amp;rdquo;? I certainly have a sense of
+don’t even know where to begin to find out if the “intangibles” matter
+at all. How do I even know that my code is “maintainable”? What does
+it mean for my code to be “well tested”? I certainly have a sense of
 Beauty (without the scare-quotes), but again, can I afford Beauty?&lt;/p&gt;
 
 &lt;p&gt;Lacking any good evidence, perhaps all we have to go on is common
 sense. Beyond a certain point, whatever practice that we adopt can
 become a fetish. Does 100% test coverage matter? Most likely not. If
 absolute reliability is crucial, say nuclear reactor control, you
-don&amp;rsquo;t get reliability out of test coverage anyway. Reliability comes
+don’t get reliability out of test coverage anyway. Reliability comes
 out of redundancy.&lt;/p&gt;
 
 &lt;p&gt;Some testing is surely good, so my common sense (qua experience) tells
 me, but when does it become a fetish? Does code metric matter? My
-common sense (qua maybe prejudice) says it&amp;rsquo;s bullshit.&lt;/p&gt;
+common sense (qua maybe prejudice) says it’s bullshit.&lt;/p&gt;
 
-&lt;p&gt;For everything, there&amp;rsquo;s a point of diminishing return. Extreme
-programming&amp;rsquo;s motto is that if X is good, then more X the
+&lt;p&gt;For everything, there’s a point of diminishing return. Extreme
+programming’s motto is that if X is good, then more X the
 better. Testing is good, so test always. Which is obviously insane,
 but probably said to be provocative. Individually we have to decide
 when good enough is enough. Sometimes good is more than enough, so a
@@ -1550,10 +1543,10 @@ waste of time.&lt;/p&gt;
 decisions matter. Programming anxieties such as how we mock objects,
 or if we are violating Single Responsibility Principle, or we have
 hard couplings, or a class has too many dependencies, or we violate
-the Law of Demeter&amp;hellip; maybe none of it really matters.&lt;/p&gt;
+the Law of Demeter… maybe none of it really matters.&lt;/p&gt;
 
 &lt;p&gt;What matters is to have your product out there for people to use. PHP
-is plenty good, and Ruby (or your favourite toy) won&amp;rsquo;t save you from
+is plenty good, and Ruby (or your favourite toy) won’t save you from
 shit business idea.&lt;/p&gt;
 </content>
  </entry>
@@ -1568,7 +1561,7 @@ rhetorical techniques to sound rational rather than putting in the
 effort to actually think. As David Hume pointed out, an argument is
 often invented after we have already decided on a conclusion. So an
 argument is rhetorical in the sense that it is designed to persuade
-so-called &amp;ldquo;rational beings&amp;rdquo;. We do not generally arrive at Truth via
+so-called “rational beings”. We do not generally arrive at Truth via
 an argument.&lt;/p&gt;
 
 &lt;p&gt;That be as it may, a good argument is still appreciated. Sometimes
@@ -1596,7 +1589,7 @@ so:&lt;/p&gt;
   &lt;li&gt;Capitalism is good.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;It&amp;rsquo;s nonsense. Capitalism is not wholely good. Such a complex cluster
+&lt;p&gt;It’s nonsense. Capitalism is not wholely good. Such a complex cluster
 of ideas as Capitalism simply cannot fit into the framework of
 syllogistic structure. Yet we do something like this all the time.&lt;/p&gt;
 
@@ -1607,11 +1600,11 @@ syllogistic structure. Yet we do something like this all the time.&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Again, the inattentive mind would simply glide through the points
-without thinking. Even though the &amp;ldquo;argument&amp;rdquo; is blatantly fallacious,
+without thinking. Even though the “argument” is blatantly fallacious,
 the rhetorical technique is seductively effective.&lt;/p&gt;
 
 &lt;p&gt;In fact, any list of three would trigger a sense of satisfaction in
-the &amp;ldquo;rational&amp;rdquo; mind. Why do I need a car?&lt;/p&gt;
+the “rational” mind. Why do I need a car?&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;I often take people around.&lt;/li&gt;
@@ -1637,24 +1630,24 @@ Stopping at three, I am being lazy.&lt;/p&gt;
    <updated>2010-04-13T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/13/Proc-new-and-lambda-are-only</id>
    <content type="html">&lt;p&gt;Proc.new And Lambda Are Only 99.9% the Same. Which is to say, not at
-all the same. 99.9% of the time it&amp;rsquo;s ok to use lambda, proc, and
+all the same. 99.9% of the time it’s ok to use lambda, proc, and
 Proc.new interchangeably. So I do (shame on me).&lt;/p&gt;
 
 &lt;p&gt;I prefer using lambda when I am doing functional style programming in
 Ruby, passing around many closures, because the syntax is less chunky
-than Proc.new. Trivial preference that shouldn&amp;rsquo;t matter.&lt;/p&gt;
+than Proc.new. Trivial preference that shouldn’t matter.&lt;/p&gt;
 
 &lt;p&gt;Except that it does. And it hurts a lot when it does.&lt;/p&gt;
 
-&lt;p&gt;Most of the time I get away with it&amp;hellip; but Chinese has a lovely
-saying, a moral admonition, that &amp;ldquo;the more you walk the dark road, the
-more ghouls you &lt;em&gt;will&lt;/em&gt; see.&amp;rdquo; So sooner or later I am bound to run into
+&lt;p&gt;Most of the time I get away with it… but Chinese has a lovely
+saying, a moral admonition, that “the more you walk the dark road, the
+more ghouls you &lt;em&gt;will&lt;/em&gt; see.” So sooner or later I am bound to run into
 an edge case that makes my code to behave in unexpected ways.&lt;/p&gt;
 
-&lt;p&gt;This kind of bugs are especially insidious, since I&amp;rsquo;ve been
-conditioned (or, I&amp;rsquo;ve conditioned myself) to think that Proc.new and
+&lt;p&gt;This kind of bugs are especially insidious, since I’ve been
+conditioned (or, I’ve conditioned myself) to think that Proc.new and
 Lambda are the same. On some level I know they are different, of
-course, but I am so used to using them interchangeably, that there&amp;rsquo;s a
+course, but I am so used to using them interchangeably, that there’s a
 lacuna in my vision that makes it hard to suspect the problem could
 arise from using Lambda instead of Proc.new, or vice versa.&lt;/p&gt;
 
@@ -1676,7 +1669,7 @@ p test2(&amp;amp;pr) # =&amp;gt; [1,2]
 p test2(&amp;amp;fn) # =&amp;gt; wrong number of arguments (1 for 2) (ArgumentError)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Why doesn&amp;rsquo;t it work? It turns out that lambda is stricter than block
+&lt;p&gt;Why doesn’t it work? It turns out that lambda is stricter than block
 about the argument list. The arity for both &lt;code&gt;fn&lt;/code&gt; and &lt;code&gt;pr&lt;/code&gt; is actually
 two. While a lambda complains, a Proc.new magically takes apart the
 array argument.&lt;/p&gt;
@@ -1688,7 +1681,7 @@ random Ruby esoteric trivia.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Bonus round&lt;/em&gt;. We know that the &lt;code&gt;return&lt;/code&gt; keyword returns from lambda,
 regardless of where lambda closure was created (unlike Proc.new, for
 which &lt;code&gt;return&lt;/code&gt; always return from the method context where the
-Proc.new closure was created). But&amp;hellip;&lt;/p&gt;
+Proc.new closure was created). But…&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;def test1(&amp;amp;block)
   block.call
@@ -1705,7 +1698,7 @@ test2(&amp;amp;lambda { return }) # unexpected return (LocalJumpError)
 
 &lt;p&gt;In this case, the return preserves its semantic if called via
 &lt;code&gt;block.call&lt;/code&gt;, but not when &lt;code&gt;yield&lt;/code&gt;ed, exactly the opposite as in the
-previous case. Pretty weird huh? That&amp;rsquo;ll be on Thursday&amp;rsquo;s quiz.&lt;/p&gt;
+previous case. Pretty weird huh? That’ll be on Thursday’s quiz.&lt;/p&gt;
 
 &lt;p&gt;Now, for a trick question.&lt;/p&gt;
 
@@ -1714,22 +1707,22 @@ b.call(1,2) # ok
 b.call(3,4) # fails
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Why does it fail? Hint, it&amp;rsquo;s fixed in Ruby1.9. And this bug I actually
+&lt;p&gt;Why does it fail? Hint, it’s fixed in Ruby1.9. And this bug I actually
 ran into in production code. It was not as balatant as this example,
 and involves indeterminism introduced by threads. So that was a lot of
 fun in the painful sense of the word, in the butt.&lt;/p&gt;
 
-&lt;p&gt;The moral of the story is that the Python Zen, TOOWTDI (There&amp;rsquo;s Only
-One Way To Do It), is a sage advice. But Ruby isn&amp;rsquo;t Python, as there
+&lt;p&gt;The moral of the story is that the Python Zen, TOOWTDI (There’s Only
+One Way To Do It), is a sage advice. But Ruby isn’t Python, as there
 are many ways to chunkify a bacon. So the responsibility is on us
-individually. If there&amp;rsquo;s no compelling reason to use one approach over
+individually. If there’s no compelling reason to use one approach over
 the other, &lt;em&gt;always&lt;/em&gt; (*) go with the same default.&lt;/p&gt;
 
 &lt;p&gt;(*) Confession: for a while, I only used &lt;code&gt;if&lt;/code&gt;, and never
-&lt;code&gt;unless&lt;/code&gt;. Srly. I&amp;rsquo;ve since given that up. This is a good example
-of Poe&amp;rsquo;s Law, &amp;ldquo;Without a winking smiley or other blatant display of
+&lt;code&gt;unless&lt;/code&gt;. Srly. I’ve since given that up. This is a good example
+of Poe’s Law, “Without a winking smiley or other blatant display of
 humor, it is impossible to create a parody of Fundamentalism that
-SOMEONE won&amp;rsquo;t mistake for the real thing.&amp;rdquo;&lt;/p&gt;
+SOMEONE won’t mistake for the real thing.”&lt;/p&gt;
 </content>
  </entry>
  
@@ -1739,23 +1732,23 @@ SOMEONE won&amp;rsquo;t mistake for the real thing.&amp;rdquo;&lt;/p&gt;
    <updated>2010-04-11T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2010/04/11/exploring-ruby-internals</id>
    <content type="html">&lt;p&gt;It is always very hard to learn a large code base, especially
-initially, when there&amp;rsquo;s not even a vague idea of how things fit into a
+initially, when there’s not even a vague idea of how things fit into a
 structure. This overall picture of the code base is the crucial first
 step. After that, it becomes much easier to see an arbitrary fragment
 of code, and guess what it does.&lt;/p&gt;
 
-&lt;p&gt;It is this first step that&amp;rsquo;s the hardest. It is a gestalt process,
+&lt;p&gt;It is this first step that’s the hardest. It is a gestalt process,
 where out of a sea of random information miraculously emerges
 understanding. I would pretty much pick a place, and start to randomly
 walk through the files, then hope for the best.&lt;/p&gt;
 
-&lt;p&gt;It&amp;rsquo;s hard. But GDB and DTrace can help! (Though now you have three
+&lt;p&gt;It’s hard. But GDB and DTrace can help! (Though now you have three
 problems instead of one.)&lt;/p&gt;
 
-&lt;h1 id=&quot;whats-going-on&quot;&gt;What&amp;rsquo;s Going On?&lt;/h1&gt;
+&lt;h1 id=&quot;whats-going-on&quot;&gt;What’s Going On?&lt;/h1&gt;
 
-&lt;p&gt;First, we need to figure out what&amp;rsquo;s going on. The plan is to evaluate
-a Ruby expression, and let DTrace tell us what are involved. Let&amp;rsquo;s
+&lt;p&gt;First, we need to figure out what’s going on. The plan is to evaluate
+a Ruby expression, and let DTrace tell us what are involved. Let’s
 just start the irb. We also want to know the pid of the irb, so DTrace
 and GDB can get a handle of it.&lt;/p&gt;
 
@@ -1766,7 +1759,7 @@ and GDB can get a handle of it.&lt;/p&gt;
 =&amp;gt; 31415 # or whatever.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Now, we&amp;rsquo;ll write a DTrace script to peek into it,&lt;/p&gt;
+&lt;p&gt;Now, we’ll write a DTrace script to peek into it,&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# function_calls.d
 pid31415:ruby:rb_*:entry {
@@ -1777,7 +1770,7 @@ pid31415:ruby:rb_*:entry {
 &lt;p&gt;and run it in another terminal session,&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt; sudo dtrace -s function_calls.d -p 31415
-dtrace: script 'object.d' matched 1175 probes
+dtrace: script &#39;object.d&#39; matched 1175 probes
 # Go back to the irb and run stuff.
 # When you are happy, hit interrupt
 ^C
@@ -1797,10 +1790,10 @@ rb_eval                                                         840
 
 &lt;p&gt;With this, we get a rough idea of what functions are important in the
 interpreter. Right off the bat, you know &lt;code&gt;rb_eval&lt;/code&gt; is central to the
-interpreter. But &lt;code&gt;rb_gc_force_recycle&lt;/code&gt;, what is that? Uh, NVM, let&amp;rsquo;s
+interpreter. But &lt;code&gt;rb_gc_force_recycle&lt;/code&gt;, what is that? Uh, NVM, let’s
 keep going. How do I find &lt;code&gt;rb_eval&lt;/code&gt;?&lt;/p&gt;
 
-&lt;p&gt;Before you get greppy, let&amp;rsquo;s go into GDB.&lt;/p&gt;
+&lt;p&gt;Before you get greppy, let’s go into GDB.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt; gdb ruby 31415
 (gdb) info func rb_eval
@@ -1820,7 +1813,7 @@ out about &lt;code&gt;rb_eval_string&lt;/code&gt;. I guess it evals a string?&lt
 &lt;pre&gt;&lt;code&gt;(gdb) p rb_eval_string(&quot;false&quot;)
 $7 = 0  # uh, ok?
 (gdb) p rb_eval_string(&quot;true&quot;)
-$8 = 2  # hm, i guess it's a magic constant
+$8 = 2  # hm, i guess it&#39;s a magic constant
 (gdb) p rb_eval_string(&quot;nil&quot;)
 $9 = 4  # another magic constant
 (gdb) p rb_eval_string(&quot;1&quot;)
@@ -1828,7 +1821,7 @@ $10 = 3 # wtf?
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Turns out that a Ruby &lt;code&gt;VALUE&lt;/code&gt; is just a pointer type. If the least
-significant bit is 1, then it&amp;rsquo;s an integer, if it&amp;rsquo;s 0, then it&amp;rsquo;s a
+significant bit is 1, then it’s an integer, if it’s 0, then it’s a
 ruby object. We shift right by one bit to get back the integer value.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(gdb) p rb_eval_string(&quot;10&quot;)
@@ -1839,7 +1832,7 @@ $17 = 10
 
 &lt;p&gt;Yup. And 0 is false, 2 is true, nil is 4. These are common values, so
 it makes sense to use magic constants. In particular, false is 0,
-because more than just a convention, that helps with CPU&amp;rsquo;s speculative
+because more than just a convention, that helps with CPU’s speculative
 execution (I guess?).&lt;/p&gt;
 
 &lt;p&gt;I am curious about arrays too. No problem! No need to ask GOD, ask GDB.&lt;/p&gt;
@@ -1857,7 +1850,7 @@ static VALUE rb_ary_zip(int, VALUE *, VALUE);
 (gdb) # bingo!
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;I think it&amp;rsquo;s pretty awesome that we can learn all this stuff without
+&lt;p&gt;I think it’s pretty awesome that we can learn all this stuff without
 even going into the source code. Maybe by know you want to see some
 code?  Is it time now to download Ruby source, and fire up your
 favourite editor? Maybe not.&lt;/p&gt;
@@ -1875,15 +1868,15 @@ favourite editor? Maybe not.&lt;/p&gt;
 2959        volatile VALUE result = Qnil;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Whoooo! I didn&amp;rsquo;t even have to grep.&lt;/p&gt;
+&lt;p&gt;Whoooo! I didn’t even have to grep.&lt;/p&gt;
 
 &lt;p&gt;Arthur C. Clarke said that any sufficiently advanced technology is
 indistinguishable from magic. Magic already took place some 25 years
 ago! GDB is like IRB on steroid for the Ruby internals on a pony.&lt;/p&gt;
 
-&lt;p&gt;Now let&amp;rsquo;s play around some more with DTrace! &amp;hellip;&lt;/p&gt;
+&lt;p&gt;Now let’s play around some more with DTrace! …&lt;/p&gt;
 
-&lt;p&gt;But I am tired. I&amp;rsquo;ll write about DTrace in a post.&lt;/p&gt;
+&lt;p&gt;But I am tired. I’ll write about DTrace in a post.&lt;/p&gt;
 
 </content>
  </entry>
@@ -1894,43 +1887,43 @@ ago! GDB is like IRB on steroid for the Ruby internals on a pony.&lt;/p&gt;
    <updated>2010-04-07T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/04/07/lecture-7-on-nietzsche</id>
    <content type="html">&lt;p&gt;I always feel the pressure that I gotta be somewhere, I gotta do
-something, I gotta be somebody. Being goal-driven, there&amp;rsquo;s always the
+something, I gotta be somebody. Being goal-driven, there’s always the
 sense that &lt;em&gt;something&lt;/em&gt;, when it is finally achieved, will provide a
 lasting satisfaction.&lt;/p&gt;
 
-&lt;p&gt;Maybe I am kidding myself. Maybe it doesn&amp;rsquo;t make sense to think of the
+&lt;p&gt;Maybe I am kidding myself. Maybe it doesn’t make sense to think of the
 good life like some Platonic ideal. Life should be let lived. Let it
 grow, organically, unexpectedly, but not according to some idea of
 perfection.&lt;/p&gt;
 
-&lt;p&gt;Maybe life isn&amp;rsquo;t about being content. Maybe another idea of good life
+&lt;p&gt;Maybe life isn’t about being content. Maybe another idea of good life
 is one of endless restlessness, unquenchable desires. To desire life
 so much, so deeply, so intensely, every waking moment, and then dream
-some more of it at night&amp;hellip;&lt;/p&gt;
+some more of it at night…&lt;/p&gt;
 
 &lt;p&gt;The idea that there could be a perfection of being where I could be free
 of worries, longings, sadness, hopes, wants, regrets, is
 intellectually seductive. That wonderful illusion of coherency comes
 only at the expense of ignoring life.&lt;/p&gt;
 
-&lt;p&gt;I am watching a lecture series on Nietzsche&amp;rsquo;s philosophy. Every
+&lt;p&gt;I am watching a lecture series on Nietzsche’s philosophy. Every
 lecture I receive something wonderfully life-affirming. Lecture 7 was
 concluded thusly,&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Schopenhauer ultimately seems to think that meaning, purpose, is to be found in a kind of rationality. That&amp;rsquo;s what Kant thought. Nevertheless, what Nietzsche points out, and I think very powerfully, is that the meaning of life is to be found not in reason, not in rationality, not in some calculation, much less in theology, but the meaning of life is to be found in the passions, that it&amp;rsquo;s creativity, it&amp;rsquo;s being devoted to causes, it&amp;rsquo;s being dedicated to something &amp;ndash; another person, a project, an art. That&amp;rsquo;s what gives life meaning. And so pessimism is overcome as the aesthetic phenomenon, not as a reason, not as a rational enterprise, but, rather, by something you really care about, something you feel deeply passionate about.  &amp;ndash; &lt;em&gt;Robert Soloman&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;Schopenhauer ultimately seems to think that meaning, purpose, is to be found in a kind of rationality. That’s what Kant thought. Nevertheless, what Nietzsche points out, and I think very powerfully, is that the meaning of life is to be found not in reason, not in rationality, not in some calculation, much less in theology, but the meaning of life is to be found in the passions, that it’s creativity, it’s being devoted to causes, it’s being dedicated to something – another person, a project, an art. That’s what gives life meaning. And so pessimism is overcome as the aesthetic phenomenon, not as a reason, not as a rational enterprise, but, rather, by something you really care about, something you feel deeply passionate about.  – &lt;em&gt;Robert Soloman&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Rather than seeking perfection, I could see life as a dynamic process,
 continuously unfolding. It is music, and we all dance to it.&lt;/p&gt;
 
-&lt;p&gt;Meaning isn&amp;rsquo;t some ghostly Platonic gift. God is dead, and soon
+&lt;p&gt;Meaning isn’t some ghostly Platonic gift. God is dead, and soon
 enough, we will all be dead. What Meanings are to be found in the
 ruins of religions and philosophy? Meaningfulness is a feeling. It
 comes right out of living.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If your life burned well, poetry is just the ash. &amp;ndash; &lt;em&gt;Leonard Cohen&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;If your life burned well, poetry is just the ash. – &lt;em&gt;Leonard Cohen&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 </content>
@@ -1948,23 +1941,23 @@ happens to them. All lonely, and never find love.&lt;/p&gt;
 a beloved. I kill off his beloved arbitrarily. The guy feels sad. He
 misses his beloved terribly. He wants her back. He searches for
 her. He dreams of her. Eventually, the guy goes crazy, and
-hallucinates the girl. He&amp;rsquo;s happy again.&lt;/p&gt;
+hallucinates the girl. He’s happy again.&lt;/p&gt;
 
-&lt;p&gt;An image of happiness doesn&amp;rsquo;t really come to mind. I can recall
+&lt;p&gt;An image of happiness doesn’t really come to mind. I can recall
 moments of bliss from my life. But happiness seems to imply a
-contentedness I&amp;rsquo;ve never had. I am always fighting something.&lt;/p&gt;
+contentedness I’ve never had. I am always fighting something.&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;I am happy&amp;rdquo; doesn&amp;rsquo;t say much about what the person is happy
-about. People can say that &amp;ldquo;I am happy&amp;rdquo; in the most incredible
-circumstances. Not being able to say &amp;ldquo;I am happy&amp;rdquo; almost seems
+&lt;p&gt;“I am happy” doesn’t say much about what the person is happy
+about. People can say that “I am happy” in the most incredible
+circumstances. Not being able to say “I am happy” almost seems
 immoral. Why am I not getting the most out of life? And I am
 ungrateful of what I have in life.&lt;/p&gt;
 
 &lt;p&gt;* * *&lt;/p&gt;
 
-&lt;p&gt;A story with a happy ending doesn&amp;rsquo;t really have anything to do with
-happiness. Life isn&amp;rsquo;t like that. Prince and princess finally get
-married, but the story doesn&amp;rsquo;t end there, and they don&amp;rsquo;t live happily
+&lt;p&gt;A story with a happy ending doesn’t really have anything to do with
+happiness. Life isn’t like that. Prince and princess finally get
+married, but the story doesn’t end there, and they don’t live happily
 ever after. They grow old and die. The princess, perhaps, would die of
 childbirth. The prince, likely, my be poisoned by a coveting sibling.&lt;/p&gt;
 
@@ -1976,7 +1969,7 @@ pain be lifted. And we sit uncomfortably until the story resolves
 favourably for the characters. When the pain lifts for the characters,
 the pain lifts for us as well.&lt;/p&gt;
 
-&lt;p&gt;It&amp;rsquo;s a vicarious act of virtue. We don&amp;rsquo;t need to do anything, but we
+&lt;p&gt;It’s a vicarious act of virtue. We don’t need to do anything, but we
 get the same feel-good-ness of having helped someone. Happy endings
 are psychologically satisfying.&lt;/p&gt;
 
@@ -1984,15 +1977,15 @@ are psychologically satisfying.&lt;/p&gt;
 itself. The characters must suffer enough to evoke our empathy, so
 they deserve the reward when it comes. Even though no magic would
 protect the hero from certain death; the dead heroine would stay
-dead; power wins; good things never last; we can&amp;rsquo;t all be happy&amp;hellip;&lt;/p&gt;
+dead; power wins; good things never last; we can’t all be happy…&lt;/p&gt;
 
 &lt;p&gt;But then, being cynical is the opposite problem of wanting cheap happy
 endings. It feels smart to be cynical. Oh, I am no fool, I know how the
 government really is!&lt;/p&gt;
 
-&lt;p&gt;Reality is never that simple. It&amp;rsquo;s neither entirely good nor entirely
-bad. There&amp;rsquo;s no such thing as a happy ending or bad ending. Things end
-favorably for some people, and unfavorably for others. Antonio&amp;rsquo;s gain
+&lt;p&gt;Reality is never that simple. It’s neither entirely good nor entirely
+bad. There’s no such thing as a happy ending or bad ending. Things end
+favorably for some people, and unfavorably for others. Antonio’s gain
 is Shylock loss. It is only a good ending because the reader is
 manipulated to side with Antonio, so the empathy belongs all to
 him.&lt;/p&gt;
@@ -2010,57 +2003,57 @@ him.&lt;/p&gt;
 sharing a bench at a deserted station, waiting for the train to come
 to take them away. A withered old man, and a young man in his 20s.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;B: I bet you can&amp;rsquo;t guess how old I am.&lt;/p&gt;
+&lt;p&gt;B: I bet you can’t guess how old I am.&lt;/p&gt;
 
 &lt;p&gt;A: 85? How old are you?&lt;/p&gt;
 
 &lt;p&gt;B: I had my 97th birthday 2 weeks ago. My wife had long passed away. I
-wonder if I&amp;rsquo;d see her again, hah. We never said goodbye. She died
+wonder if I’d see her again, hah. We never said goodbye. She died
 suddenly, you know. I remember we used to go to the same diner every
-Thursday for burgers. Burgers weren&amp;rsquo;t evil, then. Nowadays burgers are
-supposed to kill. Maybe that&amp;rsquo;s what did her in. The diner went out of
-business soon enough. Oh it&amp;rsquo;s so long ago. I am so old. I am old. An
+Thursday for burgers. Burgers weren’t evil, then. Nowadays burgers are
+supposed to kill. Maybe that’s what did her in. The diner went out of
+business soon enough. Oh it’s so long ago. I am so old. I am old. An
 old curmudgeon. I wet my bed now, ha. Perhaps I lived too long, ha
 ha. I am 97 years old. I smoked all my life. All those cigarettes
-finally killed me, ha ha&amp;hellip; How old are you?&lt;/p&gt;
+finally killed me, ha ha… How old are you?&lt;/p&gt;
 
 &lt;p&gt;A: 25.&lt;/p&gt;
 
-&lt;p&gt;B: When I was 25, I had my first son! A boy! My god, you can&amp;rsquo;t
-imagine. I don&amp;rsquo;t imagine you are married?&lt;/p&gt;
+&lt;p&gt;B: When I was 25, I had my first son! A boy! My god, you can’t
+imagine. I don’t imagine you are married?&lt;/p&gt;
 
 &lt;p&gt;A: No.&lt;/p&gt;
 
-&lt;p&gt;B: You can&amp;rsquo;t imagine what it&amp;rsquo;s like to have son. Gotta try it sometime
-[nudges the young man]. Or maybe it&amp;rsquo;s too late, ho ho. Well, maybe
-there&amp;rsquo;s a next life. Never too late, they say.&lt;/p&gt;
+&lt;p&gt;B: You can’t imagine what it’s like to have son. Gotta try it sometime
+[nudges the young man]. Or maybe it’s too late, ho ho. Well, maybe
+there’s a next life. Never too late, they say.&lt;/p&gt;
 
-&lt;p&gt;A: People say that. There&amp;rsquo;s a next life. I don&amp;rsquo;t believe it.&lt;/p&gt;
+&lt;p&gt;A: People say that. There’s a next life. I don’t believe it.&lt;/p&gt;
 
-&lt;p&gt;B: Maybe you ought to believe it. That&amp;rsquo;s your only chance to have a
+&lt;p&gt;B: Maybe you ought to believe it. That’s your only chance to have a
 son.&lt;/p&gt;
 
-&lt;p&gt;A: Maybe I don&amp;rsquo;t?&lt;/p&gt;
+&lt;p&gt;A: Maybe I don’t?&lt;/p&gt;
 
-&lt;p&gt;B: Maybe you don&amp;rsquo;t. Maybe you don&amp;rsquo;t. But I had a house, and I built it
+&lt;p&gt;B: Maybe you don’t. Maybe you don’t. But I had a house, and I built it
 myself. It was small at first. My family grew, and the house grew. My
-grandson has the house now. He&amp;rsquo;s an architect. Have I told you? And
+grandson has the house now. He’s an architect. Have I told you? And
 he loves my house. He tells people his grandpaw built it.&lt;/p&gt;
 
 &lt;p&gt;A: What happened to your son?&lt;/p&gt;
 
-&lt;p&gt;B: Well, he&amp;rsquo;s not getting the house. No way he&amp;rsquo;s getting the house.&lt;/p&gt;
+&lt;p&gt;B: Well, he’s not getting the house. No way he’s getting the house.&lt;/p&gt;
 
 &lt;p&gt;A: Why not?&lt;/p&gt;
 
-&lt;p&gt;B: He died, that&amp;rsquo;s why, ha ha. He died young, actually. My wife, the
+&lt;p&gt;B: He died, that’s why, ha ha. He died young, actually. My wife, the
 poor woman was hit the hardest.&lt;/p&gt;
 
 &lt;p&gt;A: Oh. Sorry.&lt;/p&gt;
 
 &lt;p&gt;B: You want to know how he died?&lt;/p&gt;
 
-&lt;p&gt;A: I wasn&amp;rsquo;t going to ask.&lt;/p&gt;
+&lt;p&gt;A: I wasn’t going to ask.&lt;/p&gt;
 
 &lt;p&gt;B: But you want to know how he died? He killed himself. A bullet right
 through his brain.&lt;/p&gt;
@@ -2073,22 +2066,22 @@ of a bitch.&lt;/p&gt;
 
 &lt;p&gt;A: Hmmm.&lt;/p&gt;
 
-&lt;p&gt;B: I never understood why. His wife left him. OK. But he&amp;rsquo;s got a son
+&lt;p&gt;B: I never understood why. His wife left him. OK. But he’s got a son
 to raise. He just left the kid behind. When I see my son again, by
 god, I am going to give him a good spank. My wife, she cried at
-night. She&amp;rsquo;d lock herself in the bathroom. She&amp;rsquo;d never say anything
-about it, and She&amp;rsquo;d never admit to it when I asked. I&amp;rsquo;d never forgive
+night. She’d lock herself in the bathroom. She’d never say anything
+about it, and She’d never admit to it when I asked. I’d never forgive
 my son for having done that to her.&lt;/p&gt;
 
-&lt;p&gt;A: He didn&amp;rsquo;t do that to you.&lt;/p&gt;
+&lt;p&gt;A: He didn’t do that to you.&lt;/p&gt;
 
 &lt;p&gt;B: How do you mean?&lt;/p&gt;
 
-&lt;p&gt;A: We don&amp;rsquo;t mean to hurt people.&lt;/p&gt;
+&lt;p&gt;A: We don’t mean to hurt people.&lt;/p&gt;
 
 &lt;p&gt;B: Hmmmph. Say, how did you die?&lt;/p&gt;
 
-&lt;p&gt;A: Well&amp;hellip;&lt;/p&gt;
+&lt;p&gt;A: Well…&lt;/p&gt;
 
 &lt;p&gt;B: Bullshit.&lt;/p&gt;
 
@@ -2096,8 +2089,8 @@ my son for having done that to her.&lt;/p&gt;
 
 &lt;p&gt;B: Why did you do it?&lt;/p&gt;
 
-&lt;p&gt;A: I don&amp;rsquo;t know. I don&amp;rsquo;t know why I killed myself. I don&amp;rsquo;t know why I
-was born. I certainly didn&amp;rsquo;t mean to hurt anyone. It doesn&amp;rsquo;t make any
+&lt;p&gt;A: I don’t know. I don’t know why I killed myself. I don’t know why I
+was born. I certainly didn’t mean to hurt anyone. It doesn’t make any
 difference whether I was there or not.&lt;/p&gt;
 
 &lt;p&gt;B: So here you are.&lt;/p&gt;
@@ -2108,31 +2101,31 @@ difference whether I was there or not.&lt;/p&gt;
 
 &lt;p&gt;A: Ya. I was.&lt;/p&gt;
 
-&lt;p&gt;B: And you&amp;rsquo;ve had enough?&lt;/p&gt;
+&lt;p&gt;B: And you’ve had enough?&lt;/p&gt;
 
-&lt;p&gt;A: Uh&amp;hellip;&lt;/p&gt;
+&lt;p&gt;A: Uh…&lt;/p&gt;
 
 &lt;p&gt;B: How did you do it?&lt;/p&gt;
 
 &lt;p&gt;A: Gun.&lt;/p&gt;
 
-&lt;p&gt;B: [Fascinated. Turns his body towards the young man.] So you&amp;rsquo;ve had
-enough? At 25? You&amp;rsquo;ve not married. You&amp;rsquo;ve not built your own house?
-You&amp;rsquo;ve not watched your son growing up, and then his son. And you&amp;rsquo;ve
-not had the chance to attend your own son&amp;rsquo;s funeral, har har. You&amp;rsquo;ve
+&lt;p&gt;B: [Fascinated. Turns his body towards the young man.] So you’ve had
+enough? At 25? You’ve not married. You’ve not built your own house?
+You’ve not watched your son growing up, and then his son. And you’ve
+not had the chance to attend your own son’s funeral, har har. You’ve
 had enough??&lt;/p&gt;
 
 &lt;p&gt;A: I had nothing to look forward to. Why would I want to get married?
 Because people do? Why do I want to build my own house? Who the fuck
-build their own houses now? I&amp;rsquo;ve had enough. It was my way of
+build their own houses now? I’ve had enough. It was my way of
 maximizing my happiness.&lt;/p&gt;
 
-&lt;p&gt;B: You don&amp;rsquo;t have to build your own house, no. Hey, you don&amp;rsquo;t have to
-find a pretty girl to marry if you don&amp;rsquo;t want to. But why wouldn&amp;rsquo;t
+&lt;p&gt;B: You don’t have to build your own house, no. Hey, you don’t have to
+find a pretty girl to marry if you don’t want to. But why wouldn’t
 you? My wife and I were high school sweethearts. I remember asking her
-out for the prom. I was SURE she&amp;rsquo;d say no. I guess nobody else tried
+out for the prom. I was SURE she’d say no. I guess nobody else tried
 their luck on her, ha ha. But hey, I am not saying you have to be like
-me&amp;hellip; you could&amp;hellip; what&amp;rsquo;s your name?&lt;/p&gt;
+me… you could… what’s your name?&lt;/p&gt;
 
 &lt;p&gt;A: Will.&lt;/p&gt;
 
@@ -2141,64 +2134,64 @@ Jack.&lt;/p&gt;
 
 &lt;p&gt;Will: Ok.&lt;/p&gt;
 
-&lt;p&gt;Jack: So Willy&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Jack: So Willy…&lt;/p&gt;
 
-&lt;p&gt;Will: Don&amp;rsquo;t you think it&amp;rsquo;s too late to talk about this?&lt;/p&gt;
+&lt;p&gt;Will: Don’t you think it’s too late to talk about this?&lt;/p&gt;
 
-&lt;p&gt;Jack: No. Heck, it&amp;rsquo;s never&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Jack: No. Heck, it’s never…&lt;/p&gt;
 
-&lt;p&gt;Will: Anyway, there&amp;rsquo;s no next life. It&amp;rsquo;s just a rumour. &lt;/p&gt;
+&lt;p&gt;Will: Anyway, there’s no next life. It’s just a rumour. &lt;/p&gt;
 
 &lt;p&gt;Jack: You think this is it?&lt;/p&gt;
 
 &lt;p&gt;Will: I dunno.&lt;/p&gt;
 
-&lt;p&gt;Jack: Don&amp;rsquo;t you want another chance?&lt;/p&gt;
+&lt;p&gt;Jack: Don’t you want another chance?&lt;/p&gt;
 
-&lt;p&gt;Will: I wouldn&amp;rsquo;t know what to do with it. Maybe you should have
+&lt;p&gt;Will: I wouldn’t know what to do with it. Maybe you should have
 another go at it. You seem to have enjoyed it.&lt;/p&gt;
 
-&lt;p&gt;Jack: Ha! No. I&amp;rsquo;ve had enough. I&amp;rsquo;ve built my own house. And I loved my
-wife. My son&amp;hellip; bah. My grandson, oh he&amp;rsquo;s wonderful. I&amp;rsquo;ve had
+&lt;p&gt;Jack: Ha! No. I’ve had enough. I’ve built my own house. And I loved my
+wife. My son… bah. My grandson, oh he’s wonderful. I’ve had
 enough. This is enough.&lt;/p&gt;
 
-&lt;p&gt;Will: You&amp;rsquo;ve had no regrets?&lt;/p&gt;
+&lt;p&gt;Will: You’ve had no regrets?&lt;/p&gt;
 
 &lt;p&gt;Jack: Regrets! Hell ya. That nurse at the home is cute. I wish I could
-have a go at her. She&amp;rsquo;s old enough to be your mother though, ha
-ha. Say, uh&amp;hellip; uh&amp;hellip; [gesturing] uh&amp;hellip;&lt;/p&gt;
+have a go at her. She’s old enough to be your mother though, ha
+ha. Say, uh… uh… [gesturing] uh…&lt;/p&gt;
 
 &lt;p&gt;Will: Will.&lt;/p&gt;
 
 &lt;p&gt;Jack: Ya Will, what is it that makes you want to live? You know, you
-wake up every morning, and you think to yourself, &amp;ldquo;another day, and by
-God, I am gonna grab it by the balls.&amp;rdquo; You know what I am saying?&lt;/p&gt;
+wake up every morning, and you think to yourself, “another day, and by
+God, I am gonna grab it by the balls.” You know what I am saying?&lt;/p&gt;
 
-&lt;p&gt;Will: If I had known, I wouldn&amp;rsquo;t be here, would I?&lt;/p&gt;
+&lt;p&gt;Will: If I had known, I wouldn’t be here, would I?&lt;/p&gt;
 
-&lt;p&gt;Jack: There weren&amp;rsquo;t things you wanted to do?&lt;/p&gt;
+&lt;p&gt;Jack: There weren’t things you wanted to do?&lt;/p&gt;
 
-&lt;p&gt;Will: Sure. I&amp;rsquo;d like to see Rome.&lt;/p&gt;
+&lt;p&gt;Will: Sure. I’d like to see Rome.&lt;/p&gt;
 
-&lt;p&gt;Jack: So&amp;hellip; why are you here? You should be in Rome!&lt;/p&gt;
+&lt;p&gt;Jack: So… why are you here? You should be in Rome!&lt;/p&gt;
 
 &lt;p&gt;Will: Bah! What difference does it make now? [Looks away.]&lt;/p&gt;
 
-&lt;p&gt;Jack: Look, son, you are still so young. You really shouldn&amp;rsquo;t be here,
+&lt;p&gt;Jack: Look, son, you are still so young. You really shouldn’t be here,
 talking to an old geezer like me. You should see Rome. You should go
 back.&lt;/p&gt;
 
-&lt;p&gt;Will: Go back? Don&amp;rsquo;t be ridiculous! Who do you think I am&amp;hellip; Houdini?
+&lt;p&gt;Will: Go back? Don’t be ridiculous! Who do you think I am… Houdini?
 I blew my brain out. The mortician probably had to put the pieces of
 my skull back together and clean me up good for the funeral. Which, of
-course, was none of my business. I am already here, there&amp;rsquo;s no going
-back. I hope there&amp;rsquo;s nothing going forward.&lt;/p&gt;
+course, was none of my business. I am already here, there’s no going
+back. I hope there’s nothing going forward.&lt;/p&gt;
 
 &lt;p&gt;Jack: So you are one of them.&lt;/p&gt;
 
 &lt;p&gt;Will: Them what?&lt;/p&gt;
 
-&lt;p&gt;Jack: Them&amp;hellip; ex&amp;hellip; ex&amp;hellip; ex commune.. ist.&lt;/p&gt;
+&lt;p&gt;Jack: Them… ex… ex… ex commune.. ist.&lt;/p&gt;
 
 &lt;p&gt;Will: Existentialist?&lt;/p&gt;
 
@@ -2210,21 +2203,21 @@ back. I hope there&amp;rsquo;s nothing going forward.&lt;/p&gt;
 
 &lt;p&gt;Will: Yes.&lt;/p&gt;
 
-&lt;p&gt;Jack: And you don&amp;rsquo;t give a damn?&lt;/p&gt;
+&lt;p&gt;Jack: And you don’t give a damn?&lt;/p&gt;
 
-&lt;p&gt;Will: [Flares] I do! [Breaks] And I am sorry&amp;hellip; I am really sorry. But
-I just can&amp;rsquo;t. I just&amp;hellip; I just can&amp;rsquo;t. I told her it&amp;rsquo;s not her
-fault. There&amp;rsquo;s nothing more she could do. She&amp;rsquo;s done everything for
+&lt;p&gt;Will: [Flares] I do! [Breaks] And I am sorry… I am really sorry. But
+I just can’t. I just… I just can’t. I told her it’s not her
+fault. There’s nothing more she could do. She’s done everything for
 me. And I am really sorry.&lt;/p&gt;
 
 &lt;p&gt;Jack: Why?&lt;/p&gt;
 
-&lt;p&gt;Will: I don&amp;rsquo;t know. [pauses] Anyway, here I am.&lt;/p&gt;
+&lt;p&gt;Will: I don’t know. [pauses] Anyway, here I am.&lt;/p&gt;
 
-&lt;p&gt;Jack: So here you are. You know, I&amp;rsquo;ve never forgiven my son. And I
-don&amp;rsquo;t think I ever will.&lt;/p&gt;
+&lt;p&gt;Jack: So here you are. You know, I’ve never forgiven my son. And I
+don’t think I ever will.&lt;/p&gt;
 
-&lt;p&gt;Will: I don&amp;rsquo;t expect her to forgive me.&lt;/p&gt;
+&lt;p&gt;Will: I don’t expect her to forgive me.&lt;/p&gt;
 
 &lt;p&gt;Jack: But I still love him.&lt;/p&gt;
 
@@ -2236,7 +2229,7 @@ as though the conversation never took place.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;A train comes into the station. The conductor approaches the two men
 and examines their tickets. He returns the ticket to the young man,
 and gestures him to keep waiting. Then the conductor takes the old
-man&amp;rsquo;s luggage, helps the old man to get up, then onto the train.&lt;/em&gt;&lt;/p&gt;
+man’s luggage, helps the old man to get up, then onto the train.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;The train leaves the station. The young man is left alone on the
 deserted platform. He takes out a picture from his pocket. He says
@@ -2250,8 +2243,8 @@ puts the picture back into his pocket. He waits.&lt;/em&gt;&lt;/p&gt;
    <link href="http://www.metacircus.com/writings/2010/03/30/the-glass-chamber.html"/>
    <updated>2010-03-30T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/writings/2010/03/30/the-glass-chamber</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve been told that if only we could hear each other, then we would
-fall in love. What separates us, always, isn&amp;rsquo;t space, but vacuum. We
+   <content type="html">&lt;p&gt;&lt;em&gt;I’ve been told that if only we could hear each other, then we would
+fall in love. What separates us, always, isn’t space, but vacuum. We
 can be close, yet never be together. We stand facing each other, but
 are incapable of seeing each other. So it is, we are doomed to eternal
 loneliness. Yearning for a love, clearly seen, within grasp, but
@@ -2261,7 +2254,7 @@ separated by a glass wall.&lt;/em&gt;&lt;/p&gt;
 wandering, chanced upon her, finds her suffocating, slowly dying
 from her own exhalation. Only a sheet of glass separates them,
 extending from floor to ceiling. They cannot hear each other, but they
-can feel the vibration of each others&amp;rsquo; movements.&lt;/em&gt;&lt;/p&gt;
+can feel the vibration of each others’ movements.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;The woman sits on the floor, her back against the glass wall, with a
 book in her lap, not reading. The man sees her, hesistates, glances at
@@ -2311,7 +2304,7 @@ his watch, then decides to approach. He says hi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;W: [Looks at the man.]&lt;/p&gt;
 
-&lt;p&gt;M: Me? Oh, nothing. Passing by. I&amp;rsquo;ll be on my way.&lt;/p&gt;
+&lt;p&gt;M: Me? Oh, nothing. Passing by. I’ll be on my way.&lt;/p&gt;
 
 &lt;p&gt;W: [Blinks.]&lt;/p&gt;
 
@@ -2331,7 +2324,7 @@ his watch, then decides to approach. He says hi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;W: [She says something.]&lt;/p&gt;
 
-&lt;p&gt;M: I can&amp;rsquo;t hear. [Flattens himself against wall.] Say again?&lt;/p&gt;
+&lt;p&gt;M: I can’t hear. [Flattens himself against wall.] Say again?&lt;/p&gt;
 
 &lt;p&gt;W: [She repeats, cupping her mouth by his ears.]&lt;/p&gt;
 
@@ -2340,31 +2333,31 @@ his watch, then decides to approach. He says hi.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;W: [Looks at the man. Gestures something.]&lt;/p&gt;
 
 &lt;p&gt;M: Hmmm. [Fumbles his pockets.] Pen. Pen. Ah here [shows it to the
-woman. Smiles. Fumbles again.]. Paper&amp;hellip; paper&amp;hellip; Damn, anything will
-do&amp;hellip;&lt;/p&gt;
+woman. Smiles. Fumbles again.]. Paper… paper… Damn, anything will
+do…&lt;/p&gt;
 
 &lt;p&gt;W: [Rumages her bag. She finds paper, holds it against the wall.]&lt;/p&gt;
 
-&lt;p&gt;M: [Laughs.] Well&amp;hellip;&lt;/p&gt;
+&lt;p&gt;M: [Laughs.] Well…&lt;/p&gt;
 
 &lt;p&gt;W: [Frustrated. Crumbles the paper, and toss it away. She sits down
 again, turning her back at the man.]&lt;/p&gt;
 
-&lt;p&gt;M: Hey, hey&amp;hellip; what&amp;rsquo;s wrong? [Pause.] You are upset?&lt;/p&gt;
+&lt;p&gt;M: Hey, hey… what’s wrong? [Pause.] You are upset?&lt;/p&gt;
 
 &lt;p&gt;W: [No response.]&lt;/p&gt;
 
-&lt;p&gt;M: That&amp;rsquo;s fine. [Looks at his watch.] Gotta be on my way. [Steps
-away.] Sigh. That&amp;rsquo;s fine. [Looks at his watch again.] That&amp;rsquo;s fine. [Walks
+&lt;p&gt;M: That’s fine. [Looks at his watch.] Gotta be on my way. [Steps
+away.] Sigh. That’s fine. [Looks at his watch again.] That’s fine. [Walks
 away.]&lt;/p&gt;
 
 &lt;p&gt;W: [Jumps up. Spins around, and pounds on the glass wall with both her fists.]&lt;/p&gt;
 
-&lt;p&gt;M: [Turns back to face her. He rushes back.] What&amp;rsquo;s wrong?!&lt;/p&gt;
+&lt;p&gt;M: [Turns back to face her. He rushes back.] What’s wrong?!&lt;/p&gt;
 
 &lt;p&gt;W: [Mouthes something.]&lt;/p&gt;
 
-&lt;p&gt;M: I can&amp;rsquo;t hear!!!&lt;/p&gt;
+&lt;p&gt;M: I can’t hear!!!&lt;/p&gt;
 
 &lt;p&gt;W: [Frantic. Breaking down.]&lt;/p&gt;
 
@@ -2372,31 +2365,31 @@ away.]&lt;/p&gt;
 
 &lt;p&gt;W: [Wails.]&lt;/p&gt;
 
-&lt;p&gt;M: Fuck. Fuck. Fuck. Calm down. What is it? What&amp;rsquo;s wrong?&lt;/p&gt;
+&lt;p&gt;M: Fuck. Fuck. Fuck. Calm down. What is it? What’s wrong?&lt;/p&gt;
 
 &lt;p&gt;W: [Flails her arms wildly.]&lt;/p&gt;
 
-&lt;p&gt;M: I don&amp;rsquo;t understand. What is it?&lt;/p&gt;
+&lt;p&gt;M: I don’t understand. What is it?&lt;/p&gt;
 
 &lt;p&gt;W: [Tries to calm herself.]&lt;/p&gt;
 
-&lt;p&gt;M: There, there, that&amp;rsquo;s good. Breath. Take it slowly.&lt;/p&gt;
+&lt;p&gt;M: There, there, that’s good. Breath. Take it slowly.&lt;/p&gt;
 
 &lt;p&gt;W: [Takes deep breaths.]&lt;/p&gt;
 
-&lt;p&gt;M: That&amp;rsquo;s right. Breath&amp;hellip; Breath.&lt;/p&gt;
+&lt;p&gt;M: That’s right. Breath… Breath.&lt;/p&gt;
 
 &lt;p&gt;W: [She breathes. Then she chokes.]&lt;/p&gt;
 
-&lt;p&gt;M: [He pounds on the glass wall.] I&amp;rsquo;ll get you out.&lt;/p&gt;
+&lt;p&gt;M: [He pounds on the glass wall.] I’ll get you out.&lt;/p&gt;
 
 &lt;p&gt;W: [She sits back down. Still choking.]&lt;/p&gt;
 
-&lt;p&gt;M: I&amp;rsquo;ll get you out! [Slams his body against the glass wall.] I&amp;rsquo;ll get you out&amp;hellip;&lt;/p&gt;
+&lt;p&gt;M: I’ll get you out! [Slams his body against the glass wall.] I’ll get you out…&lt;/p&gt;
 
 &lt;p&gt;W: [Curls into a ball. Her back heaving. Choking, and sobbing.]&lt;/p&gt;
 
-&lt;p&gt;M: I&amp;rsquo;ll get you out. [Runs off stage.]&lt;/p&gt;
+&lt;p&gt;M: I’ll get you out. [Runs off stage.]&lt;/p&gt;
 
 &lt;p&gt;. . .&lt;/p&gt;
 
@@ -2404,7 +2397,7 @@ away.]&lt;/p&gt;
 
 &lt;p&gt;. . .&lt;/p&gt;
 
-&lt;p&gt;M: [Walks onto stage dragging a sledgehammer.] I&amp;rsquo;ll get you out&amp;hellip; [He
+&lt;p&gt;M: [Walks onto stage dragging a sledgehammer.] I’ll get you out… [He
 swings the sledgehammer through the glass wall. It shatters into a
 million pieces, the fragments rains down on them both. He lets the
 hammer slip by the side, then kneels beside the woman.] Are you ok?
@@ -2426,11 +2419,11 @@ hammer slip by the side, then kneels beside the woman.] Are you ok?
 
 &lt;p&gt;M: You were choking.&lt;/p&gt;
 
-&lt;p&gt;W: [Cries.] I was waiting for him. Now&amp;rsquo;ve you shattered it, he will
+&lt;p&gt;W: [Cries.] I was waiting for him. Now’ve you shattered it, he will
 never come back. I will never see him again. Now I have no place to
 weep. How will I live? Where do I go?&lt;/p&gt;
 
-&lt;p&gt;M: Oh. [He lets her go.] I don&amp;rsquo;t know&amp;hellip; I didn&amp;rsquo;t know&amp;hellip;&lt;/p&gt;
+&lt;p&gt;M: Oh. [He lets her go.] I don’t know… I didn’t know…&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;The man looks at his watch, dusts himself off, and walks off the
 stage. The woman picks up her book, and walks off the other side. The
@@ -2535,9 +2528,8 @@ A. You are not making any sense at all.&lt;/p&gt;
    <content type="html">&lt;p&gt;I wrote a simple love letter generator with &lt;a href=&quot;http://github.com/hayeah/rantly/tree/master&quot;&gt;Rantly&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rantly/silly&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# generate a love letter with 3 paragraphs&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;love_letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;And get something like,&lt;/p&gt;
+&lt;span class=&quot;ss&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;love_letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And get something like,&lt;/p&gt;
 &lt;pre&gt;
 my unbelievable lighthouse:
 
@@ -2547,7 +2539,7 @@ desire. when my loin burns, my lighthouse, i feel
 the need to think of you, but this is not because
 my soul is awed, but rather a symptom of my being
 your ultimate unremarkable servant. do not think
-that saying 'my spirit wanders and wonders'
+that saying &#39;my spirit wanders and wonders&#39;
 suffices to show the depth of how my spine pines,
 because more than that, we would read poetry to
 each other with shiny joy 
@@ -2559,14 +2551,14 @@ glittering joy. because you are my beacon, and i
 am your ultimate insignificant captive, no, rather
 your unbelievable unremarkable lapdog, i hope to
 god we would whisper empty nothings into each
-others' ears with joyous joy. because you are my
+others&#39; ears with joyous joy. because you are my
 dove, and i am your incredible undeserving
 servant, no, rather your ultimate insignificant
 captive, i will that we would nurture joyous
 angels, so the world becomes all the more
 glittering..
 
-do not think that saying 'my loin burns' suffices
+do not think that saying &#39;my loin burns&#39; suffices
 to show the depth of how my spirit wanders and
 wonders, because more than that, we would nurture
 holy angels, so you, my virgin goddess, would
@@ -2580,17 +2572,15 @@ your ultimate insignificant lapdog
 
 ps: every once in a while i dream of us together,
 and hope that we would whisper empty nothings into
-each others' ears with shiny calm 
+each others&#39; ears with shiny calm 
 &lt;/pre&gt;
 &lt;p&gt;You can see the source &lt;a href=&quot;http://github.com/hayeah/rantly/blob/master/lib/rantly/silly.rb&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;What I think is neat is that the love generator is a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; built on top of Rant&amp;#8217;s core. You get an extended instance of the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; &amp;#8220;interpreter&amp;#8221; like so,&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Love&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;and use it to generate a randomly sized array of pedestal labels:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Love&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and use it to generate a randomly sized array of pedestal labels:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pedestal_label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [&amp;quot;virgin goddess&amp;quot;, &amp;quot;desire&amp;quot;, &amp;quot;lighthouse&amp;quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -2613,10 +2603,10 @@ each others' ears with shiny calm
 &lt;p&gt;Having left Haskell, I really pined for &lt;a href=&quot;http://www.cs.chalmers.se/~rjmh/QuickCheck/&quot;&gt;Quickcheck&lt;/a&gt;. I want something like it for my day to day work, to check my tests against structured random data. And furthermore, since I am capable of generating random data, I could also use it to generate database fixtures!&lt;/p&gt;
 &lt;p&gt;I looked at Rushcheck, the Ruby port of Quickcheck, and all the terribleness of monads came back to me. To create a custom generator in RushCheck, you do something like:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Candy&lt;/span&gt;
-  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Arbitrary&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Arbitrary&lt;/span&gt;
 
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arbitrary&lt;/span&gt;
-    &lt;span class=&quot;no&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;
       &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;r1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;
@@ -2627,8 +2617,7 @@ each others' ears with shiny calm
     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;Seriously hardcore! Rushcheck is cool, but monads in Ruby is just too crazy. (Rushcheck, is orphaned. I created a github repo for it &lt;a href=&quot;http://github.com/hayeah/rushcheck/tree/master&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Seriously hardcore! Rushcheck is cool, but monads in Ruby is just too crazy. (Rushcheck, is orphaned. I created a github repo for it &lt;a href=&quot;http://github.com/hayeah/rushcheck/tree/master&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;I just can&amp;#8217;t figure it out. &lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;BUT&lt;/span&gt; I &lt;span class=&quot;caps&quot;&gt;REALLY&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;WANT&lt;/span&gt; TO &lt;span class=&quot;caps&quot;&gt;USE&lt;/span&gt; IT!&lt;/strong&gt; So I rolled my own, which actually wasn&amp;#8217;t so hard. I call it &lt;strong&gt;Rant&lt;/strong&gt;&amp;#8212; RandomlyType. At its core is an imperative random generator that generates structured data, and property testing is just a trivial extension of Test::Unit using the generator.&lt;/p&gt;
 &lt;p&gt;It is easy to Rant. To generate a random Candy, you say,&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rant&amp;#39;&lt;/span&gt;
@@ -2637,18 +2626,15 @@ each others' ears with shiny calm
 &lt;span class=&quot;no&quot;&gt;Rant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;no&quot;&gt;Candy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;To generate a hundred Candies,&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To generate a hundred Candies,&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Rant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;no&quot;&gt;Candy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;Or generate a hundred pairs of Candies,&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or generate a hundred pairs of Candies,&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Rant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Candy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Candy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;The reason Rant is lot easier to use and implement, no surprise, is because it doesn&amp;#8217;t use the monadic style. Because Ruby lacks support for higher-order programming, monadic style is impractical for real use.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The reason Rant is lot easier to use and implement, no surprise, is because it doesn&amp;#8217;t use the monadic style. Because Ruby lacks support for higher-order programming, monadic style is impractical for real use.&lt;/p&gt;
 &lt;p&gt;In an imperative language, something like QuickCheck doesn&amp;#8217;t actually &lt;em&gt;need&lt;/em&gt; to be in monadic style in the first place. The particular monad QuickCheck defines and uses only abstracts over two things: size of the datastructure to generate, and the state of the random sequence generator. But, as Yogi Berra once said, the easiest way to represent states in a stateful language is to use states!&lt;/p&gt;
 &lt;p&gt;Ruby is an imperative language, so we can ask each instance of Rant generator to keep structure size as its instance variable. And the Ruby interpreter takes care of the state of the random sequence generator. We just call &lt;code&gt;rand&lt;/code&gt;. Easy.&lt;/p&gt;
 &lt;p&gt;In other words, when a block of code gets executed within an object (with &lt;code&gt;instance_eval&lt;/code&gt;), the object itself is the &amp;#8220;monad&amp;#8221; that abstracts and carries the computational context of the block.&lt;/p&gt;
@@ -2657,8 +2643,7 @@ each others' ears with shiny calm
  &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
  &lt;span class=&quot;n&quot;&gt;sized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:integer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;Rant also provides extension to Test::Unit for property testing. In Rant&amp;#8217;s test suite, you can see that it checks if the &lt;code&gt;integer&lt;/code&gt; it generates is always a &lt;code&gt;Fixnum&lt;/code&gt;,&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Rant also provides extension to Test::Unit for property testing. In Rant&amp;#8217;s test suite, you can see that it checks if the &lt;code&gt;integer&lt;/code&gt; it generates is always a &lt;code&gt;Fixnum&lt;/code&gt;,&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rant/check&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;should&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;generate Fixnum only&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;property_of&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -2667,20 +2652,17 @@ each others' ears with shiny calm
     &lt;span class=&quot;n&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_a?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Fixnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;Funnily enough, this trivial property actually caught a bug! I messed up an upper bound by an order of magnitude, and &lt;code&gt;integer&lt;/code&gt; was generating &lt;code&gt;Bignum&lt;/code&gt; s.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Funnily enough, this trivial property actually caught a bug! I messed up an upper bound by an order of magnitude, and &lt;code&gt;integer&lt;/code&gt; was generating &lt;code&gt;Bignum&lt;/code&gt; s.&lt;/p&gt;
 &lt;p&gt;Rant is only ~300 &lt;span class=&quot;caps&quot;&gt;LOC&lt;/span&gt;. You can find out more here: &lt;a href=&quot;http://github.com/hayeah/rant/tree/master&quot;&gt;http://github.com/hayeah/rant/tree/master&lt;/a&gt;.&lt;/p&gt;
 &lt;h1&gt;One Trick Pony&lt;/h1&gt;
 &lt;p&gt;One thing I found interesting after writing Rant is that its design shares family resemblance to &lt;a href=&quot;http://github.com/hayeah/rubish/tree/master&quot;&gt;Rubish&lt;/a&gt;, my Ruby shell. Both Rant and Rubish are designed around&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance_eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;In Rant&amp;#8217;s case, the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; evaluator is a random generator, and in Rubish, the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; interpreter is the shell object. Generically, a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; designed this way is something like,&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In Rant&amp;#8217;s case, the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; evaluator is a random generator, and in Rubish, the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; interpreter is the shell object. Generically, a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; designed this way is something like,&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;keyword1&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;syntax&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;syntax&amp;quot;&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;keyword2&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;syntax&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;syntax&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;where the keywords are just the callable methods of &lt;code&gt;obj&lt;/code&gt;. In otherwords, the &amp;#8220;&lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;&amp;#8221; and its interpreter is just the object itself!&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the keywords are just the callable methods of &lt;code&gt;obj&lt;/code&gt;. In otherwords, the &amp;#8220;&lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;&amp;#8221; and its interpreter is just the object itself!&lt;/p&gt;
 &lt;p&gt;This technique is nice, because it&amp;#8217;s easy to extend the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; with new methods, thanks to how open Ruby is. You can extend either the class of &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; itself, or just an instance of the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;, on the singleton object.&lt;/p&gt;
 &lt;p&gt;The problem with extending the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; class, though, is that it makes it more risky to combine multiple extensions written by different people. The more extensions you want to use, the riskier it is.&lt;/p&gt;
 &lt;p&gt;With Rubish, a &lt;code&gt;Workspace&lt;/code&gt; object manages all the bindings visible to the shell. To extend the shell, we just extend an instance object of &lt;code&gt;Workspace&lt;/code&gt;, like so,&lt;/p&gt;
@@ -2688,9 +2670,8 @@ each others' ears with shiny calm
 &lt;span class=&quot;c1&quot;&gt;# It augments the workspace with test&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# assertions.&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;WS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rubish&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_workspace&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;WS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Unit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Assertions&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;Extending a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; singleton object on a per-use basis has important advantages:&lt;/p&gt;
+&lt;span class=&quot;no&quot;&gt;WS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Unit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Assertions&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Extending a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; singleton object on a per-use basis has important advantages:&lt;/p&gt;
 &lt;ol&gt;
 	&lt;li&gt;&lt;strong&gt;Subclassing is almost never needed.&lt;/strong&gt; I find that I achieve better orthogonality by distributing methods into a flat space of Mixins, rather than a hierarchy of classes. This also keeps the codebase lean.&lt;/li&gt;
 	&lt;li&gt;&lt;strong&gt;Plugin writers don&amp;#8217;t have to worry about name conflicts.&lt;/strong&gt; The user is responsible to make sure that two Mixins indeed can mix. Otherwise, just mix them into different objects.&lt;/li&gt;
@@ -2718,8 +2699,7 @@ each others' ears with shiny calm
     &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:undef_method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;For the rest of this article, I&amp;#8217;d like to ask you to imagine how you&amp;#8217;d design a Ruby shell yourself.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For the rest of this article, I&amp;#8217;d like to ask you to imagine how you&amp;#8217;d design a Ruby shell yourself.&lt;/p&gt;
 &lt;h1&gt;Now, Imagine!&lt;/h1&gt;
 &lt;p&gt;Ruby&amp;#8217;s syntax is concise enough that in the degenerate case, it&amp;#8217;s like any other Unix shell.&lt;/p&gt;
 &lt;pre class=&quot;terminal&quot;&gt;
@@ -2756,8 +2736,7 @@ false
     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;p&gt;Then you could extend &lt;code&gt;ls&lt;/code&gt; so you yield to a block each line of its output as a Ruby File object,&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then you could extend &lt;code&gt;ls&lt;/code&gt; so you yield to a block each line of its output as a Ruby File object,&lt;/p&gt;
 &lt;pre class=&quot;terminal&quot;&gt;
 # use the filter to include only *.rb
 &amp;gt; ls.extend(LsMixin).each_file(/.rb$/) { |f|... }

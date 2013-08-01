@@ -49,7 +49,7 @@
 
 <p><img src="http://p.twimg.com/AYrd9DACAAIBr7F.png" alt="I Love Parens" /></p>
 
-<p>I love Lisp&rsquo;s syntax. Or rather, the lack thereof. But people might not like
+<p>I love Lisp’s syntax. Or rather, the lack thereof. But people might not like
 such austere minimalism. So ComaLisp has braces and curlies, and a liberal
 sprinkling of commas. It is a delicious syntatic soup fortified with extra
 punctuation marks. Yum.</p>
@@ -86,11 +86,11 @@ DSL context:</p>
 </code></pre>
 
 <p>However, the fact that lists are represented by arrays is an implementation
-detail. You can&rsquo;t rely on that. You should consider whatever returned by <code>list</code>
+detail. You can’t rely on that. You should consider whatever returned by <code>list</code>
 as an abstract datatype, and only use the provided functions in ComaLisp to
 operate on lists. (More pain the better, right?)</p>
 
-<p>The good old <code>car</code> and <code>cdr</code> work as you&rsquo;d expect.</p>
+<p>The good old <code>car</code> and <code>cdr</code> work as you’d expect.</p>
 
 <pre><code>(car (list 1, 2, 3)) == 1
 (cdr (list 1, 2, 3)) == (list 2, 3) == [2,3]
@@ -113,7 +113,7 @@ algebra works out.</p>
 (cdr (list)) == (cdr (cdr (list))) == ... == []
 </code></pre>
 
-<p>However, because the list is represented by an array, it&rsquo;s not possible to have
+<p>However, because the list is represented by an array, it’s not possible to have
 an improper list like in a real Lisp.</p>
 
 <pre><code>(cons 1 2) =&gt; '(1 . 2) # not possible
@@ -144,7 +144,7 @@ ComaLisp!</p>
 
 <h2 id="define-function">Define Function</h2>
 
-<p>Here&rsquo;s how you define a function in ComaLisp</p>
+<p>Here’s how you define a function in ComaLisp</p>
 
 <pre><code>(ComaLisp {
   (defun [:foo,:a,:b] {
@@ -173,7 +173,7 @@ dynamically.</p>
 <h2 id="oop-integration-with-ruby">OOP Integration With Ruby</h2>
 
 <p>The best that ComaLisp has to offer is probably its tight integration with
-Ruby&rsquo;s powerful object system. If you have a native Ruby object, you can invoke
+Ruby’s powerful object system. If you have a native Ruby object, you can invoke
 its methods the Lisp way,</p>
 
 <pre><code>(map [-1,-2,-3] { |e|
