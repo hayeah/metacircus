@@ -2,6 +2,7 @@
 layout: post
 title: The IMVU Story According To Its VP of Engineering
 tag: startup
+published: false
 ---
 
 I was at [James Birchler](http://twitter.com/jamesbirchler)'s talk, hosted by
