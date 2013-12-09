@@ -21,7 +21,7 @@ And so on.
 
 # What is an MVP
 
-I was very excited about Lean Startup methodology when I first learned about it. But one thing about Lean Startup movement really bothers me, and it's how lazy it allows people to be. You are expected to validate your startup idea [in a weekend](http://startupweekend.org/), or else you are wasting time and energy.
+I was very excited about Lean Startup methodology when I first learned about it. But one thing about the Lean Startup movement really bothers me, and it's how lazy it allows people to be. You are expected to validate your startup idea [in a weekend](http://startupweekend.org/), or else you are wasting time and energy.
 
 To be fair, Lean Startup asks you to be cheap, not lazy. However, many people, struck by a brilliant idea at a cocktail party, would only go so far as to putting up a landing page. If nobody signed up... well that was that. Back to the office tomorrow.
 
@@ -52,7 +52,7 @@ I was going to attend RubyConf China in October. I thought my goal was to get te
 
 I focused on designing a template language that's easy to use, and streamlining the creative process by providing little conveniences like [LiveReload](http://livereload.com).
 
-Sadly, when I was at the conference, I wasn't very good at getting people to sit down with me and forcing them to see what I was building. Despite that, I *did* talked to a few key people who were interested, which justified my staying focused on building the tool.
+Sadly, when I was at the conference, I wasn't very good at getting people to sit down with me and forcing them to see what I was building. Despite that, I *did* talk to a few key people who were interested, which I thought justified my staying focused on building the tool.
 
 So... another month went by, and
 
@@ -60,7 +60,7 @@ So... another month went by, and
 
 Officially. Not. Funny. Anymore.
 
-I've been going at this for 3 months now. It'd be funny if it's not so scary on a personal level. How long could I go without launching anything? It's not that I haven't DONE anything. It's just that I haven't accomplished anything either.
+I've been going at this for 3 months now. It'd be funny if it's not so scary on a personal level. How long could I go on without launching anything? It's not that I haven't DONE anything. It's just that I haven't accomplished anything either.
 
 One of the reasons I am starting to blog again is to tell the world: HEY! I've been working, I haven't been lying around getting fat! Although I might as well have been lying around.
 
@@ -75,7 +75,7 @@ But if I could walk away with a few lessons, I could still call it a win...
 1. The hardest thing in the world is getting people interested. **Try way harder.**
 2. Don't overly rely on any single individual to help you.
 3. Friends don't count as users.
-4. If you can't have strangers to see you work, you don't have a prototype.
+4. If you can't have strangers seeing you work, you don't have a prototype.
 5. If you are not launched, you haven't got started.
 
 So dear strangers, please allow me to **try way harder**.
