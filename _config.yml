@@ -1,6 +1,11 @@
-server: true
-auto: true
+# server: true
+# auto: true
 pygments: true
 markdown: kramdown
-exclude: Gemfile, Gemfile.lock, config.ru, ideas
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - config.ru
+  - ideas
+  - unpublished
 
