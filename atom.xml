@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2013-12-09T10:15:28+08:00</updated>
+ <updated>2013-12-09T10:24:32+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -36,7 +36,7 @@
 
 &lt;h1 id=&quot;what-is-an-mvp&quot;&gt;What is an MVP&lt;/h1&gt;
 
-&lt;p&gt;I was very excited about Lean Startup methodology when I first learned about it. But one thing about Lean Startup movement really bothers me, and it’s how lazy it allows people to be. You are expected to validate your startup idea &lt;a href=&quot;http://startupweekend.org/&quot;&gt;in a weekend&lt;/a&gt;, or else you are wasting time and energy.&lt;/p&gt;
+&lt;p&gt;I was very excited about Lean Startup methodology when I first learned about it. But one thing about the Lean Startup movement really bothers me, and it’s how lazy it allows people to be. You are expected to validate your startup idea &lt;a href=&quot;http://startupweekend.org/&quot;&gt;in a weekend&lt;/a&gt;, or else you are wasting time and energy.&lt;/p&gt;
 
 &lt;p&gt;To be fair, Lean Startup asks you to be cheap, not lazy. However, many people, struck by a brilliant idea at a cocktail party, would only go so far as to putting up a landing page. If nobody signed up… well that was that. Back to the office tomorrow.&lt;/p&gt;
 
@@ -69,7 +69,7 @@
 
 &lt;p&gt;I focused on designing a template language that’s easy to use, and streamlining the creative process by providing little conveniences like &lt;a href=&quot;http://livereload.com&quot;&gt;LiveReload&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Sadly, when I was at the conference, I wasn’t very good at getting people to sit down with me and forcing them to see what I was building. Despite that, I &lt;em&gt;did&lt;/em&gt; talked to a few key people who were interested, which justified my staying focused on building the tool.&lt;/p&gt;
+&lt;p&gt;Sadly, when I was at the conference, I wasn’t very good at getting people to sit down with me and forcing them to see what I was building. Despite that, I &lt;em&gt;did&lt;/em&gt; talk to a few key people who were interested, which I thought justified my staying focused on building the tool.&lt;/p&gt;
 
 &lt;p&gt;So… another month went by, and&lt;/p&gt;
 
@@ -77,7 +77,7 @@
 
 &lt;p&gt;Officially. Not. Funny. Anymore.&lt;/p&gt;
 
-&lt;p&gt;I’ve been going at this for 3 months now. It’d be funny if it’s not so scary on a personal level. How long could I go without launching anything? It’s not that I haven’t DONE anything. It’s just that I haven’t accomplished anything either.&lt;/p&gt;
+&lt;p&gt;I’ve been going at this for 3 months now. It’d be funny if it’s not so scary on a personal level. How long could I go on without launching anything? It’s not that I haven’t DONE anything. It’s just that I haven’t accomplished anything either.&lt;/p&gt;
 
 &lt;p&gt;One of the reasons I am starting to blog again is to tell the world: HEY! I’ve been working, I haven’t been lying around getting fat! Although I might as well have been lying around.&lt;/p&gt;
 
@@ -93,7 +93,7 @@
   &lt;li&gt;The hardest thing in the world is getting people interested. &lt;strong&gt;Try way harder.&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;Don’t overly rely on any single individual to help you.&lt;/li&gt;
   &lt;li&gt;Friends don’t count as users.&lt;/li&gt;
-  &lt;li&gt;If you can’t have strangers to see you work, you don’t have a prototype.&lt;/li&gt;
+  &lt;li&gt;If you can’t have strangers seeing you work, you don’t have a prototype.&lt;/li&gt;
   &lt;li&gt;If you are not launched, you haven’t got started.&lt;/li&gt;
 &lt;/ol&gt;
 
