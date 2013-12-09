@@ -4,13 +4,107 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2013-08-01T23:50:34+08:00</updated>
+ <updated>2013-12-09T10:15:28+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
    <email>hayeah@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Not Launched</title>
+   <link href="http://www.metacircus.com/startup/2013/12/09/not-launched.html"/>
+   <updated>2013-12-09T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/startup/2013/12/09/not-launched</id>
+   <content type="html">&lt;p&gt;Every week, I am going to write about the biggest problem I am having in my effort to build a startup. If that means that every week I am going to write about the same thing, then so be it.&lt;/p&gt;
+
+&lt;p&gt;The biggest problem I have this week is that &lt;strong&gt;I don’t have a product launched&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-not&quot;&gt;Why Not?&lt;/h1&gt;
+
+&lt;p&gt;You might ask a lonely person, “why not just go out and make some friends?” Similarly, it seems like such a simple problem for me to solve.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Just launch it.&lt;/li&gt;
+  &lt;li&gt;Real artists ship.&lt;/li&gt;
+  &lt;li&gt;Done is better than perfect.&lt;/li&gt;
+  &lt;li&gt;Fail fast…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And so on.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-an-mvp&quot;&gt;What is an MVP&lt;/h1&gt;
+
+&lt;p&gt;I was very excited about Lean Startup methodology when I first learned about it. But one thing about Lean Startup movement really bothers me, and it’s how lazy it allows people to be. You are expected to validate your startup idea &lt;a href=&quot;http://startupweekend.org/&quot;&gt;in a weekend&lt;/a&gt;, or else you are wasting time and energy.&lt;/p&gt;
+
+&lt;p&gt;To be fair, Lean Startup asks you to be cheap, not lazy. However, many people, struck by a brilliant idea at a cocktail party, would only go so far as to putting up a landing page. If nobody signed up… well that was that. Back to the office tomorrow.&lt;/p&gt;
+
+&lt;p&gt;It’s hard for &lt;a href=&quot;http://paulgraham.com/startupideas.html&quot;&gt;good ideas&lt;/a&gt; to come by. If I think I might have a good idea, why should I give up so easily after only a simple “MVP”? I had got to do more than a landing page.&lt;/p&gt;
+
+&lt;p&gt;What I liked better was Paul Graham’s idea of creating a “quantum of utility”, which is something that is useful enough to get some people to start talking to you.&lt;/p&gt;
+
+&lt;p&gt;So I started coding.&lt;/p&gt;
+
+&lt;h1 id=&quot;look-ma-no-launchable-product-and-its-cool&quot;&gt;Look Ma, No Launchable Product, and it’s cool&lt;/h1&gt;
+
+&lt;p&gt;What I wanted to build at first was “CodeSchool as a service”. It provides an in-browser programming environment for technical book authors or open source communities to build interactive tutorials.&lt;/p&gt;
+
+&lt;p&gt;Since I am building it for geeks, I thought I could iterate based on&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;what I wanted for myself, and&lt;/li&gt;
+  &lt;li&gt;what my friends would tell me they want.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I spent about a week playing with &lt;a href=&quot;http://docker.io&quot;&gt;Docker&lt;/a&gt;, &lt;a href=&quot;http://nodejs.org&quot;&gt;NodeJS&lt;/a&gt; and the &lt;a href=&quot;http://ace.c9.io&quot;&gt;ACE Editor&lt;/a&gt;, to get familiar with what they are capable of, and see how I might use them in my project. It was a happy time.&lt;/p&gt;
+
+&lt;p&gt;Then I spent about 10 days putting together a quick tech demo that barely worked, and showed it to my friends. Some thought it was really cool. Some asked how it could make money. Some thought meh, real programmers should learn programming with Emacs.&lt;/p&gt;
+
+&lt;p&gt;This demo really wasn’t meant to be launched. I just wanted to make sure that I could get it to work.&lt;/p&gt;
+
+&lt;h2 id=&quot;still-no-launchable-product&quot;&gt;Still No Launchable Product…&lt;/h2&gt;
+
+&lt;p&gt;I was going to attend RubyConf China in October. I thought my goal was to get tech bloggers, speakers, and podcasters interested in the tool, and to create content with it. Since I positioned it as an authoring tool at the time, I didn’t think it was necessary to launch a public demo. I just wanted the content creators.&lt;/p&gt;
+
+&lt;p&gt;I focused on designing a template language that’s easy to use, and streamlining the creative process by providing little conveniences like &lt;a href=&quot;http://livereload.com&quot;&gt;LiveReload&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sadly, when I was at the conference, I wasn’t very good at getting people to sit down with me and forcing them to see what I was building. Despite that, I &lt;em&gt;did&lt;/em&gt; talked to a few key people who were interested, which justified my staying focused on building the tool.&lt;/p&gt;
+
+&lt;p&gt;So… another month went by, and&lt;/p&gt;
+
+&lt;h3 id=&quot;still-no-launchable-product-1&quot;&gt;STILL No Launchable Product&lt;/h3&gt;
+
+&lt;p&gt;Officially. Not. Funny. Anymore.&lt;/p&gt;
+
+&lt;p&gt;I’ve been going at this for 3 months now. It’d be funny if it’s not so scary on a personal level. How long could I go without launching anything? It’s not that I haven’t DONE anything. It’s just that I haven’t accomplished anything either.&lt;/p&gt;
+
+&lt;p&gt;One of the reasons I am starting to blog again is to tell the world: HEY! I’ve been working, I haven’t been lying around getting fat! Although I might as well have been lying around.&lt;/p&gt;
+
+&lt;h1 id=&quot;ok-lets-fix-this&quot;&gt;Ok. Let’s Fix This&lt;/h1&gt;
+
+&lt;p&gt;I am omitting a great many detours along the way. Frustratingly, it seems as though I am no further along the way than when I started 3 months ago.&lt;/p&gt;
+
+&lt;p&gt;Sad face :’(&lt;/p&gt;
+
+&lt;p&gt;But if I could walk away with a few lessons, I could still call it a win…&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The hardest thing in the world is getting people interested. &lt;strong&gt;Try way harder.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Don’t overly rely on any single individual to help you.&lt;/li&gt;
+  &lt;li&gt;Friends don’t count as users.&lt;/li&gt;
+  &lt;li&gt;If you can’t have strangers to see you work, you don’t have a prototype.&lt;/li&gt;
+  &lt;li&gt;If you are not launched, you haven’t got started.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So dear strangers, please allow me to &lt;strong&gt;try way harder&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;P.S.&lt;/p&gt;
+
+&lt;p&gt;I open-sourced the authoring tool at &lt;a href=&quot;https://github.com/hayeah/fork2-builder&quot;&gt;Fork2 Builder&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Prayer to Walt Whitman</title>
@@ -89,109 +183,6 @@ to die. So it is that old companies have to die to make way for innovation.&lt;/
  </entry>
  
  <entry>
-   <title>How Google Ad Ranking Maximizes Profit</title>
-   <link href="http://www.metacircus.com/startup/2011/11/08/how-google-ad-ranking-maximizes-profit.html"/>
-   <updated>2011-11-08T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/startup/2011/11/08/how-google-ad-ranking-maximizes-profit</id>
-   <content type="html">&lt;p&gt;Greed, as they say on Wall Street, is good. And that, for Google, is in fact
-&lt;em&gt;mathematically true&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I was reading &lt;a href=&quot;http://certifiedknowledge.org/blog/&quot;&gt;Brad Geddes&lt;/a&gt;’s book &lt;a href=&quot;http://www.amazon.com/gp/product/0470500239/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=metacircus-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399369&amp;amp;creativeASIN=0470500239&quot;&gt;Advanced Google AdWords&lt;/a&gt;,
-to learn how to use AdWords. Naively (like me), you might think at first
-that it would make sense to put the highest bidder first. But no. Google
-ranks ads by CTR (click-through rate) * max CPC (cost per cick).&lt;/p&gt;
-
-&lt;p&gt;Why? &lt;em&gt;Because doing that maximizes profit.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;It makes sense if you think about it. If somebody is paying $100 per click for
-an ad, but doesn’t get any click, then Google makes nothing. But it wasn’t clear
-to me whether this ranking strategy is indeed &lt;em&gt;THE&lt;/em&gt; mathematically optimal
-strategy.&lt;/p&gt;
-
-&lt;p&gt;I am a nerd. So I couldn’t just let that slide by.&lt;/p&gt;
-
-&lt;p&gt;I had to prove it.&lt;/p&gt;
-
-&lt;h1 id=&quot;sanity-check&quot;&gt;Sanity Check&lt;/h1&gt;
-
-&lt;p&gt;So we want to prove that ranking by CTR * CPC maximizes profit. Before setting
-out to prove it, I did a quick sanity check so I wouldn’t go on a wild goose
-chase. Suppose there are two ads.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Zoloft. CTR = 50%. CPC = $10&lt;/li&gt;
-  &lt;li&gt;Prozac. CTR = 100%. CPC = $5&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If there are 100 searches for anti-depressants, 50 would click on the Zoloft ad,
-and Google makes $500. Given the same 100 searches, 100 would click on the
-Prozac ad, and Google makes $500.&lt;/p&gt;
-
-&lt;p&gt;It’s a toss-up. If you randomly distribute traffic between these two ads, Google
-makes the same amount. There is no reason for Google to prefer one over the
-other. Playing around with the CTR and CPC of the ads by adjusting them up and
-down, it’s clear that the formula works.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-proof&quot;&gt;The Proof&lt;/h1&gt;
-
-&lt;p&gt;Given that there are n ads ranked in order of CTR_n * CPC_n. Assume as given
-that the impressions received by these ads, N_n, is strictly decreasing (ad 1
-is seen more than ad 2, and ad 2 is seen more than ad 3, etc…).&lt;/p&gt;
-
-&lt;p&gt;If this is not the optimal strategy, then there is an alternate ranking that
-would yield higher earning. Earning from some ad of rank n is&lt;/p&gt;
-
-&lt;p&gt;E_n = N_n * CTR_n * CPC_n&lt;/p&gt;
-
-&lt;p&gt;Let’s rewrite CTR_n * CPC_n as P_n. So earning for the n-th ad would be&lt;/p&gt;
-
-&lt;p&gt;E_n = N_n * P_n&lt;/p&gt;
-
-&lt;p&gt;For the said hypothesized alternate ranking, there should exist a pair of P_a
-and P_b such that a outranks b, but if we switch them, the total earning would
-increase. Or as an equation, there should be P_a, P_b (for a &amp;gt; b) such that,&lt;/p&gt;
-
-&lt;p&gt;(1) (N_a * P_b + N_b * P_a) &amp;gt; (N_a * P_a + N_b * P_b)&lt;/p&gt;
-
-&lt;p&gt;We want to show that this is impossible. By rearranging the terms,&lt;/p&gt;
-
-&lt;p&gt;(2) (N_a * P_b - N_b * P_b) &amp;gt; (N_a * P_a -  N_b * P_a)&lt;/p&gt;
-
-&lt;p&gt;Then factoring,&lt;/p&gt;
-
-&lt;p&gt;(3) P_b(N_a - N_b) &amp;gt; P_a(N_a - N_b)&lt;/p&gt;
-
-&lt;p&gt;Canceling, we get,&lt;/p&gt;
-
-&lt;p&gt;(4) P_b &amp;gt; P_a&lt;/p&gt;
-
-&lt;p&gt;Which violates the given that P_a &amp;gt; P_b for any a &amp;gt; b. So (1) cannot be true for
-any pair of a,b. QED.&lt;/p&gt;
-
-&lt;h1 id=&quot;when-i-was-10-i-thought-girls-are-gross&quot;&gt;When I Was 10, I Thought Girls Are Gross&lt;/h1&gt;
-
-&lt;p&gt;I thought marketing is gross. I didn’t think that I’d enjoy learning about
-marketing. Why should I force somebody to buy my crap? Why should I become an
-&lt;a href=&quot;http://godaddy.com&quot;&gt;expert pain in the ass&lt;/a&gt;?&lt;/p&gt;
-
-&lt;p&gt;Marketing, like everything else, can be a force of good or evil. You can trick
-people into buying shit that doesn’t work. Or you can build something awesome,
-and tell people about it.&lt;/p&gt;
-
-&lt;p&gt;Google AdWords incentivize people to create relevant ads:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;By incorporating a combination of both bid prices and how many clicks those ads received, Google managed to maximize how much they made on any single search results page. This simple change also created an environment where a small company with a more compelling offer could have its ad displayed higher in a [search result page] than a large national company who did not take the time to create relevant ads. Price no longer trumped relevancy. Having the most money did not ensure the most clicks or visibility. Advertisers had to choose keywords that were more relevant to their products and create ads to match.
-Brad Geddes - &lt;em&gt;Advanced Google AdWords&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I think that’s pretty cool.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=3216234&quot;&gt;On Hacker News&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
    <title>Startup School 2011 Notes</title>
    <link href="http://www.metacircus.com/startup/2011/10/29/startup-school-2011.html"/>
    <updated>2011-10-29T00:00:00+08:00</updated>
@@ -233,79 +224,6 @@ smart. Yet he is somehow always there, at the right place at the right time with
 the right people.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=3174530&quot;&gt;Discuss On Hacker News&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>The IMVU Story According To Its VP of Engineering</title>
-   <link href="http://www.metacircus.com/startup/2011/10/28/the-IMVU-story-according-to-vp-engineering.html"/>
-   <updated>2011-10-28T00:00:00+08:00</updated>
-   <id>http://www.metacircus.com/startup/2011/10/28/the-IMVU-story-according-to-vp-engineering</id>
-   <content type="html">&lt;p&gt;I was at &lt;a href=&quot;http://twitter.com/jamesbirchler&quot;&gt;James Birchler&lt;/a&gt;’s talk, hosted by
-&lt;a href=&quot;http://twitter.com/richcollins&quot;&gt;Rich Collins&lt;/a&gt; of the San Francisco &lt;a href=&quot;http://www.meetup.com/Lean-Startup-Circle/&quot;&gt;Lean
-Startup Circle&lt;/a&gt;. James is the VP
-Engineering at IMVU. James’ account gave me another perspective of the IMVU
-story that is different from the somewhat sanitized/idealized account given by
-Eric Ries.&lt;/p&gt;
-
-&lt;p&gt;Eric talked about how IMVU adopted practices from the Toyata assembly line. If
-anybody made a mistake, nobody was allowed to check code into the source
-control. The whole team would stop in order to resolve the problem. Furthermore,
-root analysis was performed to ensure that the problem would not recur.&lt;/p&gt;
-
-&lt;p&gt;Great story.&lt;/p&gt;
-
-&lt;p&gt;James talked about the same thing. But he added that they don’t do it at IMVU
-anymore. They no longer could interrupt everyone whenever there was a build
-problem.&lt;/p&gt;
-
-&lt;p&gt;While IMVU may be a poster child of the Lean Startup movement, the reality is
-messier.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-imvu-redesign&quot;&gt;The IMVU Redesign&lt;/h1&gt;
-
-&lt;p&gt;Another example is the IMVU UI redesign. The old IMVU, over a period of time,
-accmulated features. Each new UI component was an improvement. The IMVU client
-eventually became like the dashboard of a nuclear reactor. They knew it was
-complicated. But hey, who’s to argue with the improved metrics? The company felt
-that the UI was wrong, but nobody wanted to shoot the elephant in the room.&lt;/p&gt;
-
-&lt;p&gt;Then a group within the company started to work on a redesign. James said that
-the group at first worked in secret. The project would’ve been
-killed. Eventually the new simplified and polished design prevailed. With the
-flip of a switch (and presmuably sighs of relief), IMVU moved over to the new
-design. Revenue went up and up from there.&lt;/p&gt;
-
-&lt;p&gt;It was the right thing to do for the customers.&lt;/p&gt;
-
-&lt;h1 id=&quot;thomas-kuhn-strikes&quot;&gt;Thomas Kuhn Strikes&lt;/h1&gt;
-
-&lt;p&gt;Yet the redesign was a non-evolutionary leap. If the normal activity of Lean
-Startup consists of experiments that lead to incremental, evolutionary
-improvements, then how do you achieve the sort of &lt;a href=&quot;http://en.wikipedia.org/wiki/Paradigm_shift&quot;&gt;“paradigm
-shift”&lt;/a&gt; like IMVU’s redesign?&lt;/p&gt;
-
-&lt;p&gt;Vision.&lt;/p&gt;
-
-&lt;p&gt;For somebody like Steve Jobs, the vision is so strong, and right, that the
-company could just follow the vision, and likely arrive somewhere good. And what
-is vision good for? Delivering value. What IMVU is learning now is that nothing
-else matters. Just ask “is what I am doing delivering value for our customers?”&lt;/p&gt;
-
-&lt;p&gt;The lesson learned is that for a company, it isn’t enough to learn a set of
-techniques. Techniques are for normal daily operation. More importantly, you
-need a culture that helps you to relentlessly pursue your vision and deliver
-customer value.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;You can see James’ slides, &lt;a href=&quot;http://www.slideshare.net/jamesbirchler/experimenting-your-way-to-success-applying-lean-startup-principles-to-product-development-at-imvu&quot;&gt;“Experimenting Your Way To
-Success”&lt;/a&gt;. The
-slide deck sticks too much to the party line, IMO. I liked James insight into
-company culture. IMVU is remarkable in its appetite for change and
-experimentation with its work processes.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=3171112&quot;&gt;Discuss on Hacker News&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -2528,7 +2446,7 @@ A. You are not making any sense at all.&lt;/p&gt;
    <content type="html">&lt;p&gt;I wrote a simple love letter generator with &lt;a href=&quot;http://github.com/hayeah/rantly/tree/master&quot;&gt;Rantly&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rantly/silly&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# generate a love letter with 3 paragraphs&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;love_letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;love_letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And get something like,&lt;/p&gt;
 &lt;pre&gt;
 my unbelievable lighthouse:
@@ -2576,7 +2494,7 @@ each others&#39; ears with shiny calm
 &lt;/pre&gt;
 &lt;p&gt;You can see the source &lt;a href=&quot;http://github.com/hayeah/rantly/blob/master/lib/rantly/silly.rb&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;What I think is neat is that the love generator is a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; built on top of Rant&amp;#8217;s core. You get an extended instance of the &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; &amp;#8220;interpreter&amp;#8221; like so,&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Love&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Rantly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Silly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Love&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and use it to generate a randomly sized array of pedestal labels:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pedestal_label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [&amp;quot;virgin goddess&amp;quot;, &amp;quot;desire&amp;quot;, &amp;quot;lighthouse&amp;quot;]&lt;/span&gt;
@@ -2603,10 +2521,10 @@ each others&#39; ears with shiny calm
 &lt;p&gt;Having left Haskell, I really pined for &lt;a href=&quot;http://www.cs.chalmers.se/~rjmh/QuickCheck/&quot;&gt;Quickcheck&lt;/a&gt;. I want something like it for my day to day work, to check my tests against structured random data. And furthermore, since I am capable of generating random data, I could also use it to generate database fixtures!&lt;/p&gt;
 &lt;p&gt;I looked at Rushcheck, the Ruby port of Quickcheck, and all the terribleness of monads came back to me. To create a custom generator in RushCheck, you do something like:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Candy&lt;/span&gt;
-  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Arbitrary&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Arbitrary&lt;/span&gt;
 
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arbitrary&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;RushCheck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;
       &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;r1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;
@@ -2670,7 +2588,7 @@ each others&#39; ears with shiny calm
 &lt;span class=&quot;c1&quot;&gt;# It augments the workspace with test&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# assertions.&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;WS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rubish&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_workspace&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;WS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:Unit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Assertions&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;WS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Unit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Assertions&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Extending a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; singleton object on a per-use basis has important advantages:&lt;/p&gt;
 &lt;ol&gt;
 	&lt;li&gt;&lt;strong&gt;Subclassing is almost never needed.&lt;/strong&gt; I find that I achieve better orthogonality by distributing methods into a flat space of Mixins, rather than a hierarchy of classes. This also keeps the codebase lean.&lt;/li&gt;

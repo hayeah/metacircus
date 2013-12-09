@@ -48,10 +48,10 @@
 <p>Having left Haskell, I really pined for <a href="http://www.cs.chalmers.se/~rjmh/QuickCheck/">Quickcheck</a>. I want something like it for my day to day work, to check my tests against structured random data. And furthermore, since I am capable of generating random data, I could also use it to generate database fixtures!</p>
 <p>I looked at Rushcheck, the Ruby port of Quickcheck, and all the terribleness of monads came back to me. To create a custom generator in RushCheck, you do something like:</p>
 <div class="highlight"><pre><code class="ruby"><span class="k">class</span> <span class="nc">Candy</span>
-  <span class="kp">extend</span> <span class="ss">RushCheck</span><span class="p">:</span><span class="ss">:Arbitrary</span>
+  <span class="kp">extend</span> <span class="no">RushCheck</span><span class="o">::</span><span class="no">Arbitrary</span>
 
   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">arbitrary</span>
-    <span class="ss">RushCheck</span><span class="p">:</span><span class="ss">:Gen</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span> <span class="n">r</span><span class="o">|</span>
+    <span class="no">RushCheck</span><span class="o">::</span><span class="no">Gen</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span> <span class="n">r</span><span class="o">|</span>
       <span class="n">r2</span> <span class="o">=</span> <span class="n">r</span>
       <span class="nb">name</span><span class="p">,</span> <span class="n">price</span> <span class="o">=</span> <span class="o">[</span><span class="nb">String</span><span class="p">,</span> <span class="nb">Integer</span><span class="o">].</span><span class="n">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
         <span class="n">r1</span><span class="p">,</span> <span class="n">r2</span> <span class="o">=</span> <span class="n">r2</span><span class="o">.</span><span class="n">split</span>
@@ -115,7 +115,7 @@
 <span class="c1"># It augments the workspace with test</span>
 <span class="c1"># assertions.</span>
 <span class="no">WS</span> <span class="o">=</span> <span class="no">Rubish</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">current_workspace</span>
-<span class="no">WS</span><span class="o">.</span><span class="n">extend</span> <span class="ss">Test</span><span class="p">:</span><span class="ss">:Unit</span><span class="o">::</span><span class="no">Assertions</span>
+<span class="no">WS</span><span class="o">.</span><span class="n">extend</span> <span class="no">Test</span><span class="o">::</span><span class="no">Unit</span><span class="o">::</span><span class="no">Assertions</span>
 </code></pre></div><p>Extending a <span class="caps">DSL</span> singleton object on a per-use basis has important advantages:</p>
 <ol>
 	<li><strong>Subclassing is almost never needed.</strong> I find that I achieve better orthogonality by distributing methods into a flat space of Mixins, rather than a hierarchy of classes. This also keeps the codebase lean.</li>

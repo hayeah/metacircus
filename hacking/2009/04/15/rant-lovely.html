@@ -36,7 +36,7 @@
 <p>I wrote a simple love letter generator with <a href="http://github.com/hayeah/rantly/tree/master">Rantly</a>.</p>
 <div class="highlight"><pre><code class="ruby"><span class="nb">require</span> <span class="s1">&#39;rantly/silly&#39;</span>
 <span class="c1"># generate a love letter with 3 paragraphs</span>
-<span class="ss">Rantly</span><span class="p">:</span><span class="ss">:Silly</span><span class="o">.</span><span class="n">love_letter</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="no">Rantly</span><span class="o">::</span><span class="no">Silly</span><span class="o">.</span><span class="n">love_letter</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div><p>And get something like,</p>
 <pre>
 my unbelievable lighthouse:
@@ -84,7 +84,7 @@ each others' ears with shiny calm
 </pre>
 <p>You can see the source <a href="http://github.com/hayeah/rantly/blob/master/lib/rantly/silly.rb">here</a></p>
 <p>What I think is neat is that the love generator is a <span class="caps">DSL</span> built on top of Rant&#8217;s core. You get an extended instance of the <span class="caps">DSL</span> &#8220;interpreter&#8221; like so,</p>
-<div class="highlight"><pre><code class="ruby"><span class="n">r</span> <span class="o">=</span> <span class="no">Rantly</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="ss">Rantly</span><span class="p">:</span><span class="ss">:Silly</span><span class="o">::</span><span class="no">Love</span><span class="p">)</span>
+<div class="highlight"><pre><code class="ruby"><span class="n">r</span> <span class="o">=</span> <span class="no">Rantly</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="no">Rantly</span><span class="o">::</span><span class="no">Silly</span><span class="o">::</span><span class="no">Love</span><span class="p">)</span>
 </code></pre></div><p>and use it to generate a randomly sized array of pedestal labels:</p>
 <div class="highlight"><pre><code class="ruby"><span class="n">r</span><span class="o">.</span><span class="n">value</span> <span class="p">{</span><span class="n">array</span><span class="p">(</span><span class="n">integer</span><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">5</span><span class="p">)){</span><span class="n">pedestal_label</span><span class="p">}}</span>
 <span class="c1"># =&gt; [&quot;virgin goddess&quot;, &quot;desire&quot;, &quot;lighthouse&quot;]</span>
