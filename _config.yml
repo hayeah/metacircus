@@ -8,4 +8,7 @@ exclude:
   - config.ru
   - ideas
   - unpublished
+  - gh-pages
+  - Makefile
+  - README.md
 
