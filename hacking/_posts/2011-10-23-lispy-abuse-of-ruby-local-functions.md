@@ -3,11 +3,6 @@ title: "Lispy Abuse of Ruby: Local Functions"
 layout: post
 ---
 
-If Ruby were a person, the court would put a restraining order prohibiting my
-appearance in her vicinity (I somehow think of Ruby as a girl). But since
-there's now law against it, I am free to bend and abuse her for my devious
-pleasures.
-
 Functional languages like Lisp and Haskell make it easy to define highly
 granular scopes. It's possible to define a local function, and restrict its
 scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:
@@ -18,7 +13,7 @@ scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:
   (list (fun1) ; first element
         (let ((fun2 (lambda () 2))) (fun2)) ; second element
         ))
-        
+
 ;; => (list 1 2)
 
 {% endhighlight %}
@@ -113,7 +108,7 @@ It looks much better in CoffeeScript:
 (->
  fun1 = -> 1
  [fun1(),(-> (fun2 = -> 2); fun2())()]
-)  
+)
 {% endhighlight%}
 
 OK... maybe not much better.
