@@ -4,13 +4,75 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2013-12-09T10:24:32+08:00</updated>
+ <updated>2013-12-17T12:02:53+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
    <email>hayeah@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Launched, But...</title>
+   <link href="http://www.metacircus.com/startup/2013/12/17/launched-but.html"/>
+   <updated>2013-12-17T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/startup/2013/12/17/launched-but</id>
+   <content type="html">&lt;p&gt;So &lt;a href=&quot;http://metacircus.com/startup/2013/12/09/not-launched.html&quot;&gt;last week&lt;/a&gt; my biggest problem was “not launching”. &lt;a href=&quot;http://fork2.com:3000&quot;&gt;It’s launched&lt;/a&gt;, on port 3000, lolz.&lt;/p&gt;
+
+&lt;p&gt;It looks like a web version of an e-book… which it is.&lt;/p&gt;
+
+&lt;p&gt;You might ask, what’s the point? There are tools (like Sphinx) out there doing this already, why bother?&lt;/p&gt;
+
+&lt;p&gt;I’ll be the first to admit that it’s not there yet. But let’s just assume that for coding, you can significantly improve upon the learning experience over e-books. What are some ways?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Social. Connect with peers. Teaching assistant. Q &amp;amp; A.&lt;/li&gt;
+  &lt;li&gt;Interactive content. Make it easy to follow along code examples.&lt;/li&gt;
+  &lt;li&gt;Mobile. On-the-go experience (include coding).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Right now you don’t have any of that if you choose to learn from a book.&lt;/p&gt;
+
+&lt;p&gt;This version is the beginning of my third product pivot. It’s embarrassing that this is all I have, but I am slowly getting a better understanding of the product I want to build, and how the product vision aligns with the long-term vision I am after.&lt;/p&gt;
+
+&lt;p&gt;I am not a product person at all, so “product design” had been a terrible pain, and slow. Given that I don’t have product-design super power, the single most dangerous thing for me to do is to keep doing this groping-in-the-dark methodology of design.&lt;/p&gt;
+
+&lt;p&gt;I often imagine a miniature Paul Graham hovering over my right shoulder whispering imperatives. And now he’s asking me to,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;smash a beam of prototypes into a beam of users&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The imagination of nature is greater than the imagination of man &lt;br /&gt; – Richard Feynman&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;biggest-problem-this-week&quot;&gt;Biggest Problem This Week&lt;/h2&gt;
+
+&lt;p&gt;“Getting users” is too vague a goal for me to pursuit directly. Perhaps “Growth Hackers” have levers to pull to do that. I don’t.&lt;/p&gt;
+
+&lt;p&gt;It’s easier for me to think about delivering value.&lt;/p&gt;
+
+&lt;p&gt;The biggest problem this week is… &lt;em&gt;drum roll&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;not-delivering-value&quot;&gt;Not Delivering Value&lt;/h2&gt;
+
+&lt;p&gt;The problem has two aspects to it,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What group of people?&lt;/li&gt;
+  &lt;li&gt;What to give them?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I plan to provide introductory content for one emerging programming language that has an active developers community. One of &lt;a href=&quot;http://clojure.org&quot;&gt;Clojure&lt;/a&gt;, &lt;a href=&quot;http://elixir-lang.org&quot;&gt;Elixir&lt;/a&gt;, or &lt;a href=&quot;http://julialang.org&quot;&gt;Julia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;P.S.&lt;/p&gt;
+
+&lt;p&gt;The authoring tool is open-sourced at &lt;a href=&quot;https://github.com/hayeah/fork2-builder&quot;&gt;https://github.com/hayeah/fork2-builder&lt;/a&gt;. Watch the development there :)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Not Launched</title>
