@@ -33,11 +33,6 @@
   <div class="main">
     <div id="post">
   <h1 class='post-title'>Lispy Abuse of Ruby: Local Functions</h1>
-<p>If Ruby were a person, the court would put a restraining order prohibiting my
-appearance in her vicinity (I somehow think of Ruby as a girl). But since
-there’s now law against it, I am free to bend and abuse her for my devious
-pleasures.</p>
-
 <p>Functional languages like Lisp and Haskell make it easy to define highly
 granular scopes. It’s possible to define a local function, and restrict its
 scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:</p>
@@ -46,7 +41,7 @@ scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:</p>
   <span class="p">(</span><span class="nb">list </span><span class="p">(</span><span class="nf">fun1</span><span class="p">)</span> <span class="c1">; first element</span>
         <span class="p">(</span><span class="k">let </span><span class="p">((</span><span class="nf">fun2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">()</span> <span class="mi">2</span><span class="p">)))</span> <span class="p">(</span><span class="nf">fun2</span><span class="p">))</span> <span class="c1">; second element</span>
         <span class="p">))</span>
-        
+
 <span class="c1">;; =&gt; (list 1 2)</span>
 </code></pre></div>
 
@@ -130,7 +125,7 @@ It looks much better in CoffeeScript:</p>
 <div class="highlight"><pre><code class="coffeescript"><span class="p">(</span><span class="nf">-&gt;</span>
  <span class="nv">fun1 = </span><span class="nf">-&gt;</span> <span class="mi">1</span>
  <span class="p">[</span><span class="nx">fun1</span><span class="p">(),(</span><span class="nf">-&gt;</span> <span class="p">(</span><span class="nv">fun2 = </span><span class="nf">-&gt;</span> <span class="mi">2</span><span class="p">);</span> <span class="nx">fun2</span><span class="p">())()]</span>
-<span class="p">)</span>  
+<span class="p">)</span>
 </code></pre></div>
 
 <p>OK… maybe not much better.</p>

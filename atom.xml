@@ -4,7 +4,7 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2013-12-17T12:04:09+08:00</updated>
+ <updated>2013-12-17T12:08:46+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
@@ -294,12 +294,7 @@ the right people.&lt;/p&gt;
    <link href="http://www.metacircus.com/hacking/2011/10/23/lispy-abuse-of-ruby-local-functions.html"/>
    <updated>2011-10-23T00:00:00+08:00</updated>
    <id>http://www.metacircus.com/hacking/2011/10/23/lispy-abuse-of-ruby-local-functions</id>
-   <content type="html">&lt;p&gt;If Ruby were a person, the court would put a restraining order prohibiting my
-appearance in her vicinity (I somehow think of Ruby as a girl). But since
-there’s now law against it, I am free to bend and abuse her for my devious
-pleasures.&lt;/p&gt;
-
-&lt;p&gt;Functional languages like Lisp and Haskell make it easy to define highly
+   <content type="html">&lt;p&gt;Functional languages like Lisp and Haskell make it easy to define highly
 granular scopes. It’s possible to define a local function, and restrict its
 scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:&lt;/p&gt;
 
@@ -307,7 +302,7 @@ scope to any arbitrary chunk of code. In Lisp (Scheme), it looks like:&lt;/p&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fun1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; first element&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fun2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; second element&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        
+
 &lt;span class=&quot;c1&quot;&gt;;; =&amp;gt; (list 1 2)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -391,7 +386,7 @@ It looks much better in CoffeeScript:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;coffeescript&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
  &lt;span class=&quot;nv&quot;&gt;fun1 = &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fun1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fun2 = &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fun2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())()]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;OK… maybe not much better.&lt;/p&gt;
