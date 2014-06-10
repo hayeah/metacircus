@@ -5,7 +5,7 @@ title: NodeSchool Chengdu Wrap-up
 
 <img src="http://i.imgur.com/ALzQfMRl.jpg" width="500"/>
 
-NodeSchool Chengdu had 40 people showing up, and 6 coaches. The attendents learned some NodeJS, and asked for follow up events. We used [Learn You Node](http://nodeschool.io/#learn-you-node).
+NodeSchool Chengdu had 40 people showing up, and 6 coaches. Despite our inexperience in hosting events, the attendants learned some NodeJS, and asked for follow up events. We used [Learn You Node](http://nodeschool.io/#learn-you-node).
 
 [Chengdu](http://en.wikipedia.org/wiki/Chengdu) is a metrapolis in central China, pop. 14 million, known for pandas, silk, and its fiery cuisine. Nowadays it has a vibrant and growing gaming industry. Come visit!
 
