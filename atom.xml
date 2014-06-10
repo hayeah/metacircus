@@ -4,13 +4,222 @@
  <title>Metacircus</title>
  <link href="http://www.metacircus.com/atom.xml" rel="self"/>
  <link href="http://www.metacircus.com"/>
- <updated>2014-01-13T11:13:24+08:00</updated>
+ <updated>2014-06-10T17:21:44+08:00</updated>
  <id>http://www.metacircus.com/</id>
  <author>
    <name>Howard Yeh</name>
    <email>hayeah@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>NodeSchool Chengdu Wrap-up</title>
+   <link href="http://www.metacircus.com/startup/2014/06/10/nodeschool-chengdu-report.html"/>
+   <updated>2014-06-10T00:00:00+08:00</updated>
+   <id>http://www.metacircus.com/startup/2014/06/10/nodeschool-chengdu-report</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ALzQfMRl.jpg&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;NodeSchool Chengdu had 40 people showing up, and 6 coaches. The attendents learned some NodeJS, and asked for follow up events. We used &lt;a href=&quot;http://nodeschool.io/#learn-you-node&quot;&gt;Learn You Node&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Chengdu&quot;&gt;Chengdu&lt;/a&gt; is a metrapolis in central China, pop. 14 million, known for pandas, silk, and its fiery cuisine. Nowadays it has a vibrant and growing gaming industry. Come visit!&lt;/p&gt;
+
+&lt;p&gt;I am writing this wrap-up so next time I can avoid the same noob mistakes. Perhaps other organizers in China can use my plan as a starting point.&lt;/p&gt;
+
+&lt;h2 id=&quot;attendents&quot;&gt;Attendents&lt;/h2&gt;
+
+&lt;p&gt;By professions (&lt;code&gt;vagrant&lt;/code&gt; is a joke category… ):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.evernote.com/shard/s20/sh/edee86dd-88f5-4996-a059-f06b6f474244/76a039039f9645fb84e48a8aff106030/deep/0/professional-background.png&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;By tech background:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.evernote.com/shard/s20/sh/7ca6a6ab-b3ba-4bb0-afa6-c62cc06b9d1a/dd777ba35b68adb04931aacea115b8da/deep/0/tech-background.png&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-venue&quot;&gt;The Venue&lt;/h2&gt;
+
+&lt;p&gt;We borrowed Hoolai Games’ office space in software park.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Plenty of chairs and table space&lt;/li&gt;
+  &lt;li&gt;Lots of power plugs&lt;/li&gt;
+  &lt;li&gt;Air conditioned and well-lit&lt;/li&gt;
+  &lt;li&gt;Whiteboard &amp;amp; projector available&lt;/li&gt;
+  &lt;li&gt;Wifi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;preparation&quot;&gt;Preparation&lt;/h2&gt;
+
+&lt;p&gt;We asked attendents to install NodeJS and NodeSchool before the event. We also told them that if they don’t know how, don’t worry about it. Just come and we’ll help them setup.&lt;/p&gt;
+
+&lt;p&gt;As other NodeSchool evenets had warned, we expected wifi to be flaky at best. So I made the followings available on a USB drive:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;VirtualBox installers for Windows and OSX.&lt;/li&gt;
+  &lt;li&gt;Virtual Machine with NodeSchool and Sublime editor (ubuntu 12.04).
+    &lt;ul&gt;
+      &lt;li&gt;Built with VirtualBox.&lt;/li&gt;
+      &lt;li&gt;Exported to “.ova” format, which is compatible with VirtualBox and VMWare.&lt;/li&gt;
+      &lt;li&gt;The exported VM image is about 1G.&lt;/li&gt;
+      &lt;li&gt;The running image requires 512MB of RAM.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Screencast explaining how to use the Virtual Machine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, following Max Ogden’s idea, I made a static website running on local network with basic information about NodeSchool. The USB drive’s content is available for download via the static site as well.&lt;/p&gt;
+
+&lt;p&gt;If you want the VM image, email me. I’ll find a place to upload it. The screencast I made is in Chinese.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-schedule&quot;&gt;The Schedule&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1:45pm - Arrival&lt;/li&gt;
+  &lt;li&gt;2:00pm -&amp;gt; 2:10pm - Introduction to event and coaches.&lt;/li&gt;
+  &lt;li&gt;2:10pm -&amp;gt; 2:40pm - Lightning Talks.&lt;/li&gt;
+  &lt;li&gt;2:40pm -&amp;gt; 3:00pm - NodeSchool Demo&lt;/li&gt;
+  &lt;li&gt;3:00pm -&amp;gt; 3:15pm - Attendents Pairing&lt;/li&gt;
+  &lt;li&gt;3:15pm -&amp;gt; 5:00pm - NodeSchool&lt;/li&gt;
+  &lt;li&gt;5:00pm -&amp;gt; 5:30pm - Wrap-up&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;problems&quot;&gt;Problems&lt;/h2&gt;
+
+&lt;p&gt;Stupid mistakes were made…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No Mac adapter for projector… so the talks and demo (except one) were canceled.&lt;/li&gt;
+  &lt;li&gt;Brought home-baked cookies, but forgot to hand them out.&lt;/li&gt;
+  &lt;li&gt;Event was initially announced with a different venue. Confusion and frantic notifications days before the event.&lt;/li&gt;
+  &lt;li&gt;Email delivery to Chinese mail services (QQ, NetEase, etc.) is flaky.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;things-to-improve&quot;&gt;Things To Improve&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t change venue (duh).&lt;/li&gt;
+  &lt;li&gt;Should’ve asked for phone numbers, and send SMS for reminders.&lt;/li&gt;
+  &lt;li&gt;Use multiple channels to send reminders: email, sms, wechat group.&lt;/li&gt;
+  &lt;li&gt;Bring more USB drives in a file system format that both Mac and Windows can read.&lt;/li&gt;
+  &lt;li&gt;Although we encouraged pairing, most people didn’t. Only people who came with real-life friends or co-worker paired.&lt;/li&gt;
+  &lt;li&gt;It would’ve been helpful to record screencasts that solves the first 2 challenges, to show people how to interact with the nodeschool program.&lt;/li&gt;
+  &lt;li&gt;Didn’t close the event well. Haphazardly said, “ok guys, event’s over. Feel free to stay or chat.”&lt;/li&gt;
+  &lt;li&gt;Some people didn’t interact with their table mates much.&lt;/li&gt;
+  &lt;li&gt;Would be nice to have schwags to hand out…&lt;/li&gt;
+  &lt;li&gt;Would be nice to showcase some cool nodejs projects, because while many people have heard of “high-concurrency” and “async”, they don’t know what to build with NodeJS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;checklist&quot;&gt;Checklist&lt;/h2&gt;
+
+&lt;p&gt;Here’s a checklist I’d use next time for hosting NodeSchool:&lt;/p&gt;
+
+&lt;h3 id=&quot;pre-planning&quot;&gt;Pre-Planning&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go through this &lt;a href=&quot;https://github.com/nodeschool/discussions/issues/93&quot;&gt;thread&lt;/a&gt; to learn from other NodeSchool organizers&lt;/li&gt;
+  &lt;li&gt;Add your event to the NodeSchool &lt;a href=&quot;https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0&quot;&gt;spreadsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;choose-a-venue&quot;&gt;Choose a venue&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Does the projector work?&lt;/li&gt;
+  &lt;li&gt;Enough power plugs?&lt;/li&gt;
+  &lt;li&gt;Wifi?&lt;/li&gt;
+  &lt;li&gt;Enough chairs and tables?&lt;/li&gt;
+  &lt;li&gt;How many people can it fit?&lt;/li&gt;
+  &lt;li&gt;Is the venue publicly accessible? (keycard?)&lt;/li&gt;
+  &lt;li&gt;Are there other things going on? (Cafe? People working?)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;announcement---2-weeks-in-advance&quot;&gt;Announcement - (2 weeks in advance)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create event announcement
+    &lt;ul&gt;
+      &lt;li&gt;Date and time&lt;/li&gt;
+      &lt;li&gt;Contact info of organizer&lt;/li&gt;
+      &lt;li&gt;Venue&lt;/li&gt;
+      &lt;li&gt;Fee (or say “free”)&lt;/li&gt;
+      &lt;li&gt;Event size limit&lt;/li&gt;
+      &lt;li&gt;Level of experience required (or say “none”)&lt;/li&gt;
+      &lt;li&gt;Equipment required (laptop. Mac or Windows)&lt;/li&gt;
+      &lt;li&gt;The announcement: &lt;a href=&quot;https://gist.github.com/hayeah/319aa17754093c05002e&quot;&gt;gist&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sign up form should ask for:
+    &lt;ul&gt;
+      &lt;li&gt;Name&lt;/li&gt;
+      &lt;li&gt;email&lt;/li&gt;
+      &lt;li&gt;Phone number&lt;/li&gt;
+      &lt;li&gt;Level of NodeJS experience&lt;/li&gt;
+      &lt;li&gt;Level of JavaScript experience&lt;/li&gt;
+      &lt;li&gt;Why do you want to attend (interesting insight here)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ask local community to retweet event&lt;/li&gt;
+  &lt;li&gt;Find volunteers to help&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;preparation-1&quot;&gt;Preparation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;NodeSchool VM&lt;/li&gt;
+  &lt;li&gt;Screencast to demo how to use VM&lt;/li&gt;
+  &lt;li&gt;Screencast to demo NodeSchool&lt;/li&gt;
+  &lt;li&gt;VM &amp;amp; videos on USB drives&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;reminder---2-days-in-advance&quot;&gt;Reminder - (2 days in advance)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ask attendents to install NodeSchool&lt;/li&gt;
+  &lt;li&gt;Direction/Map to event venue&lt;/li&gt;
+  &lt;li&gt;Reminder of event time&lt;/li&gt;
+  &lt;li&gt;Ask attendents to arrive 15 minutes early&lt;/li&gt;
+  &lt;li&gt;Invitation to join a chat group of some sort (WeChat in China)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;day-of-event&quot;&gt;Day of Event&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Arrive 30 minutes earlier&lt;/li&gt;
+  &lt;li&gt;Post wifi &amp;amp; password on the wall&lt;/li&gt;
+  &lt;li&gt;Post local IP of event web site&lt;/li&gt;
+  &lt;li&gt;Give out cards for people to write their names on&lt;/li&gt;
+  &lt;li&gt;Help early arrivers to install environment if necessary&lt;/li&gt;
+  &lt;li&gt;Demo NodeSchool live
+    &lt;ul&gt;
+      &lt;li&gt;show how to run an exercise&lt;/li&gt;
+      &lt;li&gt;show how to debug&lt;/li&gt;
+      &lt;li&gt;show how to open documentation locally&lt;/li&gt;
+      &lt;li&gt;show how to use dependencies preinstalled by learnyounode&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Announce that screencasts are available on event site&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;wrap-up&quot;&gt;Wrap up&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Take a group photo&lt;/li&gt;
+  &lt;li&gt;Encourage people to stay around and chat&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;thanks&quot;&gt;Thanks&lt;/h1&gt;
+
+&lt;p&gt;Thanks to all the attendents who came, and the coaches for their time and patience:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lite&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zihua.li/&quot;&gt;Luin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://miaoo.in/&quot;&gt;邓淼江&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;吴东强&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/heroicyang&quot;&gt;杨雄&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/alsotang&quot;&gt;Alsotang&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hoolai Games&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>There's A Way</title>
